@@ -1,0 +1,235 @@
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
+\documentclass[]{article}
+
+% Add the geometry package and set smaller margins
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+
+\usepackage{fancyhdr}
+
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\IfFileExists{microtype.sty}{
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}
+  }
+}{% if KOMA class
+  \KOMAoptions{parskip=half}
+}
+\makeatother
+
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}
+}
+
+% Custom header and footer
+\pagestyle{fancy}
+\fancyhead[l]{Azal Amer}
+\fancyhead[c]{QIS HW \#}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{.2pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\hypertarget{overview}{%
+\section{Overview}\label{overview}}
+
+\hypertarget{notes}{%
+\section{Notes}\label{notes}}
+
+\begin{itemize}
+\tightlist
+\item
+  We don't want to write giant unwieldily matrices, so keeping things
+  factored to the tensor product is a good idea
+\item
+  Quantum Circuits are just a visual notation for expressing a large
+  unitary transformation
+\end{itemize}
+
+We're just talking about how to go about writing quantum states to a
+diagram
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+{[}{[}Supplemental
+Files/images/AgACAgEAAxkBAAIBaWbgmVld9QQNQXAZD3krvjMI8VBeAAJGrTEbFpgIR6E9E1x5pS-BAQADAgADeQADNgQ.jpg{]}{]}
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Photo of how a list of operations maps to a diagram \\
+\end{longtable}
+
+\begin{quote}
+{[}!question{]}+ How do we get from Dirac notation, all the way up to
+wave-particle duality? So far this just feels like a funky particle
+\end{quote}
+
+{[}{[}../Quantum 1/1.4 Matrix Representations and
+Hamiltonians\#\^{}4385ab{]}{]} There's also the CC-Not, the Toffoli gate
+(Page 31 in the textbook). This is an 8x8 matrix, which behaves just
+like an AND gate using the two input bits. \[
+\ket{x,y,z} \to \ket{x,y,z\oplus xy} 
+\] Note that this is different than \(\ket{x,y,xy}\), because unitaries
+MUST be reversible. That means you can't just destroy information
+(unless you measure).
+
+\begin{quote}
+{[}!exercise{]} Assume you have the state
+\(\alpha \ket{00}+\beta \ket{01}+\gamma \ket{10}\delta+ \ket{11}\) What
+happens if you measure both states at the same time?
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+\(\|\alpha\|^{2}\) & .25 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\|\beta\|^{2}\) & .25 \\
+\(\|\gamma\|^{2}\) & .25 \\
+\(\|\delta\|^{2}\) & .25 \\
+\end{longtable}
+
+But now what happens when you measure them one after the other? We're
+going to measure the first qubit.
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+\(P(0)\) & \(\|\alpha\|^{2}+\|\beta\|^{2}\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+P(1) & \(\|\gamma\|^{2}+\|\delta\|^{2}\) \\
+\end{longtable}
+
+What the new state of the second qubit is, then affects what the output
+of the first qubit is.
+\end{quote}
+
+\begin{quote}
+{[}!question{]}+ What happens if I measure the first qubit in a
+different basis that isn't the digital basis? I think you just rewrite
+the basis of the first qubit into the new basis, write the possible
+states after measurement, then use that to determine your results. That
+or you just apply the measurement observables to the qubit you're going
+to measure, then work from there.
+\end{quote}
+
+I think entanglement finally made sense in my head
+
+\begin{quote}
+{[}!definition{]} Watched Pot Effect
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+{[}{[}Supplemental
+Files/images/AgACAgEAAxkBAAIBa2bgoVAEQMG-QVrnmKqqHE2ebDeiAAJNrTEbFpgIR5OyJzNsA1m3AQADAgADeQADNgQ.jpg{]}{]}
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Image of \(\ket{\alpha}\) drifting without observation \\
+\end{longtable}
+
+Let's say we have a vector \(\ket{\alpha}\), and we have our qubit
+naturally drifting from the zero to the one state. If we're an
+experimentalist, we want to know this is happening, so we keep watching
+the qubit, waiting for it to drift.
+
+Let's say the qubit rotates by \(\epsilon\) radians. Nature applies the
+below unitary to the qubit continuously \[
+\begin{pmatrix}
+\cos\epsilon(t)  & -\sin\epsilon(t) \\
+\sin\epsilon(t) & \cos\epsilon(t)
+\end{pmatrix}\ket{\alpha} 
+\] The experimenter will never see the qubit rotate! Without the
+measurements, the qubit would be rotating. That being said, the
+experimenter measures discretely, which means \[
+P\left[ 1 \right]  = \sin^{2}{(\epsilon)} \approx \epsilon^{2}
+\] Squaring from the already low probability, means the probability of
+the qubit snapping to one is astonishingly small. If we measure
+consistently over time and \(\epsilon\) is linear, we make
+\(\frac{\pi}{2\epsilon}\) measurements. That means over one rotation,
+the probability of snapping to 1 becomes \[
+P_{tot}\left[ 1 \right]  = \frac{\pi}{2\epsilon}*P[1] = \frac{\pi}{2}\epsilon
+\]
+\end{quote}
+
+\begin{quote}
+{[}!definition{]} Zeno's Effect Given a qubit now locked at \(\ket{0}\),
+and I want to somehow convert it to a \(\ket{1}\) qubit with no gates.
+To do that, I can apply measuring in infinite basis with \(d\epsilon\)
+angle. That would slowly rotate the darn thing
+
+\begin{quote}
+{[}!quote{]} ``Perhaps an everyday-life analog would be asking a
+stranger to have coffee with you, then to go dancing, etc.---there's a
+higher probability of success than if you just immediately ask them to
+marry you!'' - Scott Aaronson
+\end{quote}
+\end{quote}
+
+\hypertarget{quantum-bomb}{%
+\subsection{Quantum Bomb}\label{quantum-bomb}}
+\end{document}
