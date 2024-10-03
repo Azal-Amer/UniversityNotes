@@ -1,0 +1,453 @@
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
+\documentclass[]{article}
+
+
+\usepackage{color}
+\usepackage{graphicx}
+
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+% Add the geometry package and set smaller margins
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{braket}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{framed}
+\lstnewenvironment{Highlighting}{}{}
+\usepackage{xcolor}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\IfFileExists{microtype.sty}{
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}
+  }
+}{% if KOMA class
+  \KOMAoptions{parskip=half}
+}
+\makeatother
+
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\usepackage{framed}
+\usepackage{listings}
+
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}
+}
+
+% Custom header and footer
+\pagestyle{fancy}
+\fancyhead[l]{Azal Amer}
+\fancyhead[c]{QIS HW \#2}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{.2pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\definecolor{shadecolor}{rgb}{0.9, 0.9, 0.9}
+
+\hypertarget{problem-1}{%
+\section{Problem 1}\label{problem-1}}
+
+\hypertarget{a}{%
+\subsection{a)}\label{a}}
+
+\[
+\begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix}
+\]
+
+\hypertarget{b}{%
+\subsection{b)}\label{b}}
+
+Answer is \[
+\begin{pmatrix}
+0 & -1 & 1 & -1 \\
+1 & 0 & -1 & -1 \\
+-1 & 1 & 0 & -1 \\
+1 & 1 & 1 & 0
+\end{pmatrix}
+\]
+
+Unitary matricies are orthogonal
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{from sympy import Matrix}
+\NormalTok{import sympy as sp}
+\NormalTok{matrix =sp.Rational(1)/sp.sqrt(3)* Matrix([}
+\NormalTok{    [0, {-}1, 1, {-}1],}
+\NormalTok{    [1, 0, {-}1, {-}1],}
+\NormalTok{    [{-}1, 1, 0, {-}1],}
+\NormalTok{    [1, 1, 1, 0],}
+
+\NormalTok{])}
+\NormalTok{sp.pprint(matrix.inv())}
+\NormalTok{sp.pprint(matrix.T)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{c}{%
+\subsection{c)}\label{c}}
+
+\[
+\begin{pmatrix}
+\alpha_{1} & \alpha_{2} & \alpha_{3} \\
+\beta_{1} & \beta_{2} & \beta_{3} \\
+\gamma_{1} & \gamma_{2} & \gamma_{3}
+\end{pmatrix}
+\] The diagonals and anti-diagonals have the below conditions \[
+\begin{align}
+D = \left\{ n\bigg| n=0\right\}  \\
+A = \left\{ u\bigg|u\neq 0 \right\} 
+\end{align}
+\] Through the definition of the diagonal and anti-diagonal, we also
+know the below must be true. \[
+\begin{align}
+\alpha_{1},\beta_{2}.\gamma_{3}\in D \\
+\alpha_{3} , \beta_{2} , \gamma_{1} \in A \\
+\beta_{2}\in A,D
+\end{align}
+\] This is a contradiction, as \(\beta_{2}\) cannot be equal to zero and
+unequal to zero. One of the two conditions cannot be satisfied.
+
+\hypertarget{problem-2}{%
+\section{Problem 2}\label{problem-2}}
+
+Below are the defined matricies
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{import sympy as sp}
+
+\NormalTok{\# Define the imaginary unit}
+\NormalTok{i = sp.I}
+
+\NormalTok{\# Define the matrices}
+\NormalTok{X = sp.Matrix([[0, 1], [1, 0]])}
+\NormalTok{Y = sp.Matrix([[0, {-}i], [i, 0]])}
+\NormalTok{Z = sp.Matrix([[1, 0], [0, {-}1]])}
+
+\NormalTok{H = sp.Matrix([[1, 1], [1, {-}1]]) / sp.sqrt(2)}
+\NormalTok{R\_pi\_4 = sp.Matrix([[1, {-}1], [1, 1]]) / sp.sqrt(2)}
+\NormalTok{P = sp.Matrix([[1, 0], [0, i]])}
+\NormalTok{T = sp.Matrix([[1, 0], [0, sp.exp(i*sp.pi/4)]])}
+\NormalTok{ketH = sp.Matrix([1,0])}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{a-1}{%
+\subsection{a)}\label{a-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sp.pprint(P*H*Z*H*ketH)}
+\end{Highlighting}
+\end{Shaded}
+
+Thus this gate transforms the \(\ket{0} \to i\ket{1}\)
+
+\hypertarget{b-1}{%
+\subsection{b)}\label{b-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sp.pprint(H*Y*Z*R\_pi\_4*ketH)}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\ket{0}\to i\ket{0}  
+\]
+
+\hypertarget{c-1}{%
+\subsection{c)}\label{c-1}}
+
+To measure in the \(\left\{ \ket{+},\ket{-} \right\}\) basis, we need to
+measure using the \(X\) observable, so we just add that as a gate
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sp.pprint(H*T*X*ketH)}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\ket{\phi}  = \frac{\sqrt{ 2 }}{2}e^{ i\pi/4 }\ket{0} -\frac{\sqrt{ 2 }}{2}e^{ i\pi/4 }\ket{-} 
+\]
+
+\hypertarget{d}{%
+\subsection{d)}\label{d}}
+
+To measure in the \(\left\{ \ket{i},\ket{-i} \right\}\) basis, we use
+the \(Y\) observable
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sp.pprint(T*Z*T*Y*ketH)}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\ket{\psi}  = 0\ket{i} +\ket{-i}  
+\]
+
+\hypertarget{problem-3}{%
+\section{Problem 3}\label{problem-3}}
+
+\hypertarget{a-2}{%
+\subsection{a)}\label{a-2}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ketPlus = sp.Rational(1)/sp.sqrt(2) *sp.Matrix(}
+\NormalTok{[1,1]}
+\NormalTok{)}
+
+
+\NormalTok{psi = ketH+ketPlus}
+\NormalTok{sp.pprint((psi.T*psi).expand())}
+\end{Highlighting}
+\end{Shaded}
+
+To normalize any vector, we just divide it by the square root of it's
+own inner product. \[
+\ket{\psi}  = c\left( \ket{0} +\ket{+}  \right) 
+\] Where \(c\) is the normalization constant \[
+c = \frac{1}{\sqrt{ \left<\psi|\psi\right>  }}
+\] \[
+c = \frac{1}{\sqrt{ \sqrt{ 2 }+2 }}
+\] Therefore the normalized state is \[
+\ket{\psi}  = \frac{1}{\sqrt{ \sqrt{ 2 }+2 }}\left( \ket{0} +\ket{+}  \right) =\frac{1}{\sqrt{ \sqrt{ 2 }+2 }}\begin{pmatrix}
+1+\frac{1}{\sqrt{ 2 }}\\
+\frac{1}{\sqrt{ 2 }}
+\end{pmatrix}
+\]
+
+\hypertarget{b-2}{%
+\subsection{b)}\label{b-2}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{print(sp.latex(H.eigenvects()))}
+\end{Highlighting}
+\end{Shaded}
+
+The eigenvectors of the Hadamard gate are \[
+ \left( -1,\  \left[\begin{matrix}1 - \sqrt{2}\\1\end{matrix}\right]=\vec{v_{1}}\right), \ \left( 1, \left[\begin{matrix}1 + \sqrt{2}\\1\end{matrix}=\vec{v_{2}}\right]\right)
+\] It seems the distinguishing component between both vectors is the
+\(\ket{0}\) amplitude, so we need to check if the first component of
+each vector is equal, when the second component is 1.
+
+\[
+\begin{align}
+\sqrt{ 2 }\left( 1+\frac{1}{\sqrt{ 2 }} \right) =^{?}1+\sqrt{ 2 } \\
+\sqrt{ 2 }+1=1+\sqrt{ 2 } \\
+\frac{1}{\sqrt{ \sqrt{ 2 }+2 }}\left( \ket{0} +\ket{+}  \right) =\vec{v_{1}}
+\end{align} \\
+\]
+
+\hypertarget{c-2}{%
+\subsection{c)}\label{c-2}}
+
+The \(P\) gate moves is through a complex rotation, orthogonal to motion
+by the \(H\) gate on the Bloch Sphere. We only have two possible states
+of motion.
+
+\includegraphics{../../../Supplemental Files/images/Pasted image 20240917144240.png}
+We can only make orthogonal rotations, in orthogonal directions. From
+this, it means we can only reach pure states on the axis times the
+negative pair.
+
+\hypertarget{problem-4}{%
+\section{Problem 4}\label{problem-4}}
+
+\hypertarget{a-3}{%
+\subsection{a)}\label{a-3}}
+
+It's orthogonal eigenvectors are equally distant from
+\(\ket{+},\ket{0}\). The bisecting vector between \(\ket{0},\ket{+}\) is
+just \[
+\ket{\psi}  = \sin(\theta)\ket{0} +\cos(\theta)\ket{1} 
+\]
+
+We need to find the matrix which describes this rotation, for one vector
+apply it twice, for the other apply it's inverse. We know that \[
+U*U*U*U =\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}
+\]
+
+Which means that \(U\) applies a rotation of \(\frac{\pi}{2}/4\) each
+time. This becomes \(\frac{\pi}{8}\). We know that both our vectors are
+real, which means our unitary is represented by \[
+U_{\mathbb{R}} = \begin{pmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta
+\end{pmatrix}
+\] Where \(\theta\) is the rotation we want to apply. \[
+U = \begin{pmatrix}
+\cos \frac{\pi}{8} & -\sin \frac{\pi}{8} \\
+\sin \frac{\pi}{8} & \cos \frac{\pi}{8}
+\end{pmatrix}
+\]
+
+We want to measure in this observable. For a state \(\ket{\psi}\), one
+eigenvector having the high number of counts corresponds to the
+\(\ket{0}\) state, and the other corresponds to \(\ket{+}\). A detection
+with the eigenvalue corresponding to \(\lambda=1\) (in this case, on the
+\(\ket{0}\) detector) has an expected value of \[
+\begin{align}
+\left| \left<0|U|0\right>  \right| ^{2}= \begin{pmatrix}
+1 & 0 
+\end{pmatrix}\begin{pmatrix}
+\cos \frac{\pi}{8} & -\sin \frac{\pi}{8} \\
+\sin \frac{\pi}{8} & \cos \frac{\pi}{8}
+\end{pmatrix}\begin{pmatrix}
+1 \\
+0
+\end{pmatrix} \\
+\begin{pmatrix}
+\cos \frac{\pi}{8}  & -\sin \frac{\pi}{8}
+\end{pmatrix}\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}=\cos^{2} \frac{\pi}{8}
+\end{align}
+\] With \(\ket{+}\), our expected value is \[
+\begin{align}
+\left| \left<+|U|+\right>  \right| ^{2}= \frac{1}{2} \begin{pmatrix}
+1 & 1 
+\end{pmatrix}\begin{pmatrix}
+\cos \frac{\pi}{8} & -\sin \frac{\pi}{8} \\
+\sin \frac{\pi}{8} & \cos \frac{\pi}{8}
+\end{pmatrix}\begin{pmatrix}
+1 \\
+1
+\end{pmatrix} \\
+\frac{1}{2}\begin{pmatrix}
+\cos \frac{\pi}{8}+\sin \frac{\pi}{8}  & \cos \frac{\pi}{8}-\sin \frac{\pi}{8}
+\end{pmatrix}\begin{pmatrix}
+1 \\
+1
+\end{pmatrix}= \\
+=\left( \frac{1}{2} 2\cos \frac{\pi}{8} \right) ^{2}=\cos^{2} \frac{\pi}{8}
+\end{align}
+\] The expected value of both of these states measuring in the
+observable is \(\frac{\cos^{2}\pi}{8}\). We know that \[
+\begin{align}
+1 = \text{success}+\text{error} \\
+1=\cos^{2} \frac{\pi}{8}+\text{error}\\ \\
+1-\cos^{2} \frac{\pi}{8}=\text{error} \\
+\text{error} = \sin^{2}{ \frac{\pi}{8} } 
+\end{align}
+\]
+
+\hypertarget{c-3}{%
+\subsection{c)}\label{c-3}}
+
+Measuring in the \(\left\{ \ket{0},\ket{1} \right\}\) basis instead of
+our proper basis, gives an error on average, of \[
+\frac{{e_{\ket{0}}+e_{\ket{+} }}}{2}=e_{tot}
+\] We know that we have a click on detector \(\ket{1}\), then we have to
+be diagonal. \[
+\ket{+}  = \frac{1}{\sqrt{ 2 } }\ket{0} +\frac{1}{\sqrt{ 2 }}\ket{1} 
+\] The diagonal state 50\% of the time collapses to \(\ket{0}\). So \[
+e_{\ket{+} } = .5
+\] \(\ket{0}\) will always collapse to zero, so \[
+e_{\ket{0} } = 1
+\] Therefore, \[
+e_{tot} = \frac{{1+.5}}{2} = .75
+\]
+\end{document}

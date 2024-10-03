@@ -1,0 +1,147 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\textbf{Meet the Gates Family!}
+
+\[
+\begin{align*}
+I=\begin{bmatrix}
+1 & 0  \\ 0 & 1
+\end{bmatrix}
+ &\quad
+  X = \begin{bmatrix}
+0 & 1 \\ 1  &  0
+\end{bmatrix} 
+ &\quad 
+S=\begin{bmatrix}
+1 & 0  \\ 0 & i
+\end{bmatrix} \quad
+\\
+Y=\begin{bmatrix}
+0 & -i \\ i & 0
+\end{bmatrix} 
+ &\quad
+T=\begin{bmatrix}
+1 & 0 \\ 0 & e^{\frac{i\pi}{4}}
+\end{bmatrix} 
+ &\quad 
+H =\frac{1}{\sqrt{2}}\begin{bmatrix}
+1 & 1  \\ 1 & -1
+\end{bmatrix} 
+\\
+P_0=\begin{bmatrix}
+1 & 0 \\ 0  & 0
+\end{bmatrix} 
+ &\quad
+Z=\begin{bmatrix}
+1 & 0 \\ 0 & -1
+\end{bmatrix} &\quad
+S^{\dagger}=\begin{bmatrix}
+1 & 0 \\ 0 & -i
+\end{bmatrix}
+\end{align*}\]
+
+\(X,Y,Z,\& H\) are all different roots of the Identity matrix.
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Operator & Eigenvalue & Light Polarization & Corresponding Basis \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+X & +1 & D (Diagonal) & D/A \\
+X & -1 & A (Anti-Diagonal) & D/A \\
+Y & +1 & R (Right-Circular) & R/L \\
+Y & -1 & L (Left-Circular) & R/L \\
+Z & +1 & H (Horizontal) & H/V \\
+Z & -1 & V (Vertical) & H/V \\
+\end{longtable}
+
+\hypertarget{measuring-observable}{%
+\section{Measuring Observable}\label{measuring-observable}}
+
+Here's a useful table on what gates to apply to get to the X,Y, and Z
+observables from the digital {[}{[}Pasted image 20240319173746.png{]}{]}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Observable & Gates & Basis \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+X & H & D/A \\
+Y & \(S H\) & R/L \\
+Z & none & H/V \\
+\end{longtable}
+
+\end{document}

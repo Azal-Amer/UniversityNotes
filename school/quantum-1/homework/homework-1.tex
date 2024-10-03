@@ -1,0 +1,550 @@
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
+\documentclass[]{article}
+
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+% Add the geometry package and set smaller margins
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{braket}
+\usepackage{fancyhdr}
+
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\IfFileExists{microtype.sty}{
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}
+  }
+}{% if KOMA class
+  \KOMAoptions{parskip=half}
+}
+\makeatother
+
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\usepackage{framed}
+\usepackage{listings}
+
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}
+}
+
+% Custom header and footer
+\pagestyle{fancy}
+\fancyhead[l]{Azal Amer, Thalia Merkel, Austin Merkel}
+\fancyhead[c]{Quantum 1 HW \#1}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{.2pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\definecolor{shadecolor}{rgb}{0.9, 0.9, 0.9}
+
+\hypertarget{problem-1}{%
+\section{Problem 1}\label{problem-1}}
+
+Given \[
+\begin{align}
+S_{x} = \frac{\hbar}{2}\left( \ket{+} \bra{-}+\ket{-} \bra{+}   \right)  \\
+S_{y} = \frac{i\hbar}{2}\left(- \ket{x} \bra{-} +\ket{-} \bra{+}  \right)  \\
+S_{z} = \frac{\hbar}{2}\left( \ket{+} \bra{+} -\ket{-} \bra{-}   \right) 
+\end{align}
+\]
+
+\^{}states For readability sake, we're making the following notation
+swap \[
+\begin{align}
+\ket{+} \to \ket{x}  \\
+\ket{-}  \to \ket{\eta} 
+\end{align}
+\] There are 6 cases
+
+\hypertarget{first-combo-s_xs_y}{%
+\subsection{\texorpdfstring{First Combo
+\([S_{x},S_{y}]\)}{First Combo {[}S\_\{x\},S\_\{y\}{]}}}\label{first-combo-s_xs_y}}
+
+Starting with \(\left[ S_{x},S_{y} \right]\) \[
+S_{x}S_{y} = \frac{i\hbar^{2}}{4}\left( \ket{x} \bra{\eta} +\ket{\eta} \bra{x}  \right) \left( -\ket{x} \bra{\eta} +\ket{\eta} \bra{x}  \right) 
+\] We know that for orthogonal vectors, which \(\ket{x},\ket{\eta}\) are
+defined to be, their inner product evaluates to zero. Additionally, the
+inner product of a normalized vector with itself, is 1. Using that fact,
+we reduce the above expression to \[
+\begin{align}
+S_{x}S_{y} = \frac{i\hbar^{2}}{4}\left[ \ket{x} \bra{x} -\ket{\eta} \bra{\eta}  \right]  \\
+S_{x}S_{y} = \frac{i\hbar}{2}S_{z}
+\end{align}
+\] Now to calculate \(S_{y}S_{x}\) \[
+\begin{align}
+S_{y}S_{x} = \frac{i\hbar^2}{4} \left( -\ket{x} \bra{\eta} +\ket{\eta} \bra{x}  \right) \left( \ket{x} \bra{\eta} +\ket{\eta} \bra{x}  \right)  \\
+= -\frac{i\hbar}{2}S_{z}
+\end{align}
+\] To get \(\left[ S_{z},S_{y} \right]\), you take the difference \[
+\left[ S_{x},S_{y} \right] = S_{x}S_{y}-S_{y}S_{x} = \frac{2i\hbar}{2}S_{z} = i\hbar S_{z}
+\] For \(\left\{ S_{x},S_{y} \right\}\) \[
+\left\{ S_{x},S_{y} \right\}  = S_{x}S_{y} +S_{y}S_{z} = 0
+\]
+
+\hypertarget{second-combo-left-s_ys_z-right}{%
+\subsection{\texorpdfstring{Second Combo
+\(\left[ S_{y},S_{z} \right]\)}{Second Combo \textbackslash left{[} S\_\{y\},S\_\{z\} \textbackslash right{]}}}\label{second-combo-left-s_ys_z-right}}
+
+\[
+S_{y}S_{z} = \frac{i\hbar^{2}}{4}\left( -\ket{x} \bra{\eta} +\ket{\eta} \bra{x}  \right) \left( \ket{x} \bra{x} -\ket{\eta} \bra{\eta}  \right) 
+\] Using the product operations from before this reduces to \[
+\begin{align}
+=\frac{i\hbar^{2}}{4} \left( \ket{x} \bra{\eta} +\ket{\eta} \bra{x}  \right)   \\
+S_{y}S_{z}  =\frac{i\hbar}{2}S_{x}
+\end{align}
+\]
+
+The other combo \[
+\begin{align}
+S_{z}S_{y} = \frac{i\hbar^2}{4}\left( \ket{x} \bra{x} -\ket{\eta} \bra{\eta}   \right)\left( -\ket{x} \bra{\eta} +\ket{\eta} \bra{x}  \right) \\
+=\frac{i\hbar^{2}}{4}\left( -\ket{x} \bra{\eta} -\ket{\eta}\bra{x}   \right)  \\
+S_{z}S_{y} = \frac{-i\hbar}{2}S_{x}
+\end{align}
+\] For the commutator \[
+\left[ S_{z},S_{y} \right]  = S_{z}S_{y}-S_{y}S_{z} = i\hbar S_{z}
+\] And for the anti-commutator \[
+\left\{ S_{z},S_{y} \right\}  = S_{z}S_{y}iS_{y}S_{z} = 0
+\]
+
+\hypertarget{third-combo-left-s_xs_z-right}{%
+\subsection{\texorpdfstring{Third Combo
+\(\left[ S_{x},S_{z} \right]\)}{Third Combo \textbackslash left{[} S\_\{x\},S\_\{z\} \textbackslash right{]}}}\label{third-combo-left-s_xs_z-right}}
+
+\[
+\begin{align}
+S_{x}S_{z} = \frac{\hbar^{2}}{4}\left( \ket{x}   \bra{\eta} +\ket{\eta} \bra{x} \right) \left( \ket{x} \bra{x} -\ket{\eta} \bra{\eta}  \right)  \\
+=\frac{-i^2\hbar^{2}}{4}\left( -\ket{x} \bra{\eta} +\ket{\eta} \bra{x}  \right)  \\
+S_{x}S_{z}= \frac{-i\hbar}{2}S_{y}
+\end{align}
+\]
+
+\[
+\begin{align}
+S_{z}S_{x} = \frac{\hbar^{2}}{4}\left( \ket{x} \bra{x} -\ket{\eta} \bra{\eta}  \right)  \left( \ket{x}   \bra{\eta} +\ket{\eta} \bra{x} \right) \\
+=\frac{-i^2\hbar^{2}}{4}\left( \ket{x} \bra{\eta} -\ket{\eta} \bra{x}  \right)  \\
+S_{z}S_{x}= \frac{i\hbar}{2}S_{y}
+\end{align}
+\]
+
+Given both of these,
+
+\[
+\begin{align}
+\left[ S_{x},S_{z} \right]  = S_{x}S_{z} - S_{z}S_{x} = -i\hbar S_{y} \\
+\left\{ S_{x},S_{z} \right\}  =  S_{x}S_{z} + S_{z}S_{x} = 0
+\end{align}
+\]
+
+\hypertarget{commutator-symmetric-cases}{%
+\subsection{Commutator Symmetric
+Cases}\label{commutator-symmetric-cases}}
+
+There are also the symmetric cases to consider \[
+\begin{align}
+\left[ S_{x} ,S_{x}\right]  = S_{x}^{2}-S_{x}^{2}=0 \\
+\left[ S_{y} ,S_{y}\right]  = S_{y}^{2}-S_{y}^{2}=0 \\
+\left[ S_{z} ,S_{z}\right]  = S_{z}^{2}-S_{z}^{2}=0
+\end{align}
+\] In conclusion, we have the 6 total below cases \[
+\begin{align}
+\left[ S_{x} ,S_{x}\right]  = S_{x}^{2}-S_{x}^{2}=0 \\
+\left[ S_{y} ,S_{y}\right]  = S_{y}^{2}-S_{y}^{2}=0 \\
+\left[ S_{z} ,S_{z}\right]  = S_{z}^{2}-S_{z}^{2}=0 \\
+\left[ S_{x},S_{z} \right]  =  i\hbar S_{y} \\ 
+\left[ S_{z},S_{y} \right]  =  i\hbar S_{z} \\
+\left[ S_{x},S_{y} \right] =  i\hbar S_{z}
+\end{align}
+\]
+
+We notice that for a general case of
+\([S_{i}, S_{j}]=S_{i}S_{j}-S_{j}S_{i}\) \[
+[S_{j},S_{i}] = S_{j}S_{i}-S_{i}S_{j} = -(S_{i}S_{j}-S_{j}S_{i}) \]
+Thus, \[[S_{i,} S_{j}] = -[S_{j,} S_{i}]\]
+
+So for each of the 3 non symmetric cases we showed, their opposite
+counterparts are related by a sign.
+
+Thus, by observing each case we can see that they obey the relation \[
+[S_{i}. S_{j}] = i\hbar\epsilon_{ijk}S_{k}
+\]
+
+\hypertarget{anticommutator-symmetric-cases}{%
+\subsection{Anticommutator Symmetric
+Cases}\label{anticommutator-symmetric-cases}}
+
+For the cases of \(\{S_{x}, S_{x}\}, \{S_{y}, S_{y}\}\) ,and
+\(\{S_{z}, S_{z}\}\) we see that
+
+\[
+\{S_{i}, S_{i}\} = S_{i}S_{i}+S_{i}S_{i}=2S_{i}^2
+\]
+
+We also know that for each basis of \(\ket{x}, \ket{\eta}\)
+
+\[
+\sum_{i}^n\ket{a_{i}}\bra{a_{i}} = \ket{x}\bra{x} +\ket{\eta}\bra{\eta}=1       
+\]
+
+for \(i=x\):
+
+\[
+\begin{align}
+2S_{x}^2=\frac{2\hbar^2}{4}(\ket{x}\bra{\eta}+\ket{\eta}\bra{x})(\ket{x}\bra{\eta}+\ket{\eta}\bra{x}) \\
+\frac{2\hbar^2}{4}(\ket{x}\bra{x}+\ket{\eta}\bra{\eta}) \\
+=\frac{\hbar^2}{2}
+\end{align}
+\]
+
+for \(i=y\):
+
+\[
+\begin{align}
+2S_{y}^2=\frac{2i^2\hbar^2}{4}(-\ket{x}\bra{\eta}+\ket{\eta}\bra{x})(-\ket{x}\bra{\eta}+\ket{\eta}\bra{x}) \\
+\frac{-2\hbar^2}{4}(-\ket{x}\bra{x}-\ket{\eta}\bra{\eta}) \\
+=\frac{\hbar^2}{2}
+\end{align}
+\]
+
+for \(i=z\):
+
+\[
+\begin{align}
+2S_{z}^2=\frac{2\hbar^2}{4}(\ket{x}\bra{x}-\ket{\eta}\bra{\eta})(\ket{x}\bra{x}-\ket{\eta}\bra{\eta}) \\
+\frac{2\hbar^2}{4}(\ket{x}\bra{x}+\ket{\eta}\bra{\eta}) \\
+=\frac{\hbar^2}{2}
+\end{align}
+\]
+
+Thus, given these results and the ones above, we see that \[
+\{S_{i}, S_{j}\} = \frac{\hbar^2}{2}\delta_{ij}
+x\]
+
+\hypertarget{problem-2}{%
+\section{Problem 2}\label{problem-2}}
+
+From office hours, we know that \(S\) is defined to be a vector who's
+components are the Pauli Matrices \(\left( S_{x},S_{y},S_{z} \right)\).
+To find the representative matrix of \(S \cdot \hat{r}\), we multiply
+the components \[
+S\cdot \hat{r} = S_{x}r_{x}+ S_{y}r_{y}+ S_{z}r_{z}
+\] Then substituting in the values for the Pauli Matrices and r
+
+\[
+\begin{align}
+= \frac{\hbar}{2}\left( \sin(\theta) \cos(\phi) \begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}
++ \sin(\theta) \sin(\phi) \begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix}
++ \cos(\theta) \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix} \right)  \\ 
+=\left[\begin{matrix}\cos{\left(\theta \right)} & - i \sin{\left(\phi \right)} \sin{\left(\theta \right)} + \sin{\left(\theta \right)} \cos{\left(\phi \right)}\\i \sin{\left(\phi \right)} \sin{\left(\theta \right)} + \sin{\left(\theta \right)} \cos{\left(\phi \right)} & - \cos{\left(\theta \right)}\end{matrix}\right]
+\end{align}
+\]
+
+This matrix represents a linear combination of our Pauli matrices, to
+construct it in the \(\ket{\pm}\) basis, we find the eigenvectors with
+eigenvalues. We can use Euler's formula on the antidiagonal terms to
+reduce the complexity.
+
+\[
+\begin{align}
+\pm i\sin(\phi)\sin(\theta)+\sin(\theta)\cos(\phi) \\
+=\sin(\theta)(\cos (\phi)\pm i\sin(\phi)) \\
+= e^{ \pm i\phi }\\
+\end{align}
+\] Plugging into the above matrix then gives us the below \[
+S\cdot \hat{r}=\frac{\hbar}{2}\begin{bmatrix}\cos{\left(\theta \right)} & \sin(\theta)e^{ -i\phi }\\\sin(\theta)e^{ i\phi } & - \cos{\left(\theta \right)}\end{bmatrix}
+\] In our main case, we only need the eigenvector corresponding to
+\(\lambda=\frac{\hbar}{2}\), as that is the eigenvalue of \(\ket{+}\).
+
+\[
+eigen_{\lambda=1}(S\cdot \hat{r}) =\ket{v} =\begin{pmatrix}
+\sin (\theta) e^{ -i\phi } \\
+\cos( \theta)+1
+\end{pmatrix}
+\]
+
+This above is then in the \(\ket{\pm}\) basis, as the Pauli observables
+were constructed as such. However, the eigenvectors don't have an
+amplitude attached, and need to be normalized to preserve the
+probability summing to 1.
+
+The magnitude of the eigenvector is just \[
+\sqrt{\left<v|v\right>  } = \sqrt{ aa^{*} }
+\] which after calculating, gives us a normalization constant of
+
+\[
+c=\frac{1}{\left( 2\cos (\theta)+2 \right) }
+\]
+
+This gives us a final representation of
+
+\[
+\ket{S\cdot \hat{r};+} =\frac{1}{\left( 2\cos (\theta)+2 \right) }\left( \sin(\theta)e^{ -i\phi }\ket{+} +(\cos \theta+1)\ket{-}  \right) 
+\]
+
+\hypertarget{problem-3}{%
+\section{Problem 3}\label{problem-3}}
+
+\[
+H = a\left(\ket{1}\bra{1} -\ket{2}\bra{2}+\ket{2}\bra{1}+\ket{1}\bra{2}  \right) 
+\]
+
+We will write the hamiltonian in the \(\ket{1,2}\) basis, with the
+following definitions \[
+\begin{align}
+\ket{1}  = \begin{pmatrix}
+1 \\
+0  
+\end{pmatrix} \\
+\ket{2} =\begin{pmatrix}
+0 \\
+1
+\end{pmatrix}
+\end{align}
+\] These definitions then let us rewrite our definition of \(H\) as \[
+\begin{align}
+H = a\left( \begin{pmatrix}
+1 \\ 0
+\end{pmatrix}\begin{pmatrix}
+1 &
+0
+\end{pmatrix}-\begin{pmatrix}
+0 \\ 1
+\end{pmatrix}\begin{pmatrix}
+0 &
+1
+\end{pmatrix} +\begin{pmatrix}
+0 \\ 1
+\end{pmatrix}\begin{pmatrix}
+1 &
+0
+\end{pmatrix}+\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}\begin{pmatrix}
+0 &
+1
+\end{pmatrix}\right)  \\
+H =a\begin{pmatrix}
+1 & 0 \\
+0  & 0
+\end{pmatrix}-\begin{pmatrix}
+0 & 0 \\
+0 & 1
+\end{pmatrix}+\begin{pmatrix}
+0 & 0 \\
+1 & 0
+\end{pmatrix}+\begin{pmatrix}
+0 & 1 \\
+0  & 0
+\end{pmatrix} \\
+H = a\begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix}
+\end{align}
+\] After solving the eigenvector and eigenvalue problem for this matrix,
+we get \[
+\lambda
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{import sympy as sp}
+\NormalTok{a = sp.symbols(\textquotesingle{}a\textquotesingle{})}
+\NormalTok{vectors = (a*sp.Matrix([}
+\NormalTok{     [1,1],}
+\NormalTok{     [1,{-}1]}
+\NormalTok{])).eigenvects()}
+\NormalTok{for i in range(len(vectors)):}
+\NormalTok{    value =(vectors[i][2][0].T*vectors[i][2][0]).expand()}
+\NormalTok{    print(sp.latex(sp.simplify((1/value[0])*vectors[i][2][0])))}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\left[ \left( - \sqrt{2} a, \ 1, \ \left[ \left[\begin{matrix}1 - \sqrt{2}\\1\end{matrix}\right]\right]\right), \ \left( \sqrt{2} a, \ 1, \ \left[ \left[\begin{matrix}1 + \sqrt{2}\\1\end{matrix}\right]\right]\right)\right]
+\] \[
+\begin{align}
+\lambda_{1} =-a\sqrt{ 2 } &&\vec{v_{1}} = \begin{pmatrix}1 - \sqrt{2}\\1\end{pmatrix} \\
+\lambda_{2} =a\sqrt{ 2 } &&\vec{v_{2}} = \begin{pmatrix}1 + \sqrt{2}\\1\end{pmatrix}
+\end{align}
+\]
+
+These eigenvectors need to be normalized however. To calculate the
+normalization constant of these eigenvectors, we divide each by their
+inner product. \[
+\begin{align}
+\left<v_{1}|v_{1}\right> = \left[\begin{matrix}4 - 2 \sqrt{2}\end{matrix}\right]  \\
+\left<v_{2}|v_{2}\right> =  \left[\begin{matrix}2 \sqrt{2} + 4\end{matrix}\right]
+\end{align}
+\] Then dividing off this value gives us the eigenkets below to
+accompany our eigenvalues. \[
+\begin{align}
+\lambda_{1} =-a\sqrt{ 2 } &&\vec{v_{1}} = \frac{1}{\sqrt{ 4-2\sqrt{ 2 } }}\begin{pmatrix}1 - \sqrt{2}\\1\end{pmatrix} \\
+\lambda_{2} =a\sqrt{ 2 } &&\vec{v_{2}} = \frac{1}{\sqrt{ 2\sqrt{ 2 }+4 }}\begin{pmatrix}1 + \sqrt{2}\\1\end{pmatrix}
+\end{align}
+\]
+
+\hypertarget{problem-4}{%
+\section{Problem 4}\label{problem-4}}
+
+Find the eigenvalues and eigenvectors of the below matrix \[
+\begin{pmatrix}
+0 & -i & 0 & 0  \\
+i & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}
+\] \[
+\begin{align}
+\begin{pmatrix}
+0 & -i & 0 & 0  \\
+i & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}-\lambda I \\
+=\begin{pmatrix}
+-\lambda & -i & 0 & 0  \\
+i & -\lambda & 0 & 0 \\
+0 & 0 & -\lambda & 1 \\
+0 & 0 & 1 & -\lambda
+\end{pmatrix}
+\end{align}
+\] Working out the determinant of this matrix gives us \[
+\det(M) = \left(\lambda^{2} - 1\right)^{2}
+\] We can see that there are two degeneracies from here, two
+eigenvectors with \(\lambda=1\), two with \(\lambda=-1\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{import sympy as sp}
+\NormalTok{from sympy import Matrix, Symbol, I}
+
+\NormalTok{\# Define the symbol for lambda}
+\NormalTok{lambda\_sym = Symbol(\textquotesingle{}lambda\textquotesingle{})}
+
+\NormalTok{\# Create the matrix}
+\NormalTok{matrix = Matrix([}
+\NormalTok{    [{-}lambda\_sym, {-}I, 0, 0],}
+\NormalTok{    [I, {-}lambda\_sym, 0, 0],}
+\NormalTok{    [0, 0, {-}lambda\_sym, 1],}
+\NormalTok{    [0, 0, 1, {-}lambda\_sym]}
+\NormalTok{])}
+
+\NormalTok{print(matrix)}
+\NormalTok{print(sp.latex(matrix.eigenvects()))}
+\end{Highlighting}
+\end{Shaded}
+
+Solving the eigenvector problem is then just a matter of finding vector
+solutions to \[
+(M-\lambda I)\vec{v}=0
+\] This then gives \[
+\left[ \left( 1 - \lambda, \ 2, \ \left[ \left[\begin{matrix}- i\\1\\0\\0\end{matrix}\right], \ \left[\begin{matrix}0\\0\\1\\1\end{matrix}\right]\right]\right), \ \left( - \lambda - 1, \ 2, \ \left[ \left[\begin{matrix}i\\1\\0\\0\end{matrix}\right], \ \left[\begin{matrix}0\\0\\-1\\1\end{matrix}\right]\right]\right)\right]
+\] \[
+\begin{align}
+\lambda=1:\begin{bmatrix}- i\\1\\0\\0\end{bmatrix},\begin{bmatrix}0\\0\\1\\1\end{bmatrix} \\ \\
+\lambda=-1\begin{bmatrix}i\\1\\0\\0\end{bmatrix}, \ \begin{bmatrix}0\\0\\-1\\1\end{bmatrix}
+\end{align}
+\]
+\end{document}

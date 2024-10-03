@@ -1,0 +1,194 @@
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
+\documentclass[]{article}
+
+% Add the geometry package and set smaller margins
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+
+\usepackage{fancyhdr}
+
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\IfFileExists{microtype.sty}{
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}
+  }
+}{% if KOMA class
+  \KOMAoptions{parskip=half}
+}
+\makeatother
+
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}
+}
+
+% Custom header and footer
+\pagestyle{fancy}
+\fancyhead[l]{Azal Amer}
+\fancyhead[c]{ HW \#}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{.2pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\hypertarget{problem-1}{%
+\section{Problem 1}\label{problem-1}}
+
+\[
+\sigma = \sqrt{ \frac{p(1-p)}{N} }
+\] We need to solve for the number of people to make \(\sigma=.015\) \[
+\begin{align}
+\frac{.015^{2}}{p(1-p)} = N^{-1} \\
+\frac{.015^{2}}{.35*(1-.35)}=N^{-1} \\
+\frac{.015^{2}}{.35*.65} = N^{-1}
+\end{align}
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{print(((.015**2)/(.35*.65))**{-}1)}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+N = 1012 \text{ people}
+\] \# Problem 2 \[
+\begin{align}
+\sigma=\sqrt{ \frac{.5^{2}}{N_{A}} } \\
+\sigma=\sqrt{ \frac{.25}{6.002\times {10}^{23}} }
+\end{align}
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{N\_A = 6.002e23}
+\NormalTok{print((.25/N\_A)**.5)}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\sigma_{\text{left}} = 6.44\times 10^{-13}
+\]
+
+\hypertarget{problem-3}{%
+\section{Problem 3}\label{problem-3}}
+
+Given \(O_{2}\) at STP, \(1mol = 22.4L\) The mass of 1 oxygen is
+\(5.3*10^{-26}\). What's the rms of the molecules? The rms of the
+molecules \[
+v_{rms} = \sqrt{ \bar{v}^{2} }
+\] We also know from an extension of the Equipartition Principle, that
+the variance of particle's velocity in a gas, is equal to the average
+velocity in a gas. This means that \(v_{rms} = \sigma_{v}\) Then to
+solve for \(\sigma_{v}\), we do \[
+\begin{align}
+\sigma_{v} = \sqrt{ \frac{{3k_{b}T}}{m} }
+\end{align}
+\] We don't actually need the number of molecules in this gas, or the
+pressure.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{m = 5.3e{-}26}
+\NormalTok{k\_b = 1.38e{-}23}
+\NormalTok{T = 273}
+\NormalTok{sigma = np.sqrt(3*k\_b*T/m)}
+\NormalTok{print(sigma)}
+\end{Highlighting}
+\end{Shaded}
+
+\[\sigma_{v} = 461.788 \frac{m}{s}\]
+
+\hypertarget{problem-4}{%
+\section{Problem 4}\label{problem-4}}
+
+{[}{[}../../../Supplemental Files/images/Pasted image
+20240910131751.png{]}{]} First I made a table with a bounded combination
+of the results.
+
+\hypertarget{problem-5}{%
+\section{Problem 5}\label{problem-5}}
+
+Find the most likely energy of the Maxwell Boltzmann Distribution \[
+f(v) = 4\pi \left(\frac{m}{2\pi kT}\right)^{3/2} v^2 e^{-\frac{mv^2}{2kT}}
+\] Since this is a transformed normal distribution, we need to find the
+value of \(v(m,T)\) which maximizes the distribution.
+
+To solve this, can't we just take \(\frac{\partial}{\partial v}\)?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ sympy }\ImportTok{as}\NormalTok{ sp}
+\CommentTok{\# make a function for maxwell boltzman}
+\KeywordTok{def}\NormalTok{ maxwell\_boltzman(v, T, m):}
+    \ControlFlowTok{return} \DecValTok{4} \OperatorTok{*}\NormalTok{ sp.pi }\OperatorTok{*}\NormalTok{ (m }\OperatorTok{/}\NormalTok{ (}\DecValTok{2} \OperatorTok{*}\NormalTok{ sp.pi }\OperatorTok{*}\NormalTok{ k }\OperatorTok{*}\NormalTok{ T))}\OperatorTok{**}\NormalTok{(}\DecValTok{3}\OperatorTok{/}\DecValTok{2}\NormalTok{) }\OperatorTok{*}\NormalTok{ v}\OperatorTok{**}\DecValTok{2} \OperatorTok{*}\NormalTok{ sp.exp(}\OperatorTok{{-}}\NormalTok{m }\OperatorTok{*}\NormalTok{ v}\OperatorTok{**}\DecValTok{2} \OperatorTok{/}\NormalTok{ (}\DecValTok{2} \OperatorTok{*}\NormalTok{ k }\OperatorTok{*}\NormalTok{ T))}
+\CommentTok{\# define the symbols}
+\NormalTok{m }\OperatorTok{=}\NormalTok{ sp.symbols(}\StringTok{\textquotesingle{}m\textquotesingle{}}\NormalTok{)}
+\NormalTok{v }\OperatorTok{=}\NormalTok{ sp.symbols(}\StringTok{\textquotesingle{}v\textquotesingle{}}\NormalTok{)}
+\NormalTok{T }\OperatorTok{=}\NormalTok{ sp.symbols(}\StringTok{\textquotesingle{}T\textquotesingle{}}\NormalTok{)}
+\NormalTok{k }\OperatorTok{=}\NormalTok{ sp.symbols(}\StringTok{\textquotesingle{}k\textquotesingle{}}\NormalTok{)}
+\CommentTok{\# print the function}
+\NormalTok{maxwell\_boltzman(v, T, m)}
+\CommentTok{\# take the partial derivative}
+\NormalTok{sp.diff(maxwell\_boltzman(v, T, m), v)}
+\CommentTok{\# solve when it equals zero, we can only have one extrema}
+\BuiltInTok{print}\NormalTok{(sp.solve(sp.diff(maxwell\_boltzman(v, T, m), v), v))}
+\end{Highlighting}
+\end{Shaded}
+
+Then is \[
+v_{max} = \sqrt{ \frac{2Tk}{m} }
+\]
+\end{document}

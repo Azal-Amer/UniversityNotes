@@ -1,0 +1,624 @@
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
+\documentclass[]{article}
+
+
+\usepackage{color}
+\usepackage{graphicx}
+
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+% Add the geometry package and set smaller margins
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{braket}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{framed}
+\lstnewenvironment{Highlighting}{}{}
+\usepackage{xcolor}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\IfFileExists{microtype.sty}{
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}
+  }
+}{% if KOMA class
+  \KOMAoptions{parskip=half}
+}
+\makeatother
+
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\usepackage{framed}
+\usepackage{listings}
+
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}
+}
+
+% Custom header and footer
+\pagestyle{fancy}
+\fancyhead[l]{Azal Amer}
+\fancyhead[c]{QIS HW  \#3}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{.2pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\definecolor{shadecolor}{rgb}{0.9, 0.9, 0.9}
+
+\hypertarget{problem-1}{%
+\section{Problem 1}\label{problem-1}}
+
+
+Let's define the unitary matrix Alice uses in the form \[
+U(\theta,\phi,\lambda)=
+\begin{pmatrix}
+\cos \frac{\theta}{2} & -e^{ i\lambda  }\sin \frac{\theta}{2} \\
+e^{ i\phi  }\sin \frac{\theta}{2} & e^{ i(\lambda+\phi) }\cos{\frac{\theta}{2}}
+\end{pmatrix}
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{unitary = ltx2sp(r"""}
+\NormalTok{\textbackslash{}begin\{pmatrix\}}
+\NormalTok{\textbackslash{}cos \textbackslash{}frac\{\textbackslash{}theta\}\{2\} \& {-}e\^{}\{ i\textbackslash{}lambda  \}\textbackslash{}sin \textbackslash{}frac\{\textbackslash{}theta\}\{2\} \textbackslash{}\textbackslash{}}
+\NormalTok{e\^{}\{ i\textbackslash{}phi  \}\textbackslash{}sin \textbackslash{}frac\{\textbackslash{}theta\}\{2\} \& e\^{}\{ i(\textbackslash{}lambda+\textbackslash{}phi) \}\textbackslash{}cos\{\textbackslash{}frac\{\textbackslash{}theta\}\{2\}\}}
+\NormalTok{\textbackslash{}end\{pmatrix\}""")}
+
+\NormalTok{ketH = sp.Matrix([1,0])}
+\NormalTok{ketV = sp.Matrix([0,1])}
+\NormalTok{print(sp.latex(unitary*ketV))}
+\end{Highlighting}
+\end{Shaded}
+
+Applying the unitary to \(\ket{0},\ket{1}\) gives us \[
+U\ket{0}  = \left[\begin{matrix}\cos{\left(\frac{\theta}{2} \right)}\\e^{i \phi} \sin{\left(\frac{\theta}{2} \right)}\end{matrix}\right]
+\] \[
+U\ket{1}  = \left[\begin{matrix}- e^{i \lambda} \sin{\left(\frac{\theta}{2} \right)}\\e^{i \left(\lambda + \phi\right)} \cos{\left(\frac{\theta}{2} \right)}\end{matrix}\right]
+\] We then plug this back into the \(\ket{EPR}\) wave-function to get \[
+\begin{align}
+U_{Alice}\ket{EPR}  = \frac{1}{\sqrt{ 2 }} \left[ {\left( \cos \frac{\theta}{2}\ket{0} +e^{ i\phi }\sin \frac{\theta}{2}\ket{1}  \right)\otimes \ket{0} +\left(- e^{ -i\lambda }\sin \frac{\theta}{2}\ket{0} +e^{ i\left( \lambda+\phi \right) }\cos \frac{\theta}{2}\ket{1} \right)\otimes \ket{1}   } \right] \\
+=\frac{1}{\sqrt{ 2 }}\left[ \cos \frac{\theta}{2}\ket{00}+e^{ i\phi }\sin \frac{\theta}{2}\ket{10} -e^{ i\lambda }\sin \frac{\theta}{2}\ket{01} +e^{ i(\lambda+\phi) }\cos \frac{\theta}{2}\ket{11}   \right] 
+\end{align}
+\]
+
+We then define \(U^{T}\) as \[
+U^{T} = 
+\begin{pmatrix}
+\cos \frac{\theta}{2} & e^{ i\phi  }\sin \frac{\theta}{2}\\-e^{ i\lambda  }\sin \frac{\theta}{2} 
+ & e^{ i(\lambda+\phi) }\cos{\frac{\theta}{2}}
+\end{pmatrix}
+\] Then the transformed \(\left\{ \ket{0},\ket{1} \right\}\) states are
+\[
+\begin{align}
+U^{T}\ket{0}  = \begin{bmatrix}
+\cos \frac{\theta}{2} \\
+-e^{ i\lambda }\sin \frac{\theta}{2} 
+\end{bmatrix} \\
+U^{T}\ket{1}  = \begin{bmatrix}
+e^{ i\phi }\sin \frac{\theta}{2} \\
+e^{ i(\lambda+\phi) }\cos \frac{\theta}{2}
+\end{bmatrix}
+\end{align}
+\] Now plugging in that transformation to Bob's qubit gives us \[
+\begin{align}
+U^{T}_{Bob} \ket{EPR}  = \frac{1}{\sqrt{ 2 }}\left[  \ket{0} \otimes \left(\cos \frac{\theta}{2}\ket{0} - e^{ i\lambda }\sin \frac{\theta}{2}\ket{1}   \right)+\ket{1} \otimes \left( e^{ i\phi }\sin \frac{\theta}{2}\ket{0} +e^{ i(\lambda+\phi) }\cos \frac{\theta}{2}\ket{1}  \right)  \right]  \\
+=\frac{1}{\sqrt{ 2 }}\left[ \cos \frac{\theta}{2}\ket{00}  -e^{ i\lambda }\sin \frac{\theta}{2}\ket{01} +e^{ i\phi }\sin \frac{\theta}{2}\ket{10} +e^{ i(\lambda+\phi) }\cos \frac{\theta}{2}\ket{11} \right] 
+\end{align}
+\] Therefore \[
+U_{Alice}\ket{EPR}  = U_{Bob}^{T}\ket{EPR} 
+\]
+
+
+\newpage
+
+\hypertarget{problem-2}{%
+\section{Problem 2}\label{problem-2}}
+
+\hypertarget{a}{%
+\subsection{a)}\label{a}}
+
+\begin{figure}
+\centering
+\includegraphics{../../../Supplemental Files/images/Pasted image 20240922190108.png}
+\caption{Z circuit}
+\end{figure}
+
+For the above gate's, \[
+\begin{align}
+H = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 & 1  \\
+1 & -1
+\end{pmatrix} \\
+X = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}
+\end{align}
+\] Which gives us an expression of \[
+\begin{align}
+Z =^{?} \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 & 1  \\
+1 & -1
+\end{pmatrix}\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 & 1  \\
+1 & -1
+\end{pmatrix} \\
+\frac{1}{2}\begin{pmatrix}
+1 & 1 \\
+-1 & 1
+\end{pmatrix}\begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix} \\
+=\frac{1}{2}\begin{pmatrix}
+2 & 0 \\
+0 & -2
+\end{pmatrix} \\
+=\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}
+\end{align}
+\] To then show
+
+\begin{figure}
+\centering
+\includegraphics{../../../Supplemental Files/images/Pasted image 20240922190418.png}
+\caption{X circuit}
+\end{figure}
+
+We'll just perform the same matrix multiplication steps here:
+
+\[
+\begin{align}
+X =^{?} \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 & 1  \\
+1 & -1
+\end{pmatrix}\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 & 1  \\
+1 & -1
+\end{pmatrix} \\
+=\frac{1}{2}\begin{pmatrix}
+1 & -1 \\
+1 & 1
+\end{pmatrix}\begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix} \\
+\frac{1}{2}\begin{pmatrix}
+0 & 2 \\
+2 & 0
+\end{pmatrix} \\
+=\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}
+\end{align}
+\]
+
+\hypertarget{b}{%
+\subsection{b)}\label{b}}
+
+It's \[
+H_{0}C^{X}_{10}H_{0}= C^{Z}_{10}
+\] These gate are equivalent, because as proven before, an \(X\) gate
+sandwiched by Hadamards is equivalent to a \(Z\) gate. In this context,
+the Hadamards flip the controlled result. If the condition is met to
+flip the gate, the not gate is activated and the hadamards apply a
+\(Z\). If the condition to flip isn't met, then the control applies an
+identity. That is equivalent to \[
+\begin{align}
+HIH = HH \\
+HH = \frac{1}{2}\begin{pmatrix}
+1 & 1  \\
+1 & -1
+\end{pmatrix}\begin{pmatrix}
+1 & 1  \\
+1 & -1
+\end{pmatrix} \\
+=\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}
+\end{align}
+\] Which means that no trigger creates an identity.
+
+\hypertarget{c}{%
+\subsection{c)}\label{c}}
+
+We know from an earlier proof, that two hadamards enclosing a not, make
+a \(Z\). This gives us \[
+H_{1}Csign_{1,2}H_{1}
+\] We then know from the hint, that CSIGN is symmetric so this is equal
+to \[
+H_{1}CSIGN_{2,1}H_{1}
+\] Two hadamards on a \(Z\) observable then make a \(X\), so this
+becomes a \(CNOT_{2,1}\)
+
+\newpage
+
+\hypertarget{problem-3}{%
+\section{Problem 3}\label{problem-3}}
+
+\hypertarget{a-1}{%
+\subsection{a)}\label{a-1}}
+
+\[
+\begin{align}
+TH\ket{0} =\begin{bmatrix}
+1 & 0 \\
+0 & e^{ i\pi/4 }
+\end{bmatrix} \frac{1}{\sqrt{ 2 }}\begin{bmatrix}
+1 & 1 \\
+1 & -1
+\end{bmatrix}\begin{pmatrix}
+1 \\
+0
+\end{pmatrix} \\
+\frac{1}{\sqrt{ 2 }}\begin{bmatrix}
+1 & 1 \\
+e^{ i\pi/4 } & -e^{ i\pi/4 }
+\end{bmatrix}\begin{pmatrix}
+1 \\
+0
+\end{pmatrix} \\
+=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+e^{ i\pi/4 }
+\end{pmatrix} \\
+=\frac{1}{\sqrt{ 2 }}\left[ \ket{0} +e^{ i\pi/4 }\ket{1}  \right] 
+\end{align}
+\]
+
+\hypertarget{b-1}{%
+\subsection{b)}\label{b-1}}
+
+Right before the control not, \(\ket{\psi_{in}}\) is \[
+\ket{\psi_{in}}  =\alpha \ket{1} +\beta \ket{0} 
+\] Applying the control-not gate, means first tensoring our
+wave-functions together, then flipping the bits.
+
+\[
+H\ket{0} = \frac{1}{\sqrt{ 2 }}\ket{0} + \frac{1}{\sqrt{ 2 }}\ket{1}  
+\] Then the phase gate \[
+TH\ket{0} = \frac{1}{\sqrt{ 2 }}\ket{0} +\frac{e^{ i\pi/4 }}{\sqrt{ 2 }}\ket{1}  
+\]
+
+\[
+\begin{align}
+TH\ket{0} X\ket{\psi_{in}}  = \frac{1}{\sqrt{ 2 }}\left[ \ket{0} +e^{ i\pi/4 }\ket{1}  \right] \otimes \left[ \alpha \ket{1} +\beta \ket{0} \right]  \\
+\frac{1}{\sqrt{ 2 }}\left[ \alpha \ket{01} +\alpha e^{ i\pi/4 }\ket{11} +\beta \ket{00} +\beta e^{ i\pi/4 }\ket{10}  \right] 
+\end{align}
+\] Now applying the control-not, controlling on \(\psi_{in}\), targeting
+\(\ket{0}\).
+
+\[
+\begin{align}
+\frac{1}{\sqrt{ 2 } }\left[ \alpha \ket{11} +\alpha e^{ i\pi/4 }\ket{01}+\beta \ket{00} +\beta e^{ i\pi/4 }\ket{10}   \right] \\
+\end{align}
+\] Then applying the \(P\) gate to the \(\ket{\psi}\) qubit, we know
+that \[
+\begin{align}
+P\ket{0}  = \ket{0}  \\
+P\ket{1}  = i\ket{1}  
+\end{align}
+\] Following that rule, we get
+
+\[
+\frac{1}{\sqrt{ 2 } }\left[ i\alpha  \ket{11} +\alpha e^{ i 3\pi/4 }\ket{01}+\beta \ket{00} +\beta e^{ i\pi/4 }\ket{10}   \right] \\
+\]
+
+\hypertarget{c-1}{%
+\subsection{c)}\label{c-1}}
+
+We know that the probabilities of measuring a state on one qubit, in an
+entangled system, is the sum of the probabilities of possible states. We
+also know probability is conserved, so \[
+\mathbb{P}(\ket{1} ) = 1-\ket{0} 
+\] The probability of measuring \(\ket{1}\) on on the first qubit is \[
+\frac{1}{\sqrt{ 2 }}i* \frac{-i}{\sqrt{ 2 }} = .5
+\] Thus our probabilities of measurement are \[
+\begin{align}
+\mathbb{P}(\ket{1} ) =.5 \\
+\mathbb{P}(\ket{0} ) =.5 
+\end{align}
+\]
+
+\hypertarget{d}{%
+\subsection{d)}\label{d}}
+
+When the first qubit is measured as a \(\ket{0}\), then our resulting
+state becomes \[
+\ket{\psi_{out}} \frac{k}{\sqrt{ 2 }}\left[  i(\alpha+\beta) e^{ i\pi/4 }\ket{1}+\beta \ket{0}  \right] 
+\] The state itself can be then written as \[
+\ket{\psi_{out}} = ae^{ i 3\pi/4 }\ket{1} +b\ket{0} 
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+When the first qubit is measured as \(\ket{1}\), then the second qubit
+can only be \[
+\ket{\psi_{out}} = be^{ i\pi/4 }\ket{0} +ia\ket{1} 
+\] Where \(a,b\) are normalized constants for the states
+
+\hypertarget{f}{%
+\subsection{f)}\label{f}}
+
+\begin{figure}
+\centering
+\includegraphics{../../../Supplemental Files/images/Pasted image 20240922194846.png}
+\caption{Quantum Composer Circuit}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{../../../Supplemental Files/images/Pasted image 20240925210108.png}
+\caption{Histogram of Results}
+\end{figure}
+
+Unseen in the histogram is the counts, which were
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+State & Counts \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\ket{11}\) & 524 \\
+\(\ket{10}\) & 458 \\
+\(\ket{01}\) & 24 \\
+\(\ket{00}\) & 18 \\
+\end{longtable}
+
+\hypertarget{g}{%
+\subsection{g)}\label{g}}
+
+\[
+TV = \frac{\left| 512-524 \right| +\left| 512-458 \right| +24+18}{2*1024}  = \frac{27}{512}
+\]
+
+\hypertarget{problem-4}{%
+\section{Problem 4}\label{problem-4}}
+
+\hypertarget{a-2}{%
+\subsection{a)}\label{a-2}}
+
+\begin{figure}
+\centering
+\includegraphics{../../../Supplemental Files/images/Pasted image 20240922195746.png}
+\caption{Quantum Circuit}
+\end{figure}
+
+\[
+\ket{\psi}  = \frac{{\ket{01} -\ket{10} }}{\sqrt{ 2 }}
+\]
+
+\hypertarget{b-2}{%
+\subsection{b)}\label{b-2}}
+
+\begin{figure}
+\centering
+\includegraphics{../../../Supplemental Files/images/Pasted image 20240925205810.png}
+\caption{Measurement Outcome Data}
+\end{figure}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+\textbf{Measurement outcome} & \textbf{Frequency} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{11} & 113 \\
+\textbf{10} & 429 \\
+\textbf{01} & 465 \\
+00 & 17 \\
+\end{longtable}
+
+\hypertarget{c-2}{%
+\subsection{c)}\label{c-2}}
+
+\[
+TV = \frac{\left| 512-429 \right| +\left| 512-465 \right| +17+113}{2*1024}  =\frac{65}{512}
+\]
+
+\newpage
+\hypertarget{problem-5}{%
+\section{Problem 5}\label{problem-5}}
+
+\[
+\begin{align*}  
+\ket{000} & \mapsto \frac{\sqrt{3}}{2} \ket{000} + \frac{\ket{110} + \ket{101} + \ket{011}}{\sqrt{12}} \\  
+\ket{001} & \mapsto \frac{\sqrt{3}}{2} \ket{111} + \frac{\ket{001} + \ket{010} + \ket{100}}{\sqrt{12}} \\  
+\end{align*}
+\] Given this unitary, we already know that our chance of successfully
+cloning \(\left\{ \ket{0},\ket{1} \right\}\) is \(\frac{3}{4}\). To find
+the probability of success on \(\left\{\ket{+},\ket{-} \right\}\), we
+use the fact that \[
+\ket{+}  = \frac{1}{\sqrt{ 2 }}\left[ \ket{0} +\ket{1}  \right] 
+\] And \[
+\begin{align}
+\ket{00+}  = \frac{1}{\sqrt{ 2 }}\left( \ket{001} +\ket{000}  \right)  \\
+=\ket{00} \otimes \frac{1}{\sqrt{ 2 }}\left( \ket{1} +\ket{0}  \right) 
+\end{align}
+\] Then applying this fact to our plus-minus states gives \[
+\begin{align}
+\ket{00+}  \to  \frac{1}{\sqrt{ 2 }}\left[ \frac{\sqrt{3}}{2} \boxed{\ket{000} } + \frac{\ket{110} + \ket{101} + \ket{011}}{\sqrt{12}} \right] +\frac{1}{\sqrt{ 2 }}\left[ \frac{\sqrt{3}}{2} \boxed{\ket{111} } + \frac{\ket{001} + \ket{010} + \ket{100}}{\sqrt{12}} \right]  \\
+\ket{00-}  \to  \frac{1}{\sqrt{ 2 }}\left[ \frac{\sqrt{3}}{2} \boxed{\ket{000} } + \frac{\ket{110} + \ket{101} + \ket{011}}{\sqrt{12}} \right] -\frac{1}{\sqrt{ 2 }}\left[ \frac{\sqrt{3}}{2} \boxed{\ket{111} } + \frac{\ket{001} + \ket{010} + \ket{100}}{\sqrt{12}} \right] 
+\end{align}
+\]
+
+Our boxed terms when combined, represent successes of the state as below
+\[
+\begin{align}
+\frac{\sqrt{ 3 }}{2\sqrt{ 2 }}\ket{000}+\frac{\sqrt{ 3 }}{2\sqrt{ 2 }}\ket{111}  \\
+\frac{\sqrt{ 3 }}{2}\left( \frac{1}{\sqrt{ 2 }}\ket{000} +\frac{1}{\sqrt{ 2 } }\ket{111} \right)  = \frac{\sqrt{ 3 }}{2}\left( \ket{+++}  \right) 
+\end{align}
+\] This gives us a minimum success as \(\frac{3}{8}\).
+
+\[
+\begin{align}
+\ket{101}  = \ket{1} \otimes \ket{1} \otimes \ket{0}  = \frac{1}{\sqrt{ 2 }}\left[ \left( \ket{+} -\ket{-}  \right)\otimes\left( \ket{+} -\ket{-}  \right)\otimes \left( \ket{+} +\ket{-}  \right)  \right]  \\
+\frac{1}{\sqrt{ 2 }}\left[ \ket{+++} -\ket{+--}-\ket{-++}+\ket{---}    \right] 
+\end{align}
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{qubit = input("What\textbackslash{}\textquotesingle{}s the qubit?")}
+\NormalTok{zero,one = sp.symbols(\textquotesingle{}z i\textquotesingle{})}
+\NormalTok{plus, minus = sp.symbols(\textquotesingle{}X mu\textquotesingle{})}
+
+
+\NormalTok{ket = []}
+\NormalTok{for bit in qubit:}
+\NormalTok{    if bit == \textquotesingle{}1\textquotesingle{}:}
+\NormalTok{        ket.append(one)}
+\NormalTok{    elif bit == \textquotesingle{}0\textquotesingle{}:}
+\NormalTok{        ket.append(zero)}
+\NormalTok{ket = sp.Matrix(ket)}
+\NormalTok{ket = ket.subs(\{zero:plus+minus,one:plus{-}minus\})}
+\NormalTok{sp.pprint(ket)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.1954}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.8046}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(\left\{ \ket{0},\ket{1} \right\}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\left\{ \ket{+},\ket{-} \right\}\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+*\(\ket{001}\) &
+\(\frac{\sqrt{2}}{4} \bigg(\ket {+++} + -\ket {++-} + \ket {+-+} + -\ket {+--} + \ket {-++} + -\ket {-+-} + \ket {--+} + -\ket {---}\bigg)\) \\
+*\(\ket{010}\) &
+\(\frac{\sqrt{2}}{4} \bigg(\ket {+++} + \ket {++-} + -\ket {+-+} + -\ket {+--} + \ket {-++} + \ket {-+-} + -\ket {--+} + -\ket {---}\bigg)\) \\
+*\(\ket{100}\) &
+\(\frac{\sqrt{2}}{4} \bigg(\ket {+++} + \ket {++-} + \ket {+-+} + \ket {+--} + -\ket {-++} + -\ket {-+-} + -\ket {--+} + -\ket {---}\bigg)\) \\
+'\(\ket{011}\) &
+\(\frac{\sqrt{2}}{4} \bigg(\ket {+++} + -\ket {++-} + -\ket {+-+} + \ket {+--} + \ket {-++} + -\ket {-+-} + -\ket {--+} + \ket {---}\bigg)\) \\
+'\(\ket{101}\) &
+\(\frac{\sqrt{2}}{4} \bigg(\ket {+++} + -\ket {++-} + \ket {+-+} + -\ket {+--} + -\ket {-++} + \ket {-+-} + -\ket {--+} + \ket {---}\bigg)\) \\
+'\(\ket{110}\) &
+\(\frac{\sqrt{2}}{4} \bigg(\ket {+++} + \ket {++-} + -\ket {+-+} + -\ket {+--} + -\ket {-++} + -\ket {-+-} + \ket {--+} + \ket {---}\bigg)\) \\
+\(\ket{000}\) &
+\(\frac{\sqrt{2}}{4} \bigg(\ket {+++} + \ket {++-} + \ket {+-+} + \ket {+--} + \ket {-++} + \ket {-+-} + \ket {--+} + \ket {---}\bigg)\) \\
+\(\ket{111}\) &
+\(\frac{\sqrt{2}}{4} \bigg(\ket {+++} + -\ket {++-} + -\ket {+-+} + \ket {+--} + -\ket {-++} + \ket {-+-} + \ket {--+} + -\ket {---}\bigg)\) \\
+\end{longtable}
+
+Any combination terms don't matter. For the \(\ket{+}\) case, we add up
+the number of terms which give us success. When we copy a \(\ket{+}\),
+the \(\ket{---}\) state cancels out. 6 \[
+\frac{1}{\cancel{ \sqrt{ 2 } }}* \frac{1}{\sqrt{ 12 }}* \frac{6\cancel{ \sqrt{ 2 } }}{4}\ket{+++}  = \frac{3}{2\sqrt{ 12 }}\ket{+++} 
+\] Then in the \(\ket{+}\), \[
+P(\ket{+++} ) = \frac{3}{4}+\frac{1}{16}=\frac{13}{16}
+\] A symmetry argument can be applied for sending the \(\ket{-}\)
+
+This then gives us a final success probability of \[
+P_{tot} = \frac{{P_{\left\{ \ket{0} ,\ket{1}  \right\}  }+P_{\left\{ \ket{+} ,\ket{-}  \right\}  }}}{ 2} = \frac{3}{8}+\frac{13}{32} = \frac{25}{32}
+\]
+\end{document}

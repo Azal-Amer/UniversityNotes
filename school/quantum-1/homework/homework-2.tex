@@ -1,0 +1,711 @@
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
+\documentclass[]{article}
+
+
+\usepackage{color}
+\usepackage{graphicx}
+
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+% Add the geometry package and set smaller margins
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{braket}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{framed}
+\lstnewenvironment{Highlighting}{}{}
+\usepackage{xcolor}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\IfFileExists{microtype.sty}{
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}
+  }
+}{% if KOMA class
+  \KOMAoptions{parskip=half}
+}
+\makeatother
+
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\usepackage{framed}
+\usepackage{listings}
+
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}
+}
+
+% Custom header and footer
+\pagestyle{fancy}
+\fancyhead[l]{Azal Amer}
+\fancyhead[c]{Quantum 1 HW  \#2}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{.2pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\definecolor{shadecolor}{rgb}{0.9, 0.9, 0.9}
+
+\hypertarget{problem-1}{%
+\section{Problem 1}\label{problem-1}}
+
+In the \(\left\{ \ket{1},\ket{2} \right\}\) basis, we define the
+representations in \(\mathbb{R}^{2}\) as\\
+\[
+\begin{align}
+\ket{1}  = \begin{pmatrix}
+1 \\
+0
+\end{pmatrix}  &  & \ket{2} =\begin{pmatrix}
+0 \\
+1
+\end{pmatrix}
+\end{align}
+\] Each component \[
+\begin{align}
+H = H_{11}\begin{pmatrix}
+1 \\
+0 
+\end{pmatrix}\begin{pmatrix}
+1 & 0
+\end{pmatrix}+H_{22}\begin{pmatrix}
+0 \\
+1
+\end{pmatrix}\begin{pmatrix}
+0 & 1
+\end{pmatrix}+H_{12}\left[ \begin{pmatrix}
+1 \\
+0
+\end{pmatrix}\begin{pmatrix}
+0 & 1
+\end{pmatrix}+\begin{pmatrix}
+0 \\
+1
+\end{pmatrix} \begin{pmatrix}
+1 & 0
+\end{pmatrix}\right]   
+\\
+=H_{11}\begin{pmatrix}
+1 & 0 \\
+0 & 0
+\end{pmatrix}+H_{22}\begin{pmatrix}
+0 & 0 \\
+0 & 1
+\end{pmatrix}+H_{12}\left[ \begin{pmatrix}
+0 & 1 \\
+0 & 0
+\end{pmatrix} +\begin{pmatrix}
+0 & 0 \\
+1 & 0
+\end{pmatrix}\right]  \\
+H=\begin{pmatrix}
+H_{11} & H_{12} \\
+H_{12} & H_{22}
+\end{pmatrix}
+\end{align}
+\]
+
+\[
+\begin{align}
+ \lambda_{1}=\frac{H_{11}}{2} + \frac{H_{22}}{2} - \frac{\sqrt{H_{11}^{2} - 2 H_{11} H_{22} + 4 H_{12}^{2} + H_{22}^{2}}}{2}  &  & \vec{v_{1}}=\begin{pmatrix}
+-H_{22}+\lambda_{1} \\
+H_{12}
+\end{pmatrix}\\
+\lambda_{2} = \frac{H_{11}}{2} + \frac{H_{22}}{2} + \frac{\sqrt{H_{11}^{2} - 2 H_{11} H_{22} + 4 H_{12}^{2} + H_{22}^{2}}}{2} &  & \vec{v_{2}}=\begin{pmatrix}
+-H_{22}+\lambda_{2} \\
+H_{12}
+\end{pmatrix}
+\end{align}
+\]
+
+Our normalized eigenkets are \[
+\begin{align}
+\ket{v_{1}}  = \begin{pmatrix}\frac{- H_{22} + \lambda_{1}}{\sqrt{\left(H_{22} - \lambda_{1}\right)^{2} + H_{12}^{2}}}\\\frac{H_{12}^{2}}{\sqrt{\left(H_{22} - \lambda_{1}\right)^{2} + 1}}\end{pmatrix} \\
+\ket{v_{2}}  = \left[\begin{matrix}\frac{- H_{22} + \lambda_{2}}{\sqrt{\left(H_{22} - \lambda_{2}\right)^{2} + H_{12}^{2}}}\\ \frac{H_{12}^{2}}{\sqrt{\left(H_{22} - \lambda_{2}\right)^{2} + H_{12}^{2}}}\end{matrix}\right]
+\end{align} 
+\]
+
+With these eigenvalues, we know that if \(H_{12}=0\), the eigenvalues
+should be \(H_{11},H_{22}\) Plugging in for \(\lambda_{1}\) \[
+\begin{align}
+\frac{H_{11}}{2} + \frac{H_{22}}{2} + \frac{\sqrt{H_{11}^{2} - 2 H_{11} H_{22} + H_{22}^{2}}}{2} \\
+\frac{H_{11}}{2} + \frac{H_{22}}{2}+{\frac{\sqrt{ \left( H_{11}-H_{22} \right) ^{2} }}{2}} \\
+\frac{1}{2}\left( H_{11}+H_{22}+\left| H_{11}-H_{22} \right|  \right)  \\
+\lambda_{1} = \begin{cases} \left( H_{11}-H_{22}>0 \right) :
+H_{11} \\
+\left( H_{11}-H_{22}<0 \right):H_{22}
+\end{cases}
+\end{align}
+\] Repeating this same step with \(\lambda_{2}\) yields the same two
+possible answers due to the absolute value term. This is what we expect.
+
+\hypertarget{problem-2}{%
+\section{Problem 2}\label{problem-2}}
+
+\hypertarget{a}{%
+\subsection{a)}\label{a}}
+
+\[
+H = \Delta \left(\ket{R}\bra{L}+\ket{L}\bra{R} \right) = \Delta \begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix} 
+\] The eigenvectors of this matrix and energy eigenvalues, normalized
+are \[
+\begin{align}
+\lambda_{1} = \Delta  &  & \ket{v_{1}}  = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+1
+\end{pmatrix} \\
+\lambda_{2} = -\Delta  &  & \ket{v_{2}}  = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+-1 \\
+1
+\end{pmatrix}
+\end{align}
+\]
+
+\hypertarget{b}{%
+\subsection{b)}\label{b}}
+
+\[
+\ket{\alpha}  = a\ket{v_{1}} + b\ket{v_{2}}  
+\] This is our initial state. We know that it evolves as a function of
+time, so \(a,b\) are both time-dependent. Rewriting \(\ket{\alpha}\) to
+matrix form in the \(\left\{ \ket{R},\ket{L} \right\}\) basis gives \[
+\ket{\alpha} =\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+a(t)-b(t) \\
+a(t)+b(t)
+\end{pmatrix}
+\] From here, we plug \(\ket{\alpha}\) the Schrödinger equation. \[
+\begin{align}
+i\hbar \frac{d}{dt} \ket{\alpha(t)} =H\ket{\alpha(t)}  \\
+\dot{\ket{a(t)}} = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+\dot{a(t)}-\dot{b(t)} \\
+\dot{a(t)}+\dot{b(t)} \\
+\end{pmatrix} \\
+H\ket{\alpha} = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}\begin{pmatrix}
+a(t)-b(t) \\
+a(t)+b(t)
+\end{pmatrix}=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+a(t)+b(t) \\
+a(t)-b(t)
+\end{pmatrix} \\
+\begin{pmatrix}
+\dot{a(t)}-\dot{b(t)} \\
+\dot{a(t)}+\dot{b(t)} \\
+\end{pmatrix} =\frac{1}{i\hbar}\begin{pmatrix}
+a(t)+b(t) \\
+a(t)-b(t)
+\end{pmatrix}
+\end{align}
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{import sympy as sp}
+
+\NormalTok{t = sp.symbols(\textquotesingle{}t\textquotesingle{})}
+\NormalTok{hbar = sp.symbols(\textquotesingle{}hbar\textquotesingle{}, real=True)}
+\NormalTok{a = sp.Function(\textquotesingle{}a\textquotesingle{})(t)}
+\NormalTok{b = sp.Function(\textquotesingle{}b\textquotesingle{})(t)}
+\NormalTok{delta = sp.symbols(\textquotesingle{}Delta\textquotesingle{},real = True)}
+
+\NormalTok{lhs = sp.I * hbar * sp.Matrix([[sp.diff(a, t) {-} sp.diff(b, t)], [sp.diff(a, t) + sp.diff(b, t)]])}
+\NormalTok{rhs = (delta) * sp.Matrix([[a + b], [a {-} b]])}
+
+
+\NormalTok{sol = sp.dsolve(lhs {-} rhs)}
+
+\NormalTok{print(sp.latex(sol))}
+\end{Highlighting}
+\end{Shaded}
+
+This then gives us a solution of
+
+\[
+\ket{\alpha(t)} =c_{1} e^{\frac{i \Delta t}{\hbar}}\ket{v_{2}} +c_{2}e^{ -i\Delta t/\hbar }\ket{v_{1}} 
+\]
+
+Because we don't know the state's initial conditions, this is the
+simplified form within the basis formed by the matrix.
+
+\hypertarget{c}{%
+\subsection{c)}\label{c}}
+
+To solve this part of the question, we need to find the values of
+\(c_{1,2}\). We know that at \(t=0\), \(\ket{\alpha}=\ket{R}\). We will
+use \(\ket{\alpha(t=0)}\) to solve for \(c_{1,2}\) Before that though,
+we need to characterize \(\ket{R}\) as a linear combination of
+\(\left\{ \ket{v_{1}},\ket{v_{2}} \right\}\) . In this case \[
+\begin{align} 
+\begin{pmatrix}
+1 \\
+0 
+\end{pmatrix} = \frac{1}{\sqrt{ 2 }}\left( \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+1
+\end{pmatrix} +\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+-1
+\end{pmatrix}\right) \\
+\ket{R}  = \frac{1}{\sqrt{ 2 }} \left( \ket{v_{1}} +\ket{v_{2}}  \right) 
+\end{align}
+\]
+
+\[
+\ket{\alpha(0)} =c_{1}\ket{R} +c_{2}\ket{L}  = \ket{R} 
+\] Therefore in our initial system,
+
+\[
+\begin{align}
+c_{1} = \frac{1}{\sqrt{ 2 }} \\
+c_{2}=\frac{1}{\sqrt{ 2 }}
+\end{align}
+\]
+
+Our probability of observing \(\ket{L}\) comes from Born's rule, which
+is the amplitude of the ket squared. Rewriting \(\ket{\alpha(t)}\) in
+terms of \(\ket{R},\ket{L}\) is
+
+\[\frac{1}{\sqrt{ 2 }}
+\begin{pmatrix}
+1 & 1 \\
+1 & -1
+\end{pmatrix} \frac{1}{\sqrt{2}}\begin{pmatrix}
+e^{ i\Delta  t/\hbar } \\
+e^{ -i\Delta t/\hbar }
+\end{pmatrix}=\begin{pmatrix}\cos{\left(\frac{ \Delta t}{ \hbar} \right)}\\i \sin{\left(\frac{ \Delta t}{ \hbar} \right)}\end{pmatrix}
+\]
+
+The probability over time is finally just \[
+\mathbb{P}_{\ket{L} }(t) = \sin^{2} \left( \frac{\Delta t}{\hbar} \right) 
+\]
+
+\hypertarget{d}{%
+\subsection{d)}\label{d}}
+
+I think I already worked this out in part a, part b, and part c. \[
+\ket{\psi}  = \cos \left( \frac{\Delta t}{\hbar} \right)\ket{R}  +i\sin \left( \frac{\Delta t}{\hbar} \right) \ket{L} 
+\]
+
+\hypertarget{problem-3}{%
+\section{Problem 3}\label{problem-3}}
+
+\hypertarget{a-1}{%
+\subsection{a)}\label{a-1}}
+
+\emph{Credit to Ayden Gertiser for help with this problem}
+
+\includegraphics{../../../Supplemental Files/images/Pasted image 20240922202151.png|100}
+
+We represent the vector \(\hat{n}\) in the
+\(\left\{ z_{+},z_{-} \right\}\) basis \[
+\hat{n} = \left( \sin \gamma,0,\cos \gamma \right) 
+\] To find it's probability in the \(X\) basis, we use the fact found in
+HW1, that the \(\frac{\hbar}{2}\) eigenvector is
+\(\left( \cos \frac{\gamma}{2},\sin \frac{\gamma}{2} \right)\).
+Representing this in the \(X\) basis is found by just \[
+\begin{align}
+\cos \frac{\gamma}{2}\ket{z_{+}} +\sin \frac{\gamma}{2}\ket{z_{+}} = \frac{1}{\sqrt{ 2 }} \cos \frac{\gamma}{2}\left(\ket{x_{+}  }+\ket{x_{-}} )\right)  + \frac{1}{\sqrt{ 2 }} \sin \frac{\gamma}{2} \left(  \ket{x_{+}  }-\ket{x_{-}} )\right) 
+\end{align}
+\] From this, \[
+\mathbb{P}\left( \frac{\hbar}{2} \right) = \frac{1}{2}\left(  \cos \frac{\gamma}{2}+ \sin \frac{\gamma}{2} \right) ^{2}
+\]
+
+\hypertarget{b-1}{%
+\subsection{b)}\label{b-1}}
+
+\[
+S\cdot\vec{n} = S_{x}\sin\gamma+S_{z}\cos\gamma
+\] Whichever vector has the eigenvalue of \(\frac{\hbar}{2}\) in these
+operators, is the state of our system. Before that though, we can reduce
+the expression to the below
+
+\[
+\begin{align}
+\left<(S_{x}-\left<S_{x}\right>)^{2} \right>  \\
+\left<S_{x}^{2}-2S_{x}\left<S_{x}\right>+\left<S_{x}\right>^{2}\right>  \\
+\left<S_{x}^{2}\right> -2\left<S_{x}\right>^{2}+\left<S_{x}\right>^{2}\\ 
+=\left<S_{x}^{2}\right> -\left<S_{x}\right>^{2}\\
+\end{align}
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Sx = sp.Matrix([}
+\NormalTok{[0,1],}
+\NormalTok{[1,0]}
+\NormalTok{])}
+\NormalTok{Sz = sp.Matrix([}
+\NormalTok{[1,0],}
+\NormalTok{[0,{-}1]}
+\NormalTok{])}
+\NormalTok{gamma = sp.symbols(\textquotesingle{}gamma\textquotesingle{},real = True)}
+\NormalTok{observable = Sx*sp.sin(gamma)+Sz*sp.cos(gamma)}
+\NormalTok{eigenvect = observable.eigenvects()[1][2][0]}
+\NormalTok{print(sp.latex(eigenvect))}
+\end{Highlighting}
+\end{Shaded}
+
+Our eigenvector is then \[
+\ket{\alpha}  = k(-\sin(\gamma)\ket{0} +(\cos(\gamma)-1)\ket{1} )
+\] Where \(k\) is \[
+k=\sqrt{\left|{\frac{\sin{\left(\gamma \right)}}{\cos{\left(\gamma \right)} - 1}}\right|^{2} + 1}=\sqrt{ 2(1-\cos \gamma) }
+\]
+
+\[
+\ket{\alpha} = \frac{1}{\sqrt{ 2(1-\cos \gamma) }}(-\sin(\gamma)\ket{0} +(\cos(\gamma)-1)\ket{1} )
+\] To find our expected values, we'll start with \(S_{x}\) \[
+\bra{\alpha} S_{x}\ket{\alpha} 
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{gamma = sp.symbols(\textquotesingle{}gamma\textquotesingle{},real = True)}
+\NormalTok{normFac = 1/(sp.sqrt(2*(1{-}sp.cos(gamma))))}
+\NormalTok{vec = sp.Matrix([{-}sp.sin(gamma),sp.cos(gamma){-}1])}
+\NormalTok{normVec = normFac*vec}
+\NormalTok{expecSx = (normVec.T*Sx*normVec)[0]}
+\NormalTok{print(sp.latex(expecSx))}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+- \frac{2 \left(\cos{\left(\gamma \right)} - 1\right) \sin{\left(\gamma \right)}}{2 - 2 \cos{\left(\gamma \right)}}
+\]
+
+Then for \(S_{x}^{2}\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{gamma = sp.symbols(\textquotesingle{}gamma\textquotesingle{},real = True)}
+\NormalTok{normFac = 1/(sp.sqrt(2*(1{-}sp.cos(gamma))))}
+\NormalTok{vec = sp.Matrix([{-}sp.sin(gamma),sp.cos(gamma){-}1])}
+\NormalTok{normVec = normFac*vec}
+\NormalTok{expecSx2 =(normVec.T*(Sx**2)*normVec)[0]}
+\NormalTok{print(sp.latex(expecSx2))}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\frac{\left(\cos{\left(\gamma \right)} - 1\right)^{2}}{2 - 2 \cos{\left(\gamma \right)}} + \frac{\sin^{2}{\left(\gamma \right)}}{2 - 2 \cos{\left(\gamma \right)}}
+\] Then our difference becomes
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dispersion = expecSx2 {-} expecSx**2}
+\NormalTok{print(sp.latex(sp.simplify(dispersion.expand())))}
+\end{Highlighting}
+\end{Shaded}
+
+Then our final dispersion is just \[
+\left\langle \left(S_x - \langle S_x \rangle\right)^2 \right\rangle = \frac{\hbar^{2}}{4}\cos^{2}{\left(\gamma \right)}
+\]
+
+\hypertarget{c-1}{%
+\subsection{c)}\label{c-1}}
+
+Repeating this for \(\ket{z_{+}}\) gives us
+
+\(S_{x}\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{gamma = sp.symbols(\textquotesingle{}gamma\textquotesingle{},real = True)}
+\NormalTok{normFac = 1}
+\NormalTok{vec = sp.Matrix([1,0])}
+\NormalTok{normVec = normFac*vec}
+\NormalTok{expecSx = (normVec.T*Sx*normVec)[0]}
+\NormalTok{print(sp.latex(expecSx))}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+- \frac{2 \left(\cos{\left(\gamma \right)} - 1\right) \sin{\left(\gamma \right)}}{2 - 2 \cos{\left(\gamma \right)}}
+\]
+
+Then for \(S_{x}^{2}\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{gamma = sp.symbols(\textquotesingle{}gamma\textquotesingle{},real = True)}
+\NormalTok{normFac = 1}
+
+\NormalTok{normVec = normFac*vec}
+\NormalTok{expecSx2 =(normVec.T*(Sx**2)*normVec)[0]}
+\NormalTok{print(sp.latex(expecSx2))}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\frac{1}{2 - 2 \cos{\left(\gamma \right)}}
+\] Then our difference becomes
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dispersion = expecSx2 {-} expecSx**2}
+\NormalTok{print(sp.latex(sp.simplify(dispersion.expand())))}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\left<\left( \Delta S_{x} \right) ^{2}\right>  = \frac{\hbar^{2}}{4}
+\] For the \(S_{y}\) observable
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Sy = sp.Matrix([}
+\NormalTok{[0,{-}sp.I],}
+\NormalTok{[sp.I,0]}
+\NormalTok{])}
+\NormalTok{gamma = sp.symbols(\textquotesingle{}gamma\textquotesingle{},real = True)}
+\NormalTok{normFac = 1}
+\NormalTok{vec = sp.Matrix([1,0])}
+\NormalTok{normVec = normFac*vec}
+\NormalTok{expecSy = (normVec.T*Sy*normVec)[0]}
+\NormalTok{print(sp.latex(expecSy))}
+\NormalTok{gamma = sp.symbols(\textquotesingle{}gamma\textquotesingle{},real = True)}
+\NormalTok{normFac = 1}
+
+\NormalTok{normVec = normFac*vec}
+\NormalTok{expecSy2 =(normVec.T*(Sy**2)*normVec)[0]}
+\NormalTok{print(sp.latex(expecSy2))}
+\NormalTok{dispersion = expecSy2 {-} expecSy**2}
+\NormalTok{print(sp.latex(sp.simplify(dispersion.expand())))}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\left<\left( \Delta S_{y} \right) ^{2}\right>  = \frac{\hbar^{2}}{4}
+\]
+
+\hypertarget{problem-4}{%
+\section{Problem 4}\label{problem-4}}
+
+\hypertarget{a-2}{%
+\subsection{a)}\label{a-2}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{A, B = sp.symbols(\textquotesingle{}A B\textquotesingle{}, real=True)}
+\NormalTok{H = sp.Matrix([ }
+\NormalTok{[0, {-}sp.I*A, 0, 0], }
+\NormalTok{[sp.I*A, 0, 0, 0],}
+\NormalTok{[0, 0, 0, B], }
+\NormalTok{[0, 0, B, 0] }
+\NormalTok{])}
+\NormalTok{print(sp.latex(H.eigenvects()))}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\begin{align}
+\lambda_1 &= -A, & \mathbf{v}_1 &= \begin{bmatrix} i \\ 1 \\ 0 \\ 0 \end{bmatrix} \\[10pt]
+\lambda_2 &= A, & \mathbf{v}_2 &= \begin{bmatrix} -i \\ 1 \\ 0 \\ 0 \end{bmatrix} \\[10pt]
+\lambda_3 &= -B, & \mathbf{v}_3 &= \begin{bmatrix} 0 \\ 0 \\ -1 \\ 1 \end{bmatrix} \\[10pt]
+\lambda_4 &= B, & \mathbf{v}_4 &= \begin{bmatrix} 0 \\ 0 \\ 1 \\ 1 \end{bmatrix}
+\end{align}
+\] Above is our spectrum of the matrix.
+
+\hypertarget{b-2}{%
+\subsection{b)}\label{b-2}}
+
+From our initial conditions, we define our vector \(\ket{\psi}\) to be
+\[
+\ket{\psi}  = \alpha_{1}(t)v_{1}+\alpha_{2}(t)v_{2}+\alpha_{3}(t)v_{3}+\alpha_{4}(t)v_{4} = \begin{pmatrix}
+a_{1}(t) \\
+a_{2}(t) \\ 
+a_{3}(t) \\ 
+a_{4}(t) \\
+\end{pmatrix}
+\] then \(\dot{\ket{\psi}}\) is \[
+ \dot{\ket{\psi}}=
+\begin{pmatrix}
+\dot{a_{1}(t)} \\
+\dot{a_{2}(t) }\\ 
+\dot{a_{3}(t) }\\ 
+\dot{a_{4}(t)} \\
+\end{pmatrix}
+\] Plugging this into our schrodinger equation gives
+
+\[
+i\hbar \begin{pmatrix}
+\dot{a_{1}(t)} \\
+\dot{a_{2}(t) }\\ 
+\dot{a_{3}(t) }\\ 
+\dot{a_{4}(t)} \\
+\end{pmatrix} =  \begin{pmatrix}
+0 & -iA & 0 & 0 \\
+iA & 0 & 0 & 0 \\
+0 & 0 & 0 & B \\
+0 & 0 & B & 0
+\end{pmatrix} \begin{pmatrix}
+a_{1}(t) \\
+a_{2}(t) \\ 
+a_{3}(t) \\ 
+a_{4}(t) \\
+\end{pmatrix}
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{import sympy as sp}
+
+\NormalTok{\# Define symbols and functions}
+\NormalTok{t = sp.Symbol(\textquotesingle{}t\textquotesingle{}, real=True)}
+\NormalTok{A, B = sp.symbols(\textquotesingle{}A B\textquotesingle{}, real=True)}
+\NormalTok{hbar = sp.Symbol(\textquotesingle{}hbar\textquotesingle{}, real=True, positive=True)}
+\NormalTok{a1, a2, a3, a4 = sp.Function(\textquotesingle{}a1\textquotesingle{})(t), sp.Function(\textquotesingle{}a2\textquotesingle{})(t), sp.Function(\textquotesingle{}a3\textquotesingle{})(t), sp.Function(\textquotesingle{}a4\textquotesingle{})(t)}
+
+\NormalTok{\# Define the system of differential equations}
+\NormalTok{eq1 = sp.Eq(sp.I * hbar * a1.diff(t), {-}sp.I * A * a2)}
+\NormalTok{eq2 = sp.Eq(sp.I * hbar * a2.diff(t), sp.I * A * a1)}
+\NormalTok{eq3 = sp.Eq(sp.I * hbar * a3.diff(t), B * a4)}
+\NormalTok{eq4 = sp.Eq(sp.I * hbar * a4.diff(t), B * a3)}
+
+\NormalTok{\# Solve the system}
+\NormalTok{solution = sp.dsolve([eq1, eq2, eq3, eq4])}
+
+\NormalTok{print("Solution:")}
+\NormalTok{for sol in solution:}
+\NormalTok{    print(sp.latex(sol))}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+\ket{\psi}  = 
+\begin{pmatrix}
+-i C_1 e^{-\frac{iAt}{\hbar}} + i C_2 e^{\frac{iAt}{\hbar}} \\[10pt]
+C_1 e^{-\frac{iAt}{\hbar}} + C_2 e^{\frac{iAt}{\hbar}} \\[10pt]
+C_3 e^{-\frac{iBt}{\hbar}} - C_4 e^{\frac{iBt}{\hbar}} \\[10pt]
+C_3 e^{-\frac{iBt}{\hbar}} + C_4 e^{\frac{iBt}{\hbar}}
+\end{pmatrix}
+\] Now we want to evaluate our initial conditions at \(t=0\) Plugging
+\(t=0\) to the solution of the Schrödinger equation gives \[
+\ket{\psi}\bigg|_{t=0} = \begin{pmatrix}
+-iC_{1}+iC_{2} \\
+C_{1}+C_{2} \\
+C_{3}-C_{4} \\
+C_{3}+C_{4}
+\end{pmatrix} = \begin{pmatrix}
+0 \\
+1 \\
+1 \\
+0
+\end{pmatrix}
+\] Then \(C_{1},C_{2}=\frac{1}{2}\) And
+\(C_{3},C_{4} =\frac{1}{2},-\frac{1}{2}\) Thus in the \(\ket{z}\) basis
+the solution is
+
+\[
+\ket{\psi(t)}  = 
+\begin{pmatrix}
+-\frac{i}{2} e^{-\frac{iAt}{\hbar}} + \frac{i}{2} e^{\frac{iAt}{\hbar}} \\
+\frac{1}{2} e^{-\frac{iAt}{\hbar}} + \frac{1}{2} e^{\frac{iAt}{\hbar}} \\
+\frac{1}{2} e^{-\frac{iBt}{\hbar}} + \frac{1}{2} e^{\frac{iBt}{\hbar}} \\
+\frac{1}{2} e^{-\frac{iBt}{\hbar}} - \frac{1}{2} e^{\frac{iBt}{\hbar}}
+\end{pmatrix}
+\] However, after applying the \(H\) transformation, we get \[
+\ket{\psi(t)}  = \frac{1}{2}e^{ iAt /\hbar}\ket{-A} +\frac{1}{2}e^{ -iAt /\hbar}\ket{A} +\frac{1}{2}e^{ -iBt /\hbar}\ket{B}-\frac{1}{2}e^{ iBt /\hbar}\ket{B}  
+\]
+
+\hypertarget{c-2}{%
+\subsection{c)}\label{c-2}}
+
+The probability of occurrence is just \[
+aa^{\star} =  \frac{1}{2}e^{ iBt/h } \frac{1}{2}e^{ -iBt/h } = \frac{1}{4}
+\] Then \[
+P(E=B) = \frac{1}{4}
+\]
+\end{document}
