@@ -1,4 +1,100 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 24 Oct 2024 22:23:28 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 24 Oct 2024 22:22:44 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 31 Oct 2024 16:03:10 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 31 Oct 2024 15:59:18 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Personality Quiz]]></title><description><![CDATA[ 
+ <br>The input is a file, filled with pairs of strings. <br>&lt;X&gt;
+
+&lt;name 1&gt;
+
+&lt;answers 1&gt;
+
+&lt;name 2&gt;
+
+&lt;answers 2&gt;
+
+...
+
+&lt;name X&gt;
+
+&lt;answers X&gt;
+Copy<br>There are two ways we can approach this, either implicitly identifying the name, then keep an alternating switch to watch, or an explicit approach.<br>
+<br>The implicit flip-flop isn't robust to random newlines
+<br>We know that the answers line has a certain character length, uninterrupted by spaces. That can be an identifying factor<br>
+ corresponds to the number of strings we're anticipating.
+<br>Possible answers are , which then get categorized as being on one side or the other of a dimension.<br><br>When it comes to actually characterizing their answers, we know that each category has a question it maps too. We simply need to keep count of for each dimension what their percentage is, and their final output. Since we have access to an array, it would be nice to use it to keep track of which questions map to what.<br>Extrovert / Introvert - (questions 1, 8, 15, 22, etc)
+
+Sensation / iNtuition -&nbsp; (questions 2, 3, 9, 10, 16, 17, 23, 24, etc)
+
+Thinking / Feeling - (questions 4, 5, 11, 12, 18, 19, 25, 26, etc)
+
+Judging / Perceiving - (questions 6, 7, 13, 14, 20, 21, 27, 28, etc)
+Copy<br>Those lists are just constant, and then the results get printed as we go, since each newline isn't contingent on the previous.<br>
+We want line based processing to ID when we get new data and it's label, then token-based-processing to split up the answers from the string.]]></description><link>https://azalamer.com/UniversityNotes/school/cs-312/notes/homework-assignments/personality-quiz.html</link><guid isPermaLink="false">School/CS 312/Notes/Homework Assignments/Personality Quiz.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 28 Oct 2024 04:08:57 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>The goal is parsing different files (no error handling on format), and providing some statistical result based on the file.<br><br>The table below is from the design document, but also detials my personal notes<br><br>To identify who the home  team is, we know that the second and fourth columns contain the playing teams. Below is the column names<br>
+&lt;DATE&gt; &lt;TEAM 1&gt; &lt;TEAM 1 SCORE&gt; &lt;TEAM 2&gt; &lt;TEAM 2 SCORE&gt; &lt;FLAGS&gt; &lt;OPTIONAL INFO&gt;<br>
+<br>If I need to confirm my results, I can probably write this in pandas afterward. Plus this would make fun graphs
+<br>Simply grabbing the second column as the second token, means we can't parse-multi word team names
+To resolve this, I think I can just check if the next token is a string or number primitive.  Then I just process as normal as long as I can keep track of the new column offset in relation to the tokens
+<br>If there is a home team in the game, we know that if there's an @. That is just line based processing.<br>
+The date is also not seeming to be important.<br>The program seems straight forward, so I think I'll just use the exact proposed main format.<br>main(){
+	file = check(output('Whats the filename'))
+	# above checks and reruns until a valid file is given with a while loop
+	printHeader(file)
+	# This just takes the header
+	data = analyse(file)
+	# This runs the analysis, there will be submethods in this, only one more level deep though. Outer and inner for loop
+	log(data)
+}
+CopyRun]]></description><link>https://azalamer.com/UniversityNotes/school/cs-312/notes/homework-assignments/home-field-advantage.html</link><guid isPermaLink="false">School/CS 312/Notes/Homework Assignments/Home Field Advantage.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 25 Oct 2024 00:02:57 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br><br>Most encryption assumes a shared secret key<br>
+The OTP has perfect information theoretic security<br>
+<br>We can use this with the secret word, so that it can be perpetually reused<br>
+Shannon- Needs a very long, pre-shared key for information security.
+<br>The OTP protocol is what eventually evolved into public key cryptography.<br>How can alice and bob have private communication without having to already agree on a OTP in advance?
+This was the question conceived when BB84 was made
+<br>Could you DIY your own BB84 device? Physically probably not<br>What if I'm not confident in the original OTP security method? What can I do then?<br>email: <a data-tooltip-position="top" aria-label="mailto:pmigdal@gmail.com" rel="noopener nofollow" class="external-link" href="https://azalamer.com/UniversityNotes/mailto:pmigdal@gmail.com" target="_blank">pmigdal@gmail.com</a><br>
+<br>This could be a fun side-quest? What are we sending the email for... Work? Maybe I can just introduce myself, say what classes I've taken, and work from there? I prob need my resume updated.<br>
+- Did that!<br>
+- Maybe just ask if theres more papers they rec, or anything I'd be able to do to help?<br>
+Dear ---,<br>
+My name is Azal Amer, I am a Physics-CS double major studying at UT Austin. I recently came across quantumflytrap, and was a huge fan of your website. The interface is so intuitive, and I would have really appreciated a tool like this when i was first learning about quantum optics. A personal project of mine has been to make websites demonstrating different physical phenomena, and coming up with a good pedagogy to use when writing websites for quantum behaviors has been something I've struggled with. I was wondering if you could point me in the direction of any papers that helped motivate the creation of the site? Quantumflytrap has such a high level of polish, and I'd love to learn how to make similar tools.<br>
+I've attached my resume which includes my quantum-optics experience if that helps.<br>
+Hope you're doing well, and thank you so much for your time!<br>
+Sincerely,<br>
+Azal Amer (he/him)
+<br><br>The goal is that Alice randomly selects a basis to prepare her signal in, and then inside that basis the orthogonal axis are labelled 0,1. Bob receives the signal ,randomly measures the bits. Then they publicly announce what gates they both used, and keep the resulting bits. If Eve was monitoring at any useful rate, Alice and Bob can just announce a portion of their key and see if it matches. If the bits don't match at a certain rate, then you assume an intruder, and repeat the procedure.<br>
+This generates the OTP, which you can then use a classical channel to transmit information over!<br>
+On average, you retain <br><br>qubits after you want to check your qubits.<br>
+90% of the difficulty with a quantum computer, is implementing identity<br>
+pmigdal@gmail.com<br>
+<img alt="../../../Supplemental Files/images/Pasted image 20240919145142.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240919145142.png"><br>Quantum superdense coding<br>Theorem (Holevo's Theorem (1973)).
+By sending Bob  qubits, Alice can communicate  classical bits of her choice*<br>
+for  if Alice and Bob have pre-shared entanglement<br>
+If Alice and Bob have some preshared qubits in advance, they can actually send information over by a factor of two.<br>
+
+<br>
+<br>There's no savings to be had if we want to send qubits along, as opposed to classical bits<br>
+EXCEPT
+<br>Definition (Superdense Coding (Bennett-Wiesner)).
+Alice and bob share an entangled <a data-tooltip-position="top" aria-label="../../Quantum Computing/Semester 1/5.1 Quantum Teleportation > ^9fbf0d" data-href="../../Quantum Computing/Semester 1/5.1 Quantum Teleportation#^9fbf0d" href="https://azalamer.com/UniversityNotes/Quantum Computing/Semester 1/5.1 Quantum Teleportation#^9fbf0d" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">bell state</a><a data-tooltip-position="top" aria-label="../../Quantum Computing/Semester 1/5.1 Quantum Teleportation > ^9fbf0d" data-href="../../Quantum Computing/Semester 1/5.1 Quantum Teleportation#^9fbf0d" href="https://azalamer.com/UniversityNotes/school/quantum-computing/semester-1/5.1-quantum-teleportation.html#^9fbf0d" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">bell state</a> , 
+
+They share 1 entangled bit.<br>
+With 1 qubit and 1 ebit, Alice can now communicate two classical bits over to Bob
+
+Make sure you look at all the possible bell states<br>
+<br><br>Definition 5.1.1 (Bell States).
+States that we can use as a basis to make quantum bits in superposition, seperable
+
+
+
+
+
+ 
+<br>Coming from last time, let's say Alice measures some  qubits, bob measures them, etc. It's just BB84<br>
+How can we prove the "No Communication Theorem"<br><br>But then how can Bob work out what circuit to use to send this? Well Bob can just use a <br>The reason why this can be so useful, is that the density of your communication per packet, is doubled. Even if the number of bits to qubits is the same for fixed information, you can get it there at twice the speed<br>“This isn’t useful, but it’s kind of interesting in that, well it proves a point😁”
+-Aaronson
+<br>Alice: :<br>
+If x - 1, apply <br>
+if y=1, apply <br>
+From this binary coding,<br>
+The input bell state maps to <br>]]></description><link>https://azalamer.com/UniversityNotes/school/qis/notes/1.8,1.9-superdense-coding-and-qkd.html</link><guid isPermaLink="false">School/QIS/Notes/1.8,1.9 Superdense Coding and QKD.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 29 Oct 2024 19:33:13 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240919145142.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240919145142.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br><br>Theorem ((Yao 1993) The quantum circuit model is analogous to the quantum turing machine model).<br>If we don't have any gates which take us out of a classical digital basis<br>
 What's the best way to then implement the unitary transformation you care about from <a data-href="1.15 More on Universal Gate Sets#^83c502" href="https://azalamer.com/UniversityNotes/1.15 More on Universal Gate Sets#^83c502" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.15 More on Universal Gate Sets &gt; ^83c502</a><a data-href="1.15 More on Universal Gate Sets#^83c502" href="https://azalamer.com/UniversityNotes/school/qis/notes/1.15-more-on-universal-gate-sets.html#^83c502" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.15 More on Universal Gate Sets &gt; Theorem 1.15.1 ((Soloway-Kitaev) Arbitrary Unitary Algorithmic Complexity)</a>?<br>
 What subset of gates can you implement using only a polynomial number of gates<br>
@@ -31,58 +127,297 @@ Parity has an underlying recursive structure, I could keep applying DJ to the ne
 Between this and then, another generalization occurred, <br><br>Then we promise a property about <br>
 Promise:  is either constant (all one number) or balanced (equal number)<br>
 Problem: To decide which<br>
-Classically, you'd need  at worst. But in reality, if you had a probabilistic alg, you could pick at random till you see one of the balanced outputs<br>Theorem ((1993) Bernstein-Vazirani  Quantum Speedup).]]></description><link>https://azalamer.com/UniversityNotes/school/qis/notes/2.1-actual-quantum-computing.html</link><guid isPermaLink="false">School/QIS/Notes/2.1 Actual Quantum Computing.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 24 Oct 2024 22:22:25 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibp2capi9o-g10jf_9sk2y_bw1u34haaltrdebeivyrkc1kg9bq5ubaqadagadeqadngq.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibp2capi9o-g10jf_9sk2y_bw1u34haaltrdebeivyrkc1kg9bq5ubaqadagadeqadngq.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
- <br><br><br>Most encryption assumes a shared secret key<br>
-The OTP has perfect information theoretic security<br>
-<br>We can use this with the secret word, so that it can be perpetually reused<br>
-Shannon- Needs a very long, pre-shared key for information security.
-<br>The OTP protocol is what eventually evolved into public key cryptography.<br>How can alice and bob have private communication without having to already agree on a OTP in advance?
-This was the question conceived when BB84 was made
-<br>Could you DIY your own BB84 device? Physically probably not<br>What if I'm not confident in the original OTP security method? What can I do then?<br>email: <a data-tooltip-position="top" aria-label="mailto:pmigdal@gmail.com" rel="noopener nofollow" class="external-link" href="https://azalamer.com/UniversityNotes/mailto:pmigdal@gmail.com" target="_blank">pmigdal@gmail.com</a><br>
-<br>This could be a fun side-quest? What are we sending the email for... Work? Maybe I can just introduce myself, say what classes I've taken, and work from there? I prob need my resume updated.<br>
-- Did that!<br>
-- Maybe just ask if theres more papers they rec, or anything I'd be able to do to help?<br>
-Dear ---,<br>
-My name is Azal Amer, I am a Physics-CS double major studying at UT Austin. I recently came across quantumflytrap, and was a huge fan of your website. The interface is so intuitive, and I would have really appreciated a tool like this when i was first learning about quantum optics. A personal project of mine has been to make websites demonstrating different physical phenomena, and coming up with a good pedagogy to use when writing websites for quantum behaviors has been something I've struggled with. I was wondering if you could point me in the direction of any papers that helped motivate the creation of the site? Quantumflytrap has such a high level of polish, and I'd love to learn how to make similar tools.<br>
-I've attached my resume which includes my quantum-optics experience if that helps.<br>
-Hope you're doing well, and thank you so much for your time!<br>
-Sincerely,<br>
-Azal Amer (he/him)
-<br><br>The goal is that Alice randomly selects a basis to prepare her signal in, and then inside that basis the orthogonal axis are labelled 0,1. Bob receives the signal ,randomly measures the bits. Then they publicly announce what gates they both used, and keep the resulting bits. If Eve was monitoring at any useful rate, Alice and Bob can just announce a portion of their key and see if it matches. If the bits don't match at a certain rate, then you assume an intruder, and repeat the procedure.<br>
-This generates the OTP, which you can then use a classical channel to transmit information over!<br>
-On average, you retain <br><br>qubits after you want to check your qubits.<br>
-90% of the difficulty with a quantum computer, is implementing identity<br>
-pmigdal@gmail.com<br>
-<img alt="../../../Supplemental Files/images/Pasted image 20240919145142.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240919145142.png"><br>Quantum superdense coding<br>Theorem (Holevo's Theorem (1973)).
-By sending Bob  qubits, Alice can communicate  classical bits of her choice*<br>
-for  if Alice and Bob have pre-shared entanglement<br>
-If Alice and Bob have some preshared qubits in advance, they can actually send information over by a factor of two.
+Classically, you'd need  at worst. But in reality, if you had a probabilistic alg, you could pick at random till you see one of the balanced outputs<br>Theorem ((1993) Bernstein-Vazirani  Quantum Speedup).]]></description><link>https://azalamer.com/UniversityNotes/school/qis/notes/2.1-deutsch-jozsa-and-computing.html</link><guid isPermaLink="false">School/QIS/Notes/2.1 Deutsch-Jozsa and Computing.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 24 Oct 2024 22:22:25 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibp2capi9o-g10jf_9sk2y_bw1u34haaltrdebeivyrkc1kg9bq5ubaqadagadeqadngq.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibp2capi9o-g10jf_9sk2y_bw1u34haaltrdebeivyrkc1kg9bq5ubaqadagadeqadngq.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br><br>Today we want to cover an actually impressive quantum algorithm<br>Definition (Bernstain Vazerani).
+Given a blackbox 
+
+Promise: , 
+
+Problem: Find 
+This is the problem that the algorithm wants to solve. Classical query complexity of Bernstein-Vazerani problem is .
+Now want to give a quantum algorithm, which can solve using one query to , using a linear number of gates.<br>
+The algorithm is just to apply hadamards to every qubit twioce, once before and once after the function<br>
+
+<br>Proof of <a data-href="#^778829" href="https://azalamer.com/UniversityNotes/#^778829" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^778829</a><a data-href="#^778829" href="https://azalamer.com/UniversityNotes/#^778829" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 2.2.1 (Bernstain Vazerani)</a>. <br><br>We're now going to take some  bit string and apply this same thing<br><br>We get a total normalization and representation as<br><br>Then the solution just falls into our lap! The amplitude has some fixed phase attached to it, so we just wanna find it<br><br>In order<br><br>□<br>How did we not just violate <a data-href="1.8,1.9 Superdense Coding and QKD#^45ead5" href="https://azalamer.com/UniversityNotes/1.8,1.9 Superdense Coding and QKD#^45ead5" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.8,1.9 Superdense Coding and QKD &gt; ^45ead5</a><a data-href="1.8,1.9 Superdense Coding and QKD#^45ead5" href="https://azalamer.com/UniversityNotes/school/qis/notes/1.8,1.9-superdense-coding-and-qkd.html#^45ead5" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.8,1.9 Superdense Coding and QKD &gt; Theorem 1.8.1 (Holevo's Theorem (1973))</a> ? 
+The thing is , that we just measured  qubits, even if there was only one query. We didn't just get  bits on the results for free, we had to measure every output
+<br>Bernstein-Vazerani is an  vs  speedup]]></description><link>https://azalamer.com/UniversityNotes/school/qis/notes/2.2-bernstein-vazirani.html</link><guid isPermaLink="false">School/QIS/Notes/2.2 Bernstein-Vazirani.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 29 Oct 2024 19:33:55 GMT</pubDate></item><item><title><![CDATA[Notes]]></title><description><![CDATA[ 
+ <br>But# Overview<br><br>"Scott's travelling this week, sort of saving the world from AI, so I'm taking over"
+- Nick Hunter Jones
+<br>Feynman was the first guy to bring this up:<br>Say you wanted to simulate a quantum system, we know that <br><br>If I want to simulate this classically, I have to keep track of a lot of numbers. There's  's for n-qubit state. Pretty soon this scales up to the size of the observable universe.<br>
+If I wanted to simulate 260 qubits, then it's , which is the number of atoms in the universe.<br>"If you want to simulate a quantum system, you should probably just use a quantum system."<br>The question, is can we then use a quantum system, to simulate a classical problem<br><br>Even if I can construct a quantum state where<br><br>This just collapses to a single output, since we have to make a measurement.<br>
+Our only hope is to "choreograph an interference pattern".  <br><br>
+<br>Just a a note,  is just some arbitrarily small coefficient. Can be polynomial or wtv.<br>
+You want a way to make your incorrect answers have a very low probability, while your good solutions have a high one.
+<br><br>But how do we build these unitaries? The key thing, is that these unitaries encode the program.<br>
+We want to use k-level gates , things like 1 qubit gates or 2 qubit gates. This is just more practical cause it's easier to act on a few qubits at once, plus it's just modular.<br>
+<br> is the space complexity, which is the number of qubits, similar to the number of bits
+<br> is the number of gates in the circuit, or the depth
+<br>How do we know it's possible to build n-qubit unitaries out of lower qubit gates?
+What a great segway azal 💀, that's next!
+<br><br><br>The fundamental question is, are there a set of gates which can be used to compose any ?<br>
+<br>The analogous classical picture is building up any boolean function from  
+<br>THIS makes sense from <a data-tooltip-position="top" aria-label="../../Miscillaneous/Tidbit Facts/Cook-Levin Theorem" data-href="../../Miscillaneous/Tidbit Facts/Cook-Levin Theorem" href="https://azalamer.com/UniversityNotes/Miscillaneous/Tidbit Facts/Cook-Levin Theorem" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Cook-Levin Theorem</a><a data-tooltip-position="top" aria-label="../../Miscillaneous/Tidbit Facts/Cook-Levin Theorem" data-href="../../Miscillaneous/Tidbit Facts/Cook-Levin Theorem" href="https://azalamer.com/UniversityNotes/school/miscillaneous/tidbit-facts/cook-levin-theorem.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Cook-Levin Theorem</a>, cause any algorithm maps to a boolean one, which then is represented with a series of gates. So then a SAT solver would eject solutions to an arbitrary algorithm.
+<br>What then is our fundamental set for quantum?<br><br> is our gate set.  is the cardinality of the set.<br>For some gate set  to be universal, our arbitrary n-qubit unitary must be able to be implemented through any qubits  <br>Definition (Exact Universality).
+A gate set  has exact universality, when any  unitary  on a qubit of size , can be produced by tensoring gates in the set together. 
+
+<br>Theorem (The Standard Gate Set is Universal).
+The gate set defined as . Note that  must be continuous, so since the cardinalities of the set must match, the set  must also be continuous. 
 <br>
-<br>There's no savings to be had if we want to send qubits along, as opposed to classical bits<br>
-EXCEPT
-<br>Definition (Superdense Coding (Bennett-Wiesner)).
-Alice and bob share an entangled <a data-tooltip-position="top" aria-label="../../Quantum Computing/Semester 1/5.1 Quantum Teleportation > ^9fbf0d" data-href="../../Quantum Computing/Semester 1/5.1 Quantum Teleportation#^9fbf0d" href="https://azalamer.com/UniversityNotes/Quantum Computing/Semester 1/5.1 Quantum Teleportation#^9fbf0d" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">bell state</a><a data-tooltip-position="top" aria-label="../../Quantum Computing/Semester 1/5.1 Quantum Teleportation > ^9fbf0d" data-href="../../Quantum Computing/Semester 1/5.1 Quantum Teleportation#^9fbf0d" href="https://azalamer.com/UniversityNotes/school/quantum-computing/semester-1/5.1-quantum-teleportation.html#^9fbf0d" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">bell state</a> , 
+<br>Can find this in Nielsen and Chuang Quantum Computation and Quantum Information
+<br>The issue with Exact Universality, is that it can be really difficult to construct every possible transformation on a qubit, while in a lab.<br>Can we find a universal gate set, which is approximately universal? <br><br>Definition ((Approximate) Universal Gate Set).
+ A finite gate set  is approximately universal if for any , there exists  such that
 
-They share 1 entangled bit.<br>
-With 1 qubit and 1 ebit, Alice can now communicate two classical bits over to Bob
+For a smaller , you'd just apply more gates from the set arbitrarily.<br>
+Where
 
-Make sure you look at all the possible bell states<br>
-<br><br>Definition 5.1.1 (Bell States).
-States that we can use as a basis to make quantum bits in superposition, seperable
+That is to say, the error is smaller than our resolution of measurement.<br>
+Shatton Infinity Norm, or the biggest eigenvalue in the operator.<br>
+An example can be found in <a data-href="#^9dfc33" href="https://azalamer.com/UniversityNotes/#^9dfc33" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^9dfc33</a><a data-href="#^9dfc33" href="https://azalamer.com/UniversityNotes/#^9dfc33" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.14.4 (Clifford + T Gate set)</a><br>
+
+<br>One possible such set is<br><br>Which is called the Clifford +T<br>Definition (Clifford + T Gate set).
+
+This is an example of <a data-href="#^c11659" href="https://azalamer.com/UniversityNotes/#^c11659" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^c11659</a><a data-href="#^c11659" href="https://azalamer.com/UniversityNotes/#^c11659" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.14.3 ((Approximate) Universal Gate Set)</a><br>
+
+<br>Definition (Clifford Gates and Clifford Group).
+The set of all unitaries generated by <br>
+All possible combinations of elements in the set, form the Clifford Group.<br>
+This is NOT universal.<br>
+
+<br>"This is because the rationals are dense in the reals, you can approximate any rational number"
+- <a data-tooltip-position="top" aria-label="../../../Personal/People/Aravind Karthigeyan" data-href="../../../Personal/People/Aravind Karthigeyan" href="https://azalamer.com/UniversityNotes/Personal/People/Aravind Karthigeyan" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Aravind</a><a data-tooltip-position="top" aria-label="../../../Personal/People/Aravind Karthigeyan" data-href="../../../Personal/People/Aravind Karthigeyan" href="https://azalamer.com/UniversityNotes/personal/people/aravind-karthigeyan.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Aravind</a>
+<br>Another (approximately) universal gate set<br><br>What is the  that defines this?<br>Non universal gate sets<br><br>Note that  is just rotation matrices, but it's a weaker version of universality called <a data-href="#^a54159" href="https://azalamer.com/UniversityNotes/#^a54159" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^a54159</a><a data-href="#^a54159" href="https://azalamer.com/UniversityNotes/#^a54159" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.14.6 (Encoded Universal)</a> <br>Definition (Encoded Universal).
+Any given gate set , s.t you can simulate an arbitrary  qubit computation, with ancillas<br>
+
+<br><br>What allows <a data-href="#^toffoliGates" href="https://azalamer.com/UniversityNotes/#^toffoliGates" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^toffoliGates</a><a data-href="#^toffoliGates" href="https://azalamer.com/UniversityNotes/#^toffoliGates" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.14.1)</a>  to be universal, while <a data-href="#^dac7b9" href="https://azalamer.com/UniversityNotes/#^dac7b9" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^dac7b9</a><a data-href="#^dac7b9" href="https://azalamer.com/UniversityNotes/#^dac7b9" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.14.5 (Clifford Gates and Clifford Group)</a> isn't? The only difference is that you can control on an additional bit?
+It's not uniquely obvious in the math, esp with the computational basis. It's one of those things you'll need to grind math out for.
+<br>Theorem ((Gottosen, Knill) Simulating Clifford Gates is in ).
+Any quantum circuit made from <a data-href="#^dac7b9" href="https://azalamer.com/UniversityNotes/#^dac7b9" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^dac7b9</a><a data-href="#^dac7b9" href="https://azalamer.com/UniversityNotes/#^dac7b9" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.14.5 (Clifford Gates and Clifford Group)</a> , is classically simulatable in <br>
+
+<br>Proof of <a data-href="#^6dbb59" href="https://azalamer.com/UniversityNotes/#^6dbb59" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^6dbb59</a><a data-href="#^6dbb59" href="https://azalamer.com/UniversityNotes/#^6dbb59" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.14.7 ((Gottosen, Knill) Simulating Clifford Gates is in )</a>. <br>Exercise (AT HOME:  Try and prove this, or at least read the proof).<br>□]]></description><link>https://azalamer.com/UniversityNotes/school/qis/notes/1.14-computing-with-quantum-states.html</link><guid isPermaLink="false">School/QIS/Notes/1.14 Computing with Quantum States.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 28 Oct 2024 19:39:28 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibn2cowqktznykwjqkikcumsu9h9oraajgrjebovp5ra4ujxjbmw3oaqadagadeqadngq.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibn2cowqktznykwjqkikcumsu9h9oraajgrjebovp5ra4ujxjbmw3oaqadagadeqadngq.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Today we worked out the math for the spherical harmonics, which is critical to understanding the behavior of an electron in the hydrogen atom.<br><br><br>Test is 8am to 8pm<br>
+Started discussing orbital angular momentum, with the particle on a sphere and it's classical energy levels.<br><br>Where the moment of inertia for a particle on a sphere, is<br><br>and  is the angular momentum. Last time, we showed that <br><br>it satisfies the algebra of generators of rotation<br>
+Additionally, we have the same properties of <a data-href="1.10 Harmonic Oscillation#^dbc3f4" href="https://azalamer.com/UniversityNotes/1.10 Harmonic Oscillation#^dbc3f4" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.10 Harmonic Oscillation &gt; ^dbc3f4</a><a data-href="1.10 Harmonic Oscillation#^dbc3f4" href="https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.10-harmonic-oscillation.html#^dbc3f4" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.10 Harmonic Oscillation &gt; Definition 1.10.2 (Raising and Lowering Operator)</a> <br><br>On a sphere, it's just more appropriate to use spherical coordinates since we're not masochists<br><br>Now for our energies<br><br>Where<br><br>Notice that every energy level has a degeneracy, for now accept we can't have <br>For our ground state, from <a data-href="#^raisingRotation" href="https://azalamer.com/UniversityNotes/#^raisingRotation" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^raisingRotation</a><a data-href="#^raisingRotation" href="https://azalamer.com/UniversityNotes/#^raisingRotation" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(2.6.1)</a> we now get the energies<br><br>For each energy state that there are increasing degenerate states. The particle has increasing superpositions.<br>
+The probability of a particle being in any given region on the sphere, like the upper half, is non-zero but isn't always .<br>Every time you have a degeneracy, there is a symmetry going on<br>Let's say we had the state<br><br>and we want the probability in the northern hemisphere.<br>
+We want to find the probability of finding  at a given <br><br>^probabilitiIntegral<br>
+In this case, we know that  is just composed of . What we want to find out is the spherical harmonics in this case.<br>Definition (Spherical Harmonics).
+For a given spherically confined state, in terms of , the spherical harmonics are denoted as
+
+Those harmonics can be expressed in terms of  as
+
+<br>When we talk about the eigenstate of a position in , we're talking about generally<br><br>Then the same is true on a sphere, but we also know that the radial direction is frozen<br><br>If we were then to rotate along the  axis by  through , this rotation implies an operation on the state.<br><br> Spherical coordinates really shine here.<br>
+Proof.@ <a data-href="#^3398f1" href="https://azalamer.com/UniversityNotes/#^3398f1" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^3398f1</a><a data-href="#^3398f1" href="https://azalamer.com/UniversityNotes/#^3398f1" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 2.6.1 (Spherical Harmonics)</a> <br>To get our harmonics, we're going to do an infinitesimal rotation  on   using <a data-href="#^rotationSphericalRelation" href="https://azalamer.com/UniversityNotes/#^rotationSphericalRelation" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^rotationSphericalRelation</a><a data-href="#^rotationSphericalRelation" href="https://azalamer.com/UniversityNotes/#^rotationSphericalRelation" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(2.6.2)</a><br><br>Now combining the two equivalencies for the spherical harmonics<br><br>But how do we find  in <a data-href="#^sphericalHarmonicEquation" href="https://azalamer.com/UniversityNotes/#^sphericalHarmonicEquation" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^sphericalHarmonicEquation</a><a data-href="#^sphericalHarmonicEquation" href="https://azalamer.com/UniversityNotes/#^sphericalHarmonicEquation" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(2.6.3)</a>?<br>Let's go back to <a data-href="#^raisingRotation" href="https://azalamer.com/UniversityNotes/#^raisingRotation" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^raisingRotation</a><a data-href="#^raisingRotation" href="https://azalamer.com/UniversityNotes/#^raisingRotation" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(2.6.1)</a>, we can apply the raising or lowering operators to the following states, and they return zero<br><br>Defined in cartesian coordinates, there are the following definitions of the angular momentum in terms of cartesian coordinates and their momenta.<br><br>Now converting to spherical<br>Exercise (AT HOME: Derive the below using the spherical transformation).
+Just change of coordinates
+<br><br>Wait till trump gets to be president, theres going to be a lot of issues like that*
+that being writing  in one country, and  in another, both meaning cotangent.
+<br>Now we're going back to our expected value of the raising operator, and substituting in <a data-href="#^sphericalHarmonicEquation" href="https://azalamer.com/UniversityNotes/#^sphericalHarmonicEquation" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^sphericalHarmonicEquation</a><a data-href="#^sphericalHarmonicEquation" href="https://azalamer.com/UniversityNotes/#^sphericalHarmonicEquation" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(2.6.3)</a> <br><br>Finally, we find that the spherical harmonics are <br><br><br>Exercise (AT HOME: Repeat <a data-href="#^derivationForHarmonic" href="https://azalamer.com/UniversityNotes/#^derivationForHarmonic" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^derivationForHarmonic</a><a data-href="#^derivationForHarmonic" href="https://azalamer.com/UniversityNotes/#^derivationForHarmonic" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(2.6.4)</a> for ).<br>Repeating the derivative an  number of times allows you to get to any m, not just . We're bounded on the number of possible harmonics we are able to occupy at all, over the range of <br><br>□<br>In case you're ever being tortured, manually calculate the 's in your head. Dedissociate from the situation<br>Now let's take the state , and we want to know the probability of being in the lower hemisphere?<br><br>Why is the differential , and not just  ?
+There is a jacobian!
+
+Then 
+<br>Continuing on using <a data-href="#^mequalsL" href="https://azalamer.com/UniversityNotes/#^mequalsL" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^mequalsL</a><a data-href="#^mequalsL" href="https://azalamer.com/UniversityNotes/#^mequalsL" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(2.6.5)</a><br><br>Key assumption, to prove at a later date,<br><br><br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/quantum-1/notes/2.6-spherical-harmoics.html</link><guid isPermaLink="false">School/Quantum 1/Notes/2.6 Spherical Harmoics.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 31 Oct 2024 15:41:36 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibr2cjloidswsjmodntkrsux1dxfxeaaj4stebojigrdy90btnbzbraqadagadeqadngq.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibr2cjloidswsjmodntkrsux1dxfxeaaj4stebojigrdy90btnbzbraqadagadeqadngq.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>See Green Journal <br>]]></description><link>https://azalamer.com/UniversityNotes/school/quantum-1/notes/2.5.html</link><guid isPermaLink="false">School/Quantum 1/Notes/2.5.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 31 Oct 2024 14:32:21 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Note that 1.5 can be found in the purple journal, including the Schrödinger Equation Derivation.<br><br><br>Going from one state to another<br><br>This unitary preserves probability<br><br>We can realize just by looking at this that<br><br>Unitarity is time-reversible, so if we know a Unitary, we can reverse to get the Quantum state<br>
+Proof. Derivation of the Schrödinger Equation<br><br>Also<br><br>And<br><br><br>Where  is the generator of time translation<br>Definition (Hamiltonian).
+The Hamiltonian (denoted  in the Schrödinger Equation) is the Generator of time translations in a quantum system. It has units of Energy, so it's eigenvalues are energy states of a system.<br>
+Most commonly it is denoted as
+
+for a particle in a potential <br>
+
+<br>Evolving on a random system over time has the below derivation<br><br>From before, we know that  is the <a data-href="#^ba33b7" href="https://azalamer.com/UniversityNotes/#^ba33b7" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^ba33b7</a><a data-href="#^ba33b7" href="https://azalamer.com/UniversityNotes/#^ba33b7" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.6.2 (Schrödinger Equation)</a> <br>so <br><br>Now we divide by , and take the limit<br><br>□<br>Definition (Schrödinger Equation).
+
+Also written as 
+
+The only condition you need to solve this equation, is 
 
 
+Where  is a Unitary,  is the identity, and  is the hamiltonian of the Hamiltonian<br>
+
+<br>Now we want to define the equation for the time evolution<br><br>Where the initial state is <br><br><br>Example (What are the energies of the  system).
+
+<br>In the above derivation, remember that in the notation<br><br>Above are the energies for the  spin system. In general, a state in that system at a given time, can be written<br><br>You can notice that the eigenvectors here are just energy eigenstates<br><br><br>This is just another system of define a wave-function, but now in terms of it's possible energy states.<br>
+This then reduces to<br><br>where  is just the eigenvalue.<br>Now we're going to multiply the left by <br><br>This is just a first-order differential equation!<br><br>Because it's a first order equation, one solution is linearly identical to all solutions<br><br>This means that for any given system, if we know the Hamiltonian , the spectrum of the hamiltonian, the eigen-system, and then an initial state, we know how the system evolves over time.<br>
+The easiest way to solve the <a data-href="#^ba33b7" href="https://azalamer.com/UniversityNotes/#^ba33b7" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^ba33b7</a><a data-href="#^ba33b7" href="https://azalamer.com/UniversityNotes/#^ba33b7" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.6.2 (Schrödinger Equation)</a> , is if we know the eigenstates of the <a data-href="#^d06020" href="https://azalamer.com/UniversityNotes/#^d06020" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^d06020</a><a data-href="#^d06020" href="https://azalamer.com/UniversityNotes/#^d06020" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.6.1 (Hamiltonian)</a> <br>What you cannot do, is change the relative weights of the constants freely, because there are relative phases between them. 
+The only thing you can change, is the global phase of the state
+<br>Definition (Stationary State).
+Any state which is stationary through being first order, and follows the below behavior
+
+<br><br>Let's take the below initial state<br>Example ( Given , and the spectrum of the Hamiltonian what is the probability of ending up at  again over time? ).
+
+<br><br>Definition 1.2.5 ( represented in the  basis).
+
+<br>
+First we need to convert to an energy state in the correct basis
 
 
+Ask 
+
+What is the probability we land on  again over time?
+
+Now we want the probability of that, so the absolute value squared
+
+<br>import matplotlib.pyplot as plt
+t = np.linspace(0,4*np.pi,200)
+plt.plot(t,np.cos(t)**2)
+plt.axhline(y=1,linestyle = '--',color = 'r')
+plt.tick_params(axis='x', which='both', labelbottom=False)
+plt.axvline(x=np.pi/2,linestyle = '--',color = 'r')
+plt.grid()
+plt.show()
+CopyRun<br>
+<img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240917103717.png">
+<br>We land on the x-axis at  multiples of . The red-dashes above denote when we are in the state.<br>The neutrino eigenstates inside the sun, aren't the same as the neutrino eigenstates outside the sun. The state produced by the nuclear reactions, oscillates between two corresponding states.<br><br>Solving a Two state system, . We don't know what the observable is. Imagine we don't know the spectrum of the Hamiltonian<br>
+<br><br>Exercise 1.7.1 (Find the energy states of a system given the below Hamiltonian, with states ).
+
+^problem<br>
+Now we don't know the eigenstates of the system, and even less so the Hamiltonian evolves over time with an oscillating time-dependent component.
+First assume two things
+
+Both can just be changed with convention if a contradiction comes up, with  it's just by flipping them, and with , you wrap the phase into the exponential.
+We want to ask the same as before
+
+
+ are energies because dimensions must match,  is frequency.  is an energy<br>
+This is a ton of energy values, and depending on their magnitude, the system will be crazy over time.<br>
+One thing that can happen, is resonance.<br>
+We have to solve the differential equation from the Schrödinger Equation<br>
+<a data-href="1.6 Working with the Schrödinger Equation#^ba33b7" href="https://azalamer.com/UniversityNotes/1.6 Working with the Schrödinger Equation#^ba33b7" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.6 Working with the Schrödinger Equation &gt; ^ba33b7</a><a data-href="1.6 Working with the Schrödinger Equation#^ba33b7" href="https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.6-working-with-the-schrödinger-equation.html#^ba33b7" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.6 Working with the Schrödinger Equation &gt; Definition 1.6.2 (Schrödinger Equation)</a><br>
+
+ ]]></description><link>https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.6-working-with-the-schrödinger-equation.html</link><guid isPermaLink="false">School/Quantum 1/Notes/1.6 Working with the Schrödinger Equation.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sun, 27 Oct 2024 22:02:42 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240917103717.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240917103717.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>More work on mathematically describing the Stern-Gerlach Experiment, now using spin operators!<br><br>Last time we introduced <br><br>In the sense that they provide the same quantity of information but with a transformation.<br>
+Additionally, we showed<br><br><br>For now, we're only assuming pure states<br>
+Given the below eigenvalue problem<br><br>We make the following assumptions<br><br>Definition (Kronecker Delta Function).
+The kronecker delta function is defined, by the below statement
+
+More specifically, the area over the infinitesimal region at  is 1. The kronecker delta function is the derivative of the step function<br>
+
+<br>In our current case, the usage of the Kronecker delta is only used because the vectors are either the same , or they are <a data-tooltip-position="top" aria-label="../../Freshman Year/Linear Algebra/6.3 Orthogonal and Orthonormal Spaces > ^a83314" data-href="../../Freshman Year/Linear Algebra/6.3 Orthogonal and Orthonormal Spaces#^a83314" href="https://azalamer.com/UniversityNotes/Freshman Year/Linear Algebra/6.3 Orthogonal and Orthonormal Spaces#^a83314" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">orthogonal</a><a data-tooltip-position="top" aria-label="../../Freshman Year/Linear Algebra/6.3 Orthogonal and Orthonormal Spaces > ^a83314" data-href="../../Freshman Year/Linear Algebra/6.3 Orthogonal and Orthonormal Spaces#^a83314" href="https://azalamer.com/UniversityNotes/school/freshman-year/linear-algebra/6.3-orthogonal-and-orthonormal-spaces.html#^a83314" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">orthogonal</a> <br>
+<br><br>Definition 3.3.1 (Born Rule for Mixed States).
+The measurement outcomes are just a sum of other probabilities. Write out the sum<br>
+Then expand by the definition of the magnitude operations on a vector.
+
+ is constant through the sum, and  is a scalar so it is communative. Factor out  and put  further inside
+
+<br>
+Above is Born's rule, which defines the probability of an event offering in terms of the inner product of an eigenvector with itself.<br>Any vector in the Hilbert space can be written as a linear combination of the basis-vectors.<br><br>Using the Kronecker delta definition from earlier, we get<br><br>There is only one case when , which is , so <br><br>Below then, is our completeness statement<br><br>The sum of all the outer products of the eigenstate of the observables<br>
+with themselves, is the identity matrix.<br>
+<br>This effectively means that all the eigenvectors of a quantum state, spans a Hilbert space<br>
+<br><br>Theorem 3.3.1 (Pauli Matrices and Density Matrix).
+Any pure/mixed state can be written in terms of <a data-tooltip-position="top" aria-label="../Definitions/Pauli Matrices" data-href="../Definitions/Pauli Matrices" href="https://azalamer.com/UniversityNotes/Definitions/Pauli Matrices" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Pauli Matrices</a><a data-tooltip-position="top" aria-label="../Definitions/Pauli Matrices" data-href="../Definitions/Pauli Matrices" href="https://azalamer.com/UniversityNotes/Definitions/Pauli Matrices" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Pauli Matrices</a>. This is just like our previous basis
 
  
-<br>Coming from last time, let's say Alice measures some  qubits, bob measures them, etc. It's just BB84<br>
-How can we prove the "No Communication Theorem"<br><br>But then how can Bob work out what circuit to use to send this? Well Bob can just use a <br>The reason why this can be so useful, is that the density of your communication per packet, is doubled. Even if the number of bits to qubits is the same for fixed information, you can get it there at twice the speed<br>“This isn’t useful, but it’s kind of interesting in that, well it proves a point😁”
--Aaronson
-<br>Alice: :<br>
-If x - 1, apply <br>
-if y=1, apply <br>
-From this binary coding,<br>
-The input bell state maps to <br>]]></description><link>https://azalamer.com/UniversityNotes/school/qis/notes/1.8,1.9-superdense-coding-and-qkd.html</link><guid isPermaLink="false">School/QIS/Notes/1.8,1.9 Superdense Coding and QKD.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 23 Oct 2024 20:43:59 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240919145142.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240919145142.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+<br>Is this at all related? 
+I know that the density matrix is a linear combination of rotations toward identity? is ?
+<br><br><br><br>Definition 1.1.1 (Stern-Gerlach Experiment).
+
+
+Assume you have a medium heated up, filled with dipoles. Their magnitude is fixed with heating. The dipoles have magnetic moment  and the large dipole has magnitude . . We're also going to make this field modellable as only changing along the Z direction, so <br>
+Because we're only having a changing field on the  direction, the energy is
+
+The issue that comes in for , is that the magnitude of  can orient in any range of directions classically.<br>
+We don't see this, we see two distinct points on the screen instead.  on each point.
+
+<br><br>Definition (Spin).
+
+Where  is the elementary charge. 
+
+Spin is measured through angular momentum<br>
+
+<br>
+<br>In reference to how this exists physically
+<br>"Why do I do this? None of your business"
+Fischler in reference to why he defined spin this way
+<br>Proof of <a data-tooltip-position="top" aria-label="^8ac0da" data-href="#^8ac0da" href="https://azalamer.com/UniversityNotes/#^8ac0da" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">the unit of spin</a><a data-tooltip-position="top" aria-label="^8ac0da" data-href="#^8ac0da" href="https://azalamer.com/UniversityNotes/#^8ac0da" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">the unit of spin</a>.<br>
+How do we get the units of spin for our experiment? In the Stern Gerlach, we only care about the z-component. So we rewrite to<br><br>From our formula of a moving charge in a magnetic field, we can calculate  as <br><br>We then substitute these units into the above expression, to get<br><br>Therefore, spin has the units of angular momentum<br>
+□<br>From the experiment it tells us that<br><br>Because both sides must be identical,  has to have angular momentum <br>Theorem ().
+
+Which has units of , 
+<br>
+<br>Angular momentum has units of Energy*time, so the above means that planks constant measures angular momentum
+<br><br>Imagine we're back at the experiment, and at the beam deflecting up or down, we put an orthogonal magnetic field afterward. <br><br><br>We then write  as<br><br>The state written in the  state, is a combination of the states of the  observable. But what are the values of <br>
+Substituting in our expression for  to the measured identity, we get<br><br>We know that  is orthogonal to , so it's inner product is zero<br><br>Now we do the same with , to get the same thing<br><br>We add the complex component to represent some unknown phase which transformed the vectors.<br><br>For notation purposes, we're just redefining  to throw out the complex phase for <br><br>The same steps get repeated, in the same fashion for  to get us the pair of states. Note that we have to prove the  identity later for the phase, since  only loops in <br><br>For notation now, we're going to redefine  to include that constant   <br>Are  still orthogonal if we wrap that phase in?
+Yep! See the below diagram
+
+Keep in mind that we've rotated in a complex component, but it's still orthogonal. To a vector in multiple spaces, there is a whole plane which is orthogonal. Redefning  just rotates it to a new position on that plane<br>
+
+<br>for the two outcomes to Stern-Gerlach.<br>
+If we repeat the same beam-splitter but with the <a data-tooltip-position="top" aria-label="../../Quantum Computing/Definitions/Quantum Gates" data-href="../../Quantum Computing/Definitions/Quantum Gates" href="https://azalamer.com/UniversityNotes/Quantum Computing/Definitions/Quantum Gates" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">$Y$ observable</a><a data-tooltip-position="top" aria-label="../../Quantum Computing/Definitions/Quantum Gates" data-href="../../Quantum Computing/Definitions/Quantum Gates" href="https://azalamer.com/UniversityNotes/school/quantum-computing/definitions/quantum-gates.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow"> observable</a>.<br><br>This is true due to the completeness of the spaces. <br>If it is an appropriate analogy to compare this to polarized, light, there is. an observable where all of  goes one direction, and none the other? What's the observable for this?
+I think given the implied orientation of the experiment, it would be the  observable, as the charge would move parallel to the magnetic field lines. Because we can represent this as a pure state, we know that there is an observable where it is an eigenvector.
+<br><br>Now the question is, how can we gather more information from this system?<br><br>How do we find ? Well we know that <br><br>Still though, how do we find the phases ?<br>
+We know that <br><br>From here, we're going to use the fact that any phasor times it's complex conjugate, should be zero<br>Why is a phasor*complexconj = 0?<br><br>This gives us the phase associated with the  observable!<br><br>From here, we can define <br><br>Now we're going to redefine  to wrap in the main complex phase! This is technically making a new vector, but it's okay because of <a data-tooltip-position="top" aria-label="^385fe5" data-href="#^385fe5" href="https://azalamer.com/UniversityNotes/#^385fe5" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">the answer to our phase question</a><a data-tooltip-position="top" aria-label="^385fe5" data-href="#^385fe5" href="https://azalamer.com/UniversityNotes/#^385fe5" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">the answer to our phase question</a>.<br><br>How to do the same for ?<br>Exercise (AT HOME Perform the same process for ).<br>Definition ( represented in the  basis).
+
+]]></description><link>https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.2-stern-gerlach-and-dirac-notation-cont..html</link><guid isPermaLink="false">School/Quantum 1/Notes/1.2 Stern Gerlach and Dirac Notation cont..md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 30 Oct 2024 04:04:10 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/stern-gerlach-diagram.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/stern-gerlach-diagram.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Notes]]></title><description><![CDATA[ 
+ <br>,,,,# Overview<br><br>Let's now try to study the little oscillation along some arbitrary potential's minimum<br><br><br><br>Odd order terms fall out, because we're at a minimum.<br>
+This is just a harmonic oscillator!<br><br>The substitutions made here are just basic mechanics, we're describing the potential in terms of it's local taylor series.<br>Solving that differential equation, we get the form<br><br>The potential we're talking about here is a quadratic approximation of the image, so what is happening quantum-mechanically?<br>Well we need to repeat what we did in <a data-href="1.9 Boundary Conditions in Free Space#Particle In the Box" href="https://azalamer.com/UniversityNotes/1.9 Boundary Conditions in Free Space#Particle In the Box" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.9 Boundary Conditions in Free Space &gt; Particle In the Box</a><a data-href="1.9 Boundary Conditions in Free Space#Particle In the Box" href="https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.9-boundary-conditions-in-free-space.html#Particle_In_the_Box" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.9 Boundary Conditions in Free Space &gt; Particle In the Box</a><br><br>We then solve this differential equation <br><br>As an important note, remember that our second derivative came from the momentum from <a data-href="1.9 Boundary Conditions in Free Space#^momentumExponential" href="https://azalamer.com/UniversityNotes/1.9 Boundary Conditions in Free Space#^momentumExponential" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.9 Boundary Conditions in Free Space &gt; ^momentumExponential</a><a data-href="1.9 Boundary Conditions in Free Space#^momentumExponential" href="https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.9-boundary-conditions-in-free-space.html#^momentumExponential" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.9 Boundary Conditions in Free Space &gt; ^momentumExponential</a>, and that we define our wave-function as  <br><br><br>Theorem (Distributive Property of Commutators).
+Given operators  on the same Hilbert space,
+
+The proof is something that can be done via simple expansion
+<br>Given an operator , and that ,<br><br>Find the spectrum of .<br>
+Is this an observable?<br><br>Because we know this is an observable, we know that the eigenvalues are real!<br><br>This means that <br><br>Now let's learn more about  <br>Using <a data-href="#^27bc24" href="https://azalamer.com/UniversityNotes/#^27bc24" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^27bc24</a><a data-href="#^27bc24" href="https://azalamer.com/UniversityNotes/#^27bc24" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.10.1 (Distributive Property of Commutators)</a> <br><br>How did you simplify in that last step?<br><br>Now let's try and figure out what  is when<br><br>What this is, is the lowering and raising operators.  raises the eigenvalue of  by one,  drops it by one. <br>Definition (Raising and Lowering Operator).
+The raising () and lowering operator  are defined such that given some operator , with eigenstate , the raising operator when applied to  increases the eigenvalue by one on the resultant operator<br>
+Below is the definition of any state  defined in the context of raising and lowering
+
+<br>Here's an issue, we can keep recursively applying  while preserving the original criteria of the setup, but that will keep dropping our eigenvalue. At some point, the eigenvalue will become negative. This violates <a data-href="#^alphaIsPositive" href="https://azalamer.com/UniversityNotes/#^alphaIsPositive" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^alphaIsPositive</a><a data-href="#^alphaIsPositive" href="https://azalamer.com/UniversityNotes/#^alphaIsPositive" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.10.3)</a> <br>Exercise (Prove that you can recursivley apply the lowering and raising operators, while preserving the setup).<br>To resolve the contradction, this tells us that there exists some , such that<br><br>Then <br><br>This is how our floor works. There must exist a zero state which can't be lowered through<br>
+When we use our raising operator<br><br>This means, not only is  positive, but <br><br>Thusly<br><br>where <br><br>Now we wanna see what happens to the norm of  when the raising operator is applied. NOTE that  is just the scalar we are increased by<br><br>Then we finally get the below for the normalized state.<br><br>It is normally understood, that when denoting a raised state, it is normalized. Any state can then be defined as<br><br><br><br>The  and  operator is a linear combination of the raising and lowering operator.<br>Why is this true<br>Definition (Position and Momentum Operator in Terms of the Raising and Lowering Operators).
+
+Where
+
+<br>We know from last time that <a data-href="1.9 Boundary Conditions in Free Space#^commutationOfPositionandMomentum" href="https://azalamer.com/UniversityNotes/1.9 Boundary Conditions in Free Space#^commutationOfPositionandMomentum" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.9 Boundary Conditions in Free Space &gt; ^commutationOfPositionandMomentum</a><a data-href="1.9 Boundary Conditions in Free Space#^commutationOfPositionandMomentum" href="https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.9-boundary-conditions-in-free-space.html#^commutationOfPositionandMomentum" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.9 Boundary Conditions in Free Space &gt; (1.9.2)</a> that the commutation of these two operator definitions, should be <br>
+The gameplan, is that we plug these expressions for  into <a data-href="#^secondOrderHarmonicDiffeq" href="https://azalamer.com/UniversityNotes/#^secondOrderHarmonicDiffeq" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^secondOrderHarmonicDiffeq</a><a data-href="#^secondOrderHarmonicDiffeq" href="https://azalamer.com/UniversityNotes/#^secondOrderHarmonicDiffeq" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.10.2)</a> ]]></description><link>https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.10-harmonic-oscillation.html</link><guid isPermaLink="false">School/Quantum 1/Notes/1.10 Harmonic Oscillation.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sun, 27 Oct 2024 21:15:15 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibj2b-sszoff9sygsz5nr2l472jbn_aakbrtebqphwr3j8-sghexagaqadagadeqadngq.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibj2b-sszoff9sygsz5nr2l472jbn_aakbrtebqphwr3j8-sghexagaqadagadeqadngq.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2.6 Spherical Harmoics 2024-10-31 10.40.03]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/2.6-spherical-harmoics-2024-10-31-10.40.03.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/2.6 Spherical Harmoics 2024-10-31 10.40.03.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 31 Oct 2024 15:40:49 GMT</pubDate></item><item><title><![CDATA[Session 28 2024-10-29 18.12.43]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-28-2024-10-29-18.12.43.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 28 2024-10-29 18.12.43.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 29 Oct 2024 23:35:59 GMT</pubDate></item><item><title><![CDATA[Session 28 2024-10-29 18.52.51]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-28-2024-10-29-18.52.51.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 28 2024-10-29 18.52.51.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 29 Oct 2024 23:53:41 GMT</pubDate></item><item><title><![CDATA[Session 28 2024-10-29 17.51.29]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-28-2024-10-29-17.51.29.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 28 2024-10-29 17.51.29.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 29 Oct 2024 23:09:26 GMT</pubDate></item><item><title><![CDATA[Session 28 2024-10-29 17.41.48]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  The ability to make something move]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-28-2024-10-29-17.41.48.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 28 2024-10-29 17.41.48.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 29 Oct 2024 22:51:15 GMT</pubDate></item><item><title><![CDATA[2.2 Bernstein-Vazirani 2024-10-29 14.25.16]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  HHHH.........]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/2.2-bernstein-vazirani-2024-10-29-14.25.16.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/2.2 Bernstein-Vazirani 2024-10-29 14.25.16.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 29 Oct 2024 19:26:57 GMT</pubDate></item><item><title><![CDATA[2.2 Bernstein-Vazirani 2024-10-29 14.24.53]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/2.2-bernstein-vazirani-2024-10-29-14.24.53.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/2.2 Bernstein-Vazirani 2024-10-29 14.24.53.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 29 Oct 2024 19:25:14 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>Went through the more theorems on Universal Gate sets, and the different types of circuit complexity. <br><br><br> = Minimal number of gates from  required to approx.  to  <br>
 <br><br>Definition 1.14.3 ((Approximate) Universal Gate Set).
  A finite gate set  is approximately universal if for any , there exists  such that
@@ -137,60 +472,7 @@ We change a gate based on a condition
 Anj oracle which takes an input, and returns it's output in the phase of the qubit
 
 <br>We're going to prove in a later day, that Phase Oracle's are XOR Oracles.<br>
-Rossalier Algorithm for Unitary Synthesis is a tool that tries to beat <a data-href="#^83c502" href="https://azalamer.com/UniversityNotes/#^83c502" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^83c502</a><a data-href="#^83c502" href="https://azalamer.com/UniversityNotes/#^83c502" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.15.1 ((Soloway-Kitaev) Arbitrary Unitary Algorithmic Complexity)</a>, it has a terminal interface.<br>THIS ALL IGNORES ERROR, WE ASSUME PERFECT GATES]]></description><link>https://azalamer.com/UniversityNotes/school/qis/notes/1.15-more-on-universal-gate-sets.html</link><guid isPermaLink="false">School/QIS/Notes/1.15 More on Universal Gate Sets.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 24 Oct 2024 19:42:52 GMT</pubDate></item><item><title><![CDATA[Notes]]></title><description><![CDATA[ 
- <br>But# Overview<br><br>"Scott's travelling this week, sort of saving the world from AI, so I'm taking over"
-- Nick Hunter Jones
-<br>Feynman was the first guy to bring this up:<br>Say you wanted to simulate a quantum system, we know that <br><br>If I want to simulate this classically, I have to keep track of a lot of numbers. There's  's for n-qubit state. Pretty soon this scales up to the size of the observable universe.<br>
-If I wanted to simulate 260 qubits, then it's , which is the number of atoms in the universe.<br>"If you want to simulate a quantum system, you should probably just use a quantum system."<br>The question, is can we then use a quantum system, to simulate a classical problem<br><br>Even if I can construct a quantum state where<br><br>This just collapses to a single output, since we have to make a measurement.<br>
-Our only hope is to "choreograph an interference pattern".  <br><br>
-<br>Just a a note,  is just some arbitrarily small coefficient. Can be polynomial or wtv.<br>
-You want a way to make your incorrect answers have a very low probability, while your good solutions have a high one.
-<br><br>But how do we build these unitaries? The key thing, is that these unitaries encode the program.<br>
-We want to use k-level gates , things like 1 qubit gates or 2 qubit gates. This is just more practical cause it's easier to act on a few qubits at once, plus it's just modular.<br>
-<br> is the space complexity, which is the number of qubits, similar to the number of bits
-<br> is the number of gates in the circuit, or the depth
-<br>How do we know it's possible to build n-qubit unitaries out of lower qubit gates?
-What a great segway azal 💀, that's next!
-<br><br><br>The fundamental question is, are there a set of gates which can be used to compose any ?<br>
-<br>The analogous classical picture is building up any boolean function from  
-<br>THIS makes sense from <a data-tooltip-position="top" aria-label="../../Miscillaneous/Tidbit Facts/Cook-Levin Theorem" data-href="../../Miscillaneous/Tidbit Facts/Cook-Levin Theorem" href="https://azalamer.com/UniversityNotes/Miscillaneous/Tidbit Facts/Cook-Levin Theorem" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Cook-Levin Theorem</a><a data-tooltip-position="top" aria-label="../../Miscillaneous/Tidbit Facts/Cook-Levin Theorem" data-href="../../Miscillaneous/Tidbit Facts/Cook-Levin Theorem" href="https://azalamer.com/UniversityNotes/school/miscillaneous/tidbit-facts/cook-levin-theorem.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Cook-Levin Theorem</a>, cause any algorithm maps to a boolean one, which then is represented with a series of gates. So then a SAT solver would eject solutions to an arbitrary algorithm.
-<br>What then is our fundamental set for quantum?<br><br> is our gate set.  is the cardinality of the set.<br>For some gate set  to be universal, our arbitrary n-qubit unitary must be able to be implemented through any qubits  <br>Definition (Exact Universality).
-A gate set  has exact universality, when any  unitary  on a qubit of size , can be produced by tensoring gates in the set together. 
-
-<br>Theorem (The Standard Gate Set is Universal).
-The gate set defined as . Note that  must be continuous, so since the cardinalities of the set must match, the set  must also be continuous. 
-<br>
-<br>Can find this in Nielsen and Chuang Quantum Computation and Quantum Information
-<br>The issue with Exact Universality, is that it can be really difficult to construct every possible transformation on a qubit, while in a lab.<br>Can we find a universal gate set, which is approximately universal? <br><br>Definition ((Approximate) Universal Gate Set).
- A finite gate set  is approximately universal if for any , there exists  such that
-
-For a smaller , you'd just apply more gates from the set arbitrarily.<br>
-Where
-
-That is to say, the error is smaller than our resolution of measurement.<br>
-Shatton Infinity Norm, or the biggest eigenvalue in the operator.<br>
-An example can be found in <a data-href="#^9dfc33" href="https://azalamer.com/UniversityNotes/#^9dfc33" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^9dfc33</a><a data-href="#^9dfc33" href="https://azalamer.com/UniversityNotes/#^9dfc33" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.14.4 (Clifford + T Gate set)</a><br>
-
-<br>One possible such set is<br><br>Which is called the Clifford +T<br>Definition (Clifford + T Gate set).
-
-This is an example of <a data-href="#^c11659" href="https://azalamer.com/UniversityNotes/#^c11659" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^c11659</a><a data-href="#^c11659" href="https://azalamer.com/UniversityNotes/#^c11659" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.14.3 ((Approximate) Universal Gate Set)</a><br>
-
-<br>Definition (Clifford Gates and Clifford Group).
-The set of all unitaries generated by <br>
-All possible combinations of elements in the set, form the Clifford Group.<br>
-This is NOT universal.<br>
-
-<br>"This is because the rationals are dense in the reals, you can approximate any rational number"
-- <a data-tooltip-position="top" aria-label="../../../Personal/People/Aravind Karthigeyan" data-href="../../../Personal/People/Aravind Karthigeyan" href="https://azalamer.com/UniversityNotes/Personal/People/Aravind Karthigeyan" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Aravind</a><a data-tooltip-position="top" aria-label="../../../Personal/People/Aravind Karthigeyan" data-href="../../../Personal/People/Aravind Karthigeyan" href="https://azalamer.com/UniversityNotes/personal/people/aravind-karthigeyan.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Aravind</a>
-<br>Another (approximately) universal gate set<br><br>What is the  that defines this?<br>Non universal gate sets<br><br>Note that  is just rotation matrices, but it's a weaker version of universality called <a data-href="#^a54159" href="https://azalamer.com/UniversityNotes/#^a54159" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^a54159</a><a data-href="#^a54159" href="https://azalamer.com/UniversityNotes/#^a54159" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.14.6 (Encoded Universal)</a> <br>Definition (Encoded Universal).
-Any given gate set , s.t you can simulate an arbitrary  qubit computation, with ancillas<br>
-
-<br><br>What allows <a data-href="#^toffoliGates" href="https://azalamer.com/UniversityNotes/#^toffoliGates" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^toffoliGates</a><a data-href="#^toffoliGates" href="https://azalamer.com/UniversityNotes/#^toffoliGates" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.14.1)</a>  to be universal, while <a data-href="#^dac7b9" href="https://azalamer.com/UniversityNotes/#^dac7b9" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^dac7b9</a><a data-href="#^dac7b9" href="https://azalamer.com/UniversityNotes/#^dac7b9" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.14.5 (Clifford Gates and Clifford Group)</a> isn't? The only difference is that you can control on an additional bit?
-It's not uniquely obvious in the math, esp with the computational basis. It's one of those things you'll need to grind math out for.
-<br>Theorem ((Gottosen, Knill) Simulating Clifford Gates is in ).
-Any quantum circuit made from <a data-href="#^dac7b9" href="https://azalamer.com/UniversityNotes/#^dac7b9" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^dac7b9</a><a data-href="#^dac7b9" href="https://azalamer.com/UniversityNotes/#^dac7b9" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.14.5 (Clifford Gates and Clifford Group)</a> , is classically simulatable in <br>
-
-<br>Proof of <a data-href="#^6dbb59" href="https://azalamer.com/UniversityNotes/#^6dbb59" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^6dbb59</a><a data-href="#^6dbb59" href="https://azalamer.com/UniversityNotes/#^6dbb59" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.14.7 ((Gottosen, Knill) Simulating Clifford Gates is in )</a>. <br>Exercise (AT HOME:  Try and prove this, or at least read the proof).<br>□]]></description><link>https://azalamer.com/UniversityNotes/school/qis/notes/1.14-computing-with-quantum-states.html</link><guid isPermaLink="false">School/QIS/Notes/1.14 Computing with Quantum States.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 23 Oct 2024 03:22:41 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibn2cowqktznykwjqkikcumsu9h9oraajgrjebovp5ra4ujxjbmw3oaqadagadeqadngq.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibn2cowqktznykwjqkikcumsu9h9oraajgrjebovp5ra4ujxjbmw3oaqadagadeqadngq.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+Rossalier Algorithm for Unitary Synthesis is a tool that tries to beat <a data-href="#^83c502" href="https://azalamer.com/UniversityNotes/#^83c502" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^83c502</a><a data-href="#^83c502" href="https://azalamer.com/UniversityNotes/#^83c502" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.15.1 ((Soloway-Kitaev) Arbitrary Unitary Algorithmic Complexity)</a>, it has a terminal interface.<br>THIS ALL IGNORES ERROR, WE ASSUME PERFECT GATES]]></description><link>https://azalamer.com/UniversityNotes/school/qis/notes/1.15-more-on-universal-gate-sets.html</link><guid isPermaLink="false">School/QIS/Notes/1.15 More on Universal Gate Sets.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 24 Oct 2024 19:42:52 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br><br>Given some mixed state density matrix, is it possible to find out if it's just Alice's part of a whole shared entangled state?<br>
 This is called purification.<br><br><br>how much entanglement do these two people share this state<br><br>Then<br>]]></description><link>https://azalamer.com/UniversityNotes/school/qis/notes/1.12-information-and-entanglement.html</link><guid isPermaLink="false">School/QIS/Notes/1.12 Information and Entanglement.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 23 Oct 2024 21:55:02 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>Office Hours 10-11am Friday<br><br><br>Pre-shared ebits are like paper. <br>Conceived in 1991.<br>
@@ -343,22 +625,6 @@ We're going to define a term parity. Where you define the operator
     
   
   Point of ScienceCoppenHagenTo predictTo demonstrate the state of the worldIs QM trueDynamical CollapseNoYesIs QM Complete?YesMany Worlds InterpretationNoBohmian, other HVT]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.13-2024-10-10-15.20.06.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.13 2024-10-10 15.20.06.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 23 Oct 2024 23:00:00 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
- <br><br>The goal is parsing different files (no error handling on format), and providing some statistical result based on the file.<br><br>The table below is from the design document, but also detials my personal notes<br><br>To identify who the home  team is, we know that the second and fourth columns contain the playing teams. Below is the column names<br>
-&lt;DATE&gt; &lt;TEAM 1&gt; &lt;TEAM 1 SCORE&gt; &lt;TEAM 2&gt; &lt;TEAM 2 SCORE&gt; &lt;FLAGS&gt; &lt;OPTIONAL INFO&gt;<br>
-<br>If I need to confirm my results, I can probably write this in pandas afterward. Plus this would make fun graphs
-<br>Simply grabbing the second column as the second token, means we can't parse-multi word team names
-To resolve this, I think I can just check if the next token is a string or number primitive.  Then I just process as normal as long as I can keep track of the new column offset in relation to the tokens
-<br>If there is a home team in the game, we know that if there's an @. That is just line based processing.<br>
-The date is also not seeming to be important.<br>The program seems straight forward, so I think I'll just use the exact proposed main format.<br>main(){
-	file = check(output('Whats the filename'))
-	# above checks and reruns until a valid file is given with a while loop
-	printHeader(file)
-	# This just takes the header
-	data = analyse(file)
-	# This runs the analysis, there will be submethods in this, only one more level deep though. Outer and inner for loop
-	log(data)
-}
-CopyRun]]></description><link>https://azalamer.com/UniversityNotes/school/cs-312/notes/homework-assignments/home-field-advantage.html</link><guid isPermaLink="false">School/CS 312/Notes/Homework Assignments/Home Field Advantage.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sun, 20 Oct 2024 19:00:35 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>Covering boundary conditions, and possible energies in continuous free space<br><br><a data-href="1.8 Translation and Momentum#^completenessContinuous" href="https://azalamer.com/UniversityNotes/1.8 Translation and Momentum#^completenessContinuous" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.8 Translation and Momentum &gt; ^completenessContinuous</a><a data-href="1.8 Translation and Momentum#^completenessContinuous" href="https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.8-translation-and-momentum.html#^completenessContinuous" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.8 Translation and Momentum &gt; (1.8.1)</a><br>
 <a data-href="1.8 Translation and Momentum#^cc4d99" href="https://azalamer.com/UniversityNotes/1.8 Translation and Momentum#^cc4d99" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.8 Translation and Momentum &gt; ^cc4d99</a><a data-href="1.8 Translation and Momentum#^cc4d99" href="https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.8-translation-and-momentum.html#^cc4d99" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.8 Translation and Momentum &gt; Definition 1.8.3 (Momentum (Quantum Mechanics))</a> <br>How would we find the position over time, given that <br>
 Well this is just<br><br>
@@ -507,22 +773,7 @@ Now we're back to<br>
 
 Note that the derivation is found in purple journal
 <br>
-We'll prove next time, is<br><br>The ground-state wave-function, is the best you can get in terms of uncertainties. It "saturates" the wave-function. ]]></description><link>https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.11-the-bound-state-problem.html</link><guid isPermaLink="false">School/Quantum 1/Notes/1.11 The Bound State Problem.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sun, 20 Oct 2024 00:31:43 GMT</pubDate></item><item><title><![CDATA[Notes]]></title><description><![CDATA[ 
- <br>,,,,# Overview<br><br>Let's now try to study the little oscillation along some arbitrary potential's minimum<br><br><br><br>Odd order terms fall out, because we're at a minimum.<br>
-This is just a harmonic oscillator!<br><br>The substitutions made here are just basic mechanics, we're describing the potential in terms of it's local taylor series.<br>Solving that differential equation, we get the form<br><br>The potential we're talking about here is a quadratic approximation of the image, so what is happening quantum-mechanically?<br>Well we need to repeat what we did in <a data-href="1.9 Boundary Conditions in Free Space#Particle In the Box" href="https://azalamer.com/UniversityNotes/1.9 Boundary Conditions in Free Space#Particle In the Box" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.9 Boundary Conditions in Free Space &gt; Particle In the Box</a><a data-href="1.9 Boundary Conditions in Free Space#Particle In the Box" href="https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.9-boundary-conditions-in-free-space.html#Particle_In_the_Box" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.9 Boundary Conditions in Free Space &gt; Particle In the Box</a><br><br>We then solve this differential equation <br><br>As an important note, remember that our second derivative came from the momentum from <a data-href="1.9 Boundary Conditions in Free Space#^momentumExponential" href="https://azalamer.com/UniversityNotes/1.9 Boundary Conditions in Free Space#^momentumExponential" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.9 Boundary Conditions in Free Space &gt; ^momentumExponential</a><a data-href="1.9 Boundary Conditions in Free Space#^momentumExponential" href="https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.9-boundary-conditions-in-free-space.html#^momentumExponential" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.9 Boundary Conditions in Free Space &gt; ^momentumExponential</a>, and that we define our wave-function as  <br><br><br>Theorem (Distributive Property of Commutators).
-Given operators  on the same Hilbert space,
-
-The proof is something that can be done via simple expansion
-<br>Given an operator , and that ,<br><br>Find the spectrum of .<br>
-Is this an observable?<br><br>Because we know this is an observable, we know that the eigenvalues are real!<br><br>This means that <br><br>Now let's learn more about  <br>Using <a data-href="#^27bc24" href="https://azalamer.com/UniversityNotes/#^27bc24" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^27bc24</a><a data-href="#^27bc24" href="https://azalamer.com/UniversityNotes/#^27bc24" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.10.1 (Distributive Property of Commutators)</a> <br><br>How did you simplify in that last step?<br><br>Now let's try and figure out what  is when<br><br>What this is, is the lowering and raising operators.  raises the eigenvalue of  by one,  drops it by one. <br>Definition (Raising and Lowering Operator).
-The raising () and lowering operator  are defined such that given some operator , with eigenstate , the raising operator when applied to  increases the eigenvalue by one on the resultant operator
-<br>Here's an issue, we can keep recursively applying  while preserving the original criteria of the setup, but that will keep dropping our eigenvalue. At some point, the eigenvalue will become negative. This violates <a data-href="#^alphaIsPositive" href="https://azalamer.com/UniversityNotes/#^alphaIsPositive" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^alphaIsPositive</a><a data-href="#^alphaIsPositive" href="https://azalamer.com/UniversityNotes/#^alphaIsPositive" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.10.3)</a> <br>Exercise (Prove that you can recursivley apply the lowering and raising operators, while preserving the setup).<br>To resolve the contradction, this tells us that there exists some , such that<br><br>Then <br><br>This is how our floor works. There must exist a zero state which can't be lowered through<br>
-When we use our raising operator<br><br>This means, not only is  positive, but <br><br>Thusly<br><br>where <br><br>Now we wanna see what happens to the norm of  when the raising operator is applied. NOTE that  is just the scalar we are increased by<br><br>Then we finally get the below for the normalized state.<br><br>It is normally understood, that when denoting a raised state, it is normalized. Any state can then be defined as<br><br><br><br>The  and  operator is a linear combination of the raising and lowering operator.<br>Why is this true<br>Definition (Position and Momentum Operator in Terms of the Raising and Lowering Operators).
-
-Where
-
-<br>We know from last time that <a data-href="1.9 Boundary Conditions in Free Space#^commutationOfPositionandMomentum" href="https://azalamer.com/UniversityNotes/1.9 Boundary Conditions in Free Space#^commutationOfPositionandMomentum" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.9 Boundary Conditions in Free Space &gt; ^commutationOfPositionandMomentum</a><a data-href="1.9 Boundary Conditions in Free Space#^commutationOfPositionandMomentum" href="https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.9-boundary-conditions-in-free-space.html#^commutationOfPositionandMomentum" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.9 Boundary Conditions in Free Space &gt; (1.9.2)</a> that the commutation of these two operator definitions, should be <br>
-The gameplan, is that we plug these expressions for  into <a data-href="#^secondOrderHarmonicDiffeq" href="https://azalamer.com/UniversityNotes/#^secondOrderHarmonicDiffeq" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^secondOrderHarmonicDiffeq</a><a data-href="#^secondOrderHarmonicDiffeq" href="https://azalamer.com/UniversityNotes/#^secondOrderHarmonicDiffeq" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.10.2)</a> ]]></description><link>https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.10-harmonic-oscillation.html</link><guid isPermaLink="false">School/Quantum 1/Notes/1.10 Harmonic Oscillation.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sun, 20 Oct 2024 22:22:36 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibj2b-sszoff9sygsz5nr2l472jbn_aakbrtebqphwr3j8-sghexagaqadagadeqadngq.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibj2b-sszoff9sygsz5nr2l472jbn_aakbrtebqphwr3j8-sghexagaqadagadeqadngq.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Quantum Gates]]></title><description><![CDATA[ 
+We'll prove next time, is<br><br>The ground-state wave-function, is the best you can get in terms of uncertainties. It "saturates" the wave-function. ]]></description><link>https://azalamer.com/UniversityNotes/school/quantum-1/notes/1.11-the-bound-state-problem.html</link><guid isPermaLink="false">School/Quantum 1/Notes/1.11 The Bound State Problem.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sun, 20 Oct 2024 00:31:43 GMT</pubDate></item><item><title><![CDATA[Quantum Gates]]></title><description><![CDATA[ 
  <br>Meet the Gates Family!<br><br> are all different roots of the Identity matrix. <br><br><br>Here's a useful table on what gates to apply to get to the  X,Y, and Z observables from the digital<br>
 <img alt="Pasted image 20240319173746.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240319173746.png"><br>]]></description><link>https://azalamer.com/UniversityNotes/school/quantum-computing/definitions/quantum-gates.html</link><guid isPermaLink="false">School/Quantum Computing/Definitions/Quantum Gates.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 18 Oct 2024 01:19:20 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240319173746.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240319173746.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[PCD Fab for PD 2024-10-21 10.47.44]]></title><description><![CDATA[ 
  
