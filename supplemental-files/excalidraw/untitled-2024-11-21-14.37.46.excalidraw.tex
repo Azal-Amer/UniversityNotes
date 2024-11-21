@@ -1,0 +1,305 @@
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
+\documentclass[]{article}
+
+
+\usepackage{color}
+\usepackage{graphicx}
+
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+% Add the geometry package and set smaller margins
+\usepackage[margin=1in]{geometry}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{braket}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{framed}
+\lstnewenvironment{Highlighting}{}{}
+\usepackage{xcolor}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\IfFileExists{microtype.sty}{
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}
+  }
+}{% if KOMA class
+  \KOMAoptions{parskip=half}
+}
+\makeatother
+
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\usepackage{framed}
+\usepackage{listings}
+
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}
+}
+
+% Custom header and footer
+\pagestyle{fancy}
+\fancyhead[l]{Azal Amer}
+\fancyhead[c]{   \#}
+\fancyhead[r]{\today}
+\fancyfoot[c]{\thepage}
+\renewcommand{\headrulewidth}{.2pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\definecolor{shadecolor}{rgb}{0.9, 0.9, 0.9}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+excalidraw-plugin: parsed tags: {[}excalidraw{]}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+==⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document.
+⚠== You can decompress Drawing data with the command palette:
+`Decompress current Excalidraw file'. For more info check in plugin
+settings under `Saving'
+
+\hypertarget{excalidraw-data}{%
+\section{Excalidraw Data}\label{excalidraw-data}}
+
+\hypertarget{text-elements}{%
+\subsection{Text Elements}\label{text-elements}}
+
+1 \^{}UthAtiTE
+
+1 \^{}PubmX0HF
+
+1 \^{}RXpo7LAh
+
+1 \^{}3935Gcd1
+
+1 \^{}GILNfnT1
+
+1 \^{}HkmHzQbt
+
+1 \^{}QYMeL0dU
+
+0 \^{}Xy6m3Btq
+
+1 \^{}C7FFvKEj
+
+1 \^{}1yhA91QZ
+
+1 \^{}WWm4GpcK
+
+0 \^{}fI1EEaBi
+
+1 \^{}1fuaT1sb
+
+1 \^{}1CE4DeD9
+
+1 \^{}leCVr7S7
+
+0 \^{}gWnyr4Va
+
+0 \^{}SpKXEcs8
+
+0 \^{}nBCeVpnA
+
+1 \^{}9sgYmlFb
+
+0 \^{}OIM0Axtz
+
+1 \^{}ubF69FH9
+
+1 \^{}C98SkZvU
+
+1 \^{}wRr9xHH4
+
+1 \^{}3oRE7Lfq
+
+0 \^{}UuPVGGUa
+
+\%\% \#\# Drawing
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBWbR4aOiCEfQQOKGZuAG1wMFAwYogSbggANQBhAC0AKwBOABEADQQAaWV9ABYACUIAfRqoAHEeAA5sFOLIWERywOwojmVg}
+
+\NormalTok{6ZLMbgBmBoB2bW7xnYA2XYaABnOeXeO+AsgYbgBGeIbtLfOn3fPu7vPTrbjCb8EoUEjqbbjRKHPbdY7nBpbXbxEGQSQIQjKaSQ6HjWHwxHI1EQayrcSoc7E5hQUhsADWCCqbHwbFI5QAxE8EFyuetIJpcNg6cpaUIOMQmSy2RIadZmHBcIEsnyIAAzQj4fAAZVgawkgg8KuptIZAHVwZJuHcZhBjfSEDqYHr0AaysTRViOOEcmgnsS2ArsGpHr7L}
+
+\NormalTok{sSRcI4ABJYg+1C5AC6xNV5AyMe4HCEmuJhHFWHKuHOKtF4q9zDjRRtc3JW3uAF8qQgEMRuED4k9xt0GvFjsTGCx2Fw0HC+0xWJwAHKcMTPCa/Y63La9+6lZhNNJQZvcVUEMLEzTCcUAUWCGSycfyM0K9xK1fKm8wUD5JTKEhaMGO+i2ACEoABHCAbzre4kxXIQ4GIXBNxbX1di2HgEJeJ5jnGPFiSIDg6QzLN8HQtghS3NAaSEBACgbApK0gV90H}
+
+\NormalTok{fT8f3/FU7xlLAn2JTY0HiI4DlQzt/h2V4nmtEoQ1QLYdgSOF4l2XZuniJcnjE4kwWICFfS2bjLkuY4kKeBpEW6Yl0UxbE0B4FEV1JZ1KRXO0GUlVkOR5bkkH3QVhRLCVmQcmVyA4eVFUyViV3VTVHWdW1mTdGyaXtc0VMtUyqRihkwvJCLDXdYRPW9Z5/UDYNnjDFcI3AmML1Am0U1wNMYNQTNsxXXNiHzCRCwqYtD2IMs43q3CbKbWrTnOTjjga}
+
+\NormalTok{P5RwHThnj9Fd+3HDgpw4Gc0Hgr4Gh4C5rJtQg1w3QjUB3fA9xXA8xWIE90kCnqcOJcDIOg544IQngkJQtCVwwrC0F6vCCNq4iEGJB8nwkIt3UoAAVFjyjB4LOCgLVCCMckeC2kpVXhgAxaqNRE8yqxYgBBIhlCHdAxCyJgVX7KBzAIYnMTJiB9BIYg1mJPQslwXMmHTCRqnqZo2k6Hp+iGUYJimf1SExXMCChx8YZVXAhCgNgACVwiR8kAfQnneg}
+
+\NormalTok{xLEQdQJ4kniMiQUo0paogTMAHk6SDXAaieehNAGJpmHaboOChuAABlGPgNKMJcld2NQbppO0f5UfWzbrluYkROQuIzKhJENp4Q4fl2JSLW4NG0UNkzRK41G8VGp5U6eBEDIslYrKSk1GS86V0E5ZzeVcoUSvFez2+gXz/KVILKo1bVdTS10W2b2KC8S6KW9S8oZ46vxJG63KVwDQUCtDIuIBK6NYzyCr0dTBA+bqm7GrzCOSSedfSxytBKNmYOrX}
+
+\NormalTok{rRt9omZEFN2KhCa81WxCUgHNQci1lqoDbEieI5wlw5l2sEB6aBDrHRtKdY8p4rrYQajaO6UF9pfHgohKO2cFx60wngvqNoWR/W3LuQGK44BsFzNkPIN5LxXiLsUc4N5z7FG4TMXhYBATqQrg0KuNc64CJAuhUIUAmT6BZjIZsAAFNhypvq3xtNSRUUBvxNVzMoGhxJMjECMeKExZjooGMJqQWkFB0S4Fqj9FcFiHFOJcW4nCFsKIriYugUO1MxyD}
+
+\NormalTok{itGZYBkDpzkgUmJG4PB4Q5nvgWZISD1woP2ug5h20bZ/mwAAWQ4I4hoHB1b+woJjXoTw/w1CkUefQE4VQhUnk6aekVZ5L3nvFK0c8UpT1Xh09e2VyzbxtLvIMsBCqH0suSQ+Ed4jtm0MiBcZlDhRxePjYSzxXjaAXFpQk845J5y6XZNujku5h0wW5PunkpT3mHgqUeKplKqQpIZEuxtxFJHOJXBo1dbi1zGj/WqqNuhiQQWNQ+x8ypn2TJfa+7ib}
+
+\NormalTok{QeS3m/G80BP6mW/idTqF0zwcLQImW6EEiG1RIc9J4hwvgbSoV9G++CSj0IZLVbJSUDFWMcCsWxNoLEcpsTohlkB8CKOUao6Cmj2HcpKPo0gUAvFsGcSEXxgqMDinlYq1xUrICsPYReLhN4wCiP4VeQRYBhF8NRMUb5kjpGAtkSakC/jihWyCRAEJUSporV0h6haMTZzZ1+d2eCyTmoP1wFsFUO0MkIFQQdJhOYbbEH9oTI434ABS35ejYAAKo1Ho}
+
+\NormalTok{GmmobB4jtBGHAI8zSJ4r31EMvpCA4pvLAbaZKDoBnVoyiuD0m9X4mzynvKZB9iSzMLmxbgxwkR7LhIkuClK4LJx2W8aS8DdgKX+PERJY7a0DwuU5FUApe4eS3T5OUTzAovIXu8lcRkjaQgkYG21L064gueBcOCgC13hlFCfcq8LqpX2VbQkoKLu3vwxfMLFMxyKYNxTg88cKwIktjeSshRwUO0q1W6/CzLGFHRydKqIsq+VcoFQByAvLjFEfpSRt}
+
+\NormalTok{1IqDBio0Vo42SK8P2McQqnx6HPGsY1f+4kOrYOEv1VeQ1lrDUCMtea4TBrrV3v+TIsaciZgJiddeKsmLgk81CZNMmcCfVQJRtXZdnYpKNqai1dAuBuiRuQTGrJ8bGo216AUzQFQagID/E8VUXoeAtAAJpPC1FUQg2atjqIraFVtLoa2nLreexttkW1tMGe25FWUu2jN9L2yZKcio2iHWgeZ3Bdg8HUuMG4eJxjwgSVcOdvp4RJFrmcKOOxuhmReJ}
+
+\NormalTok{u85EhO47p7u5Tqh70Cyj8ie5U+cen5Y+cZL55cZMAofcC/q+1jhdnhJXeuNoYWn0JYItUCKeMds6qi1AIGgk8GxVBs6eLcFbeJfdYhT0yFnGzjNOhuY6VMaFZh2zOG2UEfI6Y4j5jxSEf+5RhR1JRVqHFQx9DMq5VcfYwDjxar4dKvQ3xgl8ZBM8JE8axT4mDWiOk382bQLugKeKEp4okGVO3jU26jTPrtgIl036laC4lsIhyy+FJrV4hWejbG1l}
+
+\NormalTok{9nyjZsIH+IwdsozKAQD5uANQOD6CeEKNNxwBRwDC608Ka9a31oSrwWtVbIvJcA6lw7z2SgTP3ibLnkA8uR2WYJQE5WEGdlGiOji/ztANDxC1mS8RugvBHCuESWcDi/GW/8xZyIkTtfuZ1py3cTo3IPR1gbjyAojZXK8vXh8r2lyJ1I2Tdr5t6IGoV343ZTjLnW5+2F13gq7fQ0B9LR30UnbOyULB50YMY6JfB27ZL7svS7E983QrXvoaZV9jBzHf}
+
+\NormalTok{vWIo+91Vli/uT5oyoyH9HJWI70fhuH3jUfb5KJx/fmrD/aoY3qq8EmjViaxyIkTBf72k/J2ASnYBqcurp+62aYTPWR3fT/lpnpoVKNHOHpNXtzqGgWMcPzntCynZrkuUD5pcOMD5nSPgEeL0DwJjHAN0BDFqPQKaMcJgHAC0BrobulFFDvi3Lrr0tFhQdrvthvGbpllbrXDMo3OSN0A7sVqhN7i7nCA0O7qgJxG8KVu2H8C1hcC9FsDVrwMhMsut}
+
+\NormalTok{EcMhFJPAv8LHt5B3Anlcp3snn1qnkPMehnmPKCOernp8jej8sTnJmttKmXr6K8ASGOshB+pGHXvGNtlVDVE3gdsBm3mpqdhBvuNBpdPxh4TdqSo9KQsPutAHmPvTtQmfhhgwmgggbPoYivkkWRvPiDovsKuDrRhvsQBKtoqDnYrKuqgjmUTysjifntjaOjpfjMNfjjrflfgTg/tNtYcXmTg6opspp/mBupl6JpiAhxEHjaBApOKztboAi7lcIfKZ}
+
+\NormalTok{mGrsLAZkvAd9sLhIGwEYM4IsgAIrqIUCEyBZVCUp2x1DnAwDfiSCdLjzhaJZtpUF4Y0GxYG4RaUG3Em7MHdrxGW79rW4cFkjcDcHLq8HO6AiCHCGiFe7+5dhQhjrfAtZyGCRiEKSnA+4tbjDnCAIaGDxdbOS7p6FnT9aGFDbGFnpjYXo2h55Ta3rdFza2ECD2G8A9hO6/CuGlSbbhEN6/qIq6JfEvwt7HYBEd78ghH4rfr96RGwTRGUqxHVxoZJF}
+
+\NormalTok{T7rEz4CC77A4cZA6ZHVGMpr50bFHQ5JGw6VEH46mka1FsammL6NGcLtFCY34mr472mdF0mF4k72r9Genv6WyBJf4M6AFjGoDwiNpTG+pLSxLD5QjZydghpmYkjjCrE2Yqm4ZUQ2wTjZoNB+DZq9ByBqx0jHDxAIAq5PAQyYAJnJiVrvGMHUHdINpvEPFG5PGQCdosE7z5T/HsGDqcHAk8FO78EQlu7hzcDQkLje5vrrQfAFlyFwgxzXB4hnBXCcS}
+
+\NormalTok{skQFqktwkn4mJ7XL7r6Fx5p5GHPKjZvLmGTaWE2pF4MlPq+jkLpy1zjAclfpwaVSN5JHN4Vj+FDGBFU7BEXY96SkEIIZ3aykj5xGKlmnJFYapEbE77sramL7ZGcq5H8lCp6lFElGMZIVNosZ1GanEAmmn5gU2kCZ2nY4E5tHNEdFSZdFuk2Ev5v4f6bHoDZrqCEy0wQzlpAx07AwqgRzgrqRlZjS1y/BYkySyHB7AniTdhYmyTdhjRFaUJZ7nrjA}
+
+\NormalTok{JA7B6TwQVYKQTCCQTbXqmRbK27dnjbRbrnaGEnbnEkGGDYjynoVn3Fa5RY1lmivH0FVn2VfEjJxi/HtnZbQq15cl95Pm8n1GQFxm4ANDPxdTdqL5hD7RRyLI9gVZ3kBnhLDgs7hnDmHCLIrqLHWaC5pFik/mhEY6L6EKIZD5ymyWNqfST6fbJlAzQwSBPzgwUAKzGwQCNVwxZCIzIxWiHwYxZDYwsz4B4x1WPgMykzlDBCqgmHgJMC0zuBjVMxqz}
+
+\NormalTok{q4czwzcxeikB8kqqsiywcDyz1XoDtW5aqwaxazdVESkAkRUIIAGwnm+hmwDEMUQDqJaD6AtDnC9CYxBxDHQDQxQk/DLIoQCU/A5wiXTl/AwlSWvCvDkLyU2jZ6tjKV6SIgTDaRqVaWXoWG6VdlAmGUOWty7kQAbk6H8hEn9wWXp4HnBSVkNkfFGjNq0GLx40MGuXNmm4/GsEdk25Hy+V/kXyBXoZLEFiEzhWHZRXMmUqYmnCcSJWTG/5kyMkMBy3}
+
+\NormalTok{AG+ilbIjti3npJwHYaqkQBd6XZhHFUAWD6ylqE6YfQT5Kk1Xa0pk/WKwNXFiQz7VtXNLwxdUoy9VYw4xDXDkjVyokxMyTXTWK2yp0z4ALX3gBgqicxRA8wbVBWQDbX+B7V20HXKzHWaysBnWoC6zm1eg3U6Umz3VfkBKIESDqwtCsK7DJqWgcXfVcVQkXAA0+6CUg0K0iQV4Q0/BQ0VWw2mGUlKVyRI1qWo2aWNo0lWh6UkgGVUnPH2jGWXKmW9b}
+
+\NormalTok{mUE2WXDZB0tLM3G6rm1l65xbNqb1NkQAtns1tl9reX3nuH+V83eFJGC2tTfgi2RUYXRW1ScTwRRzjRJV/4K2hnK2oDTq3DYmf3bQ5XT42162/noYlWAUUrwLVzgqgV5FW2QU61cX21NUtXlCHXoyu3aw9XJie2DXDWBJEz+0TUIBTWaZzX0xkMyiR0rVcyx2bVUaJ1yz4CYPoMWTp2nU6wXU22hz52lymxmQPWl3oA7BbDxAjDYDEDYMfx12/VDl}
+
+\NormalTok{oAoQgmA0B7A3CVt3AmySd3SXQ1yUrkQDw1oAD0qXI3qVo1j2Y0snY1NxGUGFE2L23Ikmr3kk2Wa7tJb1NovGUl73LwuVePH0t6eVn3TIX1+WeHPlgV33mZVCP0t5i3ELYlXBwQLgy0lChnAmpXQLVzwKJLjDIQK1Rpa0oPgPilXZgXQPG2wOfD/KHxVWW0pFxpQW3hO1yNH2O0p3O0EOdV4OmQe39Ve3EMEyjW0PBIUNB00yh3h10PLUrjR1rW8z}
+
+\NormalTok{x0QCsO7XsNtNp1qwZ19PZ18NXWCPGzCPmzF3OqPUjBRj+wTieYQztOur11KP/1dhN1A1CVANg3qSSVd0yUw2GPGMwKI2qUo0aUFNWO3U2MNw40z3b1nIE2OM9bOPk37nWVU22WeOH3xYM367OU03VluVpYeUc3n3FQ82PnX1/oC087mZNDxPXQqov2jpHA9i1yoyM4pVf1hk5PMvZyYlFOgO1U4oFUSlQNG1RE1NbCUqT0NNgXKnW2+1YMO3NUbM}
+
+\NormalTok{9MIw7MssdVQADW4w+0kOjOMzkOUMTTUNh1jPQD0PzOrVMPLOrPJ2tXtMqxbM8PcA50vZ53WNHOiMvgOZ0j6C9BGB7GaBB13OKM2g8UbTPPqOvOg1iVs5xCfN6M92/OKUAvmMj0gvaWlyRIQt2N43z3dZJ5mVk0r0U3It3EeNJbov01OVM0BOH1BMEun1ZZhPEtuERM/o33ROUskjsVMGCm0tUb0u+ioybIXDpMzVaZZPst/3tiAJwRXCjurgC5gP}
+
+\NormalTok{fnYKFV9sRGlUm0/Div1MW3SvIPNOoNKsdqdO2su29NZ1quVSENascS+0zPjMGuAFGv3umtzM2gLOWvobWvrNdN2vcOZ28OXW53XVutF3ekl2evlB7E+YFIID+znDEDZpfVpT3MhvAl6Thst2aOiU2giRIimxxvd0/OHl66mND1AuWPpvGyZu5bT2Hzxa5sEnwsp5FtIuZ6lsH2fHQsxa+P1l2WBNs3BOEtNs14tu82QBeHku32du4CfWZRnSi3P3}
+
+\NormalTok{Ml/zxL/KGOZNsuy1AEzGUovDDS1woSa1rGysCsrtCtJFVOiuITwLwITGMq7tINNNC4jOnsYNHtXvnvu3Kuave23s6t+16sSCB1UPTMmtLVR0WvrXMPSw7U2vyuDr/s7POv2eutgvusnM06pnlBVC7CYyYz0DtBHh1DIf3jBsbCjrIiYcaNvPRuiR1aEffMGMkcI2D2AsWOj1UcT22NzK4nbpMf5tL2FuaGklWXsfozU38cVs+N1nYuTdcdH2Cf1v}
+
+\NormalTok{jJeUiclAbbic7b83SdQGtQjA0sw7i2LLdifDh6suRzZOxKCXDRbuGPFPGelPLvd6rvCsD5WcvRrpXBIm51vYYUysPf+fxfHuKu/tnsqsXsDMatDPasucvvBeGuheBcDZmvvuRdLNfsyxJ0/uudcMOsAdOt7PAcHPPBgf0ViNtUwCSCEz/J7E1AlfMSKzCE3Cmz8URut1yHyS6NEdNcKX93JvD3Avo3UnWM0clB270fNqMebm6EFt3LDeuOU0cc1v}
+
+\NormalTok{zcYtVuz39I4ss0LffFCcNtsFc3reksSdROL4xMki9D7dGni1FZnDzlLZnc/1K0zGAJjRvQ/BGdJkmfnZmcVOG2vcymwMvRjSSsOe/f7vOetMg9ueR/qtu34Pqs+fDMR8BfjVBcTMhfzVhfI8lAftRdWsY9sMcOp0Je49JcE8usgdpck8+lk+mimg9ClrYDtB08DZleQALKe4B5yRLYDntiNoh7fB7Le5dj8T/xBrNcmN88UcdcY1gsi/6WQvi9rk}
+
+\NormalTok{OMmXMc7ly/FtjcScTdovK+Vu8ezc7/DL4tjIW4rcDrNuckbeSfRd3w7fmZRgW9gUDuRy6SPaJKHwafW5CGTs6c9ifAoS6RbufLT3p3nKYG0MKlnf3tZ3gRm0XWP3FVH9wPY200GRfIHoX26Yx9VWEPBPtDyT6w80+8PDPoj1fYRdGGufdHrFyx6A8jqJfLOsl3HypcC66XcDqczJ6qgowTwI8EeFwBGJm+ttIOhHBQiJB+yaTd/lJC0amQis7wZc}
+
+\NormalTok{gpDxDIR/+4/E2OpBziaRtI6tVSgrXHpY0s2PXexrCxX4DcEWrHMkgr3G6oty2u/abrvT46H95O7lE/gnTP4AlwmV/Y3hhVN64A00j/RJoPgDwtYls60M7pxAu6PRkQ/yKFO71yotN8q3vcASqkgEmwyq/uC4MEO+7VUnOeVfgUrCj6tVYYHnMHl53j5Q8/OMPE1nDyfYI8U+SPN9tn1R5x0KBmPdAXkNF6Jc6BZfFLhXyYFV8IOWXBqqqCEC4Abm}
+
+\NormalTok{zATQHwNQ7lcOIw0KrpGwQa1dEk3BBrvo3XSKCyObXVNoLxKBaDwWtHBfr13jwL1V+y9dfmx3Xrb8LBdNKwXQWrYa8BO2vJbqf1Cbn9ROl/Q3pt3bYm8ZOTfeTr2wO77QLgghL4C4XZYTstO80P+gGi7rfBsqi7fll7ye7mdKmIrKAe9zMi/Id2iRPdhkOiFZDOGyKE9tQJwaec4++QnASULwFlCCBFQogVUJIEMMY65ApIt+3QF/taBgHfhvrFA4}
+
+\NormalTok{iMMuVsaiG1SqBHhug64JoGFVroodW+EAHiv7imGt0cO2ySQbG04hfNFhvdSAH8xWEpsBeoLAunPyno7C9Bw3OFoYJY5HCTBJbMwWW0eKWCd6lwtXgljm5H9Wyy3B4c4Iv4Pl68AVN4e4Jk6BwvhEVBJkp1/jMsncABEEclXO4/80qtWPYEOxeBADoRIAmIXCJ94QDERiQk2oklkGINQ+mIw9tH1xHA9se+Q2Pv0287FCRCd7ckY+y07PtM+NQyAD}
+
+\NormalTok{nzR4Mj8+azJkZsxOp49zqQHcvkTzuqciWBmXa2OQyqAVBSAuwLUCsRFGlcGeDzaSHEBZ5YcauuHK0ECE56NclhPPN5GqP56UcZ+WoyemL12FaF9hhotfoPHl6mit+5gi0ecKtGM0bRnHe0SfUdGNtHha3Elm6LJY39toMnApN4P9FkpVoXfd/vbxCG+h/k0kF3oEMajAD/usI/WkVWTF+9UxAff+ArSlaOcIKSAuVjiMAx4jsJEnXBuDxLFENcBs}
+
+\NormalTok{wUhsQPKFVjKhi1LPnWLqGfiLcTYuLnhJJCtDWR+zDkccz7HcibYygU0BwBgCkBugFQXAKMLFE8UlweyGSBBJ+Adhs4Moh4M+mOAA0kQfwQeosmxLzs/mCkDSKoJ0gaDOu2g7YdmxtGS9iautUmrL1PEb8Thl4xspaMcr78rhdouwcfwyy69OaPlMTi8Ov7LMPBTSH0YpzpbMlNo4rAzCGTlrDl4iv9GYlJGXRlZEEUEuMTBNAGCskx8QlMUhne5I}
+
+\NormalTok{hAGmYhAWH0yEoCIAzQ5srhPQDFS1QBEwocSNLGT1gY+AysRk1mpUSI6tYiAPWPqGNjKBTQ1sdszaGdiOh3Ywur2NJ6QcJAWoOAO0BaBHhsAzAcsr6QUZTi0Ow4b3FKOw7IkpEK4pUYm0pLaSVBWkPSfpAMlbDRedHA8YTQMFblBulkh5McPIJK9rxDkmbk5NsFMF7Bbkp8Xr08nPD3xRvLbh2zv4kg7Yv4oKftCRBFYJahnIEZp0anacIxJsKEN2}
+
+\NormalTok{HgbAhEpJTTCaZ0TFxCqMCQzKS8A2g3Bg+6I9CUuwB6gwFW3U5VkWN4DYCap5Y8iRSMolUjqJrU9qfRITqMSqBpM4vm2NL79SGBnQoRt0NYGjT0AHAb8FUAQAVA4AHAYWhOPp4CDhynuOcdVxkjrT9gCwhNooN2lYldJ6gw6TuIzZ7jTpeovEhdOl5XSXG1ku6dcKm43isWz0s4S5IdH3Dnxzop4a6O5LuipO/0kKqFgClP0QZtUb3FJCWwyQP+EU}
+
+\NormalTok{6GWO1BE6dtIanPYFIkiHEzYJkDCzhlKSHit4QhjNCVmIwnh9SJXTcqeQHzHZDMBhEoocRNJF5zk+AdemTDOrHEDwutIxZh1LAqMina5U+1tzL6lsjGBAs4adX2FkQAGgzAZQD5n0D4BMYIw2WS30WnjD/6vyVaQuNlEmwxom0jWeuNI6T92uabfWdR0Nm6ic2y/I8ZdKMHGjRuNk80XZIek8cnpd4+6Y7MfHOzPpLg7yW4JVQeC9iwM/tsFPBTSR}
+
+\NormalTok{4QbvKGWGJDHTE4ZzLOEFIUOAJyYRKU2IfBPSmIScZckXgvJISLwCqMiA3OdiNQF5iWxFMrAURJvZlj/O9UyZk1MZktTSBdIhsS3PZk4KcenctiYTw4keteh6ASXAUnOCExHwRgUSTPLb6FYpIC8lWbV1f6rziO6854MoO1n7TdZWwTQcLz3nGTuOpkpxkaKsm3T3G94nXKr246aLXprkntO5KJZuzL6kTP6e8IBm4B1Yn8y8ibAQjkJNIDvcdhHO}
+
+\NormalTok{DpRyQFiMr4Db3nZ3cPeyUhMXBLXZSkN2sDMSECG/5wD0hOcgqW3LJnRLcFpc6qeXMIWlC6ZDUsdnXOpENzzWZAqhYvlbn5yepjrDsd3P5mHNBZ/YnkVoExijQqkwo+aaKN4XijtGiQJWdMOQV4xBIoi63ssM3lrDNRBs7rsOmNl9cpeJNGXhbPUUosL5tNLRY5NvnWz5udbBwSsycGdkXRJittl7PMUhUtQ1ihbGSj2BrpdI2JdTuHMAUwzXFOTf}
+
+\NormalTok{SIJCqyQL4xutMAbAqxmpyTafwDaGEpS6oLfokSrEYVPaaFzaFhYvBWXIIW1SyJ1IiibXOamzMKFTc1mSsxoXucWhLI/HrzISIlLiefcnoQOIkBVBvcWoOkHmiQ5TyshwhZbIIpmGLiJhbwdWWIrhpJtWu6o7cUL1n4KLdBB8/QUfLNkny1FJozfmqFOFXiZlN8nRXfL0VOzHBTo1ZcYtbY8kPRb8mThDF2Wl5f4/wWSEtnWTATwx0CIdjHN+AJSQ}
+
+\NormalTok{GSUtGUnOe4pz4FSQv4HsHiJZy8p2Y5AYipKlFzmJfVAoUSIJGQ9EloK3VuCprlpKoV1QmFZ+06mND7VLE5FUUvYmV9MVQslhUY3VikAGgmAXoL0EszEqxhfCjiDcHJVyF1anStcXSt54Mqtx0/ZlbuIGW40TJh8vNsfNUU3TeV583RXjUxZ+N7QDavFuKuWWSr9eb4j2R+N8kyciVPbX0QEuVW1QFyT0FrGHKcVnLI50SOGQJAQQ9hgxL4aCUaug}
+
+\NormalTok{UYzHl67GBtZwDxRtwljTb5TmILE4THVWCt1ZTMvZuqSRSSskSkpIUh0yF0KxuYGuoVdSQ1Hc3qQwq7FMKuRj1LYBrCPBV1VQAEVNWJIZazi1G84oRZSpEIIhc1yooxvSrMZFrt5Ja/pToMGXsr9Rps0ZebMRZ1qrZzk6LE2psEOyxVD8iVS7KlWvivJP014Zss9EWL2ofsv0QHOBKqqpIsi+dp/0cUXKuCtcJdCO1uW+L7lqUzGZuuqbbrJGU5NI}
+
+\NormalTok{fusTlJ98RDqgFWeqBUJKQVtM71akuDrpKmZAa+kS+uDW5ikV9ClFcUsGnMCRpMa7NEIHUQVARgIwbNCJJA0NKI4NwJSS0rZ61d4ESkmldz3zVvItZmkf4AdNkVHTtR+4oZXsKrVcqa1R6fDRotFWNrtF3jFtQlrbXkaO1lGrtTRp7W/S5VVGDwaaCVV2Ff4oShKjGQAU8bZ10CMaMVjnLrCqIK6jBRAxNUIizVLyv+fO2tVoL8pPy2JWgL62Ar4l}
+
+\NormalTok{l6mmUQorF3rtN5Cp9XptyUIr8lXMj9SZojVdDhp4ACqCSDgBwAdQRCbgJWGgDogMgE1E8iCAYCEAEAFAb8BZPXKqhrtN29YG1JECjwowm4fQDqCX4cqot92xxIFCe3pALtYyvDWfLu3YAHt3257ZjAFWXzjtwOr7VkB+0va9+N8z7Y9ue2vaUt8yoHSDth3Pb1Yi3E/kjtB3pA7YKyrnPjqx3pBMY17XztetJ1QA4dFOwkcWIKA064dLVYhRjph2}
+
+\NormalTok{06Udu+PCkFWZ3PajwFpbjAWC4zs7kd6QdVBDDpweQ7tzAbALSE1BkE0Azgc4ADWQioRatLWDsESCZ2y75d+AHzNwGV3aAJW84aSHBB/lbIIARgNgAYB22zQCAJEZ4Mpj53pAcdCnbtFr3FB3aRQJAc9WjG5q+7Nw6uUkQHuIAFI2AzUAXbgE0DBAoFoe/rFbG/DMgbYpAZQAKAAAUL0POPIWz1Z7qAFIBIAAEoVQmsZQFmEVALA09uATPR8Hz3FZ}
+
+\NormalTok{KQvAWvQXviDF7nd0O0eKjoZBE7aYnAYdbloQCaw8wMsCjFbEyDR7Y9i2+ZkQGD27NUVu1A7eGp3iqwQkRS53XYDqAIAlgzALULtTgDh7I9u1GPXJpJBLBCAjACGDbvwB27VM31MIMEFP1TQOYQgakAYEl1DEiZUC5CtSEJin7z9l+mhGRHACQZ+VwQCsMBDrBAA=}
+\end{Highlighting}
+\end{Shaded}
+
+\%\%
+\end{document}
