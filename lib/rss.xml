@@ -1,5 +1,50 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 24 Jan 2025 00:44:58 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 24 Jan 2025 00:44:54 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Unit 1]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br><br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/🟩-overall-quantum-computing-class-notes-🟩.html</link><guid isPermaLink="false">School/Physics/Quantum Computing/Semester 1/🟩 Overall Quantum Computing Class Notes 🟩.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 00:44:09 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 24 Jan 2025 01:01:39 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 24 Jan 2025 01:01:33 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Unit 1]]></title><description><![CDATA[ 
+ <br>Hey y'all! These are my notes from when I took the Quantum Computing FRI Stream at UT from '23-'24. At the time I was still adjusting to typing my notes in real time so they might be a bit messy. If you have any corrections for them let me know, I hope they help!<br>
+You can navigate them by unit using the table below. <br><br><br><br><br><br><br><br><br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/🟩-overall-quantum-computing-class-notes-🟩.html</link><guid isPermaLink="false">School/Physics/Quantum Computing/Semester 1/🟩 Overall Quantum Computing Class Notes 🟩.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 00:57:06 GMT</pubDate></item><item><title><![CDATA[1.3Introduction to Encryption]]></title><description><![CDATA[ 
+ <br>Symmetric encryption: Keys need to be shared securely, can only be really secure when key length = message length, security os contingent on the key being secret and hard to get<br>
+Asymmetric encryption: only you can open the message]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/1.3introduction-to-encryption.html</link><guid isPermaLink="false">School/Physics/Quantum Computing/Semester 1/1.3Introduction to Encryption.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 00:57:32 GMT</pubDate></item><item><title><![CDATA[Exam 1 is Thursday]]></title><description><![CDATA[<a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:StudyingIdea" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#StudyingIdea</a> 
+ <br><br>
+<br>Don't worry about time pressure, philo "do poorly cause you don't know"
+
+<br>Stick around for another hour post class to work on it, just skip math
+
+
+<br>You can have your notes, canvas, google, etc. 
+
+<br>No communication btwn each other, no GenAI, etc
+
+
+<br>Just like, be honest with your stuff
+<br>You can run VQEL to support findings! Running circuits on IBM, etc.
+
+<br>Checking matrix math too
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:StudyingIdea" class="tag" target="_blank" rel="noopener nofollow">#StudyingIdea</a> Make some initial solving tools to check in advance<br>
+- Expected value, takes input  and , along with some gate matrix , it would be cool to make a symbolic solver for this!
+<br>We can use wolfram alpha, jupytr, etc. to check
+
+
+<br><br><img alt="../../../../../Supplemental Files/images/Pasted image 20240227160047 1.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240227160047-1.png" style="width: 500px; max-width: 100%;"><br><br>Finding angles in Unitary matrix<br>
+Strategy: List What you Know<br>
+<br>Starting with  , find some unitary to get <br>
+Can do a few different ways
+<br>System of equations is the best general technique
+<br>NOT gate with a negative?<br>
+- Just by looking 
+
+In the above, b and d can be anything as long as we fix <br>
+Thus, our parameters would be 
+<br>Since we have an option for what lambda should be, MAKE IT SIMPLE!
+<br>Just working through this and grinding would do it
+<br><br><img alt="../../../../../Supplemental Files/images/Pasted image 20240227161146 1.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240227161146-1.png" style="width: 500px; max-width: 100%;"><br>
+<br>(A) is the only question asking us to multiply out the gates
+<br>(B) we would just do 
+<br>(C) We get the eigenvects from  and use that to make the unitary 
+
+<br><a data-href="2.4 Quantum Observables#General Orthonormal Basis Measurements" href="https://azalamer.com/UniversityNotes/2.4 Quantum Observables#General Orthonormal Basis Measurements" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">2.4 Quantum Observables &gt; General Orthonormal Basis Measurements</a><a data-href="2.4 Quantum Observables#General Orthonormal Basis Measurements" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/2.4-quantum-observables.html#General_Orthonormal_Basis_Measurements" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">2.4 Quantum Observables &gt; General Orthonormal Basis Measurements</a>
+
+
+<br>(D) Use above trick 
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/5.2-exam-review-day!.html</link><guid isPermaLink="false">School/Physics/Quantum Computing/Semester 1/5.2 Exam Review day!.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 00:57:21 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240227160047-1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240227160047-1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br><br><br>Would aliens have known about Shor's algorithm?
 QM let's us factor numbers, which is sick
 <br>Shor's algorithm does something really unique, it can find the period of any black box function.<br><br>The first public key cryptography system<br>Definition (Diffe-Hellman System).
