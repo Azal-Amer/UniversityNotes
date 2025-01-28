@@ -1,8 +1,374 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 24 Jan 2025 03:50:30 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 24 Jan 2025 03:50:25 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 28 Jan 2025 21:56:52 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 28 Jan 2025 21:56:27 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Last time they discussed differential operators, gradients, curl, divergence, etc.<br>
+We're reviewing:<br>
+<br>coordinate systems (Spherical and Cylindrical)
+<br>Nabla operators in those coordinate systems
+<br>Line integrals<br>
+This is appreciated, because I didn't get much from Beckner<br>
+Friday we're reviewing the classic vector calc theorems.
+<br><br><br><br><br>This has a divergence of 1. because the direction of the vector never changes, it is defined with a fixed direction.<br>
+In general we start with some vector  where<br><br>To get the unit vector, you divide the vector by its magnitude<br>Definition (Unit Vector).
+For any given vector , the unit vector  is defined such that it lies along the same direction as , with magnitude 1. 
+
+<br>To get the divergence of our vector<br><br>A non-zero divergence is equivalent to to having field aligned divergences and the direction of the flow changes outward. A divergence can be zero if the two terms compensate for each other. The strength changes, but the field spreads out and then comes back in. This is why divergence is a scalar product! It explains variations on a field form all directions.<br>Question
+Can you really product rule in this way? The divergence operator feels different from the gradient operator
+<br>What does it mean to take. the gradient of a scalar?
+the magnitude. isa multivariable function  so we just take the gradient as we would normally.
+<br>Example (Find the divergence of ).
+The divergence has a first term of zero, and the field is anti-aligned across the component's axis which. is also zero.
+
+<br>Example (Div = 0, but dield lines aren't straight : ).
+
+Notice how even though the direction of the vector. is changing, we seem to flow in a specific direction
+
+AT HOME, work this tragic thing through with the gradients
+<br>Why did we do this at all? This seems more complicated than the standard way of calculating the divergence
+It's just to build a visual intuition for the behavior, and how they do the same thing
+<br>An aside, I just called tennerani torabi, I'm gonna explode actually. <br>Definition (Gradient Operator).
+Given some function , who's orthonormal basis is spanned by the set of , we define the gradient as
+
+<br>Definition (Divergence).
+Given some vector   we define the divergence ( ) as
+
+<br>Definition (Curl).
+Given some vector   we define the curl ( ) as
+
+<br><br>Example ( Given : Find ).
+In other words, describe this VVF in spherical coordinates. 
+
+We'd just use the Jacobian right?
+
+To do this, recall the following conversion identities
+
+
+I'm actually crashing out getting a name wrong is so embarrassing I swear I was just thinking about girl day
+
+To solve it into spherical coordinates, you use these identities to solve for the angles. I don't want to type that out, but it happens through taking projections. Take the dot product of your cartesian components, with your spherical basis vectors. See more at <a data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection#^956507" href="https://azalamer.com/UniversityNotes/Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection#^956507" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection &gt; ^956507</a><a data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection#^956507" href="https://azalamer.com/UniversityNotes/school/math/linear-algebra/6.2-dot-products,-cross-products,-and-projection.html#^956507" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 6.2.1 (Projection)</a>  and <a data-tooltip-position="top" aria-label="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" href="https://azalamer.com/UniversityNotes/Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">6.2 Dot Products, Cross Products, and Projection</a><a data-tooltip-position="top" aria-label="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" href="https://azalamer.com/UniversityNotes/school/math/linear-algebra/6.2-dot-products,-cross-products,-and-projection.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">6.2 Dot Products, Cross Products, and Projection</a>
+Why are we doing it so complicated?
+I think because it's a review day, she's really going ground up
+
+<br>Example (AT HOME: Given a function : Find ).
+This is exactly like <a data-href="#^e0fde1" href="https://azalamer.com/UniversityNotes/#^e0fde1" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^e0fde1</a><a data-href="#^e0fde1" href="https://azalamer.com/UniversityNotes/#^e0fde1" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Example 1.3.7 (Given : Find )</a> 
+<br>How does electromagnetism behave in ? Maxwell's equations still need to work
+<a data-tooltip-position="top" aria-label="http://www.gauge-institute.org/Vector/MagneticMonopoles.pdf" rel="noopener nofollow" class="external-link" href="http://www.gauge-institute.org/Vector/MagneticMonopoles.pdf" target="_blank">This</a> straight up says that the curl operation in  takes your result ot <br>
+This is a <a data-tooltip-position="top" aria-label="https://physics.stackexchange.com/questions/21678/maxwell-in-multiple-dimensions-what-happens-to-curl" rel="noopener nofollow" class="external-link" href="https://physics.stackexchange.com/questions/21678/maxwell-in-multiple-dimensions-what-happens-to-curl" target="_blank">StackOverflow answer</a>
+<br><br>We define some path length differential . In spherical, we'd have an increment . Cylindrical has <br>
+We also know that with the chain rule<br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.3-differential-operators.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.3 Differential Operators.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 27 Jan 2025 22:28:34 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Today is the last boring class<br>
+<br>We're covering surface &amp; volume integrals
+<br>Fundamental theorems
+<br>Dirac Delta Function
+<br><br><br><a data-tooltip-position="top" aria-label="https://en.wikipedia.org/wiki/Del_in_cylindrical_and_spherical_coordinates#Del%20formula" rel="noopener nofollow" class="external-link" href="https://en.wikipedia.org/wiki/Del_in_cylindrical_and_spherical_coordinates#Del%20formula" target="_blank">This link</a> from wikipedia has a nice table which is helpful<br><br>We're integrating over structures normally.<br>Definition (Line Integral).
+Given a curve  and a function ,we can describe a line integral as integrating along it's path . 
+
+If it is a vector-valued-function, you'd take a dot product
+
+To calculate this, you:
+
+<br>Parameterize the curve  with one variable 
+<br>Solve for the values of  using the parameterization 
+<br>Integrate your function  over s
+
+<br><br>Given that you have some parameterization for  as<br><br>and your function in , the formula is<br><br>The  comes from the fact that you're integrating along the magnitude. If , then that's essentially finding the length of your curve. Think of  as a density function! If the density is , and you only vary the length, the mass is the length!<br><br>Same procedure as before, but you don't take the magnitude of .<br><br>Example (Given a function  and a curve ).
+
+[!example] Calculating a Line Integral along a fixed curve
+She wants us to calculate a line integral along a straight line in space, for 
+
+In general,  is parallel to the vector from  towards 
+<br><br>Just like a line integral, a surface gets parameterized by .<br>Definition (Surface Integral).
+Given a surface  and a function ,we can describe a line integral as integrating along it's path . 
+
+If it is a vector-valued-function, you'd take a dot product
+
+To calculate this, you:
+
+<br>Parameterize the surface  with two variables 
+<br>Solve for the values of  using the parameterization 
+<br>Calculate  using
+
+and then get the magnitude. (That's because the magnitude of a cross product, is the enclosed area!)
+<br>Integrate your function  over 
+
+<br>This is equivalent to taking the flux over the surface<br>Definition (The Direction of a Surface).
+The normal of any surface, is defined as the vector perpendicular to the surface at a given point 
+<br>YOU ALWAYS NEED TO REMEMBER THE RELEVANT JACOBIAN FOR THE COORDINATE SYSTEM <br>In this class, Tenerani uses the below convention<br><br>to save time.<br><br><br>
+<br>Divergence
+<br>Stolkes
+<br>Gradient tTheorem
+<br>Theorem (Gradient Theorem).
+The line integral of the gradient of some fuunction, is just the difference of the function defined at the endpoint. This is how we get conservative forces.
+
+<br>Theorem (Divergence Theorem).
+The curl through a colume is equivalent to the surface integral of the fieeld
+
+<br>Theorem (Stolkes Theorem).
+The total microscopic circulation is equal to the total circulation on the outer boundary
+
+<br>Exercise (Given the following function ).
+
+<br>Calculate the Divergence
+<br>Calculate the volume integral of the integral by using the <a data-href="#^281900" href="https://azalamer.com/UniversityNotes/#^281900" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^281900</a><a data-href="#^281900" href="https://azalamer.com/UniversityNotes/#^281900" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.4.6 (Divergence Theorem)</a> 
+
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.4.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.4.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 18:59:08 GMT</pubDate><enclosure url="https://i.giphy.com/f9eYHQ8RZ4zfc4unXx.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="https://i.giphy.com/f9eYHQ8RZ4zfc4unXx.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>Hey y'all! These are my notes from when I took the Quantum Information Science at UT with professor Scott Aaronson from '24-'25.<br>
-The <a data-href="0.1 Class Overview" href="https://azalamer.com/UniversityNotes/0.1 Class Overview" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">0.1 Class Overview</a><a data-href="0.1 Class Overview" href="https://azalamer.com/UniversityNotes/school/physics/qis/notes/0.1-class-overview.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">0.1 Class Overview</a> contains a list of every theorem we learned in class, but due to an issue with my website publishing workflow the equations are broken on that page. They still exist in their original notes.<br><br><br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/qis/notes/🟩-overall-qis-class-notes-🟩.html</link><guid isPermaLink="false">School/Physics/QIS/Notes/🟩 Overall QIS Class Notes 🟩.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 03:47:25 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+The <a data-href="0.1 Class Overview" href="https://azalamer.com/UniversityNotes/0.1 Class Overview" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">0.1 Class Overview</a><a data-href="0.1 Class Overview" href="https://azalamer.com/UniversityNotes/school/physics/qis/notes/0.1-class-overview.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">0.1 Class Overview</a> contains a list of every theorem we learned in class, but due to an issue with my website publishing workflow the equations are broken on that page. They still exist in their original notes.<br><br><br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/qis/notes/🟩-overall-qis-class-notes-🟩.html</link><guid isPermaLink="false">School/Physics/QIS/Notes/🟩 Overall QIS Class Notes 🟩.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 03:57:10 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br><br>For the density matrices, do not actually fully calculate the outer product. Instead, leave in  form. Then you take the projections on the relevant orthonormal basis for the other qubits. Those outer products are just like what occurs with measurement!<br>Run through shor's algorithm<br>Write out all the possible outer products for the existing states, the matrices  <br>Shors for when Q/s isn’t an integer<br>Algorithms need:<br>
+<br>Circuit diagram
+<br>Classical complexity analysis
+
+<br>Classical random
+
+
+<br>Quantum Complexity<br>
+<br><br>Definition 0.1.2 (Deutsch’s Algorithm).
+Where 
+
+Me and <a data-tooltip-position="top" aria-label="../../../../../Personal/People/Ayden Gertiser" data-href="../../../../../Personal/People/Ayden Gertiser" href="https://azalamer.com/UniversityNotes/Personal/People/Ayden Gertiser" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Ayden</a><a data-tooltip-position="top" aria-label="../../../../../Personal/People/Ayden Gertiser" data-href="../../../../../Personal/People/Ayden Gertiser" href="https://azalamer.com/UniversityNotes/personal/people/ayden-gertiser.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Ayden</a>'s Guess on what's going on:The qubits after testing on the quantum composer, all have the same result. With the  gate, it's interesting that it doesn't affect the outcome, but the  gate might just be reflecting all the superpositions. Because up to that point it's maximally entangled, flipping the superpositions is just a symmetry, so the  does nothing.<br>
+Real explanation<br>
+The input qubit is the first qubit, while the output is the zeroth qubit. This was the first quantum Computing algorithm. David Deutsch was one of the father's of quantum computing
+ 
+<br><br><br>Definition 1.3.1 (Deutsch's Algorithm).
+
+<br>Start out with 
+<br>Set output register to 
+<br>Apply Hadamard gates to all qubits
+<br>Apply another set of hadamards to all the qubits
+<br>Measure the input register
+<br>If the output is 0, the function is constant, otherwise it's balanced<br>
+Below is a table of the black-box of functions.
+
+
+Using the gates listed above, you'd make this diagram!<br>
+<img alt="../../../../../Supplemental Files/images/Pasted image 20240905163741.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240905163741.png"><br>
+Below is an implementation of the quantum protocol<br>
+<img alt="../../../../../Supplemental Files/images/Pasted image 20240905164620.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240905164620.png">
+ <br>Birthday paradox explanation<br>
+<br>Best for collision functions<br>
+Euclid's GCD alg<br>
+<br><br>Definition 2.4.1 (Euclid's algorithm).
+ If I wanna know the GCD(40,95), I can always perform integer division small to large, and take the remainder.<br>
+In this case, it's 15.<br>
+Then we know that
+
+(Because if a number can divide 40 and 95, of course it can divide the difference).<br>
+You just keep going until you hit the bottom
+
+Once one number divides the other, the smaller one is the GCD!<br>
+
+ 
+<br>Repeated squaring]]></description><link>https://azalamer.com/UniversityNotes/school/physics/qis/notes/0.1-cheat-sheet-notes.html</link><guid isPermaLink="false">School/Physics/QIS/Notes/0.1 Cheat Sheet Notes.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 14 Jan 2025 20:16:09 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240905163741.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240905163741.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>We went over the final and it's questions, and then did an introduction for degenerate perturbation theory.<br><br>How would we go about modelling multiple particle systems, like if we didn't nail the proton to a blackboard
+Doesn't have anything to do with the levels, we'd want to go into thte rest frame. We took teh rest frame to sit on the proton, but that's not exact. It doesn't change anything about the calculation itself.
+<br><br>The final stops exactly at the official hour when the official exam stops ~On Friday the 13th~<br>
+There's one question which is straightforward, but really tedious. You won't get time to crunch the algebra out the last minute.<br>
+<br>
+9 matrix elements to compute. They're all of the same kind. The grader is going to be gentle over stupid mistakes<br>
+Write nice and clear because the grader also has some rough exam. Beware of a haunting colleague of Fischer's.
+
+<br>
+There's a perturbation theory, and it asks us to calculate to a leading order. That means we have to calculate to the first non-zero leading term<br>
+- Some problems might need to make you go further down<br>
+- If the leading correction is a quadratic, you have to work to that order<br>
+- There's over a week for this, so he's considering it a homework. Only one question on perturbation theory<br>
+There's one question on angular momentum.
+
+<br>
+Orginal angular momentum there's only integers
+
+<br>
+Spin angular momentum is half<br>
+Leave solving terrible integrals for the end, at at least get to those points.
+
+<br>8 homeworks 25% on homework, 25% on tests, 30% for the final.<br>
+<br>Not dropping nothing
+<br>The grades are going to be histogram'ed, first group get's an A, etc etc. If you sit between a group you get pushed up.
+<br>It sounds like there was leniency to the homework submission<br>
+The grader is gonna upload the solutions to homework 7 and 8
+<br>We can also send him an email
+<br>What's the best way to study
+Don't just cram the night before the exam and pray. Go over the homeworks we'e done, look at the questions. See if you can sketch a solution to it. Compare to the solution, then go again. (Do the same with the tests)
+<br><br><br>Back to last time with the hydrogen atom in a capacitor<br><br>This means that our energized state is<br><br>We get the first excited state as<br><br>Which means our first energy is<br><br>Our first perturbed energy is then<br><br>To solve for this, we'd need to solve<br><br><img alt="../../../../../Supplemental Files/images/Spherical Harmonics Chart.png" src="https://azalamer.com/UniversityNotes/lib/media/spherical-harmonics-chart.png"><br>
+Using the above, we can then solve out the integral to find that the first perturbed energy is zero.<br>How did we pull our sperical harmonics from that?
+I think it has to do with them corresponding to the eigenstate 
+<br>This means we have to go to second order <a data-href="3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">3.3 Introduction to Perturbation Theory &gt; ^energyOf2ndEps</a><a data-href="3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^energyOf2ndEps" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.5 (Second Perturbed Energy)</a> <br><br>What you find, is that the second sum diverges which means that it's not small! That's not good, that's nasty and not helpful. We can see that in the general form<br>
+<br><br>Theorem 3.3.5 (Second Perturbed Energy).
+
+In the ground state, the second perturbed<br>
+
+<br>
+The easy way to deal with that, we're going to diagonalize the matrix<br>Why does diagonalization help<br>We're going to define a<br><br>In the degenerate case, the reason for the diverging, the  can be anything that isn't . But it can be  which means that the difference in the denominator is zero. That makes it all blow up<br>The notation we're using for the matrix is that<br><br>has the th entry as <br><br>Calculating these out (knowing that ) for , means that our matrix is<br><br>I still don't see how diagonalizing solves our problem? Is it cause we're finding new eigenstates? 
+Because  in our larger space, we have degeneracies in our basis vectors, we're instead solving for the energy of the subspace. With the subspace, the basis vectors are linearly independant, and we're saying that our second perturbed energy state is the same are the same. This space also models how the
+<br>We find the eigenstates of  as<br><br>The eigenstates which diagonalize the matrix, are the ones with unique energies. Because it's a very sparse energy, only two of the states are changed. <br><br>More perturbation terms might evolve the bottom two states based on how the matrix evolves
+<br>What is this quantum 1?
+Part of this is quantum. 2 for most people. All this angular momentum work has theorems that greatly reduce their complexity<br>
+He seemed like he was genuinely unsure
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.6-final-day-and-degenerate-perturbation-theory.html</link><guid isPermaLink="false">School/Physics/Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 19:41:29 GMT</pubDate><enclosure url="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3l5aHZhM2xzMmk5OHV3MjA3MGdkbDFyamFhaWEwbnNqcGRjc213byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT0GqgeTVaAdWZD1uw/giphy.gif" length="0" type="image/gif"/><content:encoded>&lt;figure&gt;&lt;img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3l5aHZhM2xzMmk5OHV3MjA3MGdkbDFyamFhaWEwbnNqcGRjc213byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT0GqgeTVaAdWZD1uw/giphy.gif"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>We're looking at states where we manually perturb the state with , as opposed to it being the natural state. We assume that our perturbation expansion works.<br>NOTE: We made a small notation swap. Unless otherwise specified, the exponent now corresponds to the order of a correction with operators and vectors in Hilbert space.
+
+<br>This note is a rehash of <a data-tooltip-position="top" aria-label="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory" data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">3.3 Introduction to Perturbation Theory</a><a data-tooltip-position="top" aria-label="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory" data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">3.3 Introduction to Perturbation Theory</a><br><br>We're using the fact that all possible solutions, can be constructed by linearly independent solutions.<br>
+<br><br>Theorem 3.3.4 (First Perturbed Wave-function).
+
+ <br>Why physically is there the energy difference in the denominator
+When you do the math, that's just how it shakes out. The other thing, is to look at the units. The coefficients in the wave-function combinations has to be energy independent. The units have to cancel out energy.<br>
+The other way to think of it, is that   is already known to be small called  (called squiggle in this class).  represents the fact that the wave-functions on a bound state are oscillatory. If two states. arefar apart in energy, one wiggles alot, and one doesnt wiggle at all. They won't combine well. Terms which are similar frequencies combine really well.
+In theory. Because of the wiggles on the energies match perfectly, we get a division by zero error,. In that event, we need degenerate perturbation. theory.  are both at the same energies which means all 
+their linear combinations are the same energy. 
+
+<br>From <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^completenessClaim" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^completenessClaim" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^completenessClaim</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^completenessClaim" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^completenessClaim" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.3.11)</a> we can see that our higher energy states become involved once we introduce perturbations. This is the basis of thinking about transitions. <br>If I want to force a system evolve to a different state, we manually introduce a perturbation for the system, which because of this can evolve it to a higher energy. An example of this is a photon hitting an atom with an electron. The electron is perturbed, and evolves to a higher energy state. <br><br><br><br>Theorem 3.3.5 (Second Perturbed Energy).
+
+In the ground state, the second perturbed<br>
+
+ <br>Why might you want the second order perturbed energy (the  terms).
+Sometimes you might want to calculate for a higher order to be sure that your terms do get smaller. Or your first order correction to the energy is zero like it was in <a data-href="../../Quantum 1/Tests/Final#Problem 2" href="https://azalamer.com/UniversityNotes/Quantum 1/Tests/Final#Problem 2" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Tests/Final &gt; Problem 2</a><a data-href="../../Quantum 1/Tests/Final#Problem 2" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/tests/final.html#Problem_2" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">../../Quantum 1/Tests/Final &gt; Problem 2</a>
+<br>Proof of <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^energyOf2ndEps</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^energyOf2ndEps" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.5 (Second Perturbed Energy)</a>.<br>
+To do this, we're going back to the previous system and finding the terms quadratic in lamdba<br><br>To identify our second order terms, use the<br>
+<br><br>Definition 1.6.2 (Schrödinger Equation).
+
+Also written as 
+
+The only condition you need to solve this equation, is 
+
+
+Where  is a Unitary,  is the identity, and  is the hamiltonian of the Hamiltonian<br>
+
+ <br>Our goal is to get<br><br>The next term on the right is <br><br>Our next move is going to be taking the bra of  on this, which is encouraging because our very last term is the corresponding ket. <br>
+For the <br>With the total quadratic term<br><br>Now for the second term on the middle of the left, we have <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^c15950</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^c15950" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.3 (First Perturbed Energy)</a> which we can use to expand there.  in the first order energy, whcih means they are always orthogonal.<br><br>This finally gets us <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^energyOf2ndEps</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^energyOf2ndEps" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.5 (Second Perturbed Energy)</a><br>
+□<br>How do we go about reducing this further?<br>Exercise (Given a particle in the below potential, what is the first order correction to the energy going to look like? Would it increase the energy, keep it at zero, or reduce it? ).
+
+Answer
+
+Only second order corrections have an influence over the center. The odd functions get integrated over an odd potential symmetrically, which means that it's zero. We extend this from <a data-href="../../Quantum 1/Notes/2.1 Motion in Potential Function, and Pairity#^c9c667" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/2.1 Motion in Potential Function, and Pairity#^c9c667" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/2.1 Motion in Potential Function, and Pairity &gt; ^c9c667</a><a data-href="../../Quantum 1/Notes/2.1 Motion in Potential Function, and Pairity#^c9c667" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/2.1-motion-in-potential-function,-and-pairity.html#^c9c667" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 2.1.3 (Pairity)</a> 
+
+<br><br><br>Definition 2.1.3 (Pairity).
+We're going to define a term parity. Where you define the operator 
+
+ <br>
+<br>This is just like if functions are odd or even
+<br>Applying a particle in an electric field is just like this! You can then know right off the bat that the potential is then odd in parity. We can produce an electric field across the box so that it's anti-symmetric. <br>We're basically doing first order perturbation theory on the perturbed wave-function when we have potentials like this. The first order just normalizes the probability distribution.<br>Weird thing from <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^energyOf2ndEps</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^energyOf2ndEps" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.5 (Second Perturbed Energy)</a> : The second order corrections to the ground state always lower it. Shoutout <a data-tooltip-position="top" aria-label="../../../../Personal/People/Ayden Gertiser" data-href="../../../../Personal/People/Ayden Gertiser" href="https://azalamer.com/UniversityNotes/Personal/People/Ayden Gertiser" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Ayden</a><a data-tooltip-position="top" aria-label="../../../../Personal/People/Ayden Gertiser" data-href="../../../../Personal/People/Ayden Gertiser" href="https://azalamer.com/UniversityNotes/personal/people/ayden-gertiser.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Ayden</a> for noticing that. <br>
+<br>The first order term can be positive or negative
+<br>If I have a particle in a high potential, with no perturbation, what makes it fall back to the ground state??
+Yes it emits a photon, but we need to be perturbed to fall in the first place.<br>
+THE VACUUM PERTURBS IT!! The EM field is a bunch of simple harmonic oscilators
+<br>If there's energy there but it can't do work, then how is it energy?]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.3-second-order-perturbation-theory.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.3 Second Order Perturbation Theory.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 19:16:13 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Similar copy of the notes in <a data-tooltip-position="top" aria-label="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory" data-href="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">3.6 Final Day and Degenerate Perturbation Theory</a><a data-tooltip-position="top" aria-label="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory" data-href="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.6-final-day-and-degenerate-perturbation-theory.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">3.6 Final Day and Degenerate Perturbation Theory</a> from Quantum 1<br><br><br>How can we look at a problem and know there will be a degeneracy.<br>
+<br>A symmetry A square box has  and interchangeable<br>
+There will be degeneracies in the hydrogen atom
+<br>
+Now we know that Sitz's Texas password is a bunch of dots
+<br> How would I apply a perturbation to break this symmetry in the box?
+Applying a potential off-center
+<br>For a particle in 2D square box, we can try separating the variables to two separate wave-function solutions.<br><br>The ground state is never degenerate!<br>If I have two degenerate states, any one of them solves the schrödinger equation.<br>Our concern form before was that our denominator in the <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^energyOf2ndEps</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^energyOf2ndEps" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.5 (Second Perturbed Energy)</a> <br>We want to do the same perturbation theory with it<br><br>Given our wave-function is the two degenerate wave-functions .<br><br>We're applying our go-to trick with , then later with . <br><br>Sanity check, if  was zero, we reduce to first order perturbation theory since it's the normal expected value. <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^c15950</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^c15950" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.3 (First Perturbed Energy)</a> .<br>We're using the following notation<br><br>then<br><br>^prev<br>
+We can find a value from alpha to solve for this system: from <a data-href="#^ca17f5" href="https://azalamer.com/UniversityNotes/#^ca17f5" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^ca17f5</a><a data-href="#^ca17f5" href="https://azalamer.com/UniversityNotes/#^ca17f5" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">^ca17f5</a>. <br><br>This gives us our quadratic equation in  when plugged back in!<br><br>
+<br>The energies are essentially just eigenvalues of our  matrix!<br>
+You can see that there's an identity hidden inside the ! This is just an energy term, which has to be real!. If the terms have to be real, and  are complex conjugates they are the same as each other!
+<br>Can you make the following reduction using <a data-href="#^notation" href="https://azalamer.com/UniversityNotes/#^notation" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^notation</a><a data-href="#^notation" href="https://azalamer.com/UniversityNotes/#^notation" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.4.4)</a>?
+
+We also know. that  so
+
+<br><br>From the energies, we already know that the expectation value  is non-zero. If it was zero there would be no problem! We're using language associated with matrices, and you can read more about that in <a data-href="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory#^fischlerMatrixIntro" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory#^fischlerMatrixIntro" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory &gt; ^fischlerMatrixIntro</a><a data-href="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory#^fischlerMatrixIntro" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.6-final-day-and-degenerate-perturbation-theory.html#^fischlerMatrixIntro" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.6.9)</a><br>You know what's fun, is that there is a similar thing in density matrices where the weirdness comes from your off-diagonal terms. The units of a density matrix is just probability, but I wonder if there is a connection beyond diagonalization.<br>This means our new goal, is to diagonalize our  matrix! We want to find better basis states. If your off-diagonal terms are zero, then your states are already diagonalized! That <br>The reason we need basis states is that otherwise our terms aren't linearly independent. <br><br>This is just like if you were measuring in the Z observable with a D photon. The Z observable is the basis where we have the degeneracy, but with the change of basis we now measure in one that can distinguish. We've rotated to DA]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.4-degenerate-perturbation-theory.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.4 Degenerate Perturbation Theory.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 27 Jan 2025 19:18:00 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Week 3 begins !<br>
+1 lesson through chapter<br>
+A continuation of <a class="original-internal-link" data-href="1.4 Degenerate Perturbation Theory.md" href="https://azalamer.com/UniversityNotes/1.4 Degenerate Perturbation Theory.md" target="_blank" rel="noopener nofollow" style="display: none;">1.4 Degenerate Perturbation Theory</a><a class="internal-link mathLink-internal-link" data-href="1.4 Degenerate Perturbation Theory.md" href="https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.4-degenerate-perturbation-theory.html" target="_self" rel="noopener nofollow">1.4 Degenerate Perturbation Theory</a><br><br>
+won't throw up im nmot dizzhy the lights AREN't flickering guys
+<br><br>It's ! When you do the first order energy correction integral, the energy being constant pulls out.<br>
+From <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^c15950</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^c15950" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.3 (First Perturbed Energy)</a>, the correction is a lot like a weighted average.<br>The first excited state does have degeneracies! We're going to pick two degenerate states<br><br>Then do the  integrals.<br><br>For the off-diagonals<br><br>With non-zero off-diagonal terms, we see that we need to diagonalize our basis.<br>
+<br><br><br>This gives us final energies in the first order of<br><br>I am not nauseous. I am like, so stable. The room totally isn't moving.<br>Now we want to find the "good" states<br><br>When this is reduced, you get<br><br>Is there a reason why this reduced to cleanly into even superpositions of the original basis?
+We'll get to it!
+<br>QM will always give us the lowest possible energy. QM ensures that the lowest energy is the lowest it can physically be.<br>Plotting the probabilities of  gives us<br><br>If we want to make the energy as low as possible and the perturbation is in the lower right, so we want to move as much probability away from that end. That's why the bottom is . <br>In 15 minutes I run to next class, cry, then I go to target and get sunglasses. With those sunglasses.<br>Griffiths is thinking of a symmetry operator. "What symmetry can I express this problem with?" "What can I do to the box which leaves it unchanged?". Then look for basis functions which obey that symmetry. This is my answer to <a class="original-internal-link" data-href="#^2c27e2" href="https://azalamer.com/UniversityNotes/#^2c27e2" target="_blank" rel="noopener nofollow" style="display: none;">my earlier question</a><a class="internal-link mathLink-internal-link" data-href="#^2c27e2" href="https://azalamer.com/UniversityNotes/#^2c27e2" target="_self" rel="noopener nofollow">my earlier question</a>! We got lucky because our perturbation was perfectly even! That's why it was a uniform superposition.<br>I'm connecting this to  operators. How might we get ? In other words, what symmetry might a new eigenstate of  originate from?
+Maybe a possible phase difference? It is certainly possible, but the symmetry becomes more subtle.
+<br>For more information on how this all obeys with matrices, you can check Griffiths A.5 on Matrix operations.<br>
+Does the dimension of the  matrix depend on the number of matrices?<br>
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.5-more-degenerate-perturbation-theory.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.5 More Degenerate Perturbation Theory.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 27 Jan 2025 19:49:02 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>Hey y'all! These are my notes from when I took the Quantum Computing FRI Stream at UT from '23-'24. At the time I was still adjusting to typing my notes in real time so they might be a bit messy. If you have any corrections for them let me know, I hope they help!<br>
-You can navigate them by unit using the table below. <br><br><br><br><br><br><br><br><br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/🟩-overall-quantum-computing-class-notes-🟩.html</link><guid isPermaLink="false">School/Physics/Quantum Computing/Semester 1/🟩 Overall Quantum Computing Class Notes 🟩.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 03:47:41 GMT</pubDate></item><item><title><![CDATA[Outline 2025-01-23 21.04.17]]></title><description><![CDATA[ 
+You can navigate them by unit using the table below. <br><br><br><br><br><br><br><br><br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/🟩-overall-quantum-computing-class-notes-🟩.html</link><guid isPermaLink="false">School/Physics/Quantum Computing/Semester 1/🟩 Overall Quantum Computing Class Notes 🟩.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 03:53:52 GMT</pubDate></item><item><title><![CDATA[1.2 Superposition]]></title><description><![CDATA[ 
+ <br><a data-href="../Definitions/Introduction to Qbits" href="https://azalamer.com/UniversityNotes/Definitions/Introduction to Qbits" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../Definitions/Introduction to Qbits</a><a data-href="../Definitions/Introduction to Qbits" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/definitions/introduction-to-qbits.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">../Definitions/Introduction to Qbits</a><br><img alt="Pasted image 20240125154522.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240125154522.png"><br>
+Right circular is 0, left circular is 1<br>
+Euler's identity is really important, referenced below. <br><br><br>If we do this, we then can represent diagonal as <br><br><br>The in class question was then just like calculating the values of new points in different vector spaces, extra way is the RREF thing I did here, but it's small enough to just substitute<br><br><br>With both of the above, we can write our horizontal and vertical polarizations in terms of our new basis vectors<br><br><br><br>We define a circular polarization vector by<br><br>What this means is we can define circular polarization soley through a phase change <br>
+Right and Left circular polarization can then be defined as <br><br>This is the key conceptual jump here, we use complex variables in this vector to represent this rotation.  A complex amplitude<br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br>Eulers identity to reduce:<br>
+<br>	<br><br><br><br><br>Eulers Identity<br>
+Sub in to get<br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/1.2-superposition.html</link><guid isPermaLink="false">School/Physics/Quantum Computing/Semester 1/1.2 Superposition.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 28 Jan 2025 21:49:33 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240125154522.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240125154522.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Beginning Problems:]]></title><description><![CDATA[<a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:Question" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Question</a> 
+ <br><br><br>Using <a data-href="../Definitions/Quantum Gates" href="https://azalamer.com/UniversityNotes/Definitions/Quantum Gates" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../Definitions/Quantum Gates</a><a data-href="../Definitions/Quantum Gates" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/definitions/quantum-gates.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">../Definitions/Quantum Gates</a>, we can just multiply out the above<br>
+Distance is just the complex conjugate identity we know abt!<br>
+<br>X gate always flips horizontal and vertical so that<br>
+- 
+<br>X, Y, Z and H are all roots of I !
+
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:Question" class="tag" target="_blank" rel="noopener nofollow">#Question</a> - How do you take the square root of a matrix?
+
+<br>Answer: There isn't a unique convention to finding it
+
+
+
+
+<br>Using definitions from here:<a data-href="../Definitions/Bra-Ket Notation" href="https://azalamer.com/UniversityNotes/Definitions/Bra-Ket Notation" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../Definitions/Bra-Ket Notation</a><a data-href="../Definitions/Bra-Ket Notation" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/definitions/bra-ket-notation.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">../Definitions/Bra-Ket Notation</a><br><br>
+<br><br>
+1. 		- Any state <a data-tooltip-position="top" aria-label="../../Linear Algebra/6.3 Orthogonal and Orthonormal Spaces > ^0be41c" data-href="../../Linear Algebra/6.3 Orthogonal and Orthonormal Spaces#^0be41c" href="https://azalamer.com/UniversityNotes/Linear Algebra/6.3 Orthogonal and Orthonormal Spaces#^0be41c" class="internal-link" target="_self" rel="noopener nofollow">inner product</a> 'd to itself is just one, telling us the length of the vector. These are normalized states
+<br><br>
+1. 		- Dot product of two perpendicular (orthogonal ) vectors
+<br><br>
+1. 
+<br><br>
+1. REMEMBER COMPLEX CONJUGATE!<br>
+a. = <br>
+2. 
+<br><br>This was not on canvas, but for everyones sake we're working this out<br><br>
+<br><br>
+1. 	- Remember there is a distributive property! We could have just rephrased this as taking the horizontal component of  , which means going back to our definition, because  because they are orthogonal, you are left with the factor of 
+<br><br>
+1. 	- You can also just use the same clever reason as above! We only want the vertical component of 
+<br><br>
+<br>If you remember that the inner product is the generalization of the dot product, because we have 2x1 vectors, it is identical to the dot product<br>
+- That being said, inner product  dot product. The dot product is defined for MxN matrices when n=1<br>
+<a data-href="../Definitions/Orthonormal Bases" href="https://azalamer.com/UniversityNotes/Definitions/Orthonormal Bases" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../Definitions/Orthonormal Bases</a><a data-href="../Definitions/Orthonormal Bases" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/definitions/orthonormal-bases.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">../Definitions/Orthonormal Bases</a>
+<br><br><a data-href="../Definitions/Polarization Vectors" href="https://azalamer.com/UniversityNotes/Definitions/Polarization Vectors" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../Definitions/Polarization Vectors</a><a data-href="../Definitions/Polarization Vectors" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/definitions/polarization-vectors.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">../Definitions/Polarization Vectors</a><br>
+<br>
+Rewrite  in the {} basis<br>
+1) 
+
+Now we just need to solve for  and  . To do this, plug in our values for  and , then factor. 
+
+From here we just solve that system for  and  to get:
+
+Therefore, we have a final answer of<br>
+
+
+<br>
+Rewrite   in the  {} where  ,  
+
+<br><br>Then plugging back in we get<br>
+<br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/2.3-single-qubit-states-and-gates.html</link><guid isPermaLink="false">School/Physics/Quantum Computing/Semester 1/2.3 Single-Qubit States and Gates.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 28 Jan 2025 21:50:01 GMT</pubDate></item><item><title><![CDATA[Drawing 2025-01-24 13.46.23]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/excalidraw/drawing-2025-01-24-13.46.23.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/Excalidraw/Drawing 2025-01-24 13.46.23.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 19:47:56 GMT</pubDate></item><item><title><![CDATA[1.4 Degenerate Perturbation Theory 2025-01-24 13.50.37]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.4-degenerate-perturbation-theory-2025-01-24-13.50.37.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.4 Degenerate Perturbation Theory 2025-01-24 13.50.37.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 19:50:37 GMT</pubDate></item><item><title><![CDATA[1.5 More Degenerate Perturbation Theory 2025-01-27 13.05.00]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.5-more-degenerate-perturbation-theory-2025-01-27-13.05.00.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.5 More Degenerate Perturbation Theory 2025-01-27 13.05.00.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 27 Jan 2025 19:06:08 GMT</pubDate></item><item><title><![CDATA[Test4 Grading 2025-01-26 13.06.48]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  You went straight to the calculator so I can't give more credit, or say what you did wrongThis was an elastic collision, so you could work with energyconservation]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/test4-grading-2025-01-26-13.06.48.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Test4 Grading 2025-01-26 13.06.48.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sun, 26 Jan 2025 19:32:09 GMT</pubDate></item><item><title><![CDATA[Outline 2025-01-23 21.04.17]]></title><description><![CDATA[ 
  
   
   
