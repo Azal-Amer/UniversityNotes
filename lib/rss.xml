@@ -1,59 +1,202 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 28 Jan 2025 21:56:52 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 28 Jan 2025 21:56:27 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
- <br><br>Last time they discussed differential operators, gradients, curl, divergence, etc.<br>
-We're reviewing:<br>
-<br>coordinate systems (Spherical and Cylindrical)
-<br>Nabla operators in those coordinate systems
-<br>Line integrals<br>
-This is appreciated, because I didn't get much from Beckner<br>
-Friday we're reviewing the classic vector calc theorems.
-<br><br><br><br><br>This has a divergence of 1. because the direction of the vector never changes, it is defined with a fixed direction.<br>
-In general we start with some vector  where<br><br>To get the unit vector, you divide the vector by its magnitude<br>Definition (Unit Vector).
-For any given vector , the unit vector  is defined such that it lies along the same direction as , with magnitude 1. 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 05 Feb 2025 20:28:48 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 05 Feb 2025 20:28:39 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>
+<br>Electric Flux
+<br>Gauss' Law
+<br>Applications
+<br><br><br>Last time we've covered charge distribution stuff, to determine the electric field. In principle we're dine, so we have all we need for any electrostatic problem.<br>
+While that approach is always true, it's not always feasible. We're going to learn about how to solve in other ways, which simplify problems greatly.<br><br>Gauss' Law relates the flux to the charges.<br>Definition (Electric Flux).
 
-<br>To get the divergence of our vector<br><br>A non-zero divergence is equivalent to to having field aligned divergences and the direction of the flow changes outward. A divergence can be zero if the two terms compensate for each other. The strength changes, but the field spreads out and then comes back in. This is why divergence is a scalar product! It explains variations on a field form all directions.<br>Question
-Can you really product rule in this way? The divergence operator feels different from the gradient operator
-<br>What does it mean to take. the gradient of a scalar?
-the magnitude. isa multivariable function  so we just take the gradient as we would normally.
-<br>Example (Find the divergence of ).
-The divergence has a first term of zero, and the field is anti-aligned across the component's axis which. is also zero.
+To find the flux, you need to calculate a normal vector to the surface so that you can take the normal.<br>
+If the surface is curved, then you need to divide the surface into infinitesimals and integrate over all those normals. (Calculate the normal vector for every point on the surface, then surface integral)
 
-<br>Example (Div = 0, but dield lines aren't straight : ).
+Where  is the normal at any given point
+<br>Above is the flux through an open surface, but it need not be open! <br>Definition (Electric Flux through a Closed Surface).
 
-Notice how even though the direction of the vector. is changing, we seem to flow in a specific direction
+For a closed surface, the area (the normal) points outwards. Positive flux enters the surface, and negative flux leaves the surface. If there are no charges on the interior of the shape, the net flux is obviously zero. What comes in is balanced with what leaves. If there are charges inside, then the flux changes according to <a data-href="#^50c460" href="https://azalamer.com/UniversityNotes/about:blank#^50c460" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^50c460</a><a data-href="#^50c460" href="https://azalamer.com/UniversityNotes/about:blank#^50c460" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.8.3 (Gauss' Law)</a> 
+<br>Definition (Gauss' Law).
+The net flux of the electrostatic field in a vacuum, is 
 
-AT HOME, work this tragic thing through with the gradients
-<br>Why did we do this at all? This seems more complicated than the standard way of calculating the divergence
-It's just to build a visual intuition for the behavior, and how they do the same thing
-<br>An aside, I just called tennerani torabi, I'm gonna explode actually. <br>Definition (Gradient Operator).
-Given some function , who's orthonormal basis is spanned by the set of , we define the gradient as
+Our flux is directly proportional to our enclosed charge.<br>
 
-<br>Definition (Divergence).
-Given some vector   we define the divergence ( ) as
+<br><br>Gauss' Law is fundamental to electrostatics.<br>
+4. It allows us to determine the electric field for a given electric field when there is a nice symmetry, via a distribution of charge. Why's  the symmetry important? well once you've identified the symmetry, you can exploit that symmetry when calculating your electric field.<br>
+- You might have spherical symmetry. In that case, when applying Gauss' Law we know that the electric field is solely proportional to the radius since flux is preserved.<br>
+- With cylindrical symmetry, your gaussian surface is coaxial cylinders<br>
+- With infinite planes your gaussian surface is a pillbox which straddles the surface. Like a cylinder perpendicular to the surface and through.<br>
+- [0] Wow it really is a straight up called a pillbox colloquially<br>After class.U should look into the doctors appointment because I keep forgetting. Prob wanna make my stress list<br>No crashouts this time<br>Example (Let's say you have a sphere with a charge distribution on the surface. How do we get the electric field outside?).
+Make a gaussian surface outside the sphere, with a radius 
 
-<br>Definition (Curl).
-Given some vector   we define the curl ( ) as
+The flux at our second point is 
 
-<br><br>Example ( Given : Find ).
-In other words, describe this VVF in spherical coordinates. 
+For the flux inside the sphere, the electric field can still only be radially dependent. In this problem, the electric field has to be zero inside.<br>
+NOTE: Zero flux doesn't imply no electric field. We can have a source and a drain.
+<br>What happens when we make the sphere dense? This just changes a piecewise condition on the interior, since the charge now scales against the radius. If you work it out, the field increases linearly as you increase the radius until you exit the sphere and then it drops by . Remember though that in this case, we'd need to perform a volume integral to get the enclosed charge in a sphere. ]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.8-gauss'-law.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.8 Gauss' Law.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 05 Feb 2025 16:49:29 GMT</pubDate><enclosure url="https://i.giphy.com/BzCLJGxXQbwH09jzq0.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="https://i.giphy.com/BzCLJGxXQbwH09jzq0.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br><br><br>Why is the magnetic moment in an electron much larger to the proton?
+Magnetic moment is inversely proportional to mass
+<br><br>The hamiltonian couples the directions of  and . This means the magnitudes are still good, l but the quantum numbers  and  are not. <br>What is a "good quantum number"? Why aren't , good?
+This is because now the operators don't freely commute. Knowing one quantum number means you can't know the other. 
+<br>The projection of those numbers onto  are good, but we don't really get anything useful form them. That means that our only good remaining quantum numbers are  and . (Direction and magnitude quantum numbers).<br>
+An Aside<br>
+Last time, we learned about a new operator  where
 
-We'd just use the Jacobian right?
+<img alt="Diagram of the new vector" src="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter" referrerpolicy="no-referrer">
+<br>A good quantum number is one which isn't coupled together. What makes  good is that despite the coupling, it's a vector sum and is itself unique despite it's linear combination being non-unique. <br>
+my head feels like its filled with water
+<br>Oh shit molecules can have dozens of angular momentum vectors because everything can move freely.<br>The good quantum numbers in our system are<br><br>Then we get the complete fine structure<br>Theorem (The Complete Fine Structure Energy in the Hydrogen Atom).
 
-To do this, recall the following conversion identities
+Where alpha is the fine structure constant. .
+<br>To conserve angular momentum, the angular momentum number in transitions must change by 1<br>Today we're evaluating this for a few cases<br><br>Principle quantum number first, then the exponent is the multiplicity, then<br>
+ get's it's own label! That's called  because the chemists are despicable. s means spherical<br>
+ :  is for principle<br>
+ :  is for diffuse<br>
+etc.<br>
+The broad formula is <br><br>Are there any degeneracies left in our system? YES! Spin degeneracies and .<br>
+How would we break it? With a magnet! <br>
+<br>That's sneak peak for next class. With that, almost all the degeneracies in the problem are broken.<br>
+The  quantum numbers are magnitude!! That's why it is . For agnitude.
+<br>This perturbation is internal. The things left out of the original hamiltonian. The solution we saw in quantum 1 didn't account for the effects of special relativity. <br>For  in the hydrogen atom, we can get<br>
+<br>
+<br>
+<br>
+<br>Can you use this to make a better transistor?
+"If you don't know about spin-orbit interactions, you have no hope of understanding the semi-conductor. I can't say you'll use this to make a better transistor, but you use this to make a transistor that works"
+<br><br>How do you know which of those new energy states are wide enough you can measure?<br>
+<br>That's called a selection rule! The selection rule says for us to be able to see a new energy level, 
+<br>Why?
+You need to conserve momentum. Can't go from a  momentum to  momentum
+<br>You can't go from  to another . What you can do is go from any energy  to . When you calculate that from , you find that there are 5 possible  transitions! Below is what they are:<br>
+<img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250203134958.png">]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.8-complete-fine-structure.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.8 Complete Fine Structure.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 05 Feb 2025 19:04:39 GMT</pubDate><enclosure url="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter" length="0" type="false"/><content:encoded>&lt;figure&gt;&lt;img src="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Today we discussed discrepancies in Dirac's exact solution to the fine structure of the Hydrogen atom. Then we learned about the Zeeman effect, which helps us split the final degeneracies in the  angular vector. <br><br><br>We treated all of this in the context of perturbation theory, but why didn't we get the exact solution?<br>
+Dirac actually  exactly solved the hydrogen atom with relativity. The exact energy only depends on  in that solution, so we have the right quantum numbers.<br>If Dirac could solve this problem exactly, why are we even doing perturbation theory?
+Our technique generalizes to a higher number of electrons! You can't just do that with Dirac's exact solution. 
+<br>
+<br>How did Dirac do it?<br>
+In Dirac theory,  and  are degenerate. But experimentally Lamb 1947 found those levels weren't degenerate. TF?? What did we miss? We included special relativity and orbit coupling??
+<br>We're missing an even more fundamental physics. We treat the magnetic field as classical. Electromagnetic radiation is a bunch of photons! Dirac's theory knows nothing about that
+<br>Weee QED is now existing. Now EM fields interact due to photons which are emitted. Those are virtual photons. 
+<br>Where does the energy come from to make the photons?
+We borrow it from the vacuum, related to the uncertainty principle.\ref uncertain The more you borrow, the sooner it's due.
+<br>
+<br><a data-href="../../Quantum 1/Notes/1.9 Boundary Conditions in Free Space#^de80e8" href="https://Quantum 1/Notes/1.9 Boundary Conditions in Free Space#^de80e8" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/1.9 Boundary Conditions in Free Space &gt; ^de80e8</a><a data-href="../../Quantum 1/Notes/1.9 Boundary Conditions in Free Space#^de80e8" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/1.9-boundary-conditions-in-free-space.html#^de80e8" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.9.1 (Heisenburg Uncertainty Principle)</a> 
+<br>If the photons have momentum, why doesn't the electron just repel the photon during their perpetual exchange?
+Cause the electron should lose momentum right? And then the photon absorbs it. How does it know to attract or repel based on charges if a photon is chargeless
+<br><br><br>The sun has somehow collected sodium from previous dying stars. Any atom with unpaired electrons has fine structure.<br>
+There was a transition at the d3 line, which we wanted to identify here on Earth. We couldn't for the life of us figure out what was doing it.<br>
+Turns out it was helium, and this was what caused the d3 line.<br><br>We add an external magnetic field<br><br>Where  and . We're basically selecting a magnetic field to destroy the last degeneracy.<br>
+<br>There's an extra factor of 2 on  (the g-factor) for spin predicted by Dirac theory (where it's exactly two)
+<br>Measurement is almost two but not exactly. There's a whole field dedicated to thus this.<br>
+You calculate  through a series
 
-
-I'm actually crashing out getting a name wrong is so embarrassing I swear I was just thinking about girl day
-
-To solve it into spherical coordinates, you use these identities to solve for the angles. I don't want to type that out, but it happens through taking projections. Take the dot product of your cartesian components, with your spherical basis vectors. See more at <a data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection#^956507" href="https://azalamer.com/UniversityNotes/Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection#^956507" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection &gt; ^956507</a><a data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection#^956507" href="https://azalamer.com/UniversityNotes/school/math/linear-algebra/6.2-dot-products,-cross-products,-and-projection.html#^956507" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 6.2.1 (Projection)</a>  and <a data-tooltip-position="top" aria-label="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" href="https://azalamer.com/UniversityNotes/Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">6.2 Dot Products, Cross Products, and Projection</a><a data-tooltip-position="top" aria-label="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" href="https://azalamer.com/UniversityNotes/school/math/linear-algebra/6.2-dot-products,-cross-products,-and-projection.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">6.2 Dot Products, Cross Products, and Projection</a>
-Why are we doing it so complicated?
-I think because it's a review day, she's really going ground up
-
-<br>Example (AT HOME: Given a function : Find ).
-This is exactly like <a data-href="#^e0fde1" href="https://azalamer.com/UniversityNotes/#^e0fde1" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^e0fde1</a><a data-href="#^e0fde1" href="https://azalamer.com/UniversityNotes/#^e0fde1" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Example 1.3.7 (Given : Find )</a> 
-<br>How does electromagnetism behave in ? Maxwell's equations still need to work
-<a data-tooltip-position="top" aria-label="http://www.gauge-institute.org/Vector/MagneticMonopoles.pdf" rel="noopener nofollow" class="external-link" href="http://www.gauge-institute.org/Vector/MagneticMonopoles.pdf" target="_blank">This</a> straight up says that the curl operation in  takes your result ot <br>
-This is a <a data-tooltip-position="top" aria-label="https://physics.stackexchange.com/questions/21678/maxwell-in-multiple-dimensions-what-happens-to-curl" rel="noopener nofollow" class="external-link" href="https://physics.stackexchange.com/questions/21678/maxwell-in-multiple-dimensions-what-happens-to-curl" target="_blank">StackOverflow answer</a>
-<br><br>We define some path length differential . In spherical, we'd have an increment . Cylindrical has <br>
-We also know that with the chain rule<br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.3-differential-operators.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.3 Differential Operators.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 27 Jan 2025 22:28:34 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+Schwinger was the first person to calculate this correction, and now  is on his tombstone. 
+<br>Status of the field of  measurements<br>
+<br>Experiment shows:  = .00115965218059
+<br>Theory is  = .00115965218164<br>
+This is line insane agreement. 
+<br>What about the magnetic moment of the proton?
+The Dirac prediction is two, the measured value is 5.9. Terrible terrible approximation. You can't even get started with an expansion for  in the proton because the  you use their isn't fine structure, it's ??!
+<br>We're breaking it into two regimes. One with a weak field, one with a strong field.<br><br>We can write our energy correction then as<br><br>Why do we have a 2? 
+Because in <a data-href="#^originalZeemanHamCor" href="https://azalamer.com/UniversityNotes/about:blank#^originalZeemanHamCor" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^originalZeemanHamCor</a><a data-href="#^originalZeemanHamCor" href="https://azalamer.com/UniversityNotes/about:blank#^originalZeemanHamCor" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.9.1)</a>,  and  differ in coefficient by 2. One has a coeff of  and the other  so we have to factor out. 
+<br><br>If the field is weak enough, then the size of  is somewhat small enough that we are going to average it out. Additionally, it's direction is kind of like the direction of .<br><br><br>To find  we use the fact that .<br><br>This then gives us for our final energy correction based on <a data-href="#^energyCorrectionFirstOrder" href="https://azalamer.com/UniversityNotes/about:blank#^energyCorrectionFirstOrder" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^energyCorrectionFirstOrder</a><a data-href="#^energyCorrectionFirstOrder" href="https://azalamer.com/UniversityNotes/about:blank#^energyCorrectionFirstOrder" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.9.2)</a> when reduced gives:<br><br>where  . This means that for any given , the  then splits off our energy correction with . <br>Next time we cover the strong field case.]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.9-zeeman-effect.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.9 Zeeman Effect.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 05 Feb 2025 20:00:58 GMT</pubDate></item><item><title><![CDATA[Drawing 2025-01-29 18.04.52]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/excalidraw/drawing-2025-01-29-18.04.52.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/Excalidraw/Drawing 2025-01-29 18.04.52.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 30 Jan 2025 00:04:52 GMT</pubDate></item><item><title><![CDATA[1.8 Gauss' Law 2025-02-05 10.11.05]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.8-gauss'-law-2025-02-05-10.11.05.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.8 Gauss' Law 2025-02-05 10.11.05.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 05 Feb 2025 16:12:36 GMT</pubDate></item><item><title><![CDATA[1.8 Gauss' Law 2025-02-05 10.16.17]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.8-gauss'-law-2025-02-05-10.16.17.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.8 Gauss' Law 2025-02-05 10.16.17.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 05 Feb 2025 19:01:45 GMT</pubDate></item><item><title><![CDATA[1.8 Gauss' Law 2025-02-05 10.41.40]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  R]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.8-gauss'-law-2025-02-05-10.41.40.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.8 Gauss' Law 2025-02-05 10.41.40.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 05 Feb 2025 16:42:45 GMT</pubDate></item><item><title><![CDATA[1.9 Zeeman Effect 2025-02-05 13.19.18]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  n=3589.5nm589.nm]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.9-zeeman-effect-2025-02-05-13.19.18.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.9 Zeeman Effect 2025-02-05 13.19.18.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 05 Feb 2025 19:28:03 GMT</pubDate></item><item><title><![CDATA[1.9 Zeeman Effect 2025-02-05 13.38.04]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  Z]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.9-zeeman-effect-2025-02-05-13.38.04.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.9 Zeeman Effect 2025-02-05 13.38.04.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 05 Feb 2025 19:40:26 GMT</pubDate></item><item><title><![CDATA[1.9 Zeeman Effect 2025-02-05 13.42.24]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  Z]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.9-zeeman-effect-2025-02-05-13.42.24.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.9 Zeeman Effect 2025-02-05 13.42.24.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 05 Feb 2025 19:42:43 GMT</pubDate></item><item><title><![CDATA[Session 38- Retake Review 2025-02-04 17.09.36]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-38-retake-review-2025-02-04-17.09.36.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 38- Retake Review 2025-02-04 17.09.36.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 04 Feb 2025 23:10:30 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[<a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> 
+ <br><br>The professor is desi! And she seems cool<br>
+The Syllabus is <a data-tooltip-position="top" aria-label="../Class Official Files/Syllabus.pdf" data-href="../Class Official Files/Syllabus.pdf" href="https://azalamer.com/UniversityNotes/Class Official Files/Syllabus.pdf" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">here</a><a data-tooltip-position="top" aria-label="../Class Official Files/Syllabus.pdf" data-href="../Class Official Files/Syllabus.pdf" href="https://azalamer.com/UniversityNotes/school/cs/data-structures-&amp;-algs/class-official-files/syllabus.pdf" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">here</a><br>
+Discussion section 50730<br><br>Can't take notes, no raised screens<br>
+Can I make a thing which not only lets me scan my notes, but also make a diagram embedder?<br>
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a>  Programming Assignment 11:00PM 🔁 every week 🛫 2025-01-30
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a>  Programming Assignment 11:00PM 🆔 CS314 🔁 every week 🛫 2025-01-23 ✅ 2025-01-28
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> CS314 Exam 1 7:00PM 🆔 CS314 📅 2025-02-11 🔺 
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> CS314 Exam 2 7:00PM 🆔 CS314 📅 2025-03-25 🔺 
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> CS314 Exam 3 3:30PM 🆔 CS314 📅 2025-05-02 🔺 
+]]></description><link>https://azalamer.com/UniversityNotes/school/cs/data-structures-&amp;-algs/notes/0.1-introduction.html</link><guid isPermaLink="false">School/CS/Data Structures &amp; Algs/Notes/0.1 Introduction.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 00:08:24 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[<a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> 
+ <br><br>Syllabus is found <a data-tooltip-position="top" aria-label="../Class Official Files/syllabus 321.pdf" data-href="../Class Official Files/syllabus 321.pdf" href="https://azalamer.com/UniversityNotes/Class Official Files/syllabus 321.pdf" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">here</a><a data-tooltip-position="top" aria-label="../Class Official Files/syllabus 321.pdf" data-href="../Class Official Files/syllabus 321.pdf" href="https://azalamer.com/UniversityNotes/school/math/probability/class-official-files/syllabus-321.pdf" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">here</a><br>
+Textbook is <a data-tooltip-position="top" aria-label="../Class Official Files/Larsen-5E.pdf" data-href="../Class Official Files/Larsen-5E.pdf" href="https://azalamer.com/UniversityNotes/Class Official Files/Larsen-5E.pdf" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">here</a><a data-tooltip-position="top" aria-label="../Class Official Files/Larsen-5E.pdf" data-href="../Class Official Files/Larsen-5E.pdf" href="https://azalamer.com/UniversityNotes/school/math/probability/class-official-files/larsen-5e.pdf" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">here</a><br>
+Attendance is not required, but there is a participation grade which is totally subjective. Being active on the edDiscussion would count.<br>
+Class calendar <a data-tooltip-position="top" aria-label="https://utexas.instructure.com/courses/1414363/pages/calendar" rel="noopener nofollow" class="external-link" href="https://utexas.instructure.com/courses/1414363/pages/calendar" target="_blank">here</a><br><br>The overall layout of the course and textbook<br>
+Homeworks are actually due<br>
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a>  Do problems 2.3.1,3,5 🆔 SDS321 📅 2025-01-15 ✅ 2025-01-14
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a>  Read textbook Ch. 2.1-2.2Ch. 2.1-2.2 🆔 SDS321 📅 2025-01-16
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Midterm Exam 1,  🔺 same room and time 📅 2025-02-19🆔 SDS321
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Midterm Exam 2, 🔺 same room and time 📅 2025-04-02🆔 SDS321
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a>  Email Dr. Bartroff about Eid 🔼 📅 2025-01-27🆔 SDS321 
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Do problems 2.2.1,3,21,29,31,33 🆔 SDS321 ⏬ 📅 2025-01-15 ✅ 2025-01-14
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Read textbook Ch. 2.3 🆔 SDS321 ⏬ 📅 2025-01-15 ✅ 2025-01-14
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Do problems 2.3.1,3,5 🆔 SDS321 ⏬ 📅 2025-01-15 ✅ 2025-01-14
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Read textbook p. 32-39 (Ch. 2.4) 🆔 SDS321 ⏬ 📅 2025-01-22 ✅ 2025-01-22
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Do problems 2.4.1,11,19 🆔 SDS321 ⏬ 📅 2025-01-22 ✅ 2025-01-22
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Read textbook p. 40-47 (Ch. 2.4) 🆔 SDS321 ⏬ 📅 2025-01-27 ✅ 2025-01-28
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Do problems 2.4.23,27,29 🆔 SDS321 ⏬ 📅 2025-01-27 ✅ 2025-01-28
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Read textbook p. 48-52 (Ch. 2.4) 🆔 SDS321 ⏬ 📅 2025-01-29 ✅ 2025-01-28
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Do problems 2.4.41,43 ⏬ 📅 2025-01-29 🆔 SDS321
+<br>Homeworks are whatever you want, the exams use paper and are in class. 3-4 short problems. The exams have no coding<br>Late policy: 24 hour grace period with a 25% penalty with unlimited uses. <br>
+<br>This is just like a regular policy?
+<br>Canvas isn't going to have a correct weighting of how the class grade is, so don't pay attention to it. <br>AI Policy - Basically the standard one, don't submit what isn't yours<br>Definition (Probability).
+The field of math concerning randomness
+<br>Definition (Statistics).
+The science of drawing valid conclusions from data
+<br>This guy is so forking boring, at least try to be engaging at 8:00 am 😭. I do get that he's also here at 8am. But bro cmon<br><br><br>Includes the HHH event, so 1/2. ]]></description><link>https://azalamer.com/UniversityNotes/school/math/probability/notes/0.1-introduction.html</link><guid isPermaLink="false">School/Math/Probability/Notes/0.1 Introduction.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 00:10:16 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>Today is the last boring class<br>
 <br>We're covering surface &amp; volume integrals
 <br>Fundamental theorems
@@ -109,7 +252,183 @@ The total microscopic circulation is equal to the total circulation on the outer
 <br>Calculate the Divergence
 <br>Calculate the volume integral of the integral by using the <a data-href="#^281900" href="https://azalamer.com/UniversityNotes/#^281900" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^281900</a><a data-href="#^281900" href="https://azalamer.com/UniversityNotes/#^281900" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.4.6 (Divergence Theorem)</a> 
 
-]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.4.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.4.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 18:59:08 GMT</pubDate><enclosure url="https://i.giphy.com/f9eYHQ8RZ4zfc4unXx.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="https://i.giphy.com/f9eYHQ8RZ4zfc4unXx.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.4-vector-integrals.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.4 Vector Integrals.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 16:03:10 GMT</pubDate><enclosure url="https://i.giphy.com/f9eYHQ8RZ4zfc4unXx.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="https://i.giphy.com/f9eYHQ8RZ4zfc4unXx.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Today we're going over<br>
+<br>The Electric Field
+<br>Charge Distribution
+<br>E-Field from charge distribution
+<br><br>It's convenient to introduce a continuous charge distribution to simplify the calculations.<br>Definition (Columb's law).
+Columb's law is a fundamental theorem in electrostatics. It tells us that between two point charges, the electric force is
+
+
+<br>The little  is our test charge, and  is our source.<br><br>The ratio of the force to the charge is what we call the electric field<br>
+This also means<br><br>What happens with multiple charges.<br>Definition (The Superposition Principle).
+The superposition principle states that the electric field on some charge  by a set of charges , is the sum of all the individual force interactions superimposed
+
+<br>Positive charges make field lines which are emitted, negative charges make field lines which absorb.<br>Guys I just had my first conversation with no words, I didn't understand anything past "I'm sleepy", but we did do a <br>
+Azal: "What's up "<br>
+Harshini: "Im sleepy"<br>
+Azal: Agrees<br>
+Harshini: Does some weird glaring<br>
+Harshini: Does more
+<br>Exercise (Find the magnitude of the electric field drawn at ).
+
+Our field then gets pulled down as if there was a charge  above it, with twice the magnitude. First I calculate the angle below
+
+
+^angleComponent<br>
+That's the vertical component. Then we just multiply by the electric field strength from each &gt;charge, given by the below 
+
+Now to to evaluate our projection, we plug in our solved angle
+
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.6-the-electric-field.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.6 The Electric Field.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 16:32:43 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Today we covered solving for the spectrum of a spherically symmetric hamiltonian, then later we solved the special case of a particle in a sphere. <br><br>Today we're starting with a non-relativistic hamiltonian, which is radius dependent.<br><br>(This hamiltonian is true for all non-relativistic particles in a spherically symmetric potential)<br>We want to know the energy states (obvi)<br><br>We know already that the hamiltonian commutes with the angular momentum. This is obvious because the Hamiltonian is composed of two scalar terms, and rotating a vector on a radius, yields a result still on the radius. More information on this comes from <br><br>We also know<br><br>Our energies will then be<br><br>Where  is another quantum number.<br>To solve for our energies, we can solve through a position projection<br><br>We are going to define the following equality, which can be easily checked<br><br>Exercise (AT HOME:Check the above).<br>Plugging this into <a data-href="#^leftOff" href="https://azalamer.com/UniversityNotes/#^leftOff" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^leftOff</a><a data-href="#^leftOff" href="https://azalamer.com/UniversityNotes/#^leftOff" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.1.6)</a> <br><br>Using an existing radius momentum commutation rule, which says<br><br>We then reduce to<br><br>Plugging into <a data-href="#^rpepsilonTerm" href="https://azalamer.com/UniversityNotes/#^rpepsilonTerm" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^rpepsilonTerm</a><a data-href="#^rpepsilonTerm" href="https://azalamer.com/UniversityNotes/#^rpepsilonTerm" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.1.8)</a> <br><br>This means we can now solve for <br><br>Plugging back into our hamiltonian <a data-href="#^radiusDepHam" href="https://azalamer.com/UniversityNotes/#^radiusDepHam" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^radiusDepHam</a><a data-href="#^radiusDepHam" href="https://azalamer.com/UniversityNotes/#^radiusDepHam" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.1.1)</a> <br><br>Notice two things, <br>
+<br>Lack of angular dependance
+<br>Dependance on the  quantum number. (This would imply asymmetry in the -direction)<br>
+Now to solve for our energies from <a data-href="#^leftOff" href="https://azalamer.com/UniversityNotes/#^leftOff" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^leftOff</a><a data-href="#^leftOff" href="https://azalamer.com/UniversityNotes/#^leftOff" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.1.6)</a>, using  <a data-href="2.6 Spherical Harmonics#^3398f1" href="https://azalamer.com/UniversityNotes/2.6 Spherical Harmonics#^3398f1" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">2.6 Spherical Harmonics &gt; ^3398f1</a><a data-href="2.6 Spherical Harmonics#^3398f1" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/2.6-spherical-harmonics.html#^3398f1" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 2.6.1 (Spherical Harmonics)</a> 
+<br>WE HAVE TWO 's, one is the mass, one is the quantum number.<br>It's the end of my career, and I'm getting out if here FAST<br><br>Future Azal, the potential from the hamiltonian got thrown back in at the end because he forgot to use math with it<br>Now we're going to do a change of variables, and claim the result. We're deep in the weeds here, so he's making this another take home.<br><br>Exercise (TAKE HOME: Perform this substitution yourself).<br><br>Notice how it looks like a 1D Schrödinger equation!<br>
+<br><br>Definition 1.6.2 (Schrödinger Equation).
+
+Also written as 
+
+The only condition you need to solve this equation, is 
+
+
+Where  is a Unitary,  is the identity, and  is the hamiltonian of the Hamiltonian<br>
+
+ <br>Now we're going to define the following conditions<br><br><br>Our problem is then<br><br>This makes our  differential equation become<br><br>Starting with our quantum number ,<br>
+<br>
+<br><br>Just from intuition, we know that<br><br>So then  in <a data-href="#^sol1" href="https://azalamer.com/UniversityNotes/#^sol1" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^sol1</a><a data-href="#^sol1" href="https://azalamer.com/UniversityNotes/#^sol1" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.1.20)</a><br>That makes  our normalization constant. Additionally, we still need to impose our boundary conditions at <a data-href="#^boundaryCondition" href="https://azalamer.com/UniversityNotes/#^boundaryCondition" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^boundaryCondition</a><a data-href="#^boundaryCondition" href="https://azalamer.com/UniversityNotes/#^boundaryCondition" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.1.17)</a><br><br>More generally, we'd use Spherical Bessel Functions<br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.1-spherically-symmetric-potentials.html</link><guid isPermaLink="false">School/Physics/Quantum 1/Notes/3.1 Spherically Symmetric Potentials.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 19:39:51 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>We solved for the energy states of the Hydrogen atom with a Coulomb potential. <br><br>Last time we were discussing spherically symmetric hamiltonians. For reference <a data-href="3.1 Spherically Symmetric Potentials#^radiusDepHam" href="https://azalamer.com/UniversityNotes/3.1 Spherically Symmetric Potentials#^radiusDepHam" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">3.1 Spherically Symmetric Potentials &gt; ^radiusDepHam</a><a data-href="3.1 Spherically Symmetric Potentials#^radiusDepHam" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.1-spherically-symmetric-potentials.html#^radiusDepHam" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.1.1)</a><br>
+<br><br><br><br><br><br>Definition 2.6.1 (Spherical Harmonics).
+For a given spherically confined state, in terms of , the spherical harmonics are denoted as
+
+Those harmonics can be expressed in terms of  as
+
+<br><br>We just need to change our spherically symmetric potential from the hamiltonian<br><br>(Just a standard Coulomb potential)<br>
+Similar to <a data-href="3.1 Spherically Symmetric Potentials#^diffEq" href="https://azalamer.com/UniversityNotes/3.1 Spherically Symmetric Potentials#^diffEq" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">3.1 Spherically Symmetric Potentials &gt; ^diffEq</a><a data-href="3.1 Spherically Symmetric Potentials#^diffEq" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.1-spherically-symmetric-potentials.html#^diffEq" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.1.16)</a><br>Classically with a columb potential<br><br>We're doing to make the following substitutions<br><br>We're off-screening the math for the sake of sanity, substituting the diffeq from <a data-href="3.1 Spherically Symmetric Potentials#^diffEq" href="https://azalamer.com/UniversityNotes/3.1 Spherically Symmetric Potentials#^diffEq" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">3.1 Spherically Symmetric Potentials &gt; ^diffEq</a><a data-href="3.1 Spherically Symmetric Potentials#^diffEq" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.1-spherically-symmetric-potentials.html#^diffEq" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.1.16)</a> with our new potential and substitutions<br><br>At a fixed , there will always be  possible states. For our value of rho, we're going to take the limit of the diffeq as . <br><br>We decay by  at infinity. If  the result is nonsense cause then we'd get infinite energy<br>
+For <br><br>Same reason for throwing out  as we did for .<br>Now that we have the end and initial behaviors, we conjecture that  is of the form<br><br>Why can I just say that the solution is of this form?
+This product is just because it is an easy way to capture both behaviors of the function.If you can find a way to combine the fact of those end behaviors, then any trick will do.
+<br>Now we want to solve for that  term, by plugging back into the diffeq. We do this by expressing this as a power series!<br><br>Going to that fourth step, is a matter of recognizing that now our sum has a recursion relation, which means we can't explicitly solve for . This can be seen more obviously if you plug in for a fixed value of . Off-screening the math, you can recognize that the way to reduce the recursion relation.<br><br>Plugging this value of the ratio into our summation expression for  assuming that there is infinite <br><br>Serious problem though, if we now plug back into  <a data-href="#^conjecturedSolution" href="https://azalamer.com/UniversityNotes/#^conjecturedSolution" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^conjecturedSolution</a><a data-href="#^conjecturedSolution" href="https://azalamer.com/UniversityNotes/#^conjecturedSolution" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.2.7)</a>, we now break our end behavior criteria! As we approach infinity, the wave-function now also goes to infinity. The only way to get out of this problem, is if the series is bounded. There has to be a fixed number of possible .<br>
+From <a data-href="#^recursiveRatio" href="https://azalamer.com/UniversityNotes/#^recursiveRatio" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^recursiveRatio</a><a data-href="#^recursiveRatio" href="https://azalamer.com/UniversityNotes/#^recursiveRatio" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.2.8)</a>,<br><br>because , we know that !<br>
+ must be quantized and even!<br>I don't think he's going to pass confirmation, but if mr. Gaetz does, then he's going to allow wavefunctions to go to infinity, at infinity<br>Good luck to you guys...<br>With all this information, we find<br><br>Theorem (The Energy level of a Hydrogen Atom).
+ is the mass of the electron,  is the charge of it,  is planks constant, and  is the quantum number
+
+<br>Those are the energy levels when .<br>
+Higher quantum numbers  have lower energies. This makes sense with classical coulomb potentials. But, WHERE DID OUR  DEPENDENCE GO? The Hydrogen atom no longer needs this quantum number on the energy!<br>
+There are a BUNCH more quantum numbers for us now to occupy for ground states. Recall we already found that<br><br>Why the  quantum number vanished, is beyond this course. There is a symmetry, which "has something to do with "<br>
+There is an additional symmetry called "Runge-Lenz vector". Like the hearth moves around the sun, there's something conserved there other than angular momentum. That's the <a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=a7hj_0r3_Ws" rel="noopener nofollow" class="external-link" href="https://www.youtube.com/watch?v=a7hj_0r3_Ws" target="_blank">Runge-Lenz vector.</a><br>What was the importance of 
+We never solved for  and thusly , so it wasn't important
+<br>We never solved for the wave-function, just the energies]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.2-two-particles-the-hydrogen-atom.html</link><guid isPermaLink="false">School/Physics/Quantum 1/Notes/3.2 Two Particles-The Hydrogen Atom.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 19:40:45 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Week 3 begins !<br>
+1 lesson through chapter<br>
+A continuation of <a class="original-internal-link" data-href="1.4 Degenerate Perturbation Theory.md" href="https://azalamer.com/UniversityNotes/1.4 Degenerate Perturbation Theory.md" target="_blank" rel="noopener nofollow" style="display: none;">1.4 Degenerate Perturbation Theory</a><a class="internal-link mathLink-internal-link" data-href="1.4 Degenerate Perturbation Theory.md" href="https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.4-degenerate-perturbation-theory.html" target="_self" rel="noopener nofollow">1.4 Degenerate Perturbation Theory</a><br><br>
+won't throw up im nmot dizzhy the lights AREN't flickering guys
+<br><br>It's ! When you do the first order energy correction integral, the energy being constant pulls out.<br>
+From <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^c15950</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^c15950" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.3 (First Perturbed Energy)</a>, the correction is a lot like a weighted average.<br>The first excited state does have degeneracies! We're going to pick two degenerate states<br><br>Then do the  integrals.<br><br>For the off-diagonals<br><br>With non-zero off-diagonal terms, we see that we need to diagonalize our basis.<br>
+<br><br><br>This gives us final energies in the first order of<br><br>I am not nauseous. I am like, so stable. The room totally isn't moving.<br>Now we want to find the "good" states<br><br>When this is reduced, you get<br><br>Is there a reason why this reduced to cleanly into even superpositions of the original basis?
+We'll get to it!
+<br>QM will always give us the lowest possible energy. QM ensures that the lowest energy is the lowest it can physically be.<br>Plotting the probabilities of  gives us<br><br>If we want to make the energy as low as possible and the perturbation is in the lower right, so we want to move as much probability away from that end. That's why the bottom is . <br>In 15 minutes I run to next class, cry, then I go to target and get sunglasses. With those sunglasses.<br>Griffiths is thinking of a symmetry operator. "What symmetry can I express this problem with?" "What can I do to the box which leaves it unchanged?". Then look for basis functions which obey that symmetry. This is my answer to <a class="original-internal-link" data-href="#^2c27e2" href="https://azalamer.com/UniversityNotes/#^2c27e2" target="_blank" rel="noopener nofollow" style="display: none;">my earlier question</a><a class="internal-link mathLink-internal-link" data-href="#^2c27e2" href="https://azalamer.com/UniversityNotes/#^2c27e2" target="_self" rel="noopener nofollow">my earlier question</a>! We got lucky because our perturbation was perfectly even! That's why it was a uniform superposition.<br>I'm connecting this to  operators. How might we get ? In other words, what symmetry might a new eigenstate of  originate from?
+Maybe a possible phase difference? It is certainly possible, but the symmetry becomes more subtle.
+<br>For more information on how this all obeys with matrices, you can check Griffiths A.5 on Matrix operations.<br>
+Does the dimension of the  matrix depend on the number of matrices?]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.5-more-degenerate-perturbation-theory.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.5 More Degenerate Perturbation Theory.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 16:23:38 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br><img alt="Spectrum of Atomic Hydrogen > Experiment 21 from Advanced Physics with ..." src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.vernier.com%2Fwp-content%2Fuploads%2F2019%2F12%2Flab.PHYS-ABM-21-hydrogen_spectrum.001.png&amp;f=1&amp;nofb=1&amp;ipt=9b26b1e3ed8f3085005f3a81beeaabb1bdadbaa1ce199d33d8b7fbc9b64ce2f8&amp;ipo=images" referrerpolicy="no-referrer"><br>
+Our goal is to figure out what's going on with those left two-most lines, those are the fine structure.<br>
+What we're looking at today isn't the cause of this splitting.<br><br>We model the hydrogen atom with a coulomb potential, see <a class="original-internal-link" data-href="../../Quantum 1/Notes/3.2 Two Particles-The Hydrogen Atom.md" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.2 Two Particles-The Hydrogen Atom.md" target="_blank" rel="noopener nofollow" style="display: none;">3.2 Two Particles-The Hydrogen Atom</a><a class="internal-link mathLink-internal-link" data-href="../../Quantum 1/Notes/3.2 Two Particles-The Hydrogen Atom.md" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.2-two-particles-the-hydrogen-atom.html" target="_self" rel="noopener nofollow">3.2 Two Particles-The Hydrogen Atom</a> for more details.<br><br>We find once you solve for the spectrum of the hydrogen atom, that the energy only depends on the quantum number .<br><br><br>Theorem 3.2.1 (The Energy level of a Hydrogen Atom).
+ is the mass of the electron,  is the charge of it,  is planks constant, and  is the quantum number
+
+ <br>The alternative way to write this expression with some rearrangement, you write<br><br>The fine structure constant is the value of !<br>The number of degeneracies in the hydrogen atom goes by . We know that the splitting of the transition lines is due to some internal  <br>Correction terms are going to become  which are (special) relativistic in the origin. The issue with <a data-href="#^h0" href="https://azalamer.com/UniversityNotes/#^h0" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^h0</a><a data-href="#^h0" href="https://azalamer.com/UniversityNotes/#^h0" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.6.1)</a> is that we didn't incorporate terms associated with special relativity!<br>The kinetic energy operator, the momentum part, is not consistent with SR. We're going to expand from our guy Einstein.<br><br>We're going to expand our square root via taylor<br><br>The KE in a spherically symmetric potential is  <br>An aside: Can we even use perturbation theory? Is this "small"?
+To show that the perturbation is small, we have to calculate . We know that momentum is just , so 
+
+As long as the electron's velocity is small compared to the speed of light, we can use perturbation theory!<br>
+To get that, we use Virial's Theorem, which states that in a spherically symmetric potential, the kinetic energy is
+
+We know the potential of an electron in hydrogen, so once we actually calculate the velocity using the mass, we find that 
+
+That means we're clear to use perturbation theory!
+<br>We're going to use that second order term, <br><br>Now to calculate our first corrected energy<br><br>Why are the expectation values not including ? 
+Well this is a spherically symmetric potential, so the  parts of the state don't get uniquely acted on. The expectation value over those parts is zero. As for notation, not having  implies that we don't need to include it in our expectation value, because of this previous reason. 
+<br>Doing the expectation values for  is messy and complicated. He will give some intuition though. This is much like how we solved <a data-href="3.2 Two Particles-The Hydrogen Atom#^recursiveRatio" href="https://azalamer.com/UniversityNotes/3.2 Two Particles-The Hydrogen Atom#^recursiveRatio" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">3.2 Two Particles-The Hydrogen Atom &gt; ^recursiveRatio</a><a data-href="3.2 Two Particles-The Hydrogen Atom#^recursiveRatio" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.2-two-particles-the-hydrogen-atom.html#^recursiveRatio" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.2.8)</a>: these are complicated integrals, but in principle we could solve it through a power series!<br><br>Above is our relativistic correction to the energy levels of the hydrogen atom. The energy correction changes depending on the  and  quantum number! That means it's observable! The spacing is shifted from what regular Schrödinger would give!<br>
+Because of how  is bounded, the difference in the energy seen inside <a data-href="#^relEnergy" href="https://azalamer.com/UniversityNotes/#^relEnergy" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^relEnergy</a><a data-href="#^relEnergy" href="https://azalamer.com/UniversityNotes/#^relEnergy" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.6.7)</a>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.6-fine-structure-in-the-hydrogen-atom.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.6 Fine Structure in the Hydrogen Atom.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 20:32:25 GMT</pubDate><enclosure url="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.vernier.com%2Fwp-content%2Fuploads%2F2019%2F12%2Flab.PHYS-ABM-21-hydrogen_spectrum.001.png&amp;f=1&amp;nofb=1&amp;ipt=9b26b1e3ed8f3085005f3a81beeaabb1bdadbaa1ce199d33d8b7fbc9b64ce2f8&amp;ipo=images" length="0" type="false"/><content:encoded>&lt;figure&gt;&lt;img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.vernier.com%2Fwp-content%2Fuploads%2F2019%2F12%2Flab.PHYS-ABM-21-hydrogen_spectrum.001.png&amp;f=1&amp;nofb=1&amp;ipt=9b26b1e3ed8f3085005f3a81beeaabb1bdadbaa1ce199d33d8b7fbc9b64ce2f8&amp;ipo=images"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[1.5 More Degenerate Perturbation Theory 2025-01-29 10.22.42]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  +q-qD-]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.5-more-degenerate-perturbation-theory-2025-01-29-10.22.42.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.5 More Degenerate Perturbation Theory 2025-01-29 10.22.42.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 16:24:56 GMT</pubDate></item><item><title><![CDATA[1.6 The Electric Field 2025-01-29 10.06.18]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  qQ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.6-the-electric-field-2025-01-29-10.06.18.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.6 The Electric Field 2025-01-29 10.06.18.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 16:06:56 GMT</pubDate></item><item><title><![CDATA[1.6 The Electric Field 2025-01-29 10.12.28]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.6-the-electric-field-2025-01-29-10.12.28.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.6 The Electric Field 2025-01-29 10.12.28.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 29 Jan 2025 16:15:09 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Last time they discussed differential operators, gradients, curl, divergence, etc.<br>
+We're reviewing:<br>
+<br>coordinate systems (Spherical and Cylindrical)
+<br>Nabla operators in those coordinate systems
+<br>Line integrals<br>
+This is appreciated, because I didn't get much from Beckner<br>
+Friday we're reviewing the classic vector calc theorems.
+<br><br><br><br><br>This has a divergence of 1. because the direction of the vector never changes, it is defined with a fixed direction.<br>
+In general we start with some vector  where<br><br>To get the unit vector, you divide the vector by its magnitude<br>Definition (Unit Vector).
+For any given vector , the unit vector  is defined such that it lies along the same direction as , with magnitude 1. 
+
+<br>To get the divergence of our vector<br><br>A non-zero divergence is equivalent to to having field aligned divergences and the direction of the flow changes outward. A divergence can be zero if the two terms compensate for each other. The strength changes, but the field spreads out and then comes back in. This is why divergence is a scalar product! It explains variations on a field form all directions.<br>Question
+Can you really product rule in this way? The divergence operator feels different from the gradient operator
+<br>What does it mean to take. the gradient of a scalar?
+the magnitude. isa multivariable function  so we just take the gradient as we would normally.
+<br>Example (Find the divergence of ).
+The divergence has a first term of zero, and the field is anti-aligned across the component's axis which. is also zero.
+
+<br>Example (Div = 0, but dield lines aren't straight : ).
+
+Notice how even though the direction of the vector. is changing, we seem to flow in a specific direction
+
+AT HOME, work this tragic thing through with the gradients
+<br>Why did we do this at all? This seems more complicated than the standard way of calculating the divergence
+It's just to build a visual intuition for the behavior, and how they do the same thing
+<br>An aside, I just called tennerani torabi, I'm gonna explode actually. <br>Definition (Gradient Operator).
+Given some function , who's orthonormal basis is spanned by the set of , we define the gradient as
+
+<br>Definition (Divergence).
+Given some vector   we define the divergence ( ) as
+
+<br>Definition (Curl).
+Given some vector   we define the curl ( ) as
+
+<br><br>Example ( Given : Find ).
+In other words, describe this VVF in spherical coordinates. 
+
+We'd just use the Jacobian right?
+
+To do this, recall the following conversion identities
+
+
+I'm actually crashing out getting a name wrong is so embarrassing I swear I was just thinking about girl day
+
+To solve it into spherical coordinates, you use these identities to solve for the angles. I don't want to type that out, but it happens through taking projections. Take the dot product of your cartesian components, with your spherical basis vectors. See more at <a data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection#^956507" href="https://azalamer.com/UniversityNotes/Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection#^956507" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection &gt; ^956507</a><a data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection#^956507" href="https://azalamer.com/UniversityNotes/school/math/linear-algebra/6.2-dot-products,-cross-products,-and-projection.html#^956507" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 6.2.1 (Projection)</a>  and <a data-tooltip-position="top" aria-label="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" href="https://azalamer.com/UniversityNotes/Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">6.2 Dot Products, Cross Products, and Projection</a><a data-tooltip-position="top" aria-label="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" href="https://azalamer.com/UniversityNotes/school/math/linear-algebra/6.2-dot-products,-cross-products,-and-projection.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">6.2 Dot Products, Cross Products, and Projection</a>
+Why are we doing it so complicated?
+I think because it's a review day, she's really going ground up
+
+<br>Example (AT HOME: Given a function : Find ).
+This is exactly like <a data-href="#^e0fde1" href="https://azalamer.com/UniversityNotes/#^e0fde1" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^e0fde1</a><a data-href="#^e0fde1" href="https://azalamer.com/UniversityNotes/#^e0fde1" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Example 1.3.7 (Given : Find )</a> 
+<br>How does electromagnetism behave in ? Maxwell's equations still need to work
+<a data-tooltip-position="top" aria-label="http://www.gauge-institute.org/Vector/MagneticMonopoles.pdf" rel="noopener nofollow" class="external-link" href="http://www.gauge-institute.org/Vector/MagneticMonopoles.pdf" target="_blank">This</a> straight up says that the curl operation in  takes your result ot <br>
+This is a <a data-tooltip-position="top" aria-label="https://physics.stackexchange.com/questions/21678/maxwell-in-multiple-dimensions-what-happens-to-curl" rel="noopener nofollow" class="external-link" href="https://physics.stackexchange.com/questions/21678/maxwell-in-multiple-dimensions-what-happens-to-curl" target="_blank">StackOverflow answer</a>
+<br><br>We define some path length differential . In spherical, we'd have an increment . Cylindrical has <br>
+We also know that with the chain rule<br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.3-differential-operators.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.3 Differential Operators.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 27 Jan 2025 22:28:34 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>Hey y'all! These are my notes from when I took the Quantum Information Science at UT with professor Scott Aaronson from '24-'25.<br>
 The <a data-href="0.1 Class Overview" href="https://azalamer.com/UniversityNotes/0.1 Class Overview" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">0.1 Class Overview</a><a data-href="0.1 Class Overview" href="https://azalamer.com/UniversityNotes/school/physics/qis/notes/0.1-class-overview.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">0.1 Class Overview</a> contains a list of every theorem we learned in class, but due to an issue with my website publishing workflow the equations are broken on that page. They still exist in their original notes.<br><br><br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/qis/notes/🟩-overall-qis-class-notes-🟩.html</link><guid isPermaLink="false">School/Physics/QIS/Notes/🟩 Overall QIS Class Notes 🟩.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 03:57:10 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br><br>For the density matrices, do not actually fully calculate the outer product. Instead, leave in  form. Then you take the projections on the relevant orthonormal basis for the other qubits. Those outer products are just like what occurs with measurement!<br>Run through shor's algorithm<br>Write out all the possible outer products for the existing states, the matrices  <br>Shors for when Q/s isn’t an integer<br>Algorithms need:<br>
@@ -266,19 +585,6 @@ You can see that there's an identity hidden inside the ! This is just an energy 
 We also know. that  so
 
 <br><br>From the energies, we already know that the expectation value  is non-zero. If it was zero there would be no problem! We're using language associated with matrices, and you can read more about that in <a data-href="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory#^fischlerMatrixIntro" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory#^fischlerMatrixIntro" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory &gt; ^fischlerMatrixIntro</a><a data-href="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory#^fischlerMatrixIntro" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.6-final-day-and-degenerate-perturbation-theory.html#^fischlerMatrixIntro" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.6.9)</a><br>You know what's fun, is that there is a similar thing in density matrices where the weirdness comes from your off-diagonal terms. The units of a density matrix is just probability, but I wonder if there is a connection beyond diagonalization.<br>This means our new goal, is to diagonalize our  matrix! We want to find better basis states. If your off-diagonal terms are zero, then your states are already diagonalized! That <br>The reason we need basis states is that otherwise our terms aren't linearly independent. <br><br>This is just like if you were measuring in the Z observable with a D photon. The Z observable is the basis where we have the degeneracy, but with the change of basis we now measure in one that can distinguish. We've rotated to DA]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.4-degenerate-perturbation-theory.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.4 Degenerate Perturbation Theory.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 27 Jan 2025 19:18:00 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
- <br><br>Week 3 begins !<br>
-1 lesson through chapter<br>
-A continuation of <a class="original-internal-link" data-href="1.4 Degenerate Perturbation Theory.md" href="https://azalamer.com/UniversityNotes/1.4 Degenerate Perturbation Theory.md" target="_blank" rel="noopener nofollow" style="display: none;">1.4 Degenerate Perturbation Theory</a><a class="internal-link mathLink-internal-link" data-href="1.4 Degenerate Perturbation Theory.md" href="https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.4-degenerate-perturbation-theory.html" target="_self" rel="noopener nofollow">1.4 Degenerate Perturbation Theory</a><br><br>
-won't throw up im nmot dizzhy the lights AREN't flickering guys
-<br><br>It's ! When you do the first order energy correction integral, the energy being constant pulls out.<br>
-From <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^c15950</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^c15950" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.3 (First Perturbed Energy)</a>, the correction is a lot like a weighted average.<br>The first excited state does have degeneracies! We're going to pick two degenerate states<br><br>Then do the  integrals.<br><br>For the off-diagonals<br><br>With non-zero off-diagonal terms, we see that we need to diagonalize our basis.<br>
-<br><br><br>This gives us final energies in the first order of<br><br>I am not nauseous. I am like, so stable. The room totally isn't moving.<br>Now we want to find the "good" states<br><br>When this is reduced, you get<br><br>Is there a reason why this reduced to cleanly into even superpositions of the original basis?
-We'll get to it!
-<br>QM will always give us the lowest possible energy. QM ensures that the lowest energy is the lowest it can physically be.<br>Plotting the probabilities of  gives us<br><br>If we want to make the energy as low as possible and the perturbation is in the lower right, so we want to move as much probability away from that end. That's why the bottom is . <br>In 15 minutes I run to next class, cry, then I go to target and get sunglasses. With those sunglasses.<br>Griffiths is thinking of a symmetry operator. "What symmetry can I express this problem with?" "What can I do to the box which leaves it unchanged?". Then look for basis functions which obey that symmetry. This is my answer to <a class="original-internal-link" data-href="#^2c27e2" href="https://azalamer.com/UniversityNotes/#^2c27e2" target="_blank" rel="noopener nofollow" style="display: none;">my earlier question</a><a class="internal-link mathLink-internal-link" data-href="#^2c27e2" href="https://azalamer.com/UniversityNotes/#^2c27e2" target="_self" rel="noopener nofollow">my earlier question</a>! We got lucky because our perturbation was perfectly even! That's why it was a uniform superposition.<br>I'm connecting this to  operators. How might we get ? In other words, what symmetry might a new eigenstate of  originate from?
-Maybe a possible phase difference? It is certainly possible, but the symmetry becomes more subtle.
-<br>For more information on how this all obeys with matrices, you can check Griffiths A.5 on Matrix operations.<br>
-Does the dimension of the  matrix depend on the number of matrices?<br>
-]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.5-more-degenerate-perturbation-theory.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.5 More Degenerate Perturbation Theory.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 27 Jan 2025 19:49:02 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>Hey y'all! These are my notes from when I took the Quantum Computing FRI Stream at UT from '23-'24. At the time I was still adjusting to typing my notes in real time so they might be a bit messy. If you have any corrections for them let me know, I hope they help!<br>
 You can navigate them by unit using the table below. <br><br><br><br><br><br><br><br><br><br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/🟩-overall-quantum-computing-class-notes-🟩.html</link><guid isPermaLink="false">School/Physics/Quantum Computing/Semester 1/🟩 Overall Quantum Computing Class Notes 🟩.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 24 Jan 2025 03:53:52 GMT</pubDate></item><item><title><![CDATA[1.2 Superposition]]></title><description><![CDATA[ 
  <br><a data-href="../Definitions/Introduction to Qbits" href="https://azalamer.com/UniversityNotes/Definitions/Introduction to Qbits" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../Definitions/Introduction to Qbits</a><a data-href="../Definitions/Introduction to Qbits" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/definitions/introduction-to-qbits.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">../Definitions/Introduction to Qbits</a><br><img alt="Pasted image 20240125154522.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240125154522.png"><br>

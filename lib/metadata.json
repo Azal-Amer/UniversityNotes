@@ -1,6 +1,6 @@
 {
   "vaultName": "Obsidian Vault",
-  "lastExport": 1738101387536,
+  "lastExport": 1738787319370,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon ctp-latte ctp-mocha-old ctp-accent-maroon anp-speech-bubble anp-codeblock-numbers anp-list-toggle anp-table-toggle anp-table-width anp-table-auto anp-color-transition-toggle anp-button-metadata-toggle anp-h1-red anp-h1-divider anp-h2-peach anp-h2-divider anp-h3-green anp-h4-teal anp-h5-lavender anp-h6-mauve anp-italic-teal anp-highlight-yellow anp-simple-rainbow-color-toggle anp-simple-rainbow-title-toggle anp-simple-rainbow-collapse-icon-toggle anp-simple-rainbow-indentation-toggle anp-simple-rainbow-icon-toggle anp-rainbow-subfolder-color-toggle anp-card-layout-filebrowser anp-theme-ext-dark ctp-nord-light ctp-flexoki-dark",
   "useCustomHeadContent": true,
@@ -20,8 +20,8 @@
     "School/CS/CS 312/Notes/Introduction Day.md",
     "School/CS/CS 312/Notes/Section Notes.md",
     "School/CS/Data Structures & Algs/Notes/0.1 Introduction.md",
-    "School/Math/Discrete Math/Class Files/Epp, Susanna S., author/Discrete mathematics _ an introduction to mathematical reasoning/Discrete mathematics _ an introduction to mathematical reasoning - Epp, Susanna S., author.pdf",
     "School/Math/Discrete Math/Class Files/Epp, Susanna S., author/Discrete mathematics _ an introduction to mathematical reasoning/Discrete mathematics _ an introduction to mathematical reasoning - Epp, Susanna S., author.opf",
+    "School/Math/Discrete Math/Class Files/Epp, Susanna S., author/Discrete mathematics _ an introduction to mathematical reasoning/Discrete mathematics _ an introduction to mathematical reasoning - Epp, Susanna S., author.pdf",
     "School/Math/Discrete Math/Class Files/Epp, Susanna S., author/Discrete mathematics _ an introduction to mathematical reasoning/Discrete mathematics _ an introduction to mathematical reasoning - Epp, Susanna S., author.jpg",
     "School/Math/Discrete Math/Class Files/Discrete Math Syllabus.pdf",
     "School/Math/Discrete Math/Class Files/Discrete Mathematics with Applications[Team Nanban][TPB].pdf",
@@ -58,7 +58,9 @@
     "School/Physics/Electrodynamics/Notes/0.1 Introduction.md",
     "School/Physics/Electrodynamics/Notes/1.1 Reviewing Vectors.md",
     "School/Physics/Electrodynamics/Notes/1.3 Differential Operators.md",
-    "School/Physics/Electrodynamics/Notes/1.4.md",
+    "School/Physics/Electrodynamics/Notes/1.4 Vector Integrals.md",
+    "School/Physics/Electrodynamics/Notes/1.6 The Electric Field.md",
+    "School/Physics/Electrodynamics/Notes/1.8 Gauss' Law.md",
     "School/Physics/Modern Physics/Code/introduction.ipynb",
     "School/Physics/Modern Physics/Notes/0.1 Introduction.md",
     "School/Physics/Modern Physics/Notes/1.1 Fundamentals of Probability.md",
@@ -123,6 +125,9 @@
     "School/Physics/Quantum 2/Notes/1.3 Second Order Perturbation Theory.md",
     "School/Physics/Quantum 2/Notes/1.4 Degenerate Perturbation Theory.md",
     "School/Physics/Quantum 2/Notes/1.5 More Degenerate Perturbation Theory.md",
+    "School/Physics/Quantum 2/Notes/1.6 Fine Structure in the Hydrogen Atom.md",
+    "School/Physics/Quantum 2/Notes/1.8 Complete Fine Structure.md",
+    "School/Physics/Quantum 2/Notes/1.9 Zeeman Effect.md",
     "School/Physics/Quantum Computing/Definitions/Bell States.md",
     "School/Physics/Quantum Computing/Definitions/Bra-Ket Notation.md",
     "School/Physics/Quantum Computing/Definitions/Introduction to Qbits.md",
@@ -131,8 +136,8 @@
     "School/Physics/Quantum Computing/Definitions/Orthonormal Bases.md",
     "School/Physics/Quantum Computing/Definitions/Pauli Matrices.md",
     "School/Physics/Quantum Computing/Definitions/Polarization Vectors.md",
-    "School/Physics/Quantum Computing/Definitions/Quantum Gates.md",
     "School/Physics/Quantum Computing/Definitions/Quantum Gates.tex",
+    "School/Physics/Quantum Computing/Definitions/Quantum Gates.md",
     "School/Physics/Quantum Computing/Semester 1/🟩 Overall Quantum Computing Class Notes 🟩.md",
     "School/Physics/Quantum Computing/Semester 1/1.2 Quantum Key Distribution.md",
     "School/Physics/Quantum Computing/Semester 1/1.2 Superposition.md",
@@ -186,8 +191,8 @@
     "School/Physics/Quantum Computing/Semester 2/Grover's Algorithm.md",
     "School/Physics/Quantum Computing/Semester 2/Midterm Review.md",
     "School/Physics/Quantum Computing/Hidden Variables and Bell's Inequality.md",
-    "Supplemental Files/Excalidraw/3.4 More Perturbation Theory 2024-11-21 10.05.10.excalidraw.md",
     "Supplemental Files/Excalidraw/3.4 More Perturbation Theory 2024-11-21 10.05.10.excalidraw.tex",
+    "Supplemental Files/Excalidraw/3.4 More Perturbation Theory 2024-11-21 10.05.10.excalidraw.md",
     "Supplemental Files/Excalidraw/Apartment Note 2024-11-24 15.34.01.excalidraw.md",
     "Supplemental Files/Excalidraw/Apartment Note 2024-11-24 15.35.27.excalidraw.md",
     "Supplemental Files/Excalidraw/Applications of Grover's Algorithm 2024-11-21 15.18.51.excalidraw.md",
@@ -206,6 +211,7 @@
     "Supplemental Files/Excalidraw/Drawing 2024-06-19 19.18.12.excalidraw.md",
     "Supplemental Files/Excalidraw/Drawing 2024-06-26 00.13.14.excalidraw.md",
     "Supplemental Files/Excalidraw/Drawing 2025-01-24 13.46.23.excalidraw.md",
+    "Supplemental Files/Excalidraw/Drawing 2025-01-29 18.04.52.excalidraw.md",
     "Supplemental Files/Excalidraw/Example 2 electrode.md",
     "Supplemental Files/Excalidraw/Example Annotating Salt Bridge.md",
     "Supplemental Files/Excalidraw/Example Notation.md",
@@ -217,8 +223,8 @@
     "Supplemental Files/Excalidraw/Shorthand for Electrochemical Cell.md",
     "Supplemental Files/Excalidraw/Solubility Equilibrium in Water .excalidraw.md",
     "Supplemental Files/Excalidraw/Untitled 2024-11-21 14.14.07.excalidraw.md",
-    "Supplemental Files/Excalidraw/Untitled 2024-11-21 14.37.46.excalidraw.md",
     "Supplemental Files/Excalidraw/Untitled 2024-11-21 14.37.46.excalidraw.tex",
+    "Supplemental Files/Excalidraw/Untitled 2024-11-21 14.37.46.excalidraw.md",
     "Supplemental Files/Excalidraw/Untitled 2024-11-21 14.49.59.excalidraw.md",
     "Supplemental Files/Excalidraw/Weather Eclipse.md",
     "Supplemental Files/Excalidraw/Wrapper Classes 2024-11-20 17.08.55.excalidraw.md",
@@ -249,8 +255,17 @@
     "Supplemental Files/images/1.3 Deutsch's Algorithm 2024-09-05 15.41.44.excalidraw.md",
     "Supplemental Files/images/1.4 Degenerate Perturbation Theory 2025-01-24 13.50.37.excalidraw.md",
     "Supplemental Files/images/1.5 More Degenerate Perturbation Theory 2025-01-27 13.05.00.excalidraw.md",
+    "Supplemental Files/images/1.5 More Degenerate Perturbation Theory 2025-01-29 10.22.42.excalidraw.md",
+    "Supplemental Files/images/1.6 The Electric Field 2025-01-29 10.06.18.excalidraw.md",
+    "Supplemental Files/images/1.6 The Electric Field 2025-01-29 10.12.28.excalidraw.md",
     "Supplemental Files/images/1.8 2024-09-24 09.33.55.excalidraw.md",
+    "Supplemental Files/images/1.8 Gauss' Law 2025-02-05 10.11.05.excalidraw.md",
+    "Supplemental Files/images/1.8 Gauss' Law 2025-02-05 10.16.17.excalidraw.md",
+    "Supplemental Files/images/1.8 Gauss' Law 2025-02-05 10.41.40.excalidraw.md",
     "Supplemental Files/images/1.9 2024-10-01 10.03.31.excalidraw.md",
+    "Supplemental Files/images/1.9 Zeeman Effect 2025-02-05 13.19.18.excalidraw.md",
+    "Supplemental Files/images/1.9 Zeeman Effect 2025-02-05 13.38.04.excalidraw.md",
+    "Supplemental Files/images/1.9 Zeeman Effect 2025-02-05 13.42.24.excalidraw.md",
     "Supplemental Files/images/1.11 The Bound State Problem 2024-10-08 10.03.17.excalidraw.md",
     "Supplemental Files/images/1.13 2024-10-10 14.19.17.excalidraw.md",
     "Supplemental Files/images/1.13 2024-10-10 15.20.06.excalidraw.md",
@@ -283,8 +298,8 @@
     "Supplemental Files/images/2.7 What Else can Shor do? 2024-11-14 14.33.22.excalidraw.md",
     "Supplemental Files/images/2.7 What Else can Shor do? 2024-11-14 15.05.50.excalidraw.md",
     "Supplemental Files/images/2.7 What Else can Shor do? 2024-11-14 15.08.40.excalidraw.md",
-    "Supplemental Files/images/2.7 What Else can Shor do? 2024-11-14 15.14.17.excalidraw.tex",
     "Supplemental Files/images/2.7 What Else can Shor do? 2024-11-14 15.14.17.excalidraw.md",
+    "Supplemental Files/images/2.7 What Else can Shor do? 2024-11-14 15.14.17.excalidraw.tex",
     "Supplemental Files/images/2.7 What Else can Shor do? 2024-11-14 15.16.12.excalidraw.md",
     "Supplemental Files/images/2.7 What Else can Shor do? 2024-11-14 15.17.07.excalidraw.md",
     "Supplemental Files/images/2.8 Grovers Algorithm 2024-11-19 14.23.57.excalidraw.md",
@@ -297,8 +312,8 @@
     "Supplemental Files/images/2.11 Error Correction and Fault-Tolerant Computation 2024-12-05 14.27.30.excalidraw.md",
     "Supplemental Files/images/2.11 Error Correction and Fault-Tolerant Computation 2024-12-05 14.28.18.excalidraw.md",
     "Supplemental Files/images/2.11 Error Correction and Fault-Tolerant Computation 2024-12-05 15.13.06.excalidraw.md",
-    "Supplemental Files/images/3.1 2024-11-12 10.38.33.excalidraw.md",
     "Supplemental Files/images/3.1 2024-11-12 10.38.33.excalidraw.tex",
+    "Supplemental Files/images/3.1 2024-11-12 10.38.33.excalidraw.md",
     "Supplemental Files/images/3.2 Two Particles-The Hydrogen Atom 2024-11-14 09.53.02.excalidraw.md",
     "Supplemental Files/images/3.2 Two Particles-The Hydrogen Atom 2024-11-14 09.55.18.excalidraw.md",
     "Supplemental Files/images/3.3 2024-11-19 09.45.13.excalidraw.md",
@@ -475,8 +490,8 @@
     "Supplemental Files/images/Galvanic_and_Electrolytic_Cells 2.png",
     "Supplemental Files/images/Google Assistant Obsidian Connector 2024-06-01 14.00.05.excalidraw.md",
     "Supplemental Files/images/Google Assistant Obsidian Connector 2024-06-13 00.09.59.excalidraw.md",
-    "Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.md",
     "Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.png",
+    "Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.md",
     "Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.sync-conflict-20240708-201726-Y4UWHYB.md",
     "Supplemental Files/images/Grading Test 2 2024-08-26 15.00.35.excalidraw.md",
     "Supplemental Files/images/Grafing 2024-10-08 11.05.45.excalidraw.md",
@@ -485,8 +500,8 @@
     "Supplemental Files/images/Hiba.md",
     "Supplemental Files/images/Hidden Variables and Bell's Inequality 2024-07-11 16.26.15.excalidraw.md",
     "Supplemental Files/images/Hijab_Butch_Blues.png",
-    "Supplemental Files/images/Homework 1 2025-01-22 08.42.09.excalidraw.md",
     "Supplemental Files/images/Homework 1 2025-01-22 08.42.09.excalidraw.tex",
+    "Supplemental Files/images/Homework 1 2025-01-22 08.42.09.excalidraw.md",
     "Supplemental Files/images/Homework 1 2025-01-22 08.48.55.excalidraw.md",
     "Supplemental Files/images/Homework 2 2024-09-17 14.37.38.excalidraw.md",
     "Supplemental Files/images/Homework 2 2024-09-22 20.15.24.excalidraw.md",
@@ -534,6 +549,8 @@
     "Supplemental Files/images/image_28.png",
     "Supplemental Files/images/image_29.png",
     "Supplemental Files/images/image_30.png",
+    "Supplemental Files/images/image_31.png",
+    "Supplemental Files/images/image_32.png",
     "Supplemental Files/images/IMG_2890.png",
     "Supplemental Files/images/IMG_20240825_133024.jpg",
     "Supplemental Files/images/IMG_20240825_133025.jpg",
@@ -1039,6 +1056,12 @@
     "Supplemental Files/images/Pasted image 20250124175328.png",
     "Supplemental Files/images/Pasted image 20250124175330.png",
     "Supplemental Files/images/Pasted image 20250124175417.png",
+    "Supplemental Files/images/Pasted image 20250128172051.png",
+    "Supplemental Files/images/Pasted image 20250131160336.png",
+    "Supplemental Files/images/Pasted image 20250201225004.png",
+    "Supplemental Files/images/Pasted image 20250203134958.png",
+    "Supplemental Files/images/Pasted image 20250204153936.png",
+    "Supplemental Files/images/Pasted image 20250204173834.png",
     "Supplemental Files/images/PCD Fab for PD 2024-10-21 10.47.44.excalidraw.md",
     "Supplemental Files/images/Periodic-table-indicating-the-cosmic-origin-and-evolution-of-the-chemical-elements.png",
     "Supplemental Files/images/picture.png",
@@ -1095,8 +1118,8 @@
     "Supplemental Files/images/Session 13 2024-07-21 19.23.38.excalidraw.md",
     "Supplemental Files/images/Session 14 2024-07-21 18.47.13.excalidraw.md",
     "Supplemental Files/images/Session 14 2024-07-21 19.05.24.excalidraw.md",
-    "Supplemental Files/images/Session 15 2024-07-25 23.13.16.excalidraw.md",
     "Supplemental Files/images/Session 15 2024-07-25 23.13.16.excalidraw.png",
+    "Supplemental Files/images/Session 15 2024-07-25 23.13.16.excalidraw.md",
     "Supplemental Files/images/Session 15 2024-07-26 10.06.07.excalidraw.md",
     "Supplemental Files/images/Session 16 2024-07-12 10.15.56.excalidraw.md",
     "Supplemental Files/images/Session 16 2024-07-12 10.38.09.excalidraw.md",
@@ -1195,6 +1218,7 @@
     "Supplemental Files/images/Session 37 2025-01-13 18.34.42.excalidraw.md",
     "Supplemental Files/images/Session 37 Review Momentum and Energy 2025-01-13 20.30.20.excalidraw.md",
     "Supplemental Files/images/Session 37 Review Momentum and Energy 2025-01-13 20.34.56.excalidraw.md",
+    "Supplemental Files/images/Session 38- Retake Review 2025-02-04 17.09.36.excalidraw.md",
     "Supplemental Files/images/Spec Sheet Polarizer 1.png",
     "Supplemental Files/images/Spherical Coordinates Diagram.excalidraw.md",
     "Supplemental Files/images/Spherical Harmonics Chart.png",
@@ -1239,19 +1263,15 @@
     "Supplemental Files/images/User Input 2024-09-18 17.08.58.excalidraw.md",
     "Supplemental Files/images/User Input 2024-09-18 17.29.32.excalidraw.md",
     "Supplemental Files/images/User Input 2024-09-18 17.38.16.excalidraw.md",
-    "Supplemental Files/images/UTQT Bloc-Party Meeting 2024-08-25 18.36.39.excalidraw.md",
     "Supplemental Files/images/UTQT Bloc-Party Meeting 2024-08-25 18.36.39.excalidraw.svg",
     "Supplemental Files/images/UTQT Bloc-Party Meeting 2024-08-25 18.36.39.excalidraw.png",
+    "Supplemental Files/images/UTQT Bloc-Party Meeting 2024-08-25 18.36.39.excalidraw.md",
     "Supplemental Files/images/UTQT meeting notes 2024-04-27 16.33.06.excalidraw.md",
     "Supplemental Files/images/UTQT meeting notes 2024-04-27 16.40.08.excalidraw.md",
     "Supplemental Files/images/UTQT Navigating Differences Post.png",
     "Supplemental Files/images/VID_49561121_203338_224.mp4",
     "index.md",
-    "lib/media/pasted-image-20240905163741.png",
-    "lib/media/pasted-image-20240905164620.png",
-    "lib/media/spherical-harmonics-chart.png",
-    "lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg",
-    "lib/media/pasted-image-20240125154522.png",
+    "lib/media/pasted-image-20250203134958.png",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -1266,7 +1286,7 @@
     "lib/fonts/52ac8f3034507f1d9e53.ttf",
     "lib/fonts/05b618077343fbbd92b7.ttf",
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
-    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/media/6155340132a851f6089e.svg",
     "lib/fonts/mathjax_zero.woff",
     "lib/fonts/mathjax_main-regular.woff",
     "lib/fonts/mathjax_main-bold.woff",
@@ -1320,6 +1340,8 @@
     "lib/media/agacageaaxkbaaibe2bpvvmjgpi_ipmwhoqecpyyxjg2aallrdebdzfqr47lybimywf0aqadagadeqadngq.jpg",
     "lib/media/agacageaaxkbaaibfwbpwufva0qvkooq2ksiqo6-p7naalqrdebdzfqr3dboj0qusjwaqadagadeqadngq.jpg",
     "lib/media/pasted-image-20240919125605.png",
+    "lib/media/pasted-image-20240905163741.png",
+    "lib/media/pasted-image-20240905164620.png",
     "lib/media/bloch-sphere.png",
     "lib/media/agacageaaxkbaaibwmbab0hg8cetfa3knes9cc5-p5u0aalfrdebtdprrnmlni-nvtuvaqadagadeqadngq.jpg",
     "lib/media/agacageaaxkbaaibawbgmvld9qqnqxazd3krvjmi8vbeaajgrtebfpgir6e9e1x5ps-baqadagadeqadngq.jpg",
@@ -1363,13 +1385,16 @@
     "lib/media/aal_izz_well__3_idiots__aamir_khan_madhavan_sharman_j__sonu.gif",
     "lib/media/agacageaaxkbaaibpwcaw-uuhpt1ihlnfqyfgy7pcqegaak8rdebeivyro8by6sz31uxaqadagadeqadngq.jpg",
     "lib/media/agacageaaxkbaaibr2cjloidswsjmodntkrsux1dxfxeaaj4stebojigrdy90btnbzbraqadagadeqadngq.jpg",
+    "lib/media/spherical-harmonics-chart.png",
     "lib/media/pasted-image-20240902194106.png",
+    "lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg",
     "lib/media/pasted-image-20240504222402.png",
     "lib/media/pasted-image-20240504222415.png",
     "lib/media/pasted-image-20240402164753.png",
     "lib/media/pasted-image-20240319173746.png",
     "lib/media/pasted-image-20240201153435.png",
     "lib/media/pasted-image-20240201163114.png",
+    "lib/media/pasted-image-20240125154522.png",
     "lib/media/pasted-image-20240215162018.png",
     "lib/media/pasted-image-20240215164148.png",
     "lib/media/pasted-image-20240215164742.png",
@@ -1438,7 +1463,7 @@
     "lib/fonts/52ac8f3034507f1d9e53.ttf",
     "lib/fonts/05b618077343fbbd92b7.ttf",
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
-    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/media/6155340132a851f6089e.svg",
     "lib/fonts/mathjax_zero.woff",
     "lib/fonts/mathjax_main-regular.woff",
     "lib/fonts/mathjax_main-bold.woff",
@@ -1482,271 +1507,271 @@
   ],
   "fileInfo": {
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738182887299,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1738101387536,
-      "sourceSize": 1097380,
+      "modifiedTime": 1738787319370,
+      "sourceSize": 1117046,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
@@ -1758,61 +1783,61 @@
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1738101387536,
-      "sourceSize": 64581,
+      "modifiedTime": 1738787319370,
+      "sourceSize": 66756,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1738101387536,
-      "sourceSize": 131018,
+      "modifiedTime": 1738787319370,
+      "sourceSize": 137228,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 10171,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 271569,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1738101387536,
-      "sourceSize": 310,
+      "modifiedTime": 1738787319370,
+      "sourceSize": 353,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1738101387536,
-      "sourceSize": 10560,
+      "modifiedTime": 1738787319370,
+      "sourceSize": 10512,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 34264,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     },
     "lib/media/favicon.ico": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 15086,
       "exportedPath": "lib/media/favicon.ico",
       "dependencies": []
     },
     "lib/html/custom-head-content.html": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738787319370,
       "sourceSize": 601,
       "exportedPath": "lib/html/custom-head-content.html",
       "dependencies": []
@@ -8681,8 +8706,8 @@
       "dependencies": []
     },
     "School/CS/Data Structures & Algs/Notes/0.1 Introduction.md": {
-      "modifiedTime": 1737678851452,
-      "sourceSize": 654,
+      "modifiedTime": 1738182887299,
+      "sourceSize": 744,
       "exportedPath": "school/cs/data-structures-&-algs/notes/0.1-introduction.html",
       "dependencies": []
     },
@@ -8902,8 +8927,8 @@
       "dependencies": []
     },
     "School/Math/Probability/Notes/0.1 Introduction.md": {
-      "modifiedTime": 1737678851452,
-      "sourceSize": 2519,
+      "modifiedTime": 1738182887299,
+      "sourceSize": 2564,
       "exportedPath": "school/math/probability/notes/0.1-introduction.html",
       "dependencies": []
     },
@@ -9300,14 +9325,14 @@
       ]
     },
     "School/Physics/Quantum 1/Notes/3.1 Spherically Symmetric Potentials.md": {
-      "modifiedTime": 1737678851452,
-      "sourceSize": 7434,
+      "modifiedTime": 1738182887299,
+      "sourceSize": 7572,
       "exportedPath": "school/physics/quantum-1/notes/3.1-spherically-symmetric-potentials.html",
       "dependencies": []
     },
     "School/Physics/Quantum 1/Notes/3.2 Two Particles-The Hydrogen Atom.md": {
-      "modifiedTime": 1737678851452,
-      "sourceSize": 6032,
+      "modifiedTime": 1738182887299,
+      "sourceSize": 6200,
       "exportedPath": "school/physics/quantum-1/notes/3.2-two-particles-the-hydrogen-atom.html",
       "dependencies": []
     },
@@ -10077,12 +10102,6 @@
       "exportedPath": "school/physics/electrodynamics/notes/1.3-differential-operators.html",
       "dependencies": []
     },
-    "School/Physics/Electrodynamics/Notes/1.4.md": {
-      "modifiedTime": 1738101387536,
-      "sourceSize": 4582,
-      "exportedPath": "school/physics/electrodynamics/notes/1.4.html",
-      "dependencies": []
-    },
     "School/Physics/QIS/Notes/0.1 Cheat Sheet Notes.md": {
       "modifiedTime": 1738101387536,
       "sourceSize": 917,
@@ -10099,7 +10118,7 @@
       "dependencies": []
     },
     "School/Physics/Quantum 2/Notes/1.5 More Degenerate Perturbation Theory.md": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738182887299,
       "sourceSize": 4298,
       "exportedPath": "school/physics/quantum-2/notes/1.5-more-degenerate-perturbation-theory.html",
       "dependencies": [
@@ -10167,9 +10186,173 @@
       "dependencies": []
     },
     "lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg": {
-      "modifiedTime": 1738101387536,
+      "modifiedTime": 1738182887299,
       "sourceSize": 76011,
       "exportedPath": "lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg",
+      "dependencies": []
+    },
+    "School/Physics/Electrodynamics/Notes/1.4 Vector Integrals.md": {
+      "modifiedTime": 1738182887299,
+      "sourceSize": 4609,
+      "exportedPath": "school/physics/electrodynamics/notes/1.4-vector-integrals.html",
+      "dependencies": []
+    },
+    "School/Physics/Electrodynamics/Notes/1.6 The Electric Field.md": {
+      "modifiedTime": 1738182887299,
+      "sourceSize": 3164,
+      "exportedPath": "school/physics/electrodynamics/notes/1.6-the-electric-field.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/1.6 Fine Structure in the Hydrogen Atom.md": {
+      "modifiedTime": 1738182887299,
+      "sourceSize": 4838,
+      "exportedPath": "school/physics/quantum-2/notes/1.6-fine-structure-in-the-hydrogen-atom.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.5 More Degenerate Perturbation Theory 2025-01-29 10.22.42.excalidraw.md": {
+      "modifiedTime": 1738182887299,
+      "sourceSize": 7729,
+      "exportedPath": "supplemental-files/images/1.5-more-degenerate-perturbation-theory-2025-01-29-10.22.42.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.6 The Electric Field 2025-01-29 10.06.18.excalidraw.md": {
+      "modifiedTime": 1738182887299,
+      "sourceSize": 4607,
+      "exportedPath": "supplemental-files/images/1.6-the-electric-field-2025-01-29-10.06.18.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.6 The Electric Field 2025-01-29 10.12.28.excalidraw.md": {
+      "modifiedTime": 1738182887299,
+      "sourceSize": 8788,
+      "exportedPath": "supplemental-files/images/1.6-the-electric-field-2025-01-29-10.12.28.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250128172051.png": {
+      "modifiedTime": 1738182887299,
+      "sourceSize": 83175,
+      "exportedPath": "supplemental-files/images/pasted-image-20250128172051.png",
+      "dependencies": []
+    },
+    "School/Physics/Electrodynamics/Notes/1.8 Gauss' Law.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 4722,
+      "exportedPath": "school/physics/electrodynamics/notes/1.8-gauss'-law.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/1.8 Complete Fine Structure.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 4189,
+      "exportedPath": "school/physics/quantum-2/notes/1.8-complete-fine-structure.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250203134958.png"
+      ]
+    },
+    "School/Physics/Quantum 2/Notes/1.9 Zeeman Effect.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 5820,
+      "exportedPath": "school/physics/quantum-2/notes/1.9-zeeman-effect.html",
+      "dependencies": []
+    },
+    "Supplemental Files/Excalidraw/Drawing 2025-01-29 18.04.52.excalidraw.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 570,
+      "exportedPath": "supplemental-files/excalidraw/drawing-2025-01-29-18.04.52.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.8 Gauss' Law 2025-02-05 10.11.05.excalidraw.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 7105,
+      "exportedPath": "supplemental-files/images/1.8-gauss'-law-2025-02-05-10.11.05.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.8 Gauss' Law 2025-02-05 10.16.17.excalidraw.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 13851,
+      "exportedPath": "supplemental-files/images/1.8-gauss'-law-2025-02-05-10.16.17.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.8 Gauss' Law 2025-02-05 10.41.40.excalidraw.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 4898,
+      "exportedPath": "supplemental-files/images/1.8-gauss'-law-2025-02-05-10.41.40.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.9 Zeeman Effect 2025-02-05 13.19.18.excalidraw.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 6984,
+      "exportedPath": "supplemental-files/images/1.9-zeeman-effect-2025-02-05-13.19.18.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.9 Zeeman Effect 2025-02-05 13.38.04.excalidraw.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 6852,
+      "exportedPath": "supplemental-files/images/1.9-zeeman-effect-2025-02-05-13.38.04.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.9 Zeeman Effect 2025-02-05 13.42.24.excalidraw.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 7794,
+      "exportedPath": "supplemental-files/images/1.9-zeeman-effect-2025-02-05-13.42.24.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/image_31.png": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 9332470,
+      "exportedPath": "supplemental-files/images/image_31.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/image_32.png": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 9343355,
+      "exportedPath": "supplemental-files/images/image_32.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250131160336.png": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 155970,
+      "exportedPath": "supplemental-files/images/pasted-image-20250131160336.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250201225004.png": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 28908,
+      "exportedPath": "supplemental-files/images/pasted-image-20250201225004.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250203134958.png": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 141677,
+      "exportedPath": "supplemental-files/images/pasted-image-20250203134958.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250204153936.png": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 147805,
+      "exportedPath": "supplemental-files/images/pasted-image-20250204153936.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250204173834.png": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 55086,
+      "exportedPath": "supplemental-files/images/pasted-image-20250204173834.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 38- Retake Review 2025-02-04 17.09.36.excalidraw.md": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 2544,
+      "exportedPath": "supplemental-files/images/session-38-retake-review-2025-02-04-17.09.36.excalidraw.html",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250203134958.png": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 141677,
+      "exportedPath": "lib/media/pasted-image-20250203134958.png",
+      "dependencies": []
+    },
+    "lib/media/6155340132a851f6089e.svg": {
+      "modifiedTime": 1738787319370,
+      "sourceSize": 315,
+      "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     }
   }
