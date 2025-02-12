@@ -1,4 +1,302 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 10 Feb 2025 16:02:50 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 10 Feb 2025 16:02:50 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 12 Feb 2025 20:16:49 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 12 Feb 2025 20:16:34 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[<a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> 
+ <br><br>The professor is desi! And she seems cool<br>
+The Syllabus is <a data-tooltip-position="top" aria-label="../Class Official Files/Syllabus.pdf" data-href="../Class Official Files/Syllabus.pdf" href="https://azalamer.com/Class Official Files/Syllabus.pdf" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">here</a><a data-tooltip-position="top" aria-label="../Class Official Files/Syllabus.pdf" data-href="../Class Official Files/Syllabus.pdf" href="https://azalamer.com/UniversityNotes/school/cs/data-structures-&amp;-algs/class-official-files/syllabus.pdf" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">here</a><br>
+Discussion section 50730<br><br>Can't take notes, no raised screens<br>
+Can I make a thing which not only lets me scan my notes, but also make a diagram embedder?<br>
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a>  Programming Assignment 11:00PM 🆔 CS314 🔁 every week 📅 2025-01-23
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> CS314 Exam 1 7:00PM 🆔 CS314 🔺 ⏳2025-02-11
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> CS314 Exam 2 7:00PM 🆔 CS314 ⏳2025-03-25 🔺 
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> CS314 Exam 3 3:30PM 🆔 CS314 ⏳ 2025-05-02 🔺 
+]]></description><link>https://azalamer.com/UniversityNotes/school/cs/data-structures-&amp;-algs/notes/0.1-introduction.html</link><guid isPermaLink="false">School/CS/Data Structures &amp; Algs/Notes/0.1 Introduction.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 11 Feb 2025 21:28:44 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[<a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:task" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#task</a> 
+ <br><br>Syllabus is <a data-tooltip-position="top" aria-label="https://www.cs.utexas.edu/~dnp/cs311/syllabus/cs311Syllabus.html" rel="noopener nofollow" class="external-link" href="https://www.cs.utexas.edu/~dnp/cs311/syllabus/cs311Syllabus.html" target="_blank">here</a><br>
+Office Hours: TW 11:00am-12:00pm JGB Patio<br>
+Dr. Parikh<br>
+I'm in section 50645<br>
+Textbooks are Rosen and <a data-tooltip-position="top" aria-label="../Class Official Files/Susanna S. Epp - Discrete Mathematics with Applications (2019, Cengage Learning) - libgen.li.pdf" data-href="../Class Official Files/Susanna S. Epp - Discrete Mathematics with Applications (2019, Cengage Learning) - libgen.li.pdf" href="https://azalamer.com/Class Official Files/Susanna S. Epp - Discrete Mathematics with Applications (2019, Cengage Learning) - libgen.li.pdf" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Epp.</a><a data-tooltip-position="top" aria-label="../Class Official Files/Susanna S. Epp - Discrete Mathematics with Applications (2019, Cengage Learning) - libgen.li.pdf" data-href="../Class Official Files/Susanna S. Epp - Discrete Mathematics with Applications (2019, Cengage Learning) - libgen.li.pdf" href="https://azalamer.com/UniversityNotes/school/math/discrete-math-cs/class-official-files/susanna-s.-epp-discrete-mathematics-with-applications-(2019,-cengage-learning)-libgen.li.pdf" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Epp.</a>, Discrete mathematics and its Applications,Discrete mathematics with Applications<br>
+They prefer email for being reached out to, but in the subject put CS311 in the subject line<br><br>Exercise (Given some polynomial of the form).
+
+where  indicates the number of coefficients in the polynomial, and  is the coefficient of the -th term.
+<br>
+<br>This literally just means a polynomial who's integer coefficients are defined by some other polynomial, though in this case I suspect that instead  is actually a set
+<br>public static double foof(int[] p, double x){
+	double answer = 0;
+	for(int i = 0;i&lt;p.length;i++){
+		answer +=Math.pow(x,i)*p[i]
+	}
+	return answer
+}
+	
+Run<br>In this class, we're making the following symbolic map<br><br>Check if the following code works<br>k:=0
+y:=p(0)
+while k&lt;n-1 do
+	k:=k+1
+	y:=p(x)*x**k+y
+endwhile
+<br>The code has a bug, it excuses the last term since it's not an inclusive comparison in the loop and fails in the constant function case<br>What about this one?<br>k:=n
+y:=0
+while k&gt;0 do
+	k:=k-1
+	y:=p(k)*x**k+y
+endwhile
+<br>This does work! Notice how we don't need to recompute the exponent each time. Instead, with each new iteration, we multiply in a new term. Now as opposed to exponential runtime, we now have linear runtime! This is in  where the previous was <br><br>Similar to <a data-href="../../../Physics/QIS/Notes/1.15 More on Universal Gate Sets#^0bc669" href="Physics/QIS/Notes/1.15 More on Universal Gate Sets#^0bc669" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../../Physics/QIS/Notes/1.15 More on Universal Gate Sets &gt; ^0bc669</a><a data-href="../../../Physics/QIS/Notes/1.15 More on Universal Gate Sets#^0bc669" href="https://azalamer.com/UniversityNotes/school/physics/qis/notes/1.15-more-on-universal-gate-sets.html#^0bc669" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.15.3 (Query Complexity)</a>, big  notation also is a measure of how frequently something happens. Here, we're defining it for query complexity. This will get a formal definition in a bit<br>Discrete math shows us how to use logic and reasoning to present coherent mathematical accurate arguments. It's a proof heavy class, which is actually quite exciting. <br>The way the class is structured, before each lecture there is about 30min of videos to watch in advance so it's a flipped structure.<br>
+There's a bunch of definitions and notations.<br>
+Every week there's also a problem set, due Friday at 9:00PM (All are due at 9)<br>
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Pset due 9:00pm 🔼 🔁 every week 📅 2025-01-24🆔 CS311
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Pset due 9:00pm 🆔 CS311 🔼 🔁 every week 📅 2025-01-17🆔 CS311
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Videos due 🆔 CS311 🔼 🔁 every week 📅 2025-01-13🆔 CS311
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> Videos due  🔼 🔁 every week 📅 2025-01-17  🆔 CS311<br>
+PSets are based on what was learned that week, and for completion only. It is our responsibility to check. That also means that all of our grade is probably based on exams.
+<br>Today, I should probably write out the tasks for my planner<br>Discussion sessions have a quiz, there are two midterms and a comprehensive final<br>
+(See syllabus "How will I know how I am doing in the class?")<br>
+<br>Participation is 6% - Watching videos, participating in class meaning don't use your devices in class. Attend 80% of classes to get 100%
+
+<br>BRO I TAKE MY NOTES ON HERE WHAT DO YOU WANT FROM ME
+
+
+<br>We have 4 slip days
+<br>2 assignments get dropped (quizzes and psets)
+<br>DAMN IT MY LAPTOP IS GONNA DIE I THOUGHT THIS WAS AN HOUR LONG<br>
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a>  Midterm 1: 7-8:30pm 🔺 ⏳ 2025-02-20🆔 CS311
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a>  Midterm 2: 7-8:30pm 🔺 ⏳ 2025-04-03🆔 CS311
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a>  Final 3:30-6:30. Note that we personally have a conflict🔺 ⏳ 2025-05-01🆔 CS311
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a>  Final  EMAIL TEACHER ABT EXAM CONFLICT WITH SDS 321. Note that we personally have a conflict🔺 ⏳ 2025-04-10🆔 CS311<br>
+that's a lot of finals on one day
+<br><a href="https://azalamer.com/UniversityNotes?query=tag:task" class="tag" target="_blank" rel="noopener nofollow">#task</a> - CS311 Welcome Survey 🔼 📅 2025-01-24 ✅ 2025-01-21<br>
+On canvas, there's a form to show extenuating circumstances
+<br>Homepage on canvas becomes a preview for the coming week, which is really convenient.]]></description><link>https://azalamer.com/UniversityNotes/school/math/discrete-math-cs/notes/0.1-introduction.html</link><guid isPermaLink="false">School/Math/Discrete Math CS/Notes/0.1 Introduction.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 28 Jan 2025 18:32:12 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Electric potential Cont<br>
+Conductors vs Insulators<br><br><br>
+<br>Brutal force, integrate over the distribution <a data-href="1.9 Electric Potentials#^electricfieldatDist" href="https://azalamer.com/UniversityNotes/1.9 Electric Potentials#^electricfieldatDist" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.9 Electric Potentials &gt; ^electricfieldatDist</a><a data-href="1.9 Electric Potentials#^electricfieldatDist" href="https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.9-electric-potentials.html#^electricfieldatDist" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.9.1)</a>
+<br>Gauss's Law- This is the most likely
+<br>Gradient of the potential
+<br>The potential is also related to the work per unit charge, this is voltage!<br>The potential is convention wise, assumed zero at infinity<br><br>The potential with a continuum of point charges, is given by the below expression<br><br><br>
+<br>Conductors permit electrons to flow freely, charge is typically distributed along the surface to make the electric field along the interior of the conductor zero.
+<br>How long does it take to measure the moving of charges in a conductor when it wants to approach equilibrium?
+<a rel="noopener nofollow" class="external-link" href="https://physics.stackexchange.com/questions/86658/how-long-does-it-take-for-a-metal-to-reach-equilibrium" target="_blank">https://physics.stackexchange.com/questions/86658/how-long-does-it-take-for-a-metal-to-reach-equilibrium</a>
+<br>
+<br>Insulators prevent the free flow
+<br>Outside the conductor, the induced electric field doesn't need to cancel with the applied field. <br>This is how we get ourselves to a faraday cage! <br>The equipotential lines are always perpendicular to the electric field lines. No work is required to move a charge along an equipotential surface. On the surface of a conductor, electric field lines always point normal.<br>How do you calculate the surface charge along a closed conductor given an external electric field?
+*crickets*
+<br>Example (Potential of a Conducting Sphere).
+The electric field on the inside is zero
+
+The magnitude of the E field is discontinuous at the edge of the sphere, but the potential is constant on the interior since the E field is zero inside!
+<br>
+<br>Email Andeen lauren notes
+<br>
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.10-more-electric-potential.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.10 More Electric Potential.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 12 Feb 2025 18:25:35 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>We're talking about boundary conditions to describe the discontinuous changes in the electric field at surfaces, and electrostatic energy.<br><br><br>
+<br>Can't browse online
+<br>Cant use generative AI (it fails anyway lol)
+<br>Don't do with peers
+<br>Questions are essentially "do the integral", so do the integral yourself.
+<br>Midterm is open note
+<br>Midterm is on the style of the second homework other than the first one. Up until chapter 2.4.1<br>
+Your work has to be intelligible<br>
+There are 4 main questions, with subsections. Nothing unfamiliar with other upperdivs<br><br>Conductors only have surface charges, no bulk charges. Additionally because they have mobile charges, you can induce charge distributions onto a conductor.<br>
+The electric field to the right of an infinite charged plate is<br><br>The electric field is discontinuous if the plane was completely thin, but you can't be discontinuous. See <a data-href="1.10 More Electric Potential#^4ee782" href="https://azalamer.com/UniversityNotes/1.10 More Electric Potential#^4ee782" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.10 More Electric Potential &gt; ^4ee782</a><a data-href="1.10 More Electric Potential#^4ee782" href="https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.10-more-electric-potential.html#^4ee782" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Example 1.10.1 (Potential of a Conducting Sphere)</a>  for a visual of a discontinuous  field.<br>
+How do you determine the jump you can have between two regions?<br>I DIDN'T KNOW THE PROFESSOR DESKS COULD RISE AND FALL. THAT WAS MAGIC<br>To do this, construct a gaussian pillbox of infentesimal height <br><br>We construct an infinitesimal pillbox with height .We construct a gaussian surface to get flux<br><br>Then take <br><br>The only closed charge that will contribute here as we approach 0 is the surface charge! As the volume tends to zero, the charge volume distribution won't contribute.<br><br><a data-href="#^discontinuous" href="https://azalamer.com/UniversityNotes/about:blank#^discontinuous" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^discontinuous</a><a data-href="#^discontinuous" href="https://azalamer.com/UniversityNotes/about:blank#^discontinuous" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.11.4)</a>  The electric field is discontinuous if there is a surface charge on our contour. Otherwise it is continuous.<br>But in real life it can't be. How do we resolve the discontinuity
+Probably because of the skin depth. There is no delta function of charge distribution, it is distributed along the surface with narrow depth.
+<br>For a conducting sphere, this then means that  is<br><br>Before we did the perpendicular field, now we want the parallel.<br><br>Now similar to before, we're going to take a line integral over our new loop . It's a closed loop. We know that the voltage around the loop has to be zero.<br><br>The tangential component of an electric field has to be continuous.<br>
+The electric field inside the conductor must be zero, therefore the only non-zero component is the perpendicular one just off of the surface.<br>
+This states that our electric field only goes up after we exit the surface<br><br>For a generic E-field and arbitrary path, the work done moving a charge between two points <br><br>If I have a set of charges in a spacial configuration, the work I did to put those charges in that arrangement is equal to the energy contained by the system.<br>
+This is what you would expect.<br>
+Proof.@ <a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^690926</a><a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.11.1 (The Energy Contained by a Collection of Charges)</a> <br>With more than two charges, place them into some set .  is composed of every unique subset of  with length 2. The energy contained by  is<br><br>This is another example of the superposition principle! Another way of thinking about it is a fully interconnected graph, and you simply sum up the energy to construct all edges.<br>
+Arbitrarily it's<br><br>Why the less than or equals?
+The reason why  is because otherwise an edge gets it's energy accounted when it's  AND . Double counting!
+<br>Now we do a trick, we're excluding the duplicates anyway so it's the same as dividing by two!<br>
+□<br>Theorem (The Energy Contained by a Collection of Charges).
+For a set of charges in the list , the total potential of the system is:
+
+<br>Now we're moving from the discrete description, to the continuum. This will show the energy really is in the electric field<br>
+For a continuous distribution of charge, we can write it as<br><a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^690926</a><a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.11.1 (The Energy Contained by a Collection of Charges)</a> can be rewritten as<br><br>Notice how our separated  function is just the potential of .<br>Now we want to move to a continuum<br><br>"The infinitesimal energy at a point is equal to the potential at that location, times the charge density at that location."<br>
+We know that for conductors, the charge is splattered across the surface.<br><br>Next time we will go from here, to the expression involving the electric field.]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.11-boundary-conditions-and-energy.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.11 Boundary Conditions and Energy.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 12 Feb 2025 18:25:37 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>We're continuing directly from <a data-href="3.2 Two Particles-The Hydrogen Atom" href="https://azalamer.com/UniversityNotes/3.2 Two Particles-The Hydrogen Atom" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">3.2 Two Particles-The Hydrogen Atom</a><a data-href="3.2 Two Particles-The Hydrogen Atom" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.2-two-particles-the-hydrogen-atom.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">3.2 Two Particles-The Hydrogen Atom</a>, and then introducing non-degenerate perturbation theory. That kind of perturbation theory only works with no degeneracies, with the hydrogen atom that's the ground state.<br><br><br><br><br><br>Theorem 3.2.1 (The Energy level of a Hydrogen Atom).
+ is the mass of the electron,  is the charge of it,  is planks constant, and  is the quantum number
+
+<br>Something to note when we get the wave-function, is that if we have a value of  equal to zero, the wave-function won't vanish at . That's because we have no angular momentum. <br>Notice that as you increase , the energy level lines get closer together. When we clear those lines by kicking the electron hard. That's ionization<br>Definition (Bohr Radius).
+The Bohr radius is defined as the most probable distance an electron takes from the hydrogen atom
+
+<br><br>We rarely can solve a problem exactly, so one has to develop techniques to approximate the exact result. This is Perturbation theory. The quality of a physicist is fancy approximations. One of the techniques is called perturbation theory.<br>Definition (Perturbation Theory).
+Let's say we have a hamiltonian, with a spectrum we know.
+
+A perturbation is something really small. Small means a distance in relation to another.
+<br>Imagine a 1D Harmonic oscillator, with a small un-harmonic-ness<br><br>The units of  is<br><br>The scale of this is nothing without a comparison. Let's say we want to refer to the energy of the un-harmonic term, compared to the harmonic term . We can use Perturbation Theory when<br><br>over relevant 's<br>
+We want to solve <br><br>when it is in the form of <a data-href="#^perturbationForm" href="https://azalamer.com/UniversityNotes/about:blank#^perturbationForm" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^perturbationForm</a><a data-href="#^perturbationForm" href="https://azalamer.com/UniversityNotes/about:blank#^perturbationForm" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 3.3.2 (Perturbation Theory)</a>. We're writing this as<br><br>We basically represent our state as correction terms of increasing size. Where we stop our expansion is up to the context of the experiment.<br>
+We're going to solve <a data-href="#^perturbationForm" href="https://azalamer.com/UniversityNotes/about:blank#^perturbationForm" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^perturbationForm</a><a data-href="#^perturbationForm" href="https://azalamer.com/UniversityNotes/about:blank#^perturbationForm" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 3.3.2 (Perturbation Theory)</a> using <a data-href="#^expansion" href="https://azalamer.com/UniversityNotes/about:blank#^expansion" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^expansion</a><a data-href="#^expansion" href="https://azalamer.com/UniversityNotes/about:blank#^expansion" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.3.5)</a>. To simplify this, we're going to normalize our exact state.<br><br>We're writing this out together as<br><br>Breaking this up in terms of orders <br><br>
+<br>We made an initial assumption from <a data-href="#^innerProdAss" href="https://azalamer.com/UniversityNotes/about:blank#^innerProdAss" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^innerProdAss</a><a data-href="#^innerProdAss" href="https://azalamer.com/UniversityNotes/about:blank#^innerProdAss" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.3.6)</a> which by extension meant the th perturbed state, is orthogonal to the th state when 
+<br>Theorem (First Perturbed Energy).
+The first order correction to the energy on the th energy level is just the expectation value of the perturbation in the unperturbed state 
+
+<br>Proof.@ <a data-href="#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/about:blank#^energyOf2ndEps" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^energyOf2ndEps</a><a data-href="#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/about:blank#^energyOf2ndEps" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.5 (Second Perturbed Energy)</a> and <a data-href="#^stateOfFirstEps" href="https://azalamer.com/UniversityNotes/about:blank#^stateOfFirstEps" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^stateOfFirstEps</a><a data-href="#^stateOfFirstEps" href="https://azalamer.com/UniversityNotes/about:blank#^stateOfFirstEps" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.4 (First Perturbed Wave-function)</a><br>
+Now for the second order correction we go back to <a data-href="#^mainPerturbedEq" href="https://azalamer.com/UniversityNotes/about:blank#^mainPerturbedEq" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^mainPerturbedEq</a><a data-href="#^mainPerturbedEq" href="https://azalamer.com/UniversityNotes/about:blank#^mainPerturbedEq" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.3.7)</a> to <br><br>With more math massaging, we get<br><br>This is useless! We need <br>
+We claim that<br><br>We get this from completeness since this is just identity times the vector we want. From <a data-href="#^idkanymore" href="https://azalamer.com/UniversityNotes/about:blank#^idkanymore" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^idkanymore</a><a data-href="#^idkanymore" href="https://azalamer.com/UniversityNotes/about:blank#^idkanymore" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.3.8)</a>, we're instead going to project on , and we're going to assume there's no degeneracies.<br><br>This is what we're looking for in our summation in <a data-href="#^completenessClaim" href="https://azalamer.com/UniversityNotes/about:blank#^completenessClaim" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^completenessClaim</a><a data-href="#^completenessClaim" href="https://azalamer.com/UniversityNotes/about:blank#^completenessClaim" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.3.11)</a><br>Theorem (First Perturbed Wave-function).
+
+<br>Which then gives us  from <a data-href="#^secondPerturbationApprox" href="https://azalamer.com/UniversityNotes/about:blank#^secondPerturbationApprox" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^secondPerturbationApprox</a><a data-href="#^secondPerturbationApprox" href="https://azalamer.com/UniversityNotes/about:blank#^secondPerturbationApprox" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.3.10)</a><br><br>Another way of writing this is:<br>Theorem (Second Perturbed Energy).
+
+In the ground state, the second perturbed<br>
+
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html</link><guid isPermaLink="false">School/Physics/Quantum 1/Notes/3.3 Introduction to Perturbation Theory.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 11 Feb 2025 03:57:43 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br><br><br>Why is the magnetic moment in an electron much larger to the proton?
+Magnetic moment is inversely proportional to mass
+<br><br>The hamiltonian couples the directions of  and . This means the magnitudes are still good, l but the quantum numbers  and  are not. <br>What is a "good quantum number"? Why aren't , good?
+This is because now the operators don't freely commute. Knowing one quantum number means you can't know the other. 
+<br>The projection of those numbers onto  are good, but we don't really get anything useful form them. That means that our only good remaining quantum numbers are  and . (Direction and magnitude quantum numbers).<br>
+An Aside<br>
+Last time, we learned about a new operator  where
+
+<img alt="Diagram of the new vector" src="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter" referrerpolicy="no-referrer">
+<br><br>A good quantum number is one which isn't coupled together. What makes  good is that despite the coupling, it's a vector sum and is itself unique despite it's linear combination being non-unique. <br>
+my head feels like its filled with water
+<br>Oh shit molecules can have dozens of angular momentum vectors because everything can move freely.<br>The good quantum numbers in our system are<br><br>Then we get the complete fine structure<br>Theorem (The Complete Fine Structure Energy in the Hydrogen Atom).
+
+Where alpha is the fine structure constant. .
+<br>To conserve angular momentum, the angular momentum number in transitions must change by 1<br>Today we're evaluating this for a few cases<br><br>Principle quantum number first, then the exponent is the multiplicity, then<br>
+ get's it's own label! That's called  because the chemists are despicable. s means spherical<br>
+ :  is for principle<br>
+ :  is for diffuse<br>
+etc.<br>
+The broad formula is <br><br>Are there any degeneracies left in our system? YES! Spin degeneracies and .<br>
+How would we break it? With a magnet! <br>
+<br>That's sneak peak for next class. With that, almost all the degeneracies in the problem are broken.<br>
+The  quantum numbers are magnitude!! That's why it is . For agnitude.
+<br>This perturbation is internal. The things left out of the original hamiltonian. The solution we saw in quantum 1 didn't account for the effects of special relativity. <br>For  in the hydrogen atom, we can get<br>
+<br>
+<br>
+<br>
+<br>Can you use this to make a better transistor?
+"If you don't know about spin-orbit interactions, you have no hope of understanding the semi-conductor. I can't say you'll use this to make a better transistor, but you use this to make a transistor that works"
+<br><br>How do you know which of those new energy states are wide enough you can measure?<br>
+<br>That's called a selection rule! The selection rule says for us to be able to see a new energy level, 
+<br>Why?
+You need to conserve momentum. Can't go from a  momentum to  momentum
+<br>You can't go from  to another . What you can do is go from any energy  to . When you calculate that from , you find that there are 5 possible  transitions! Below is what they are:<br>
+<img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250203134958.png">]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.8-complete-fine-structure.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.8 Complete Fine Structure.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 11 Feb 2025 01:52:16 GMT</pubDate><enclosure url="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter" length="0" type="false"/><content:encoded>&lt;figure&gt;&lt;img src="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>We talked about electron-proton magnetic moment coupling<br><br>"What's finer than fine"<br>The relation between angular momentum and magnetic moment.<br>
+<br>For orbital angular momentum 
+<br>For electron spin 
+<br>A proton has  but  (not a point particle)
+<br>Mass of the proton is 2000 times larger than the electron<br>
+Because the proton has such a high , it tells us it can't be a point particle
+<br>Why does the high  on the proton tell us it can't be a point particle
+SR tells us that a point particle with spin  must have a  factor of . We can measure the proton having  spin and it's  factor, the only contradiction is the assumption is that it must be a point particle
+<br>Today we're going to see the effects between the coupling of the proton's magnetic moment and the electron's.<br><br><br>The first term falls to zero because of this symmetric cancelling out between the dipoles. There are points where the electron's magnetic moment lines up with the proton's field, and points with complete disagreement. For every orthogonal part, there's a constructive; antiparallel has a parallel. Adding those contributions up (see Griffiths) goes to zero.<br>
+Through a similar argument, our second term  in <a data-href="#^dipoleInteractionField" href="https://azalamer.com/UniversityNotes/about:blank#^dipoleInteractionField" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^dipoleInteractionField</a><a data-href="#^dipoleInteractionField" href="https://azalamer.com/UniversityNotes/about:blank#^dipoleInteractionField" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.11.1)</a> has to be nonzero. The origin doesn't have a complement to cancel it, it's unique. The more rigorous argument is in Griffiths E&amp;M.<br>We're going to consider <a data-href="#^dipoleInteractionField" href="https://azalamer.com/UniversityNotes/about:blank#^dipoleInteractionField" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^dipoleInteractionField</a><a data-href="#^dipoleInteractionField" href="https://azalamer.com/UniversityNotes/about:blank#^dipoleInteractionField" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.11.1)</a> as producing a perturbation. The perturbation looks like<br><br><br>The wave-function term comes from the delta function.<br>
+The dot-product uses the same trick we did in <a data-href="1.10 Zeeman Effect Cont" href="https://azalamer.com/UniversityNotes/1.10 Zeeman Effect Cont" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.10 Zeeman Effect Cont</a><a data-href="1.10 Zeeman Effect Cont" href="https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.10-zeeman-effect-cont.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">1.10 Zeeman Effect Cont</a><br>Our magnitudes are still good<br><br>Where <br><br>Again we're moving into a coupled basis since now the angular momentum are coupled.<br><br>Our coupled basis is  <br>Our new quantum number  is the coupled spin between the electron and proton.<br>Exercise (INSTAPOLL: What are the possible values for the spin quantum number when the electron is coupled to the proton spin?).
+
+ANS: (0,1) Either the spin is in total agreement or disagreement. It's a projection so it can't be negative
+<br>Solving this out, our energy correction either has <br><br>Below is the expression which <br><br><br>This energy difference and transition creates the fabled 21cm line in astrophysics. The wavelength is literally 21 cm.<br>What causes the transition between the triplet to the singlet?
+Nature wants to find ways to reach lower energy states, we talk more about it later
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.11-hyperfine-splitting.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.11 Hyperfine Splitting.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 12 Feb 2025 19:06:27 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br><br><br>Why is the 21 cm line so important? <br>
+<br>The big bang happened, rapidly expanded really really hot and was super charged. Things then cooled off and things could recombine to become neutral hydrogen.
+<br>All of a sudden the radiation ejected when the hydrogen formed and cooled and we got the CMB
+<br>After that, stars took over. They re-ionized the hydrogen with their UV from the stars. Re-ionization is when neutral hydrogen stepped out and came back. The 21cm wavelength with the redshift lets you study this period of the universe!
+<br>We're now wanting to find the good states since  is diagonal<br><br>These states turn out to be below<br><br>The first number is the resultant magnitude quantum number, and the second number is the projection of that vector. (The arrows are the spin of the electron and proton respectively)<br>The universe started out very small, the energy density was huge. Why didn't we just form a black hole?
+It was literally everything, so it should have. But the answer is that there was no place to collapse to
+<br>Why is it that  are plus anad minus?
+It has to do with the phase. "Down" can mean different thing in different ways. We can still end up with a zero projection onto the  axis, if our resultant vector is perpendicular. This is regardless of length
+
+<br>We're now going to move to Clebcsh-Gordon values. <br><br>To use a Clebcsh-Gordon table, the red vertical column represents your  state. Your green row represents the corresponding identical  quantum numbers.<br>Exercise (AT HOME: To better understand, go through this and see how you can pull  <a data-href="#^7fcef6" href="https://azalamer.com/UniversityNotes/about:blank#^7fcef6" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^7fcef6</a><a data-href="#^7fcef6" href="https://azalamer.com/UniversityNotes/about:blank#^7fcef6" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.12.2)</a> from this result).<br>To get the coefficients in the table, you can then use the raising and lowering operators. Remember that the raising and lowering operators only act on the projection quantum number, it's rotating.<br>Why is this table even useful?
+If you had spin  particles, then your good basis might be more complicated and require more work. This table concisely represents all the transformations for you.
+<br>How does the neutron have a magnetic moment? Isn't it neutrally charged?]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.12-hyperfine-coupling.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.12 Hyperfine Coupling.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 12 Feb 2025 19:49:22 GMT</pubDate><enclosure url="https://i.giphy.com/KupdfnqWwV7J6.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="https://i.giphy.com/KupdfnqWwV7J6.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[1.11 Boundary Conditions and Energy 2025-02-12 10.12.21]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  (1)(2)Area AHeight h]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.11-boundary-conditions-and-energy-2025-02-12-10.12.21.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.11 Boundary Conditions and Energy 2025-02-12 10.12.21.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 12 Feb 2025 16:49:57 GMT</pubDate></item><item><title><![CDATA[1.11 Boundary Conditions and Energy 2025-02-12 10.20.51]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  (1)(2)lh]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.11-boundary-conditions-and-energy-2025-02-12-10.20.51.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.11 Boundary Conditions and Energy 2025-02-12 10.20.51.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 12 Feb 2025 16:22:04 GMT</pubDate></item><item><title><![CDATA[1.12 Hyperfine Coupling 2025-02-12 13.27.51]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  S=1S=0]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.12-hyperfine-coupling-2025-02-12-13.27.51.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.12 Hyperfine Coupling 2025-02-12 13.27.51.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 12 Feb 2025 19:31:22 GMT</pubDate></item><item><title><![CDATA[1.12 Hyperfine Coupling 2025-02-12 13.34.53]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.12-hyperfine-coupling-2025-02-12-13.34.53.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.12 Hyperfine Coupling 2025-02-12 13.34.53.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 12 Feb 2025 19:37:20 GMT</pubDate></item><item><title><![CDATA[Homework 3 2025-02-11 15.47.47]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  L=1H=-10ux=3/2x=1/2x=0x=-12]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/homework-3-2025-02-11-15.47.47.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Homework 3 2025-02-11 15.47.47.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 11 Feb 2025 22:05:30 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>We talked about the Zeeman effect given a strong magnetic field, and it's application to solar photogrametry.<br><br>From last time, we see that the Zeeman effect is smaller than fine structure<br><br>Fer  how many states does it split into with a magnetic field. 
+I put two, but it's not.<br>
+, which is what the energy is dependent on.
+
+ can be zero or 1, and there's different values of  which would make our  into . That means we get splitting<br>
+To identify which line is which, you use <a data-href="1.9 Zeeman Effect.md#^gfactorZeeman" href="https://azalamer.com/UniversityNotes/1.9 Zeeman Effect#^gfactorZeeman" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.9 Zeeman Effect.md &gt; ^gfactorZeeman</a><a data-href="1.9 Zeeman Effect.md#^gfactorZeeman" href="https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.9-zeeman-effect.html#^gfactorZeeman" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.9.5)</a>
+<br>We reviewed for the weak case, but now the strong case.<br><br>With a strong enough external field,  and  precess around our  oriented field<br><br>The perturbation becomes<br><br>with an energy involving <a data-href="1.9 Zeeman Effect.md#^gfactorZeeman" href="https://azalamer.com/UniversityNotes/1.9 Zeeman Effect#^gfactorZeeman" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.9 Zeeman Effect.md &gt; ^gfactorZeeman</a><a data-href="1.9 Zeeman Effect.md#^gfactorZeeman" href="https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.9-zeeman-effect.html#^gfactorZeeman" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.9.5)</a> <br><br>For a state , what is ?
+We don't have the magnitudes of the other vectors, so it implies we're precessing. If we're precessing, the average value of  and  is zero.
+How would you prove this?
+You'd use raising and lowering operators associated with angular momentum. Recall:
+
+Those operators raise and lower .<br>
+You can write  as that superposition, apply it to the state, then take the inner product
+
+Where before to get the spin-orbit coupling term we need those expected values. We just proved they're independent!
+
+
+<br><br>
+<br> is no longer diagonal in either matrix. 
+<br>Pick one and compute all elements of 
+<br>Diagonalize
+<br>Good states are combination that depend on 
+<br>Griffiths has the results
+<br><br>This is how we measure the strength of sunspots! We look at the emission lines from the different energy levels, and then predict the field strength that would be required to create that spectrum<br>
+<img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250207135050.png">]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.10-zeeman-effect-cont.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.10 Zeeman Effect Cont.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 10 Feb 2025 19:18:17 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250207135050.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250207135050.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[1.10 More Electric Potential 2025-02-10 10.44.01]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  RrE]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.10-more-electric-potential-2025-02-10-10.44.01.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.10 More Electric Potential 2025-02-10 10.44.01.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 10 Feb 2025 16:44:33 GMT</pubDate></item><item><title><![CDATA[1.11 Hyperfine Splitting 2025-02-10 13.19.53]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.11-hyperfine-splitting-2025-02-10-13.19.53.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.11 Hyperfine Splitting 2025-02-10 13.19.53.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 10 Feb 2025 19:20:51 GMT</pubDate></item><item><title><![CDATA[1.11 Hyperfine Splitting 2025-02-10 13.39.56]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  agreemmentdisagreement]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.11-hyperfine-splitting-2025-02-10-13.39.56.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.11 Hyperfine Splitting 2025-02-10 13.39.56.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 10 Feb 2025 19:40:25 GMT</pubDate></item><item><title><![CDATA[1.11 Hyperfine Splitting 2025-02-10 13.42.20]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  TripletSingletUnperturbed]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.11-hyperfine-splitting-2025-02-10-13.42.20.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.11 Hyperfine Splitting 2025-02-10 13.42.20.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 10 Feb 2025 19:44:44 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br><br><br>Would aliens have known about Shor's algorithm?
 QM let's us factor numbers, which is sick
 <br>Shor's algorithm does something really unique, it can find the period of any black box function.<br><br>The first public key cryptography system<br>Definition (Diffe-Hellman System).
