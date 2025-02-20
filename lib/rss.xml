@@ -1,4 +1,194 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 14 Feb 2025 21:42:43 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 14 Feb 2025 21:42:36 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 20 Feb 2025 05:50:24 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 20 Feb 2025 05:50:09 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Fundamental Principles]]></title><description><![CDATA[ 
+ <br><br><br>If operation A can be done in  ways and operation B in  ways, then sequence (A,B) can be done in  ways.<br>In Plain English: When you have to do several things in sequence, multiply the number of ways to do each thing.<br><br>If operation A can be done in  ways OR operation B in  ways (mutually exclusive), then total number of ways is .<br><br><br><br>When to Use: Ordering  objects from  distinct objects where order matters.<br><br>
+How many different arrangements of TESSELATION?<br>
+Given 11 letters (T,E,S,S,E,L,L,A,T,I,O,N), find arrangements.
+<br>Use permutation with repetition:  (due to repeated E,L)<br><br>For  objects where there are  of first type,  of second type, etc:<br><br>Example: MISSISSIPPI has:<br>
+<br>4 S's
+<br>4 I's
+<br>2 P's
+<br>1 M
+<br>Total arrangements = <br><br><br><br>When to Use: Selecting  objects from  objects where order doesn't matter.<br><br>
+<br>
+<br>
+<br>Pascal's Identity: 
+<br><br>
+12 politicians meet for dinner. How many handshakes possible if each shakes hands with every other once?
+<br>Solution: Each handshake is a combination of 2 from 12:<br>
+ handshakes<br><br><br>From HW3: Number of ways to arrange letters in ABRACADABRA:<br>
+4. Count total letters: 11<br>
+5. Break down repeats:<br>
+<br>5 A's
+<br>2 B's
+<br>2 R's
+<br>1 C, 1 D
+<br>
+<br>Use formula: 
+<br><br>Birthday Problem (From HW):<br>
+Instead of counting shared birthdays, count no shared birthdays:<br>
+<br><br><br><br>
+Arrange 8 books: 3 red, 3 blue, 2 brown
+<br>Solution: <br><br><br>
+Committee of 50 from 100 senators (2 per state). Probability all states represented?
+<br>Solution:<br>
+<br>Total ways: 
+<br>Favorable ways:  (each state chooses 1 senator)
+<br>
+<br><br><br>
+Paths from (0,0) to (m,n) using only right and up moves
+<br>Solution:  or <br><br>
+<br>
+Order Matters?
+
+<br>Yes → Permutation
+<br>No → Combination
+
+
+<br>
+Repetition Allowed?
+
+<br>Changes formula significantly
+<br>For permutations:  vs 
+
+
+<br>
+Double Counting
+
+<br>Check if situations overlap
+<br>Use inclusion-exclusion if needed
+
+
+<br><br>
+<br>
+First Ask:
+
+<br>Does order matter?
+<br>Are elements distinct?
+<br>Is repetition allowed?
+
+
+<br>
+Then:
+
+<br>Draw tree diagram if helpful
+<br>Write out small cases
+<br>Check answer makes sense
+
+
+<br>
+Finally:
+
+<br>Verify with simple case
+<br>Check magnitude of answer
+
+
+<br><br><br>
+In how many ways can letters in ZOMBIES be arranged where one is a vowel and one is a consonant?
+<br>Solution:<br>
+10. Vowels: I,E<br>
+11. Consonants: Z,M,B,S<br>
+12. Answer:  (select vowel, select consonant, arrange them)<br><br>[Another relevant combinatorics problem]<br><br><br>
+<br>Multiplication Rule: Sequential choices
+<br>Permutation: Ordered arrangements
+<br>Combination: Unordered selections
+<br>Permutation with Repetition: Ordered arrangements with identical objects
+<br><br>
+<br>
+<br>
+<br>Permutation with repetition: 
+<br><br><br><br>Indicators:<br>
+<br>"Given that..."
+<br>"If we know..."
+<br>Sequential events
+<br>Updated information
+<br>Strategy:<br>
+20. Write out P(A|B) = P(A∩B)/P(B)<br>
+21. Draw tree diagram if sequential<br>
+22. Use Bayes' for "reverse" conditionals<br><br>Indicators:<br>
+<br>Multiple trials
+<br>"Repeatedly..."
+<br>No connection between events
+<br>Product of probabilities
+<br>Strategy:<br>
+23. Verify independence by checking P(A∩B) = P(A)P(B)<br>
+24. Use multiplication rule<br>
+25. Consider complement for "at least one" problems<br><br>Indicators:<br>
+<br>Counting arrangements
+<br>Selecting items
+<br>"How many ways..."
+<br>Ordering/grouping
+<br>Strategy:<br>
+26. Ask: Does order matter?<br>
+27. Check: Repetition allowed?<br>
+28. Use appropriate formula:<br>
+<br>Order matters → Permutation
+<br>Order doesn't → Combination
+<br><br><br>Example (HW2): Drawing chips until red appears<br>Strategy:<br>
+29. Define success state<br>
+30. Use geometric series if needed<br>
+31. Consider all paths to success<br><br>Example (HW3): Circuit problems<br>Strategy:<br>
+32. Break into components<br>
+33. Find component probabilities<br>
+34. Combine using:<br>
+<br>Series: P(all work) = p₁p₂...pₙ
+<br>Parallel: P(at least one) = 1 - (1-p₁)(1-p₂)...(1-pₙ)
+<br><br>Example (Practice Exam): Poker hands<br>Strategy:<br>
+35. Total outcomes: <br>
+36. Break desired hand into steps:<br>
+<br>Choose ranks
+<br>Choose suits
+<br>
+<br>Multiply using combination rules
+<br><br><br>
+<br>Write given probabilities
+<br>List conditions
+<br>Draw diagram if helpful
+<br><br>
+<br>Identify problem type
+<br>Choose appropriate formula
+<br>Break into subproblems
+<br><br>
+<br>Follow systematic approach
+<br>Show clear steps
+<br>Check intermediate results
+<br><br>
+<br>Answer between 0 and 1?
+<br>Units correct?
+<br>Makes intuitive sense?
+<br><br><br>Example: Using  when order matters<br>Prevention:<br>
+<br>Ask: "Does rearrangement create new outcome?"
+<br>Try small example first
+<br>Make organized list
+<br><br>Example: Drawing cards without replacement<br>Prevention:<br>
+<br>Check if events affect each other
+<br>Calculate P(A|B) ≟ P(A)
+<br>Consider replacement/no replacement
+<br><br>Example: Adding instead of multiplying<br>Prevention:<br>
+<br>Write complete formula first
+<br>Show each step
+<br>Check units and magnitude
+<br><br><br>
+A test is 90% reliable for guilty, 98% reliable for innocent. 12% actually guilty. Find P(innocent|test says guilty).
+<br><br>
+<br>Identify:
+<br>
+<br>Bayes' Theorem problem
+<br>Need: P(I|G)
+<br>
+<br>List Given:
+<br>
+<br>P(G|guilty) = 0.90
+<br>P(G|innocent) = 0.02
+<br>P(guilty) = 0.12
+<br>P(innocent) = 0.88
+<br>
+<br>Apply Bayes':
+<br>Calculate:
+<br><br>
+<br>Use complement for "at least one"
+<br>Break complex problems into steps
+<br>Try small numbers first
+<br>Look for symmetry
+]]></description><link>https://azalamer.com/UniversityNotes/school/math/probability/notes/cheatsheet.html</link><guid isPermaLink="false">School/Math/Probability/Notes/Cheatsheet.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 20 Feb 2025 05:50:11 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>We wrapped up our previous lecture on electrostatic energy, by proving <a data-href="#^7d3a65" href="https://azalamer.com/UniversityNotes/about:blank#^7d3a65" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^7d3a65</a><a data-href="#^7d3a65" href="https://azalamer.com/UniversityNotes/about:blank#^7d3a65" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.12.1 (Energy contained in charge distribution)</a>.<br><br>Midterm is released 11:30am Monday, open till 11:30PM. Can't submit after 11:30.<br>
 Monday's lecture is pre-recorded<br><br>From <a data-href="1.11 Boundary Conditions and Energy#^2a436d" href="https://azalamer.com/UniversityNotes/1.11 Boundary Conditions and Energy#^2a436d" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.11 Boundary Conditions and Energy &gt; ^2a436d</a><a data-href="1.11 Boundary Conditions and Energy#^2a436d" href="https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.11-boundary-conditions-and-energy.html#^2a436d" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.11.11)</a>, we can see that the energy is dependance on volume. But if we draw an arbitrary volume to integrate over, it's charge density difference is zero so the integral stays at the normal surface.<br>
 From here we use gauss law<br><br>Why does the integral cancel out? 
@@ -20,33 +210,7 @@ We're integrating to infinity, but inside and outside are different! We need to 
 If you have a capacitor connected to a source of charge, then it can have a fixed voltage with unlimited charge. That's why they're used in so many experimental applications for pulsed energy.<br>
 Capacitors are rlly important trust.<br>
 The capacitance of a capacitor is the ratio between stored charge, and the potential difference.<br><br>The unit is the Farad.<br>
-For a charged conducting sphere, the capacitance is<br><br><br>For funsies you calculate your own capacitance. Approximate yourself as a sphere. ]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.12-capacitors-and-electrostatics.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.12 Capacitors and Electrostatics.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 14 Feb 2025 16:49:29 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250214101640.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250214101640.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
- <br><br>We're talking about boundary conditions to describe the discontinuous changes in the electric field at surfaces, and electrostatic energy.<br><br><br>
-<br>Can't browse online
-<br>Cant use generative AI (it fails anyway lol)
-<br>Don't do with peers
-<br>Questions are essentially "do the integral", so do the integral yourself.
-<br>Midterm is open note
-<br>Midterm is on the style of the second homework other than the first one. Up until chapter 2.4.1<br>
-Your work has to be intelligible<br>
-There are 4 main questions, with subsections. Nothing unfamiliar with other upperdivs<br><br>Conductors only have surface charges, no bulk charges. Additionally because they have mobile charges, you can induce charge distributions onto a conductor.<br>
-The electric field to the right of an infinite charged plate is<br><br>The electric field is discontinuous if the plane was completely thin, but you can't be discontinuous. See <a data-href="1.10 More Electric Potential#^4ee782" href="https://azalamer.com/UniversityNotes/1.10 More Electric Potential#^4ee782" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.10 More Electric Potential &gt; ^4ee782</a><a data-href="1.10 More Electric Potential#^4ee782" href="https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.10-more-electric-potential.html#^4ee782" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Example 1.10.1 (Potential of a Conducting Sphere)</a>  for a visual of a discontinuous  field.<br>
-How do you determine the jump you can have between two regions?<br>I DIDN'T KNOW THE PROFESSOR DESKS COULD RISE AND FALL. THAT WAS MAGIC<br>To do this, construct a gaussian pillbox of infentesimal height <br><br>We construct an infinitesimal pillbox with height .We construct a gaussian surface to get flux<br><br>Then take <br><br>The only closed charge that will contribute here as we approach 0 is the surface charge! As the volume tends to zero, the charge volume distribution won't contribute.<br><br><a data-href="#^discontinuous" href="https://azalamer.com/UniversityNotes/about:blank#^discontinuous" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^discontinuous</a><a data-href="#^discontinuous" href="https://azalamer.com/UniversityNotes/about:blank#^discontinuous" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.11.4)</a>  The electric field is discontinuous if there is a surface charge on our contour. Otherwise it is continuous.<br>But in real life it can't be. How do we resolve the discontinuity
-Probably because of the skin depth. There is no delta function of charge distribution, it is distributed along the surface with narrow depth.
-<br>For a conducting sphere, this then means that  is<br><br>Before we did the perpendicular field, now we want the parallel.<br><br>Now similar to before, we're going to take a line integral over our new loop . It's a closed loop. We know that the voltage around the loop has to be zero.<br><br>The tangential component of an electric field has to be continuous.<br>
-The electric field inside the conductor must be zero, therefore the only non-zero component is the perpendicular one just off of the surface.<br>
-This states that our electric field only goes up after we exit the surface<br><br>For a generic E-field and arbitrary path, the work done moving a charge between two points <br><br>If I have a set of charges in a spacial configuration, the work I did to put those charges in that arrangement is equal to the energy contained by the system.<br>
-This is what you would expect.<br>
-Proof.@ <a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^690926</a><a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.11.1 (The Energy Contained by a Collection of Charges)</a> <br>With more than two charges, place them into some set .  is composed of every unique subset of  with length 2. The energy contained by  is<br><br>This is another example of the superposition principle! Another way of thinking about it is a fully interconnected graph, and you simply sum up the energy to construct all edges.<br>
-Arbitrarily it's<br><br>Why the less than or equals?
-The reason why  is because otherwise an edge gets it's energy accounted when it's  AND . Double counting!
-<br>Now we do a trick, we're excluding the duplicates anyway so it's the same as dividing by two!<br>
-□<br>Theorem (The Energy Contained by a Collection of Charges).
-For a set of charges in the list , the total potential of the system is:
-
-<br>Now we're moving from the discrete description, to the continuum. This will show the energy really is in the electric field<br>
-For a continuous distribution of charge, we can write it as<br><a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^690926</a><a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.11.1 (The Energy Contained by a Collection of Charges)</a> can be rewritten as<br><br>Notice how our separated  function is just the potential of .<br>Now we want to move to a continuum<br><br>"The infinitesimal energy at a point is equal to the potential at that location, times the charge density at that location."<br>
-We know that for conductors, the charge is splattered across the surface.<br><br>Next time we will go from here, to the expression involving the electric field.]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.11-boundary-conditions-and-energy.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.11 Boundary Conditions and Energy.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 14 Feb 2025 16:09:55 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+For a charged conducting sphere, the capacitance is<br><br><br>For funsies you calculate your own capacitance. Approximate yourself as a sphere. ]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.12-capacitors-and-electrostatics.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.12 Capacitors and Electrostatics.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 18 Feb 2025 01:53:29 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250214101640.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250214101640.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br><br><br>Why is the magnetic moment in an electron much larger to the proton?
 Magnetic moment is inversely proportional to mass
 <br><br>The hamiltonian couples the directions of  and . This means the magnitudes are still good, l but the quantum numbers  and  are not. <br>What is a "good quantum number"? Why aren't , good?
@@ -56,7 +220,7 @@ An Aside<br>
 Last time, we learned about a new operator  where
 
 <img alt="Diagram of the new vector" src="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter" referrerpolicy="no-referrer">
-<br><br>A good quantum number is one which isn't coupled together. What makes  good is that despite the coupling, it's a vector sum and is itself unique despite it's linear combination being non-unique. <br>
+<br>A good quantum number is one which isn't coupled together. What makes  good is that despite the coupling, it's a vector sum and is itself unique despite it's linear combination being non-unique. <br>
 my head feels like its filled with water
 <br>Oh shit molecules can have dozens of angular momentum vectors because everything can move freely.<br>The good quantum numbers in our system are<br><br>Then we get the complete fine structure<br>Theorem (The Complete Fine Structure Energy in the Hydrogen Atom).
 
@@ -81,7 +245,33 @@ The  quantum numbers are magnitude!! That's why it is . For agnitude.
 <br>Why?
 You need to conserve momentum. Can't go from a  momentum to  momentum
 <br>You can't go from  to another . What you can do is go from any energy  to . When you calculate that from , you find that there are 5 possible  transitions! Below is what they are:<br>
-<img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250203134958.png">]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.8-complete-fine-structure.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.8 Complete Fine Structure.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 12 Feb 2025 20:19:05 GMT</pubDate><enclosure url="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter" length="0" type="false"/><content:encoded>&lt;figure&gt;&lt;img src="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+<img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250203134958.png">]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.8-complete-fine-structure.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.8 Complete Fine Structure.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 17 Feb 2025 18:52:51 GMT</pubDate><enclosure url="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter" length="0" type="false"/><content:encoded>&lt;figure&gt;&lt;img src="https://chem.libretexts.org/@api/deki/files/90875/379px-LS_coupling.svg.png?revision=1&amp;size=bestfit&amp;width=321&amp;height=343/%7Ccenter"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Similar copy of the notes in <a data-tooltip-position="top" aria-label="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory" data-href="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory" href="https://Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">3.6 Final Day and Degenerate Perturbation Theory</a><a data-tooltip-position="top" aria-label="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory" data-href="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.6-final-day-and-degenerate-perturbation-theory.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">3.6 Final Day and Degenerate Perturbation Theory</a> from Quantum 1<br><br><br>How can we look at a problem and know there will be a degeneracy.<br>
+<br>A symmetry A square box has  and interchangeable<br>
+There will be degeneracies in the hydrogen atom
+<br>
+Now we know that Sitz's Texas password is a bunch of dots
+<br> How would I apply a perturbation to break this symmetry in the box?
+Applying a potential off-center
+<br>For a particle in 2D square box, we can try separating the variables to two separate wave-function solutions.<br><br>The ground state is never degenerate!<br>If I have two degenerate states, any one of them solves the schrödinger equation.<br>Our concern form before was that our denominator in the <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^energyOf2ndEps</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^energyOf2ndEps" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^energyOf2ndEps" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.5 (Second Perturbed Energy)</a> <br>We want to do the same perturbation theory with it<br><br>Given our wave-function is the two degenerate wave-functions .<br><br>We're applying our go-to trick with , then later with . <br><br>Sanity check, if  was zero, we reduce to first order perturbation theory since it's the normal expected value. <a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory &gt; ^c15950</a><a data-href="../../Quantum 1/Notes/3.3 Introduction to Perturbation Theory#^c15950" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.3-introduction-to-perturbation-theory.html#^c15950" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 3.3.3 (First Perturbed Energy)</a> .<br>We're using the following notation<br><br>then<br><br>^prev<br>
+We can find a value from alpha to solve for this system: from <a data-href="#^ca17f5" href="https://azalamer.com/UniversityNotes/about:blank#^ca17f5" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^ca17f5</a><a data-href="#^ca17f5" href="https://azalamer.com/UniversityNotes/about:blank#^ca17f5" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">^ca17f5</a>. <br><br>This gives us our quadratic equation in  when plugged back in!<br><br>
+<br>The energies are essentially just eigenvalues of our  matrix!<br>
+You can see that there's an identity hidden inside the ! This is just an energy term, which has to be real!. If the terms have to be real, and  are complex conjugates they are the same as each other!
+<br>Can you make the following reduction using <a data-href="#^notation" href="https://azalamer.com/UniversityNotes/about:blank#^notation" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^notation</a><a data-href="#^notation" href="https://azalamer.com/UniversityNotes/about:blank#^notation" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.4.4)</a>?
+
+We also know. that  so
+
+<br><br>From the energies, we already know that the expectation value  is non-zero. If it was zero there would be no problem! We're using language associated with matrices, and you can read more about that in <a data-href="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory#^fischlerMatrixIntro" href="https://Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory#^fischlerMatrixIntro" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory &gt; ^fischlerMatrixIntro</a><a data-href="../../Quantum 1/Notes/3.6 Final Day and Degenerate Perturbation Theory#^fischlerMatrixIntro" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/3.6-final-day-and-degenerate-perturbation-theory.html#^fischlerMatrixIntro" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(3.6.9)</a><br>You know what's fun, is that there is a similar thing in density matrices where the weirdness comes from your off-diagonal terms. The units of a density matrix is just probability, but I wonder if there is a connection beyond diagonalization.<br>This means our new goal, is to diagonalize our  matrix! We want to find better basis states. If your off-diagonal terms are zero, then your states are already diagonalized! That <br>The reason we need basis states is that otherwise our terms aren't linearly independent. <br><br>This is just like if you were measuring in the Z observable with a D photon. The Z observable is the basis where we have the degeneracy, but with the change of basis we now measure in one that can distinguish. We've rotated to DA]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.4-degenerate-perturbation-theory.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.4 Degenerate Perturbation Theory.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sun, 16 Feb 2025 02:32:29 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[<a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:fourierTransform" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#fourierTransform</a> 
+ <br><br>We learned about how to model the effects of time varying changes to the potential in a quantum system.<br><br>@adiht - PMA modeling person<br>First midterm is next Friday, closed notes and books. Coversheet with formulas. More of a progress report. One more HW assignment between now and then, due next Tuesday.<br>Exercise (For a quantum system in some definite energy state , what is the time dependence of the wave function?).
+The probability doesn't have time dependance, but the wave-function does!
+<br>When a system isn't in a well defined energy, but it is in a superposition state. If you end up with different 's somehow, multiplying it out gives you cross terms. The superposition state is of the form of both the time variance, and it's positional dependance.<br>The perturbations we look at will be separable.<br><br>We know from the Euler relation, that it can be written in the  form. This is our "wiggle term" mentioned in Griffiths.<br>We know <br><br>Then applying our perturbation<br><br>Then we want to solve <a data-href="../../Quantum 1/Notes/1.6 Working with the Schrödinger Equation#^ba33b7" href="https://Quantum 1/Notes/1.6 Working with the Schrödinger Equation#^ba33b7" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">../../Quantum 1/Notes/1.6 Working with the Schrödinger Equation &gt; ^ba33b7</a><a data-href="../../Quantum 1/Notes/1.6 Working with the Schrödinger Equation#^ba33b7" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/1.6-working-with-the-schrödinger-equation.html#^ba33b7" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.6.2 (Schrödinger Equation)</a> <br><br>Expanding this gives<br><br>Where  is our amplitude to derive probability.<br>
+We can always do this, this is a good basis to work with. Any possible state is a superposition of the basis states.<br>
+We're now plugging the form from  <a data-href="#^8177e9" href="https://azalamer.com/UniversityNotes/about:blank#^8177e9" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^8177e9</a><a data-href="#^8177e9" href="https://azalamer.com/UniversityNotes/about:blank#^8177e9" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.14.5)</a> to <a data-href="#^86c9d0" href="https://azalamer.com/UniversityNotes/about:blank#^86c9d0" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^86c9d0</a><a data-href="#^86c9d0" href="https://azalamer.com/UniversityNotes/about:blank#^86c9d0" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.14.4)</a>. When you take these derivatives, you'll get two pieces. One involving the derivative of the complex exponential phase, and one involving .<br>
+The Hamiltonian acting on will cause . The result of this is that these mutual wave-function terms drop out.<br>Exercise (AT HOME: Work through this and prove it).<br><br>As is our usual technique, we're singling out just one of the states  and one <br><br>This gives us a set of coupled differential equations to solve! Now the<br>
+We're picking the below notation<br><br>You can check to see our units for  work out since  angular momentum being .<br>
+For our first order term, assume<br><br>This gives us our first order term<br><br>We're now making a specific assumption: we claim we're initially in a single state . Then<br><br>Basically, we're saying that "given a state, what is the evolution of the system with respect to other states over time". To figure out this answer, we can just integrate!<br><br>This is just the <a href="https://azalamer.com/UniversityNotes?query=tag:fourierTransform" class="tag" target="_blank" rel="noopener nofollow">#fourierTransform</a> !!<br><br>What this does is that it picks out the part of the perturbation, to see what part is at the resonant frequency of the system. That's the part that will be effective in <a data-href="#^5c5b03" href="https://azalamer.com/UniversityNotes/about:blank#^5c5b03" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^5c5b03</a><a data-href="#^5c5b03" href="https://azalamer.com/UniversityNotes/about:blank#^5c5b03" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.14.12)</a> that will be effective at triggering a state transition.<br>Anything that has time dependance can be expanded as sums of harmonic perturbations.<br>
+This is cool asf.<br><br>The transition probability at a given time is<br><br>Lat's say that I have my perturbation, I leave it on for awhile, and at some time later, I turn it off. More specifically, what if I want to know when to turn the perturbation off so that it's maximizing it's probability in another state.<br>Starting from <a data-href="#^5c5b03" href="https://azalamer.com/UniversityNotes/about:blank#^5c5b03" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^5c5b03</a><a data-href="#^5c5b03" href="https://azalamer.com/UniversityNotes/about:blank#^5c5b03" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.14.12)</a>  <br><br>The key points here, are that we factored out that center exponential term because we wanted to add a sin component. Sin has a more physical presence. <br>If I wanted to know when to first turn the perturbation off, then we know that the probability of the  state should be zero!<br>
+Once you turn the perturbation off, those coefficients get locked in.<br>What about a Gaussian pulse?<br><br>Well just like before, we apply <a data-href="#^5c5b03" href="https://azalamer.com/UniversityNotes/about:blank#^5c5b03" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^5c5b03</a><a data-href="#^5c5b03" href="https://azalamer.com/UniversityNotes/about:blank#^5c5b03" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.14.12)</a> and plug in<br><br><br>But what bounds do we pick? Well good news, the gaussian has so much of it's area focussed at the center, since we're already approximating we can just integrate over ]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.14-time-dependent-perturbation-theory.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.14 Time Dependent Perturbation Theory.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 17 Feb 2025 21:17:28 GMT</pubDate><enclosure url="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGZ3dHY1Y3lkOXp5ZjdlMGF6OXo1czE0dDNmN3lnMDFlNGNuM3U1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HUgz8J4UzxKX6SI/giphy.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGZ3dHY1Y3lkOXp5ZjdlMGF6OXo1czE0dDNmN3lnMDFlNGNuM3U1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HUgz8J4UzxKX6SI/giphy.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>We're using tricks we've already learned, on some new things<br>
 <img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250214131342.png"><br>
 Happy valentines day chat<br>
@@ -112,7 +302,145 @@ CHAT WE'RE DOING MOLECULAR BONDING
 
 <br>Now we need to compute the off-diagonal elements to see what the good elements are for this state<br>To get <br><br>Isn't this just getting the first order energy correction?
 No it's getting 
-<br>The off diagonal matrix elements are HUGE. These aren't only not the good states, they're pathetic. You can calculate the energies from what we did in <a data-href="1.4 Degenerate Perturbation Theory#^R2eigenEnergy" href="https://azalamer.com/UniversityNotes/1.4 Degenerate Perturbation Theory#^R2eigenEnergy" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.4 Degenerate Perturbation Theory &gt; ^R2eigenEnergy</a><a data-href="1.4 Degenerate Perturbation Theory#^R2eigenEnergy" href="https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.4-degenerate-perturbation-theory.html#^R2eigenEnergy" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.4.7)</a> <br>The good states and bad states are<br><br>When two Coulomb potentials approach each other, there is suddenly a potential which is lower for the electron to be in than it was before! THIS IS BONDING!!!]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.13-double-well-problem.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.13 Double Well Problem.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 14 Feb 2025 21:21:08 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250214131342.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250214131342.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[lxplus notes 2025-02-13 16.14.57]]></title><description><![CDATA[ 
+<br>The off diagonal matrix elements are HUGE. These aren't only not the good states, they're pathetic. You can calculate the energies from what we did in <a data-href="1.4 Degenerate Perturbation Theory#^R2eigenEnergy" href="https://azalamer.com/UniversityNotes/1.4 Degenerate Perturbation Theory#^R2eigenEnergy" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.4 Degenerate Perturbation Theory &gt; ^R2eigenEnergy</a><a data-href="1.4 Degenerate Perturbation Theory#^R2eigenEnergy" href="https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.4-degenerate-perturbation-theory.html#^R2eigenEnergy" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.4.7)</a> <br>The good states and bad states are<br><br>When two Coulomb potentials approach each other, there is suddenly a potential which is lower for the electron to be in than it was before! THIS IS BONDING!!!]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.13-double-well-problem.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.13 Double Well Problem.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 17 Feb 2025 18:53:01 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250214131342.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250214131342.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Session 39 2025-02-18 18.33.57]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-39-2025-02-18-18.33.57.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 39 2025-02-18 18.33.57.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 19 Feb 2025 00:58:18 GMT</pubDate></item><item><title><![CDATA[Session 39 2025-02-18 18.29.59]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-39-2025-02-18-18.29.59.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 39 2025-02-18 18.29.59.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 19 Feb 2025 00:34:17 GMT</pubDate></item><item><title><![CDATA[Session 39 2025-02-18 18.22.35]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-39-2025-02-18-18.22.35.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 39 2025-02-18 18.22.35.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 19 Feb 2025 00:29:09 GMT</pubDate></item><item><title><![CDATA[Session 39 2025-02-18 18.06.54]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-39-2025-02-18-18.06.54.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 39 2025-02-18 18.06.54.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 19 Feb 2025 00:15:30 GMT</pubDate></item><item><title><![CDATA[Session 39 2025-02-18 18.00.00]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-39-2025-02-18-18.00.00.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 39 2025-02-18 18.00.00.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 19 Feb 2025 00:04:54 GMT</pubDate></item><item><title><![CDATA[Session 39 2025-02-18 17.55.02]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-39-2025-02-18-17.55.02.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 39 2025-02-18 17.55.02.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 18 Feb 2025 23:58:12 GMT</pubDate></item><item><title><![CDATA[Session 39 2025-02-18 17.11.47]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/session-39-2025-02-18-17.11.47.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Session 39 2025-02-18 17.11.47.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Tue, 18 Feb 2025 23:40:58 GMT</pubDate></item><item><title><![CDATA[Homework 3 2025-02-16 21.35.45]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/homework-3-2025-02-16-21.35.45.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Homework 3 2025-02-16 21.35.45.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 17 Feb 2025 03:40:50 GMT</pubDate></item><item><title><![CDATA[3.10 ArrayLists Worksheet 2025-02-19 18.43.15]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/3.10-arraylists-worksheet-2025-02-19-18.43.15.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/3.10 ArrayLists Worksheet 2025-02-19 18.43.15.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 20 Feb 2025 00:44:12 GMT</pubDate></item><item><title><![CDATA[3.10 ArrayLists 2025-02-19 18.14.30]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/3.10-arraylists-2025-02-19-18.14.30.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/3.10 ArrayLists 2025-02-19 18.14.30.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 20 Feb 2025 00:17:01 GMT</pubDate></item><item><title><![CDATA[3.10 ArrayLists 2025-02-19 18.07.18]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/3.10-arraylists-2025-02-19-18.07.18.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/3.10 ArrayLists 2025-02-19 18.07.18.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 20 Feb 2025 00:09:21 GMT</pubDate></item><item><title><![CDATA[2025-02-19 2025-02-19 19.39.08]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/2025-02-19-2025-02-19-19.39.08.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/2025-02-19 2025-02-19 19.39.08.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 20 Feb 2025 01:47:06 GMT</pubDate></item><item><title><![CDATA[2025-02-18 2025-02-18 19.43.28]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/2025-02-18-2025-02-18-19.43.28.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/2025-02-18 2025-02-18 19.43.28.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Wed, 19 Feb 2025 01:44:06 GMT</pubDate></item><item><title><![CDATA[1.14 Time Dependent Perturbation Theory 2025-02-17 13.45.58]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  ]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.14-time-dependent-perturbation-theory-2025-02-17-13.45.58.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.14 Time Dependent Perturbation Theory 2025-02-17 13.45.58.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Mon, 17 Feb 2025 21:16:16 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>We're talking about boundary conditions to describe the discontinuous changes in the electric field at surfaces, and electrostatic energy.<br><br><br>
+<br>Can't browse online
+<br>Cant use generative AI (it fails anyway lol)
+<br>Don't do with peers
+<br>Questions are essentially "do the integral", so do the integral yourself.
+<br>Midterm is open note
+<br>Midterm is on the style of the second homework other than the first one. Up until chapter 2.4.1<br>
+Your work has to be intelligible<br>
+There are 4 main questions, with subsections. Nothing unfamiliar with other upperdivs<br><br>Conductors only have surface charges, no bulk charges. Additionally because they have mobile charges, you can induce charge distributions onto a conductor.<br>
+The electric field to the right of an infinite charged plate is<br><br>The electric field is discontinuous if the plane was completely thin, but you can't be discontinuous. See <a data-href="1.10 More Electric Potential#^4ee782" href="https://azalamer.com/UniversityNotes/1.10 More Electric Potential#^4ee782" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.10 More Electric Potential &gt; ^4ee782</a><a data-href="1.10 More Electric Potential#^4ee782" href="https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.10-more-electric-potential.html#^4ee782" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Example 1.10.1 (Potential of a Conducting Sphere)</a>  for a visual of a discontinuous  field.<br>
+How do you determine the jump you can have between two regions?<br>I DIDN'T KNOW THE PROFESSOR DESKS COULD RISE AND FALL. THAT WAS MAGIC<br>To do this, construct a gaussian pillbox of infentesimal height <br><br>We construct an infinitesimal pillbox with height .We construct a gaussian surface to get flux<br><br>Then take <br><br>The only closed charge that will contribute here as we approach 0 is the surface charge! As the volume tends to zero, the charge volume distribution won't contribute.<br><br><a data-href="#^discontinuous" href="https://azalamer.com/UniversityNotes/about:blank#^discontinuous" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^discontinuous</a><a data-href="#^discontinuous" href="https://azalamer.com/UniversityNotes/about:blank#^discontinuous" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.11.4)</a>  The electric field is discontinuous if there is a surface charge on our contour. Otherwise it is continuous.<br>But in real life it can't be. How do we resolve the discontinuity
+Probably because of the skin depth. There is no delta function of charge distribution, it is distributed along the surface with narrow depth.
+<br>For a conducting sphere, this then means that  is<br><br>Before we did the perpendicular field, now we want the parallel.<br><br>Now similar to before, we're going to take a line integral over our new loop . It's a closed loop. We know that the voltage around the loop has to be zero.<br><br>The tangential component of an electric field has to be continuous.<br>
+The electric field inside the conductor must be zero, therefore the only non-zero component is the perpendicular one just off of the surface.<br>
+This states that our electric field only goes up after we exit the surface<br><br>For a generic E-field and arbitrary path, the work done moving a charge between two points <br><br>If I have a set of charges in a spacial configuration, the work I did to put those charges in that arrangement is equal to the energy contained by the system.<br>
+This is what you would expect.<br>
+Proof.@ <a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^690926</a><a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.11.1 (The Energy Contained by a Collection of Charges)</a> <br>With more than two charges, place them into some set .  is composed of every unique subset of  with length 2. The energy contained by  is<br><br>This is another example of the superposition principle! Another way of thinking about it is a fully interconnected graph, and you simply sum up the energy to construct all edges.<br>
+Arbitrarily it's<br><br>Why the less than or equals?
+The reason why  is because otherwise an edge gets it's energy accounted when it's  AND . Double counting!
+<br>Now we do a trick, we're excluding the duplicates anyway so it's the same as dividing by two!<br>
+□<br>Theorem (The Energy Contained by a Collection of Charges).
+For a set of charges in the list , the total potential of the system is:
+
+<br>Now we're moving from the discrete description, to the continuum. This will show the energy really is in the electric field<br>
+For a continuous distribution of charge, we can write it as<br><a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^690926</a><a data-href="#^690926" href="https://azalamer.com/UniversityNotes/about:blank#^690926" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.11.1 (The Energy Contained by a Collection of Charges)</a> can be rewritten as<br><br>Notice how our separated  function is just the potential of .<br>Now we want to move to a continuum<br><br>"The infinitesimal energy at a point is equal to the potential at that location, times the charge density at that location."<br>
+We know that for conductors, the charge is splattered across the surface.<br><br>Next time we will go from here, to the expression involving the electric field.]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.11-boundary-conditions-and-energy.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.11 Boundary Conditions and Energy.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 14 Feb 2025 16:09:55 GMT</pubDate></item><item><title><![CDATA[lxplus notes 2025-02-13 16.14.57]]></title><description><![CDATA[ 
  
   
   
