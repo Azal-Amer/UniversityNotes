@@ -1,4 +1,64 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 20 Feb 2025 05:50:24 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 20 Feb 2025 05:50:09 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Fundamental Principles]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 21 Feb 2025 20:14:52 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 21 Feb 2025 20:14:45 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Proof Types]]></title><description><![CDATA[ 
+ <br><br><br>If you have , if you can show  regardless of  then you can show <br>
+Example: "Prove that if it's raining, then 2+2=4"<br><br>If you can compose a hypothesis false, <br>
+Example: "Prove that if 2+2=5, then the moon is made of cheese"<br><br>Direct proofs of a given statement <br>
+Example: "Prove that if  is even, then  is even"<br><br><br>Example: If I wanted to prove that  is odd given  is odd, that is the same as proving that if  is even,  is even.<br><br>Works only through the law of excluded middle, written above. If we assume , then if we prove it false then by law of excluded middle  must be true.<br>
+Example: "Prove  is irrational" by assuming rational as  in lowest terms<br><br>Literally just prove the statement for all elements in a set.<br><br>Example: Prove for all integers by splitting into even and odd cases<br><br>Theorems that are assertions of the existence of an element<br>
+<br><br>When writing inference proofs, universal instantiation takes us from a forall, to a specific example.<br>
+For inference proofs, no conclusion statement needed.<br>
+For equivalence proofs, must write conclusion statement.<br><br>Something you assume to be true<br><br>A helping theorem to prove another<br><br>A theorem that establishes directly from another theorem<br><br>Statement proposed to be true<br><br><br>Look for keywords:<br>
+<br>"Show/Prove that if..." → likely direct or contrapositive
+<br>"Cannot exist" → contradiction might work well
+<br>"For all" → might need cases or exhaustive proof
+<br>"There exists" → existence proof, find one example
+<br><br>
+<br>Try writing out what you know and what you need to show
+<br>For complicated implications, try writing out  and  clearly
+<br>If direct proof seems hard, try contrapositive
+<br>If both seem hard, try contradiction
+<br>Look for divisibility/even/odd → often uses contrapositive
+<br><br>
+<br>Proving something is irrational → contradiction starting with 
+<br>Number theory proofs → often split into even/odd cases
+<br>Divisibility proofs → often use contrapositive
+<br>Complex implications → break into smaller pieces with transitivity
+<br><br><br><br><br>
+<br>Use when you need to convert implications to OR statements
+<br>Helpful in contradiction proofs to show something can't happen
+<br><br>
+<br>Use when you need to "distribute" a negation
+<br>Often paired with contrapositive to handle complex negations
+<br>Remember: negation "flips" AND/OR
+<br><br>
+<br>Use when you need to isolate specific terms
+<br>Helpful in splitting complex statements into cases
+<br>Especially useful in equivalence proofs to rearrange terms
+<br><br><br><br>
+<br>Your "go-to" for direct proofs
+<br>Use when you have both a statement and its implication
+<br>Forms the backbone of most direct proofs
+<br><br><br>
+<br>Use when you have the negation of the conclusion
+<br>Natural choice for contrapositive proofs
+<br>Often used with "cannot exist" type proofs
+<br><br>
+<br>Use to go from general to specific case
+<br>First step when using a "for all" statement
+<br>Makes universal statements usable in your proof
+<br><br>
+<br>Use to combine separate pieces of evidence
+<br>Good for building up complex statements
+<br>Often used before using another inference rule
+<br><br><br>
+<br>Perfect for negating complex statements
+<br>Helps simplify negative implications
+<br><br>
+<br>Build up evidence, then make conclusion
+<br>Common in multi-step direct proofs
+<br><br>
+<br>Take general rule, apply to specific case
+<br>Standard pattern in inference proofs
+]]></description><link>https://azalamer.com/UniversityNotes/school/math/discrete-math-cs/notes/cheatsheet.html</link><guid isPermaLink="false">School/Math/Discrete Math CS/Notes/CheatSheet.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 21 Feb 2025 00:14:06 GMT</pubDate></item><item><title><![CDATA[Fundamental Principles]]></title><description><![CDATA[ 
  <br><br><br>If operation A can be done in  ways and operation B in  ways, then sequence (A,B) can be done in  ways.<br>In Plain English: When you have to do several things in sequence, multiply the number of ways to do each thing.<br><br>If operation A can be done in  ways OR operation B in  ways (mutually exclusive), then total number of ways is .<br><br><br><br>When to Use: Ordering  objects from  distinct objects where order matters.<br><br>
 How many different arrangements of TESSELATION?<br>
 Given 11 letters (T,E,S,S,E,L,L,A,T,I,O,N), find arrangements.
@@ -15,13 +75,15 @@ Given 11 letters (T,E,S,S,E,L,L,A,T,I,O,N), find arrangements.
 12 politicians meet for dinner. How many handshakes possible if each shakes hands with every other once?
 <br>Solution: Each handshake is a combination of 2 from 12:<br>
  handshakes<br><br><br>From HW3: Number of ways to arrange letters in ABRACADABRA:<br>
-4. Count total letters: 11<br>
-5. Break down repeats:<br>
+<br>Count total letters: 11
+<br>Break down repeats:
+
 <br>5 A's
 <br>2 B's
 <br>2 R's
 <br>1 C, 1 D
-<br>
+
+
 <br>Use formula: 
 <br><br>Birthday Problem (From HW):<br>
 Instead of counting shared birthdays, count no shared birthdays:<br>
@@ -84,9 +146,10 @@ Finally:
 <br><br><br>
 In how many ways can letters in ZOMBIES be arranged where one is a vowel and one is a consonant?
 <br>Solution:<br>
-10. Vowels: I,E<br>
-11. Consonants: Z,M,B,S<br>
-12. Answer:  (select vowel, select consonant, arrange them)<br><br>[Another relevant combinatorics problem]<br><br><br>
+<br>Vowels: I,E
+<br>Consonants: Z,M,B,S
+<br>Answer:  (select vowel, select consonant, arrange them)
+<br><br>[Another relevant combinatorics problem]<br><br><br>
 <br>Multiplication Rule: Sequential choices
 <br>Permutation: Ordered arrangements
 <br>Combination: Unordered selections
@@ -101,42 +164,53 @@ In how many ways can letters in ZOMBIES be arranged where one is a vowel and one
 <br>Sequential events
 <br>Updated information
 <br>Strategy:<br>
-20. Write out P(A|B) = P(A∩B)/P(B)<br>
-21. Draw tree diagram if sequential<br>
-22. Use Bayes' for "reverse" conditionals<br><br>Indicators:<br>
+<br>Write out P(A|B) = P(A∩B)/P(B)
+<br>Draw tree diagram if sequential
+<br>Use Bayes' for "reverse" conditionals
+<br><br>Indicators:<br>
 <br>Multiple trials
 <br>"Repeatedly..."
 <br>No connection between events
 <br>Product of probabilities
 <br>Strategy:<br>
-23. Verify independence by checking P(A∩B) = P(A)P(B)<br>
-24. Use multiplication rule<br>
-25. Consider complement for "at least one" problems<br><br>Indicators:<br>
+<br>Verify independence by checking P(A∩B) = P(A)P(B)
+<br>Use multiplication rule
+<br>Consider complement for "at least one" problems
+<br><br>Indicators:<br>
 <br>Counting arrangements
 <br>Selecting items
 <br>"How many ways..."
 <br>Ordering/grouping
 <br>Strategy:<br>
-26. Ask: Does order matter?<br>
-27. Check: Repetition allowed?<br>
-28. Use appropriate formula:<br>
+<br>Ask: Does order matter?
+<br>Check: Repetition allowed?
+<br>Use appropriate formula:
+
 <br>Order matters → Permutation
 <br>Order doesn't → Combination
+
+
 <br><br><br>Example (HW2): Drawing chips until red appears<br>Strategy:<br>
-29. Define success state<br>
-30. Use geometric series if needed<br>
-31. Consider all paths to success<br><br>Example (HW3): Circuit problems<br>Strategy:<br>
-32. Break into components<br>
-33. Find component probabilities<br>
-34. Combine using:<br>
+<br>Define success state
+<br>Use geometric series if needed
+<br>Consider all paths to success
+<br><br>Example (HW3): Circuit problems<br>Strategy:<br>
+<br>Break into components
+<br>Find component probabilities
+<br>Combine using:
+
 <br>Series: P(all work) = p₁p₂...pₙ
 <br>Parallel: P(at least one) = 1 - (1-p₁)(1-p₂)...(1-pₙ)
+
+
 <br><br>Example (Practice Exam): Poker hands<br>Strategy:<br>
-35. Total outcomes: <br>
-36. Break desired hand into steps:<br>
+<br>Total outcomes: 
+<br>Break desired hand into steps:
+
 <br>Choose ranks
 <br>Choose suits
-<br>
+
+
 <br>Multiply using combination rules
 <br><br><br>
 <br>Write given probabilities
@@ -169,26 +243,63 @@ In how many ways can letters in ZOMBIES be arranged where one is a vowel and one
 <br><br><br>
 A test is 90% reliable for guilty, 98% reliable for innocent. 12% actually guilty. Find P(innocent|test says guilty).
 <br><br>
-<br>Identify:
 <br>
+Identify:
+
 <br>Bayes' Theorem problem
 <br>Need: P(I|G)
+
+
 <br>
-<br>List Given:
-<br>
+List Given:
+
 <br>P(G|guilty) = 0.90
 <br>P(G|innocent) = 0.02
 <br>P(guilty) = 0.12
 <br>P(innocent) = 0.88
+
+
 <br>
-<br>Apply Bayes':
-<br>Calculate:
+Apply Bayes':
+
+<br>
+Calculate:
+
 <br><br>
 <br>Use complement for "at least one"
 <br>Break complex problems into steps
 <br>Try small numbers first
 <br>Look for symmetry
-]]></description><link>https://azalamer.com/UniversityNotes/school/math/probability/notes/cheatsheet.html</link><guid isPermaLink="false">School/Math/Probability/Notes/Cheatsheet.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 20 Feb 2025 05:50:11 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+]]></description><link>https://azalamer.com/UniversityNotes/school/math/probability/notes/cheatsheet.html</link><guid isPermaLink="false">School/Math/Probability/Notes/Cheatsheet.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Thu, 20 Feb 2025 23:49:15 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Last time we covered oscillating perturbations, this time <br><br><br>Forget all about fine structure and Zeeman. We're going to put an electric field across our atom.<br><br> in the z-direction, constant magnitude (like a capacitor) then<br><br>where <br>
+This is called an electric dipole interaction.<br>Applying this to the hydrogen atom is called the Stark effect<br><br>We're going to look and see if some of the angular terms are zero, since we know that the radial part is never zero. <br>
+<br><a class="original-internal-link" data-href="../../Quantum 1/Notes/2.4 Rotation and Angular momentum.md" href="https://Quantum 1/Notes/2.4 Rotation and Angular momentum" target="_blank" rel="noopener nofollow" style="display: none;">2.4 Rotation and Angular momentum</a><a class="internal-link mathLink-internal-link" data-href="../../Quantum 1/Notes/2.4 Rotation and Angular momentum.md" href="https://azalamer.com/UniversityNotes/school/physics/quantum-1/notes/2.4-rotation-and-angular-momentum.html" target="_self" rel="noopener nofollow">2.4 Rotation and Angular momentum</a><br>
+Important note right now, is from the spherical Jacobian!
+
+For the ground state
+<br><br>
+<br>In our case, theta is the polar angle
+<br>This is completely analogous to putting a symmetric linear potential in the bound state! The integral is even.<br>
+The charge distribution of the electron in the ground state of the Hydrogen atom is symmetric. The expectation value is then gonna be zero!<br>Use as many units as you can before you embark on an actual integral<br>Notice that all the spherical harmonics have a parity!<br><br>To be an even function is to have a parity of $+1$, and odd has a parity of $-1$
+<br><br><br>The integrand is always odd, so the integral is always zero! There are no first order shifts  possible states!<br>
+This is why the diagonal elements in the pre-lecture were mentioned to be zero! They all integrate to zero. For more information, see the Pre-lecture for 1.15<br>
+BUT WAIT, what about degeneracies. <br>
+<br>Are the off-diagonal elements zero or non-zero? We need to check the off-diagonal elements
+<br>This becomes a 4x4 degenerate matrix (Since we are ignoring the effects of spin). <br>
+Focus on the -part<br><br>Unless those two phi parts have the same  value, the integral will be zero! That's because with different eigenstates, then the integral of those would be zero (orthogonality)!<br>That means we want things with the same value of <br><br>Homework answer is NON-ZERO! <br>
+Since this is non-zero, we have worry about the  part seen at <a data-href="#^85ec74" href="https://azalamer.com/UniversityNotes/about:blank#^85ec74" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^85ec74</a><a data-href="#^85ec74" href="https://azalamer.com/UniversityNotes/about:blank#^85ec74" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.16.4)</a><br>
+The columns are in the order of <br><br>They lied to us in chemistry. <br><br>The good states have a dipole moment! The charge distribution of the electron is now off-center.<br>
+The reason chemistry books lie to you, is that the same energy  states are constant on the  axis. They don't want to deal with complex numbers so they include a superposition of the two to introduce a directional bias.<br>Why is there no weak field strong field cases like we had for <a class="original-internal-link" data-href="1.9 Zeeman Effect.md" href="https://azalamer.com/UniversityNotes/1.9 Zeeman Effect" target="_blank" rel="noopener nofollow" style="display: none;">1.9 Zeeman Effect</a><a class="internal-link mathLink-internal-link" data-href="1.9 Zeeman Effect.md" href="https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.9-zeeman-effect.html" target="_self" rel="noopener nofollow">1.9 Zeeman Effect</a>
+The electric field in the atom is so strong, it doesn't matter how strong the external field is. We very rarely reach the strong field case. The petawatt laser just reaches it, and it's one of the strongest in the world
+<br>Next Monday we're covering transitions. We're going back to our time dependent formula.]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-2/notes/1.16-the-stark-effect.html</link><guid isPermaLink="false">School/Physics/Quantum 2/Notes/1.16 The Stark Effect.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 21 Feb 2025 20:14:18 GMT</pubDate><enclosure url="https://i.giphy.com/hHxTQkcjmHUTC.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="https://i.giphy.com/hHxTQkcjmHUTC.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[1.16 The Stark Effect 2025-02-21 13.42.30]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  Unperturbed (4 fold)2-fold unchanged]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/1.16-the-stark-effect-2025-02-21-13.42.30.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/1.16 The Stark Effect 2025-02-21 13.42.30.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Fri, 21 Feb 2025 19:45:02 GMT</pubDate></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br>We wrapped up our previous lecture on electrostatic energy, by proving <a data-href="#^7d3a65" href="https://azalamer.com/UniversityNotes/about:blank#^7d3a65" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^7d3a65</a><a data-href="#^7d3a65" href="https://azalamer.com/UniversityNotes/about:blank#^7d3a65" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.12.1 (Energy contained in charge distribution)</a>.<br><br>Midterm is released 11:30am Monday, open till 11:30PM. Can't submit after 11:30.<br>
 Monday's lecture is pre-recorded<br><br>From <a data-href="1.11 Boundary Conditions and Energy#^2a436d" href="https://azalamer.com/UniversityNotes/1.11 Boundary Conditions and Energy#^2a436d" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">1.11 Boundary Conditions and Energy &gt; ^2a436d</a><a data-href="1.11 Boundary Conditions and Energy#^2a436d" href="https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.11-boundary-conditions-and-energy.html#^2a436d" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">(1.11.11)</a>, we can see that the energy is dependance on volume. But if we draw an arbitrary volume to integrate over, it's charge density difference is zero so the integral stays at the normal surface.<br>
 From here we use gauss law<br><br>Why does the integral cancel out? 
