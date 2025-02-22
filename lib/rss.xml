@@ -1,4 +1,55 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 21 Feb 2025 20:14:52 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 21 Feb 2025 20:14:45 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Proof Types]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 22 Feb 2025 01:26:54 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 22 Feb 2025 01:26:48 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Reviewing vectors, vector algebra, and coordinate systems. This class is very much review of existing required vector knowledge, so reviewing this isn't mandatory.<br><br><br><br><br>Definition 1 (Vector).
+A quantity with direction and magnitude.<br>
+Ex: Directions, the position of something, velocity(?)
+ <br>Exercise (How far has our person travelled?).
+
+We want to represent our movement with a displacement vector . In this case our displacement vector is . For distance, we get the magnitude of the vector
+
+<br>There are two representations<br><br><br><br>This idea of the coordinate representation originating from projections scales .<br>
+From this, we extend to the generalizing fact that given a space of basis vectors , and a vector within that space <br><br>where  is the projection onto that basis vector.<br>Vectors can be summed, commute, and can be multiplied by a scalar.<br>Just like how you can represent vectors in a geometric approach and coordinate approach, so too can you use those for addition.<br><br>In the coordinate approach<br><br>Subsequently this can be applied to subtraction as well<br>Like any other addition, vectors can only be linearly combined if their units match
+You can't just add a displacement vector to acceleration vector
+<br>Additionally, vectors obey the distributive law<br><br><br><br>We then move to defining the dot product, which is a vector operation which takes two vectors and maps them to a scalar. Associated note <a data-tooltip-position="top" aria-label="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" href="Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">here</a><a data-tooltip-position="top" aria-label="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" data-href="../../../Math/Linear Algebra/6.2 Dot Products, Cross Products, and Projection" href="https://azalamer.com/UniversityNotes/school/math/linear-algebra/6.2-dot-products,-cross-products,-and-projection.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">here</a>. The dot product gives you the projection of one vector onto another.<br>Definition (Vector Dot Product).
+Given that , the dot product is defined as
+
+The dot product itself represents the projection of one vector onto another
+<br>From <a data-href="#^c716d7" href="https://azalamer.com/UniversityNotes/about:blank#^c716d7" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^c716d7</a><a data-href="#^c716d7" href="https://azalamer.com/UniversityNotes/about:blank#^c716d7" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.1.2 (Vector Dot Product)</a> , we can show that<br>Theorem (Dot Product-Magnitude Identity).
+The dot product of a vector with itself, is the magnitude squared
+
+<br>Proof.@ <a data-href="#^92e8b2" href="https://azalamer.com/UniversityNotes/about:blank#^92e8b2" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^92e8b2</a><a data-href="#^92e8b2" href="https://azalamer.com/UniversityNotes/about:blank#^92e8b2" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.1.3 (Dot Product-Magnitude Identity)</a><br>
+Given that , we know that <br><br>Additionally from <a data-href="#^c716d7" href="https://azalamer.com/UniversityNotes/about:blank#^c716d7" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^c716d7</a><a data-href="#^c716d7" href="https://azalamer.com/UniversityNotes/about:blank#^c716d7" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.1.2 (Vector Dot Product)</a> <br><br>Therefore<br><br>□<br>
+Geometrically, the dot product is<br><br><br>Definition (Cross Product for Vectors).
+For vectors , the cross product takes two vectors and maps them to a mutually orthogonal vector. Geometrically is defined as 
+
+where  is pulled from the right hand rule<br>
+In the coordinate approach it's derived as
+
+The cross product, unlike <a data-href="#^c716d7" href="https://azalamer.com/UniversityNotes/about:blank#^c716d7" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^c716d7</a><a data-href="#^c716d7" href="https://azalamer.com/UniversityNotes/about:blank#^c716d7" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Definition 1.1.2 (Vector Dot Product)</a> only operates in 
+<br>The magnitude of the cross product can be interpreted as the area of the parallelogram spanned by <br>Definition (Separation Vector).
+Given two vectors  , we define the separation vector as
+
+
+The magnitude of our separation vector is
+
+The direction of the separation vector is then
+
+<br><br>The coordinate system we've been using is the Cartesian Coordinate System. Translations to other coordinate systems will be found in the lecture notes.<br>]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.1-reviewing-vectors.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.1 Reviewing Vectors.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sat, 22 Feb 2025 01:09:41 GMT</pubDate></item><item><title><![CDATA[Graded Test 1 2024-07-08 19.37.46.excalidraw.sync-conflict-20240708-201726-Y4UWHYB]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  5cm to inches, means youhave 5/100 meters. Sanity check was important here! 1892 inches is 152 feet, which is def not 5cmswap those1 pt lost for incorrect unit on conversion factor (miles*sec)/(meter*hour)-1 pt for incorrect answer -1pt, key example neededwas when your acceleration would be non-zeroThis would occur the instant you stopped-1pt, they're both vector quantitiesThe main idea is that acceleration is a change of velocity, we could change from 0mph to 10mph, or 10mph to 20mph. Both are the same accelerationHere I was effectivley looking for a mention of the definition.-1 pt Wrong kinematics equation-1 pt Wrong Answer-1 pt Wrong units in work-1pt Wrong kinematics equation-1 pt Wrong AnswerThe units here were very important, you could catch the error with them. Always make sure they cancel-1 Wrong Answer-1 Wrong setup equation-1 No dimensional Analysis usedNot enough room, you'd need 6 trucks. (11,000/2000 = 5.5 trucks)-1 Wrong Answer-1 Not enough work shown (they do take off for this on the AP)-3 pts no work or answer to the question+1 extra credit-1 pt Wrong behavior on interval 5-10. Velocity was negative, but constant andnegative.-1 pt Wrong behavior on interval 10-15. Velocity was positive, but constant andnegative.23/42]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/graded-test-1-2024-07-08-19.37.46.excalidraw.sync-conflict-20240708-201726-y4uwhyb.html</link><guid isPermaLink="false">Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.sync-conflict-20240708-201726-Y4UWHYB.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sat, 22 Feb 2025 01:09:22 GMT</pubDate></item><item><title><![CDATA[Graded Test 1 2024-07-08 19.37.46]]></title><description><![CDATA[ 
+ 
+  
+  
+  
+    
+    
+  
+  5cm to inches, means youhave 5/100 meters. Sanity check was important here! 1892 inches is 152 feet, which is def not 5cmswap those1 pt lost for incorrect unit on conversion factor (miles*sec)/(meter*hour)-1 pt for incorrect answer -1pt, key example neededwas when your acceleration would be non-zeroThis would occur the instant you stopped-1pt, they're both vector quantitiesThe main idea is that acceleration is a change of velocity, we could change from 0mph to 10mph, or 10mph to 20mph. Both are the same accelerationHere I was effectivley looking for a mention of the definition.-1 pt Wrong kinematics equation-1 pt Wrong Answer-1 pt Wrong units in work-1pt Wrong kinematics equation-1 pt Wrong AnswerThe units here were very important, you could catch the error with them. Always make sure they cancel-1 Wrong Answer-1 Wrong setup equation-1 No dimensional Analysis usedNot enough room, you'd need 6 trucks. (11,000/2000 = 5.5 trucks)-1 Wrong Answer-1 Not enough work shown (they do take off for this on the AP)-3 pts no work or answer to the question+1 extra credit-1 pt Wrong behavior on interval 5-10. Velocity was negative, but constant andnegative.-1 pt Wrong behavior on interval 10-15. Velocity was positive, but constant andnegative.23/42]]></description><link>https://azalamer.com/UniversityNotes/supplemental-files/images/graded-test-1-2024-07-08-19.37.46.excalidraw.html</link><guid isPermaLink="false">Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sat, 22 Feb 2025 01:09:22 GMT</pubDate></item><item><title><![CDATA[Proof Types]]></title><description><![CDATA[ 
  <br><br><br>If you have , if you can show  regardless of  then you can show <br>
 Example: "Prove that if it's raining, then 2+2=4"<br><br>If you can compose a hypothesis false, <br>
 Example: "Prove that if 2+2=5, then the moon is made of cheese"<br><br>Direct proofs of a given statement <br>

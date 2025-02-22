@@ -1,75 +1,125 @@
 {
   "vaultName": "Obsidian Vault",
-  "lastExport": 1740186229973,
+  "lastExport": 1740187984971,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon ctp-latte ctp-mocha-old ctp-accent-maroon anp-speech-bubble anp-codeblock-numbers anp-list-toggle anp-table-toggle anp-table-width anp-table-auto anp-color-transition-toggle anp-button-metadata-toggle anp-h1-red anp-h1-divider anp-h2-peach anp-h2-divider anp-h3-green anp-h4-teal anp-h5-lavender anp-h6-mauve anp-italic-teal anp-highlight-yellow anp-simple-rainbow-color-toggle anp-simple-rainbow-title-toggle anp-simple-rainbow-collapse-icon-toggle anp-simple-rainbow-indentation-toggle anp-simple-rainbow-icon-toggle anp-rainbow-subfolder-color-toggle anp-card-layout-filebrowser anp-theme-ext-dark ctp-nord-light ctp-flexoki-dark",
   "useCustomHeadContent": true,
   "useCustomFavicon": true,
   "files": [
-    "Personal/Tutoring/Quizes and Tests/Quiz 1/quiz Solutions.pdf",
-    "Personal/Tutoring/Quizes and Tests/Quiz 2/Quiz 2.md",
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/position-graph-grid.svg",
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/position-graph-grid.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/position-graph-lines-arcs.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/velocity-graph-lines-arcs.svg",
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/velocity-graph-lines-arcs.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/velocityGraph2.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/Conceptual Q's!.png",
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/position-graph-grid.svg",
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/position-graph-grid.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/position-graph-lines-arcs.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/velocity-graph-lines-arcs.svg",
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/velocity-graph-lines-arcs.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/velocityGraph2.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/Retake.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 1/Test 1.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 1/Test 1 Notes.md",
-    "Personal/Tutoring/Quizes and Tests/Test 2/Test 2 Main.pdf",
-    "Personal/Tutoring/Quizes and Tests/Test 3/Retest/Test 3 Retake.md",
-    "Personal/Tutoring/Quizes and Tests/Test 3/Test 3.md",
-    "Personal/Tutoring/Quizes and Tests/Test 4 - Energy and Momentum/Test 4.md",
-    "Personal/Tutoring/Quizes and Tests/Test 4 - Energy and Momentum/Test 4 Key.md",
-    "Personal/Tutoring/Quizes and Tests/Test 4 - Energy and Momentum/Test 4 Retake.md",
-    "Personal/Tutoring/Session 1.md",
-    "Personal/Tutoring/Session 2.md",
-    "Personal/Tutoring/Session 3.md",
-    "Personal/Tutoring/Session 4.md",
-    "Personal/Tutoring/Session 5.md",
-    "Personal/Tutoring/Session 6.md",
-    "Personal/Tutoring/Session 7 Gravity.md",
-    "Personal/Tutoring/Session 8 Acceleration.md",
-    "Personal/Tutoring/Session 9- Review and More Gravity.md",
-    "Personal/Tutoring/Session 10.md",
-    "Personal/Tutoring/Session 11.md",
-    "Personal/Tutoring/Session 12.md",
-    "Personal/Tutoring/Session 13.md",
-    "Personal/Tutoring/Session 14.md",
-    "Personal/Tutoring/Session 15.md",
-    "Personal/Tutoring/Session 16.md",
-    "Personal/Tutoring/Session 17.md",
-    "Personal/Tutoring/Session 18- Fractions and Examples.md",
-    "Personal/Tutoring/Session 19.md",
-    "Personal/Tutoring/Session 20- More Practice and Calculator Tricks.md",
-    "Personal/Tutoring/Session 21.md",
-    "Personal/Tutoring/Session 22 Force and Work.md",
-    "Personal/Tutoring/Session 23.md",
-    "Personal/Tutoring/Session 24.md",
-    "Personal/Tutoring/Session 25 - Inclined Plane and Momentum.md",
-    "Personal/Tutoring/Session 26- Test Review.md",
-    "Personal/Tutoring/Session 27 Retest Review and New Unit Intro.md",
-    "Personal/Tutoring/Session 28 More on Work.md",
-    "Personal/Tutoring/Session 29 More on Energy and Rotational Motion.md",
-    "Personal/Tutoring/Session 30.md",
-    "Personal/Tutoring/Session 31 Work Energy Theorem.md",
-    "Personal/Tutoring/Session 32 Quiz Review and Momentum.md",
-    "Personal/Tutoring/Session 33 Linear Momentum.md",
-    "Personal/Tutoring/Session 34 - Impulse and Momentum.md",
-    "Personal/Tutoring/Session 35 - 2 Dimensional Collisions.md",
-    "Personal/Tutoring/Session 36 - More on 2D Collisions.md",
-    "Personal/Tutoring/Session 37 Review Momentum and Energy.md",
-    "Personal/Tutoring/Session 38- Retake Review.md",
-    "Personal/Tutoring/Session 39 Momentum Review.md",
-    "Personal/Tutoring/Session 40- Midterm Review.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.out",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.log",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.fls",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.fdb_latexmk",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.aux",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/Quiz 1.tex",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.tex",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.fls",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.out",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.log",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.fdb_latexmk",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.aux",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.synctex.gz",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.synctex.gz",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/Textbook.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 2/Quiz 2.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 2/Quiz 2.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/position-graph-grid.svg",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/position-graph-grid.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/position-graph-lines-arcs.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/velocity-graph-lines-arcs.svg",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/velocity-graph-lines-arcs.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/velocityGraph2.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/Conceptual Q's!.png",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/position-graph-grid.svg",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/position-graph-grid.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/position-graph-lines-arcs.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/velocity-graph-lines-arcs.svg",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/velocity-graph-lines-arcs.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/velocityGraph2.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Conceptual Q's!.png",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Retake.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.fls",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.tex",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.log",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.fdb_latexmk",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.aux",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.synctex.gz",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test Grading.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Unit 1 Test Retake:.png",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Graded Test 1.png",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Graded Test 1.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/HumzaAnswers.png",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.aux",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.tex",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.log",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.fls",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.fdb_latexmk",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1 Notes.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.synctex.gz",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Grading Test 2.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/MCQ Answers.ipynb",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.tex",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.log",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.fls",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.fdb_latexmk",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.aux",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.synctex.gz",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Retest/Retest Grading.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Retest/Test 3 Retake.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Grading.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Test 3.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Test 3.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Test 3 Draft and Key.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 4 - Energy and Momentum/Test 4.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 4 - Energy and Momentum/Test 4 Key.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 4 - Energy and Momentum/Test 4 Retake.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 4 - Energy and Momentum/Test4 Grading.md",
+    "Personal/Tutoring/AP Physics/🟩 Tutoring Overview🟩.md",
+    "Personal/Tutoring/AP Physics/filter.log",
+    "Personal/Tutoring/AP Physics/Session 1.md",
+    "Personal/Tutoring/AP Physics/Session 2.md",
+    "Personal/Tutoring/AP Physics/Session 3.md",
+    "Personal/Tutoring/AP Physics/Session 4.md",
+    "Personal/Tutoring/AP Physics/Session 5.md",
+    "Personal/Tutoring/AP Physics/Session 6.md",
+    "Personal/Tutoring/AP Physics/Session 7 Gravity.md",
+    "Personal/Tutoring/AP Physics/Session 8 Acceleration.md",
+    "Personal/Tutoring/AP Physics/Session 9- Review and More Gravity.md",
+    "Personal/Tutoring/AP Physics/Session 10.md",
+    "Personal/Tutoring/AP Physics/Session 11.md",
+    "Personal/Tutoring/AP Physics/Session 12.md",
+    "Personal/Tutoring/AP Physics/Session 13.md",
+    "Personal/Tutoring/AP Physics/Session 14.md",
+    "Personal/Tutoring/AP Physics/Session 15.md",
+    "Personal/Tutoring/AP Physics/Session 16.md",
+    "Personal/Tutoring/AP Physics/Session 17.md",
+    "Personal/Tutoring/AP Physics/Session 18- Fractions and Examples.md",
+    "Personal/Tutoring/AP Physics/Session 19.md",
+    "Personal/Tutoring/AP Physics/Session 20- More Practice and Calculator Tricks.md",
+    "Personal/Tutoring/AP Physics/Session 21.md",
+    "Personal/Tutoring/AP Physics/Session 22 Force and Work.md",
+    "Personal/Tutoring/AP Physics/Session 23.md",
+    "Personal/Tutoring/AP Physics/Session 24.md",
+    "Personal/Tutoring/AP Physics/Session 25 - Inclined Plane and Momentum.md",
+    "Personal/Tutoring/AP Physics/Session 26- Test Review.md",
+    "Personal/Tutoring/AP Physics/Session 27 Retest Review and New Unit Intro.md",
+    "Personal/Tutoring/AP Physics/Session 28 More on Work.md",
+    "Personal/Tutoring/AP Physics/Session 29 More on Energy and Rotational Motion.md",
+    "Personal/Tutoring/AP Physics/Session 30.md",
+    "Personal/Tutoring/AP Physics/Session 31 Work Energy Theorem.md",
+    "Personal/Tutoring/AP Physics/Session 32 Quiz Review and Momentum.md",
+    "Personal/Tutoring/AP Physics/Session 33 Linear Momentum.md",
+    "Personal/Tutoring/AP Physics/Session 34 - Impulse and Momentum.md",
+    "Personal/Tutoring/AP Physics/Session 35 - 2 Dimensional Collisions.md",
+    "Personal/Tutoring/AP Physics/Session 36 - More on 2D Collisions.md",
+    "Personal/Tutoring/AP Physics/Session 37 Review Momentum and Energy.md",
+    "Personal/Tutoring/AP Physics/Session 38- Retake Review.md",
+    "Personal/Tutoring/AP Physics/Session 39 Momentum Review.md",
+    "Personal/Tutoring/AP Physics/Session 40- Midterm Review.md",
     "School/CS/CS 312/Class Official Files/CS 312 Scavenger Hunt Personal Copy.pdf",
     "School/CS/CS 312/Class Official Files/CS 312 Syllabus Fall 2024.pdf",
     "School/CS/CS 312/Notes/Homework Assignments/Azal Amer I Know an Old Lady - Guided Design.pdf",
@@ -85,8 +135,8 @@
     "School/CS/CS 312/Notes/Section Notes.md",
     "School/CS/Data Structures & Algs/Notes/0.1 Introduction.md",
     "School/Math/Discrete Math/Class Files/Epp, Susanna S., author/Discrete mathematics _ an introduction to mathematical reasoning/Discrete mathematics _ an introduction to mathematical reasoning - Epp, Susanna S., author.pdf",
-    "School/Math/Discrete Math/Class Files/Epp, Susanna S., author/Discrete mathematics _ an introduction to mathematical reasoning/Discrete mathematics _ an introduction to mathematical reasoning - Epp, Susanna S., author.opf",
     "School/Math/Discrete Math/Class Files/Epp, Susanna S., author/Discrete mathematics _ an introduction to mathematical reasoning/Discrete mathematics _ an introduction to mathematical reasoning - Epp, Susanna S., author.jpg",
+    "School/Math/Discrete Math/Class Files/Epp, Susanna S., author/Discrete mathematics _ an introduction to mathematical reasoning/Discrete mathematics _ an introduction to mathematical reasoning - Epp, Susanna S., author.opf",
     "School/Math/Discrete Math/Class Files/Discrete Math Syllabus.pdf",
     "School/Math/Discrete Math/Class Files/Discrete Mathematics with Applications[Team Nanban][TPB].pdf",
     "School/Math/Discrete Math/1.1 The Language of Sets.md",
@@ -321,8 +371,8 @@
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.12.01.excalidraw.md",
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.12.04.excalidraw.md",
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.13.08.excalidraw.md",
-    "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.18.27.excalidraw.tex",
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.18.27.excalidraw.md",
+    "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.18.27.excalidraw.tex",
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.42.08.excalidraw.md",
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.49.12.excalidraw.md",
     "Supplemental Files/images/1.1 Revisiting Perturbation Theory 2025-01-15 13.08.11.excalidraw.md",
@@ -672,8 +722,8 @@
     "Supplemental Files/images/Linear Algebra Grade Scale.png",
     "Supplemental Files/images/Linear Algebra Grade Weights.png",
     "Supplemental Files/images/lxplus notes 2025-02-13 16.14.57.excalidraw.md",
-    "Supplemental Files/images/main.ts",
     "Supplemental Files/images/main.js",
+    "Supplemental Files/images/main.ts",
     "Supplemental Files/images/Malus Law Fit Again.png",
     "Supplemental Files/images/Malus's Law Experimental Fit.png",
     "Supplemental Files/images/Malus's Law HWP Fit.png",
@@ -1405,8 +1455,8 @@
     "Supplemental Files/images/User Input 2024-09-18 17.08.58.excalidraw.md",
     "Supplemental Files/images/User Input 2024-09-18 17.29.32.excalidraw.md",
     "Supplemental Files/images/User Input 2024-09-18 17.38.16.excalidraw.md",
-    "Supplemental Files/images/UTQT Bloc-Party Meeting 2024-08-25 18.36.39.excalidraw.svg",
     "Supplemental Files/images/UTQT Bloc-Party Meeting 2024-08-25 18.36.39.excalidraw.png",
+    "Supplemental Files/images/UTQT Bloc-Party Meeting 2024-08-25 18.36.39.excalidraw.svg",
     "Supplemental Files/images/UTQT Bloc-Party Meeting 2024-08-25 18.36.39.excalidraw.md",
     "Supplemental Files/images/UTQT meeting notes 2024-04-27 16.33.06.excalidraw.md",
     "Supplemental Files/images/UTQT meeting notes 2024-04-27 16.40.08.excalidraw.md",
@@ -1440,7 +1490,6 @@
     "lib/media/pasted-image-20240629101802.png",
     "lib/media/pasted-image-20240702102413.png",
     "lib/media/pasted-image-20240702103850.png",
-    "personal/tutoring/quizes-and-tests/test-1/graded-test-1.png",
     "lib/media/pasted-image-20240709095501.png",
     "lib/media/pasted-image-20240709095514.png",
     "lib/media/pasted-image-20240709095557.png",
@@ -1706,85 +1755,85 @@
   ],
   "fileInfo": {
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
@@ -1796,181 +1845,181 @@
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 1242524,
+      "modifiedTime": 1740187984971,
+      "sourceSize": 1282989,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
@@ -1982,67 +2031,67 @@
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 81242,
+      "modifiedTime": 1740187984971,
+      "sourceSize": 82781,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 137305,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 10171,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 271569,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 338,
+      "modifiedTime": 1740187984971,
+      "sourceSize": 336,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 10512,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 34264,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     },
     "lib/media/favicon.ico": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 15086,
       "exportedPath": "lib/media/favicon.ico",
       "dependencies": []
     },
     "lib/html/custom-head-content.html": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 601,
       "exportedPath": "lib/html/custom-head-content.html",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
@@ -2406,8 +2455,8 @@
       "dependencies": []
     },
     "School/Physics/Electrodynamics/Notes/1.1 Reviewing Vectors.md": {
-      "modifiedTime": 1739203948402,
-      "sourceSize": 6858,
+      "modifiedTime": 1740187608655,
+      "sourceSize": 6869,
       "exportedPath": "school/physics/electrodynamics/notes/1.1-reviewing-vectors.html",
       "dependencies": []
     },
@@ -8342,8 +8391,8 @@
       "dependencies": []
     },
     "Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.sync-conflict-20240708-201726-Y4UWHYB.md": {
-      "modifiedTime": 1739203948402,
-      "sourceSize": 42125,
+      "modifiedTime": 1740187608655,
+      "sourceSize": 42136,
       "exportedPath": "supplemental-files/images/graded-test-1-2024-07-08-19.37.46.excalidraw.sync-conflict-20240708-201726-y4uwhyb.html",
       "dependencies": []
     },
@@ -8354,8 +8403,8 @@
       "dependencies": []
     },
     "Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.md": {
-      "modifiedTime": 1739203948402,
-      "sourceSize": 42149,
+      "modifiedTime": 1740187608655,
+      "sourceSize": 42160,
       "exportedPath": "supplemental-files/images/graded-test-1-2024-07-08-19.37.46.excalidraw.html",
       "dependencies": []
     },
@@ -11023,489 +11072,6 @@
       "exportedPath": "supplemental-files/images/1.16-the-stark-effect-2025-02-21-13.42.30.excalidraw.html",
       "dependencies": []
     },
-    "Personal/Tutoring/Quizes and Tests/Quiz 1/quiz Solutions.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 84410,
-      "exportedPath": "personal/tutoring/quizes-and-tests/quiz-1/quiz-solutions.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Quiz 2/Quiz 2.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 6107,
-      "exportedPath": "personal/tutoring/quizes-and-tests/quiz-2/quiz-2.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/position-graph-grid.svg": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 1568,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/assets/position-graph-grid.svg",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/position-graph-grid.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 8184,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/assets/position-graph-grid.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/position-graph-lines-arcs.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 8188,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/assets/position-graph-lines-arcs.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/velocity-graph-lines-arcs.svg": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 1707,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/assets/velocity-graph-lines-arcs.svg",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/velocity-graph-lines-arcs.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 8882,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/assets/velocity-graph-lines-arcs.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/assets/velocityGraph2.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 8898,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/assets/velocitygraph2.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/Conceptual Q's!.png": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 367960,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/retake-file/assets/conceptual-q's!.png",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/position-graph-grid.svg": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 1568,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/retake-file/assets/position-graph-grid.svg",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/position-graph-grid.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 8184,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/retake-file/assets/position-graph-grid.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/position-graph-lines-arcs.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 8188,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/retake-file/assets/position-graph-lines-arcs.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/velocity-graph-lines-arcs.svg": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 1707,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/retake-file/assets/velocity-graph-lines-arcs.svg",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/velocity-graph-lines-arcs.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 8882,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/retake-file/assets/velocity-graph-lines-arcs.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/assets/velocityGraph2.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 8898,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/retake-file/assets/velocitygraph2.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/Retake File/Retake.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 119993,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/retake-file/retake.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/Test 1.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 161448,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/test-1.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 1/Test 1 Notes.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4602,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/test-1-notes.html",
-      "dependencies": [
-        "lib/media/kinematics-equations.png"
-      ]
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 2/Test 2 Main.pdf": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 128593,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-2/test-2-main.pdf",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 3/Retest/Test 3 Retake.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4352,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-3/retest/test-3-retake.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 3/Test 3.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 6373,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-3/test-3.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 4 - Energy and Momentum/Test 4.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 6419,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-4-energy-and-momentum/test-4.html",
-      "dependencies": [
-        "lib/media/pasted-image-20250121165904.png"
-      ]
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 4 - Energy and Momentum/Test 4 Key.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4594,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-4-energy-and-momentum/test-4-key.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Quizes and Tests/Test 4 - Energy and Momentum/Test 4 Retake.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 3531,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-4-energy-and-momentum/test-4-retake.html",
-      "dependencies": [
-        "lib/media/pasted-image-20250128172051.png"
-      ]
-    },
-    "Personal/Tutoring/Session 1.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 7584,
-      "exportedPath": "personal/tutoring/session-1.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240510134042.png",
-        "lib/media/pasted-image-20240510134052.png",
-        "lib/media/pasted-image-20240510134100.png"
-      ]
-    },
-    "Personal/Tutoring/Session 2.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4116,
-      "exportedPath": "personal/tutoring/session-2.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 3.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 3507,
-      "exportedPath": "personal/tutoring/session-3.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240517150140.png",
-        "lib/media/pasted-image-20240517150226.png",
-        "lib/media/pasted-image-20240517150310.png",
-        "lib/media/kinematics-equations.png"
-      ]
-    },
-    "Personal/Tutoring/Session 4.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 5799,
-      "exportedPath": "personal/tutoring/session-4.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240522170636.png",
-        "lib/media/pasted-image-20240522164206.png",
-        "lib/media/pasted-image-20240522164308.png"
-      ]
-    },
-    "Personal/Tutoring/Session 5.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4026,
-      "exportedPath": "personal/tutoring/session-5.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240530115542.png",
-        "lib/media/pasted-image-20240530115556.png",
-        "lib/media/pasted-image-20240530123313.png",
-        "lib/media/kinematics-equations.png",
-        "lib/media/pasted-image-20240530123522.png"
-      ]
-    },
-    "Personal/Tutoring/Session 6.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2909,
-      "exportedPath": "personal/tutoring/session-6.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240530115556.png",
-        "lib/media/kinematics-equations.png",
-        "lib/media/pasted-image-20240604113902.png"
-      ]
-    },
-    "Personal/Tutoring/Session 7 Gravity.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 3378,
-      "exportedPath": "personal/tutoring/session-7-gravity.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 8 Acceleration.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2805,
-      "exportedPath": "personal/tutoring/session-8-acceleration.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 9- Review and More Gravity.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 5806,
-      "exportedPath": "personal/tutoring/session-9-review-and-more-gravity.html",
-      "dependencies": [
-        "lib/media/kinematics-equations.png",
-        "lib/media/pasted-image-20240626183749.png",
-        "lib/media/pasted-image-20240626191310.png"
-      ]
-    },
-    "Personal/Tutoring/Session 10.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 3447,
-      "exportedPath": "personal/tutoring/session-10.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240629100402.png",
-        "lib/media/pasted-image-20240629101710.png",
-        "lib/media/pasted-image-20240629102918.png",
-        "lib/media/kinematics-equations.png",
-        "lib/media/pasted-image-20240629101749.png",
-        "lib/media/pasted-image-20240629105049.png",
-        "lib/media/pasted-image-20240629101802.png"
-      ]
-    },
-    "Personal/Tutoring/Session 11.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4363,
-      "exportedPath": "personal/tutoring/session-11.html",
-      "dependencies": [
-        "lib/media/kinematics-equations.png",
-        "lib/media/pasted-image-20240702102413.png",
-        "lib/media/pasted-image-20240702103850.png"
-      ]
-    },
-    "Personal/Tutoring/Session 12.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 884,
-      "exportedPath": "personal/tutoring/session-12.html",
-      "dependencies": [
-        "personal/tutoring/quizes-and-tests/test-1/graded-test-1.png",
-        "lib/media/pasted-image-20240709095501.png",
-        "lib/media/kinematics-equations.png",
-        "lib/media/pasted-image-20240709095514.png",
-        "lib/media/pasted-image-20240709095557.png"
-      ]
-    },
-    "Personal/Tutoring/Session 13.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2757,
-      "exportedPath": "personal/tutoring/session-13.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 14.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2979,
-      "exportedPath": "personal/tutoring/session-14.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 15.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2703,
-      "exportedPath": "personal/tutoring/session-15.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240726110222.png",
-        "lib/media/pasted-image-20240726110346.png"
-      ]
-    },
-    "Personal/Tutoring/Session 16.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 22348,
-      "exportedPath": "personal/tutoring/session-16.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240730175852.png",
-        "lib/media/pasted-image-20240730175913.png",
-        "lib/media/pasted-image-20240730181954.png"
-      ]
-    },
-    "Personal/Tutoring/Session 17.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2940,
-      "exportedPath": "personal/tutoring/session-17.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240802100727.png",
-        "lib/media/kinematics-equations.png"
-      ]
-    },
-    "Personal/Tutoring/Session 18- Fractions and Examples.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 3423,
-      "exportedPath": "personal/tutoring/session-18-fractions-and-examples.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240807102014.png",
-        "lib/media/pasted-image-20240807102116.png"
-      ]
-    },
-    "Personal/Tutoring/Session 19.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2569,
-      "exportedPath": "personal/tutoring/session-19.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 20- More Practice and Calculator Tricks.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4137,
-      "exportedPath": "personal/tutoring/session-20-more-practice-and-calculator-tricks.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240812104533.png",
-        "lib/media/kinematics-equations.png",
-        "lib/media/pasted-image-20240812110941.png"
-      ]
-    },
-    "Personal/Tutoring/Session 21.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 1364,
-      "exportedPath": "personal/tutoring/session-21.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 22 Force and Work.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4940,
-      "exportedPath": "personal/tutoring/session-22-force-and-work.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 23.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4838,
-      "exportedPath": "personal/tutoring/session-23.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240903173816.png"
-      ]
-    },
-    "Personal/Tutoring/Session 24.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2345,
-      "exportedPath": "personal/tutoring/session-24.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 25 - Inclined Plane and Momentum.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 3839,
-      "exportedPath": "personal/tutoring/session-25-inclined-plane-and-momentum.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240917180621.png"
-      ]
-    },
-    "Personal/Tutoring/Session 26- Test Review.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 1784,
-      "exportedPath": "personal/tutoring/session-26-test-review.html",
-      "dependencies": [
-        "lib/media/pasted-image-20240924185328.png",
-        "lib/media/kinematics-equations.png"
-      ]
-    },
-    "Personal/Tutoring/Session 27 Retest Review and New Unit Intro.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 5216,
-      "exportedPath": "personal/tutoring/session-27-retest-review-and-new-unit-intro.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 28 More on Work.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4736,
-      "exportedPath": "personal/tutoring/session-28-more-on-work.html",
-      "dependencies": [
-        "lib/media/kinematics-equations.png",
-        "lib/media/pasted-image-20241029183350.png"
-      ]
-    },
-    "Personal/Tutoring/Session 29 More on Energy and Rotational Motion.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2495,
-      "exportedPath": "personal/tutoring/session-29-more-on-energy-and-rotational-motion.html",
-      "dependencies": [
-        "lib/media/kinematics-equations.png"
-      ]
-    },
-    "Personal/Tutoring/Session 30.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2919,
-      "exportedPath": "personal/tutoring/session-30.html",
-      "dependencies": [
-        "lib/media/kinematics-equations.png"
-      ]
-    },
-    "Personal/Tutoring/Session 31 Work Energy Theorem.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4635,
-      "exportedPath": "personal/tutoring/session-31-work-energy-theorem.html",
-      "dependencies": [
-        "lib/media/kinematics-equations.png"
-      ]
-    },
-    "Personal/Tutoring/Session 32 Quiz Review and Momentum.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2088,
-      "exportedPath": "personal/tutoring/session-32-quiz-review-and-momentum.html",
-      "dependencies": [
-        "lib/media/pasted-image-20241214111810.png",
-        "lib/media/kinematics-equations.png"
-      ]
-    },
-    "Personal/Tutoring/Session 33 Linear Momentum.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 5932,
-      "exportedPath": "personal/tutoring/session-33-linear-momentum.html",
-      "dependencies": [
-        "lib/media/pasted-image-20241221094205.png"
-      ]
-    },
-    "Personal/Tutoring/Session 34 - Impulse and Momentum.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 3664,
-      "exportedPath": "personal/tutoring/session-34-impulse-and-momentum.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 35 - 2 Dimensional Collisions.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2038,
-      "exportedPath": "personal/tutoring/session-35-2-dimensional-collisions.html",
-      "dependencies": [
-        "lib/media/pasted-image-20241231174033.png"
-      ]
-    },
-    "Personal/Tutoring/Session 36 - More on 2D Collisions.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 3012,
-      "exportedPath": "personal/tutoring/session-36-more-on-2d-collisions.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 37 Review Momentum and Energy.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2519,
-      "exportedPath": "personal/tutoring/session-37-review-momentum-and-energy.html",
-      "dependencies": []
-    },
-    "Personal/Tutoring/Session 38- Retake Review.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 3368,
-      "exportedPath": "personal/tutoring/session-38-retake-review.html",
-      "dependencies": [
-        "lib/media/pasted-image-20250204173834.png"
-      ]
-    },
-    "Personal/Tutoring/Session 39 Momentum Review.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 2795,
-      "exportedPath": "personal/tutoring/session-39-momentum-review.html",
-      "dependencies": [
-        "lib/media/kinematics-equations.png",
-        "lib/media/pasted-image-20250218192442.png"
-      ]
-    },
-    "Personal/Tutoring/Session 40- Midterm Review.md": {
-      "modifiedTime": 1740186229973,
-      "sourceSize": 4614,
-      "exportedPath": "personal/tutoring/session-40-midterm-review.html",
-      "dependencies": [
-        "lib/media/pasted-image-20250221173742.png",
-        "lib/media/pasted-image-20250221181236.png"
-      ]
-    },
     "Supplemental Files/images/Pasted image 20250221173742.png": {
       "modifiedTime": 1740186229973,
       "sourceSize": 140601,
@@ -11542,314 +11108,1097 @@
       "exportedPath": "supplemental-files/images/session-40-midterm-review-2025-02-21-18.49.49.excalidraw.html",
       "dependencies": []
     },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.out": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 191,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz.out",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.log": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 16308,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz.log",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 60377,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.fls": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 12103,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz.fls",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.fdb_latexmk": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 10716,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz.fdb_latexmk",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.aux": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 377,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz.aux",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/Quiz 1.tex": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2004,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz-1.tex",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.tex": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4362,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz-solutions.tex",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.fls": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 12436,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz-solutions.fls",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.out": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 191,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz-solutions.out",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.log": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 16576,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz-solutions.log",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 84410,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz-solutions.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.fdb_latexmk": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 11091,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz-solutions.fdb_latexmk",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.aux": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 377,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz-solutions.aux",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.synctex.gz": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 13760,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz-solutions.synctex.gz",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.synctex.gz": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 5763,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/quiz.synctex.gz",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/Textbook.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 58978891,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-1/textbook.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 2/Quiz 2.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 6116,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-2/quiz-2.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 2/Quiz 2.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 886349,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-2/quiz-2.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/position-graph-grid.svg": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 1568,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/assets/position-graph-grid.svg",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/position-graph-grid.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 8184,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/assets/position-graph-grid.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/position-graph-lines-arcs.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 8188,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/assets/position-graph-lines-arcs.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/velocity-graph-lines-arcs.svg": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 1707,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/assets/velocity-graph-lines-arcs.svg",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/velocity-graph-lines-arcs.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 8882,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/assets/velocity-graph-lines-arcs.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/velocityGraph2.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 8898,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/assets/velocitygraph2.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/Conceptual Q's!.png": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 367960,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/assets/conceptual-q's!.png",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/position-graph-grid.svg": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 1568,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/assets/position-graph-grid.svg",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/position-graph-grid.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 8184,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/assets/position-graph-grid.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/position-graph-lines-arcs.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 8188,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/assets/position-graph-lines-arcs.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/velocity-graph-lines-arcs.svg": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 1707,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/assets/velocity-graph-lines-arcs.svg",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/velocity-graph-lines-arcs.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 8882,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/assets/velocity-graph-lines-arcs.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/assets/velocityGraph2.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 8898,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/assets/velocitygraph2.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Conceptual Q's!.png": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 367960,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/conceptual-q's!.png",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Retake.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 119993,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/retake.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.fls": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 11570,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/test-1.fls",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.tex": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 6105,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/test-1.tex",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.log": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 15578,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/test-1.log",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.fdb_latexmk": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 11020,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/test-1.fdb_latexmk",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.aux": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 305,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/test-1.aux",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test 1.synctex.gz": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 16645,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/test-1.synctex.gz",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Test Grading.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 360,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/test-grading.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Retake File/Unit 1 Test Retake:.png": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 307407,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/retake-file/unit-1-test-retake:.png",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Graded Test 1.png": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 8528141,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/graded-test-1.png",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Graded Test 1.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 691,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/graded-test-1.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/HumzaAnswers.png": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 209520,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/humzaanswers.png",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.aux": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 833,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/test-1.aux",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.tex": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 6560,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/test-1.tex",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 161448,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/test-1.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.log": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 17011,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/test-1.log",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.fls": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 12282,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/test-1.fls",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.fdb_latexmk": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 11506,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/test-1.fdb_latexmk",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1 Notes.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4605,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/test-1-notes.html",
+      "dependencies": [
+        "lib/media/kinematics-equations.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/Test 1.synctex.gz": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 18258,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/test-1.synctex.gz",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Grading Test 2.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 383,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-2/grading-test-2.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/MCQ Answers.ipynb": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 9886,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-2/mcq-answers.ipynb",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.tex": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 10277,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-2/test-2-main.tex",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.log": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 9703,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-2/test-2-main.log",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.fls": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 6685,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-2/test-2-main.fls",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 128593,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-2/test-2-main.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.fdb_latexmk": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 7191,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-2/test-2-main.fdb_latexmk",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.aux": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 32,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-2/test-2-main.aux",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.synctex.gz": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 29145,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-2/test-2-main.synctex.gz",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Retest/Retest Grading.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 156,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-3/retest/retest-grading.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Retest/Test 3 Retake.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4352,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-3/retest/test-3-retake.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Grading.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 307,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-3/grading.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Test 3.pdf": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 78187,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-3/test-3.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Test 3.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 6382,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-3/test-3.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 3/Test 3 Draft and Key.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 9041,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-3/test-3-draft-and-key.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 4 - Energy and Momentum/Test 4.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 6432,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-4-energy-and-momentum/test-4.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250121165904.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 4 - Energy and Momentum/Test 4 Key.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4594,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-4-energy-and-momentum/test-4-key.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 4 - Energy and Momentum/Test 4 Retake.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 3572,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-4-energy-and-momentum/test-4-retake.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250128172051.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 4 - Energy and Momentum/Test4 Grading.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 3199,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-4-energy-and-momentum/test4-grading.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/🟩 Tutoring Overview🟩.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 1010,
+      "exportedPath": "personal/tutoring/ap-physics/🟩-tutoring-overview🟩.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/filter.log": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 15,
+      "exportedPath": "personal/tutoring/ap-physics/filter.log",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 1.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 7584,
+      "exportedPath": "personal/tutoring/ap-physics/session-1.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240510134042.png",
+        "lib/media/pasted-image-20240510134052.png",
+        "lib/media/pasted-image-20240510134100.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 2.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4119,
+      "exportedPath": "personal/tutoring/ap-physics/session-2.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 3.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 3510,
+      "exportedPath": "personal/tutoring/ap-physics/session-3.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240517150140.png",
+        "lib/media/pasted-image-20240517150226.png",
+        "lib/media/pasted-image-20240517150310.png",
+        "lib/media/kinematics-equations.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 4.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 5826,
+      "exportedPath": "personal/tutoring/ap-physics/session-4.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240522170636.png",
+        "lib/media/pasted-image-20240522164206.png",
+        "lib/media/pasted-image-20240522164308.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 5.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4059,
+      "exportedPath": "personal/tutoring/ap-physics/session-5.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240530115542.png",
+        "lib/media/pasted-image-20240530115556.png",
+        "lib/media/pasted-image-20240530123313.png",
+        "lib/media/kinematics-equations.png",
+        "lib/media/pasted-image-20240530123522.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 6.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2936,
+      "exportedPath": "personal/tutoring/ap-physics/session-6.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240530115556.png",
+        "lib/media/kinematics-equations.png",
+        "lib/media/pasted-image-20240604113902.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 7 Gravity.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 3402,
+      "exportedPath": "personal/tutoring/ap-physics/session-7-gravity.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 8 Acceleration.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2808,
+      "exportedPath": "personal/tutoring/ap-physics/session-8-acceleration.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 9- Review and More Gravity.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 5821,
+      "exportedPath": "personal/tutoring/ap-physics/session-9-review-and-more-gravity.html",
+      "dependencies": [
+        "lib/media/kinematics-equations.png",
+        "lib/media/pasted-image-20240626183749.png",
+        "lib/media/pasted-image-20240626191310.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 10.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 3471,
+      "exportedPath": "personal/tutoring/ap-physics/session-10.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240629100402.png",
+        "lib/media/pasted-image-20240629101710.png",
+        "lib/media/pasted-image-20240629102918.png",
+        "lib/media/kinematics-equations.png",
+        "lib/media/pasted-image-20240629101749.png",
+        "lib/media/pasted-image-20240629105049.png",
+        "lib/media/pasted-image-20240629101802.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 11.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4378,
+      "exportedPath": "personal/tutoring/ap-physics/session-11.html",
+      "dependencies": [
+        "lib/media/kinematics-equations.png",
+        "lib/media/pasted-image-20240702102413.png",
+        "lib/media/pasted-image-20240702103850.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 12.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 912,
+      "exportedPath": "personal/tutoring/ap-physics/session-12.html",
+      "dependencies": [
+        "personal/tutoring/ap-physics/quizes-and-tests/test-1/graded-test-1.png",
+        "lib/media/pasted-image-20240709095501.png",
+        "lib/media/kinematics-equations.png",
+        "lib/media/pasted-image-20240709095514.png",
+        "lib/media/pasted-image-20240709095557.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 13.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2766,
+      "exportedPath": "personal/tutoring/ap-physics/session-13.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 14.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2988,
+      "exportedPath": "personal/tutoring/ap-physics/session-14.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 15.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2715,
+      "exportedPath": "personal/tutoring/ap-physics/session-15.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240726110222.png",
+        "lib/media/pasted-image-20240726110346.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 16.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 22378,
+      "exportedPath": "personal/tutoring/ap-physics/session-16.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240730175852.png",
+        "lib/media/pasted-image-20240730175913.png",
+        "lib/media/pasted-image-20240730181954.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 17.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2952,
+      "exportedPath": "personal/tutoring/ap-physics/session-17.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240802100727.png",
+        "lib/media/kinematics-equations.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 18- Fractions and Examples.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 3441,
+      "exportedPath": "personal/tutoring/ap-physics/session-18-fractions-and-examples.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240807102014.png",
+        "lib/media/pasted-image-20240807102116.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 19.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2581,
+      "exportedPath": "personal/tutoring/ap-physics/session-19.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 20- More Practice and Calculator Tricks.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4155,
+      "exportedPath": "personal/tutoring/ap-physics/session-20-more-practice-and-calculator-tricks.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240812104533.png",
+        "lib/media/kinematics-equations.png",
+        "lib/media/pasted-image-20240812110941.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 21.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 1364,
+      "exportedPath": "personal/tutoring/ap-physics/session-21.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 22 Force and Work.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4955,
+      "exportedPath": "personal/tutoring/ap-physics/session-22-force-and-work.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 23.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4871,
+      "exportedPath": "personal/tutoring/ap-physics/session-23.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240903173816.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 24.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2357,
+      "exportedPath": "personal/tutoring/ap-physics/session-24.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 25 - Inclined Plane and Momentum.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 3860,
+      "exportedPath": "personal/tutoring/ap-physics/session-25-inclined-plane-and-momentum.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240917180621.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 26- Test Review.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 1799,
+      "exportedPath": "personal/tutoring/ap-physics/session-26-test-review.html",
+      "dependencies": [
+        "lib/media/pasted-image-20240924185328.png",
+        "lib/media/kinematics-equations.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 27 Retest Review and New Unit Intro.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 5237,
+      "exportedPath": "personal/tutoring/ap-physics/session-27-retest-review-and-new-unit-intro.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 28 More on Work.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4754,
+      "exportedPath": "personal/tutoring/ap-physics/session-28-more-on-work.html",
+      "dependencies": [
+        "lib/media/kinematics-equations.png",
+        "lib/media/pasted-image-20241029183350.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 29 More on Energy and Rotational Motion.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2510,
+      "exportedPath": "personal/tutoring/ap-physics/session-29-more-on-energy-and-rotational-motion.html",
+      "dependencies": [
+        "lib/media/kinematics-equations.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 30.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2940,
+      "exportedPath": "personal/tutoring/ap-physics/session-30.html",
+      "dependencies": [
+        "lib/media/kinematics-equations.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 31 Work Energy Theorem.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4653,
+      "exportedPath": "personal/tutoring/ap-physics/session-31-work-energy-theorem.html",
+      "dependencies": [
+        "lib/media/kinematics-equations.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 32 Quiz Review and Momentum.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2094,
+      "exportedPath": "personal/tutoring/ap-physics/session-32-quiz-review-and-momentum.html",
+      "dependencies": [
+        "lib/media/pasted-image-20241214111810.png",
+        "lib/media/kinematics-equations.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 33 Linear Momentum.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 5944,
+      "exportedPath": "personal/tutoring/ap-physics/session-33-linear-momentum.html",
+      "dependencies": [
+        "lib/media/pasted-image-20241221094205.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 34 - Impulse and Momentum.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 3673,
+      "exportedPath": "personal/tutoring/ap-physics/session-34-impulse-and-momentum.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 35 - 2 Dimensional Collisions.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2050,
+      "exportedPath": "personal/tutoring/ap-physics/session-35-2-dimensional-collisions.html",
+      "dependencies": [
+        "lib/media/pasted-image-20241231174033.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 36 - More on 2D Collisions.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 3024,
+      "exportedPath": "personal/tutoring/ap-physics/session-36-more-on-2d-collisions.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 37 Review Momentum and Energy.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2528,
+      "exportedPath": "personal/tutoring/ap-physics/session-37-review-momentum-and-energy.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 38- Retake Review.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 3387,
+      "exportedPath": "personal/tutoring/ap-physics/session-38-retake-review.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250204173834.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 39 Momentum Review.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 2822,
+      "exportedPath": "personal/tutoring/ap-physics/session-39-momentum-review.html",
+      "dependencies": [
+        "lib/media/kinematics-equations.png",
+        "lib/media/pasted-image-20250218192442.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 40- Midterm Review.md": {
+      "modifiedTime": 1740187984971,
+      "sourceSize": 4632,
+      "exportedPath": "personal/tutoring/ap-physics/session-40-midterm-review.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250221173742.png",
+        "lib/media/pasted-image-20250221181236.png"
+      ]
+    },
     "lib/media/kinematics-equations.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 27667,
       "exportedPath": "lib/media/kinematics-equations.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250121165904.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 106968,
       "exportedPath": "lib/media/pasted-image-20250121165904.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250128172051.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 83175,
       "exportedPath": "lib/media/pasted-image-20250128172051.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240510134042.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 69544,
       "exportedPath": "lib/media/pasted-image-20240510134042.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240510134052.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 88293,
       "exportedPath": "lib/media/pasted-image-20240510134052.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240510134100.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 365988,
       "exportedPath": "lib/media/pasted-image-20240510134100.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240517150140.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 58259,
       "exportedPath": "lib/media/pasted-image-20240517150140.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240517150226.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 341668,
       "exportedPath": "lib/media/pasted-image-20240517150226.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240517150310.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 44406,
       "exportedPath": "lib/media/pasted-image-20240517150310.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240522170636.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 17899,
       "exportedPath": "lib/media/pasted-image-20240522170636.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240522164206.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 517966,
       "exportedPath": "lib/media/pasted-image-20240522164206.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240522164308.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 66604,
       "exportedPath": "lib/media/pasted-image-20240522164308.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240530115542.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 116219,
       "exportedPath": "lib/media/pasted-image-20240530115542.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240530115556.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 86321,
       "exportedPath": "lib/media/pasted-image-20240530115556.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240530123313.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 35495,
       "exportedPath": "lib/media/pasted-image-20240530123313.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240530123522.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 85024,
       "exportedPath": "lib/media/pasted-image-20240530123522.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240604113902.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 132484,
       "exportedPath": "lib/media/pasted-image-20240604113902.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240626183749.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 185441,
       "exportedPath": "lib/media/pasted-image-20240626183749.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240626191310.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 195944,
       "exportedPath": "lib/media/pasted-image-20240626191310.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240629100402.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 294796,
       "exportedPath": "lib/media/pasted-image-20240629100402.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240629101710.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 22190,
       "exportedPath": "lib/media/pasted-image-20240629101710.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240629102918.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 30722,
       "exportedPath": "lib/media/pasted-image-20240629102918.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240629101749.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 15697,
       "exportedPath": "lib/media/pasted-image-20240629101749.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240629105049.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 53913,
       "exportedPath": "lib/media/pasted-image-20240629105049.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240629101802.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 46241,
       "exportedPath": "lib/media/pasted-image-20240629101802.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240702102413.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 67784,
       "exportedPath": "lib/media/pasted-image-20240702102413.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240702103850.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 100044,
       "exportedPath": "lib/media/pasted-image-20240702103850.png",
       "dependencies": []
     },
-    "personal/tutoring/quizes-and-tests/test-1/graded-test-1.png": {
-      "modifiedTime": 1740186229973,
+    "personal/tutoring/ap-physics/quizes-and-tests/test-1/graded-test-1.png": {
+      "modifiedTime": 1740187984971,
       "sourceSize": 8528141,
-      "exportedPath": "personal/tutoring/quizes-and-tests/test-1/graded-test-1.png",
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/test-1/graded-test-1.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240709095501.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 86123,
       "exportedPath": "lib/media/pasted-image-20240709095501.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240709095514.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 230366,
       "exportedPath": "lib/media/pasted-image-20240709095514.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240709095557.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 17775,
       "exportedPath": "lib/media/pasted-image-20240709095557.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240726110222.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 100522,
       "exportedPath": "lib/media/pasted-image-20240726110222.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240726110346.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 128432,
       "exportedPath": "lib/media/pasted-image-20240726110346.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240730175852.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 125584,
       "exportedPath": "lib/media/pasted-image-20240730175852.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240730175913.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 62380,
       "exportedPath": "lib/media/pasted-image-20240730175913.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240730181954.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 36143,
       "exportedPath": "lib/media/pasted-image-20240730181954.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240802100727.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 333133,
       "exportedPath": "lib/media/pasted-image-20240802100727.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240807102014.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 45374,
       "exportedPath": "lib/media/pasted-image-20240807102014.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240807102116.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 151392,
       "exportedPath": "lib/media/pasted-image-20240807102116.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240812104533.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 1051382,
       "exportedPath": "lib/media/pasted-image-20240812104533.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240812110941.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 106499,
       "exportedPath": "lib/media/pasted-image-20240812110941.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240903173816.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 57950,
       "exportedPath": "lib/media/pasted-image-20240903173816.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240917180621.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 17590,
       "exportedPath": "lib/media/pasted-image-20240917180621.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20240924185328.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 194141,
       "exportedPath": "lib/media/pasted-image-20240924185328.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241029183350.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 41640,
       "exportedPath": "lib/media/pasted-image-20241029183350.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241214111810.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 65502,
       "exportedPath": "lib/media/pasted-image-20241214111810.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241221094205.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 453746,
       "exportedPath": "lib/media/pasted-image-20241221094205.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20241231174033.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 85814,
       "exportedPath": "lib/media/pasted-image-20241231174033.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250204173834.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 55086,
       "exportedPath": "lib/media/pasted-image-20250204173834.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250218192442.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 136948,
       "exportedPath": "lib/media/pasted-image-20250218192442.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250221173742.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 140601,
       "exportedPath": "lib/media/pasted-image-20250221173742.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250221181236.png": {
-      "modifiedTime": 1740186229973,
+      "modifiedTime": 1740187984971,
       "sourceSize": 28727,
       "exportedPath": "lib/media/pasted-image-20250221181236.png",
       "dependencies": []
