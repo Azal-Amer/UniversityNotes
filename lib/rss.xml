@@ -1,4 +1,140 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 22 Feb 2025 01:56:10 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 22 Feb 2025 01:56:07 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Obsidian Vault]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://azalamer.com/UniversityNotes/</link><image><url>https://azalamer.com/UniversityNotes/lib/media/favicon.ico</url><title>Obsidian Vault</title><link>https://azalamer.com/UniversityNotes/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 22 Feb 2025 02:25:08 GMT</lastBuildDate><atom:link href="https://azalamer.com/UniversityNotes/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 22 Feb 2025 02:25:03 GMT</pubDate><copyright><![CDATA[Azal Amer]]></copyright><ttl>60</ttl><dc:creator>Azal Amer</dc:creator><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
+ <br><br>Today is the last boring class<br>
+<br>We're covering surface &amp; volume integrals
+<br>Fundamental theorems
+<br>Dirac Delta Function
+<br><br><br><a data-tooltip-position="top" aria-label="https://en.wikipedia.org/wiki/Del_in_cylindrical_and_spherical_coordinates#Del%20formula" rel="noopener nofollow" class="external-link" href="https://en.wikipedia.org/wiki/Del_in_cylindrical_and_spherical_coordinates#Del%20formula" target="_blank">This link</a> from wikipedia has a nice table which is helpful<br><br>We're integrating over structures normally.<br>Definition (Line Integral).
+Given a curve  and a function ,we can describe a line integral as integrating along it's path . 
+
+If it is a vector-valued-function, you'd take a dot product
+
+To calculate this, you:
+
+<br>Parameterize the curve  with one variable 
+<br>Solve for the values of  using the parameterization 
+<br>Integrate your function  over s
+
+<br><br>Given that you have some parameterization for  as<br><br>and your function in , the formula is<br><br>The  comes from the fact that you're integrating along the magnitude. If , then that's essentially finding the length of your curve. Think of  as a density function! If the density is , and you only vary the length, the mass is the length!<br><br>Same procedure as before, but you don't take the magnitude of .<br><br>Example (Given a function  and a curve ).
+
+[!example] Calculating a Line Integral along a fixed curve
+She wants us to calculate a line integral along a straight line in space, for 
+
+In general,  is parallel to the vector from  towards 
+<br><br>Just like a line integral, a surface gets parameterized by .<br>Definition (Surface Integral).
+Given a surface  and a function ,we can describe a line integral as integrating along it's path . 
+
+If it is a vector-valued-function, you'd take a dot product
+
+To calculate this, you:
+
+<br>Parameterize the surface  with two variables 
+<br>Solve for the values of  using the parameterization 
+<br>Calculate  using
+
+and then get the magnitude. (That's because the magnitude of a cross product, is the enclosed area!)
+<br>Integrate your function  over 
+
+<br>This is equivalent to taking the flux over the surface<br>Definition (The Direction of a Surface).
+The normal of any surface, is defined as the vector perpendicular to the surface at a given point 
+<br>YOU ALWAYS NEED TO REMEMBER THE RELEVANT JACOBIAN FOR THE COORDINATE SYSTEM <br>In this class, Tenerani uses the below convention<br><br>to save time.<br><br><br>
+<br>Divergence
+<br>Stolkes
+<br>Gradient tTheorem
+<br>Theorem (Gradient Theorem).
+The line integral of the gradient of some fuunction, is just the difference of the function defined at the endpoint. This is how we get conservative forces.
+
+<br>Theorem (Divergence Theorem).
+The curl through a colume is equivalent to the surface integral of the fieeld
+
+<br>Theorem (Stokes Theorem).
+The total microscopic circulation is equal to the total circulation on the outer boundary
+
+<br>Exercise (Given the following function ).
+
+<br>Calculate the Divergence
+<br>Calculate the volume integral of the integral by using the <a data-href="#^281900" href="https://azalamer.com/UniversityNotes/about:blank#^281900" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">^281900</a><a data-href="#^281900" href="https://azalamer.com/UniversityNotes/about:blank#^281900" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Theorem 1.4.6 (Divergence Theorem)</a> 
+
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/electrodynamics/notes/1.4-vector-integrals.html</link><guid isPermaLink="false">School/Physics/Electrodynamics/Notes/1.4 Vector Integrals.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sat, 22 Feb 2025 02:04:05 GMT</pubDate><enclosure url="https://i.giphy.com/f9eYHQ8RZ4zfc4unXx.webp" length="0" type="image/webp"/><content:encoded>&lt;figure&gt;&lt;img src="https://i.giphy.com/f9eYHQ8RZ4zfc4unXx.webp"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Definition]]></title><description><![CDATA[<a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:Practice" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#Practice</a> <a class="tag" href="https://azalamer.com/UniversityNotes/?query=tag:linearindependance" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#linearindependance</a> 
+ <br><br>Any pure state can be written in terms of  some standard basis<br><br>Theorem (Pauli Matrices and Density Matrix).
+Any pure/mixed state can be written in terms of <a data-tooltip-position="top" aria-label="../Definitions/Pauli Matrices" data-href="../Definitions/Pauli Matrices" href="https://azalamer.com/Definitions/Pauli Matrices" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Pauli Matrices</a><a data-tooltip-position="top" aria-label="../Definitions/Pauli Matrices" data-href="../Definitions/Pauli Matrices" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/definitions/pauli-matrices.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Pauli Matrices</a>. This is just like our previous basis
+
+<br>
+<br>What this means, is that any density matrix can be written as the sum of the expected value when measuring your quantum system with an observable, times that observable
+<br>Definition (Pauli Matrix).
+Any of the   observables<br>
+
+<br><br>
+<br>Perform single-qubit quantum state tomography (#QST)
+<br>Estimate state preparation and measurement (#SPAM) errors
+<br><br><br>Mixed states <a data-tooltip-position="top" aria-label="3.2 Mixed Quantum States > Intro" data-href="3.2 Mixed Quantum States#Intro" href="https://azalamer.com/UniversityNotes/3.2 Mixed Quantum States#Intro" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Mixed States</a><a data-tooltip-position="top" aria-label="3.2 Mixed Quantum States > Intro" data-href="3.2 Mixed Quantum States#Intro" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/3.2-mixed-quantum-states.html#Intro" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Mixed States</a> <br><br>Reminder probability of observing a pure state (ket)<br>
+<a data-tooltip-position="top" aria-label="3.3 Density Matrices > Born Rule for Pure/Mixed States" data-href="3.3 Density Matrices#Born Rule for Pure/Mixed States" href="https://azalamer.com/UniversityNotes/3.3 Density Matrices#Born Rule for Pure/Mixed States" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Born Rule</a><a data-tooltip-position="top" aria-label="3.3 Density Matrices > Born Rule for Pure/Mixed States" data-href="3.3 Density Matrices#Born Rule for Pure/Mixed States" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/3.3-density-matrices.html#Born_Rule_for_Pure/Mixed_States" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Born Rule</a><br><br>Expectation Value <a data-tooltip-position="top" aria-label="2.5 Calculating Observables > Expected Values > Definition" data-href="2.5 Calculating Observables#Expected Values#Definition" href="https://azalamer.com/UniversityNotes/2.5 Calculating Observables#Expected Values#Definition" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">Expectation Value</a><a data-tooltip-position="top" aria-label="2.5 Calculating Observables > Expected Values > Definition" data-href="2.5 Calculating Observables#Expected Values#Definition" href="https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/2.5-calculating-observables.html#Expected_Values" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">Expectation Value</a><br><br><br>Exercise (Compute the expectation values for the Pauli Matricies and verify the Pauli Summation Identity Given the density matrix below).
+
+For X
+
+For Y
+
+For Z
+
+And now Verifying
+
+<br><br><img alt="Pasted image 20240326160527.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326160527.png"><br>
+Normally, you're given some state generated by a circuit, and you need to measure things about it. You don't know the density matrix<br><br><img alt="Pasted image 20240326160616.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326160616.png"><br>
+<a href="https://azalamer.com/UniversityNotes?query=tag:Practice" class="tag" target="_blank" rel="noopener nofollow">#Practice</a> Come up with the unitary to produce this state<br>
+<br>
+Use QX Simulator to measure the expectation values for X,Y, Z (1024 shots)
+
+<br>Z, we need no extra gates since the default HV
+
+<br>The expectation value is 0<img alt="Pasted image 20240326161036.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326161036.png" style="width: 500px; max-width: 100%;">
+
+
+<br>X we need a H<br>
+2. expect = -.71<img alt="Pasted image 20240326161206.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326161206.png" style="width: 500px; max-width: 100%;">
+<br>For Y we need an 
+
+<br>expect = .73 <img alt="Pasted image 20240326161259.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326161259.png" style="width: 500px; max-width: 100%;">
+<br>
+
+
+
+
+<br>
+From the results, estimate the density matrix <br>
+4. <img alt="Pasted image 20240326163049.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326163049.png">
+
+<br>
+What should it be theoretically
+
+<br>
+<br><img alt="Pasted image 20240326162241.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326162241.png">
+<br>
+
+
+<br><br>Definition (Fidelity).
+
+Where  is what was experimentally calculated, and  is what you wanted to get
+<br>
+<br>If you get  , then it implies that 
+<br>A nonzero determinant means there is statistical error involved
+<br>Fidelity is the probability of getting what we expect. We want a very high fidelity
+<br>A density matrix needs to to have a determinant equal to zero. If you are making a mixture of pure states, there exists a basis where it is 100% in one state over another, so it's not linearly indapendant  <a href="https://azalamer.com/UniversityNotes?query=tag:linearindependance" class="tag" target="_blank" rel="noopener nofollow">#linearindependance</a> 
+<br>Definition (SPAM Error is given by Infidelity (for shallow state prep)).
+The errors that are not within the circuit you're performing. It's mechanical errors<br>
+
+<br>
+<br>Errors we don't expect to grow as we add gates
+<br>These errors occur before and after your circuit
+<br>They're like the y intercept as a function of the numbers of gates, if we have a lot of gates, the gates might have associated errors. We just want to know what the error with no number of gates is
+<br><br>
+<br>Density matrix estimation
+
+<br><img alt="Pasted image 20240326164239.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326164239.png">
+
+
+<br><br>
+Corresponding Code<br>
+<img alt="Pasted image 20240326164653.png" src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326164653.png">
+]]></description><link>https://azalamer.com/UniversityNotes/school/physics/quantum-computing/semester-1/3.3-3.4-quantum-state-tomography.html</link><guid isPermaLink="false">School/Physics/Quantum Computing/Semester 1/3.3-3.4 Quantum State Tomography.md</guid><dc:creator><![CDATA[Azal Amer]]></dc:creator><pubDate>Sat, 22 Feb 2025 02:11:04 GMT</pubDate><enclosure url="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326160527.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20240326160527.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Overview]]></title><description><![CDATA[ 
  <br><br><br><br><img src="https://azalamer.com/UniversityNotes/lib/media/pasted-image-20250221173742.png"><br>
 Units 1,2,3,4,6<br>5,6.5,7,8<br>25% Force<br>
 25% Energy<br>
