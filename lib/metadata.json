@@ -1,11 +1,51 @@
 {
   "vaultName": "Obsidian Vault",
-  "lastExport": 1740191103732,
+  "lastExport": 1740616389096,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon ctp-latte ctp-mocha-old ctp-accent-maroon anp-speech-bubble anp-codeblock-numbers anp-list-toggle anp-table-toggle anp-table-width anp-table-auto anp-color-transition-toggle anp-button-metadata-toggle anp-h1-red anp-h1-divider anp-h2-peach anp-h2-divider anp-h3-green anp-h4-teal anp-h5-lavender anp-h6-mauve anp-italic-teal anp-highlight-yellow anp-simple-rainbow-color-toggle anp-simple-rainbow-title-toggle anp-simple-rainbow-collapse-icon-toggle anp-simple-rainbow-indentation-toggle anp-simple-rainbow-icon-toggle anp-rainbow-subfolder-color-toggle anp-card-layout-filebrowser anp-theme-ext-dark ctp-nord-light ctp-flexoki-dark",
   "useCustomHeadContent": true,
   "useCustomFavicon": true,
   "files": [
+    "Personal/Tutoring/AP CS/Class Worksheets/3.6 For Loops.md",
+    "Personal/Tutoring/AP CS/Class Worksheets/3.7 Worksheet.md",
+    "Personal/Tutoring/AP CS/Class Worksheets/3.8 2D arrays.md",
+    "Personal/Tutoring/AP CS/Class Worksheets/3.10 ArrayLists Worksheet.md",
+    "Personal/Tutoring/AP CS/Class Worksheets/3.11 More Advanced Array Work.md",
+    "Personal/Tutoring/AP CS/Homework Assignments/3.2 Boolean Expressions- Bank.pdf",
+    "Personal/Tutoring/AP CS/Homework Assignments/3.2 Boolean Expressions- Bank.md",
+    "Personal/Tutoring/AP CS/Homework Assignments/3.4 Arrays - Basketball.pdf",
+    "Personal/Tutoring/AP CS/Homework Assignments/3.4 Arrays - Basketball.md",
+    "Personal/Tutoring/AP CS/Homework Assignments/3.5 For Loop Art.md",
+    "Personal/Tutoring/AP CS/Homework Assignments/3.7 For Loop Challenges.md",
+    "Personal/Tutoring/AP CS/Homework Assignments/3.8 2D Arrays Image Processing.md",
+    "Personal/Tutoring/AP CS/Homework Assignments/ArrayList Challenges.md",
+    "Personal/Tutoring/AP CS/Homework Assignments/Style Guide 3.4.pdf",
+    "Personal/Tutoring/AP CS/Homework Assignments/Style Guide 3.4.md",
+    "Personal/Tutoring/AP CS/3.2 Boolean Expressions and Conditionals.md",
+    "Personal/Tutoring/AP CS/3.3 If Else Statements.md",
+    "Personal/Tutoring/AP CS/3.4 If statements and Arrays.md",
+    "Personal/Tutoring/AP CS/3.5 Arrays and For loops.md",
+    "Personal/Tutoring/AP CS/3.6 For loops and Nested Loops.md",
+    "Personal/Tutoring/AP CS/3.7 More For Loops.md",
+    "Personal/Tutoring/AP CS/3.8 2D Array Indexing.md",
+    "Personal/Tutoring/AP CS/3.9.md",
+    "Personal/Tutoring/AP CS/3.10 ArrayLists.md",
+    "Personal/Tutoring/AP CS/3.11 Challenge Problems with Arrays.md",
+    "Personal/Tutoring/AP CS/AP CS Midterm Study Guide Review 2024-25-1.pdf",
+    "Personal/Tutoring/AP CS/Assignment Statements and Operators.md",
+    "Personal/Tutoring/AP CS/Casting Numerics, and Classes.md",
+    "Personal/Tutoring/AP CS/Classes and For loops.md",
+    "Personal/Tutoring/AP CS/Datatypes and Variables.md",
+    "Personal/Tutoring/AP CS/Lesson Plan for 3.4.md",
+    "Personal/Tutoring/AP CS/Methods.md",
+    "Personal/Tutoring/AP CS/Midterm CS Questions.md",
+    "Personal/Tutoring/AP CS/Midterm Review.md",
+    "Personal/Tutoring/AP CS/Overloading Classes.md",
+    "Personal/Tutoring/AP CS/User Input.md",
+    "Personal/Tutoring/AP CS/Wrapper Classes.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Equation Sheet.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Midterm FRQ.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Midterm MCQ.md",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.pdf",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.out",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.log",
@@ -17,9 +57,9 @@
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.out",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.pdf",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.log",
-    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.aux",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.fls",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.fdb_latexmk",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.aux",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.synctex.gz",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.synctex.gz",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/Textbook.pdf",
@@ -187,6 +227,8 @@
     "School/Physics/Electrodynamics/Notes/1.10 More Electric Potential.md",
     "School/Physics/Electrodynamics/Notes/1.11 Boundary Conditions and Energy.md",
     "School/Physics/Electrodynamics/Notes/1.12 Capacitors and Electrostatics.md",
+    "School/Physics/Electrodynamics/Notes/2.3 Laplace's Equation.md",
+    "School/Physics/Electrodynamics/Notes/2.4.md",
     "School/Physics/Modern Physics/Code/introduction.ipynb",
     "School/Physics/Modern Physics/Notes/0.1 Introduction.md",
     "School/Physics/Modern Physics/Notes/1.1 Fundamentals of Probability.md",
@@ -260,6 +302,8 @@
     "School/Physics/Quantum 2/Notes/1.13 Double Well Problem.md",
     "School/Physics/Quantum 2/Notes/1.14 Time Dependent Perturbation Theory.md",
     "School/Physics/Quantum 2/Notes/1.16 The Stark Effect.md",
+    "School/Physics/Quantum 2/Notes/1.17 Transitions in the Atom.md",
+    "School/Physics/Quantum 2/Notes/1.18 Review Day.md",
     "School/Physics/Quantum Computing/Definitions/Bell States.md",
     "School/Physics/Quantum Computing/Definitions/Bra-Ket Notation.md",
     "School/Physics/Quantum Computing/Definitions/Introduction to Qbits.md",
@@ -419,6 +463,11 @@
     "Supplemental Files/images/1.15 More on Universal Gate Sets 2024-10-17 14.33.58.excalidraw.md",
     "Supplemental Files/images/1.15 More on Universal Gate Sets 2024-10-17 14.59.17.excalidraw.md",
     "Supplemental Files/images/1.16 The Stark Effect 2025-02-21 13.42.30.excalidraw.md",
+    "Supplemental Files/images/1.17 2025-02-24 13.28.08.excalidraw.md",
+    "Supplemental Files/images/1.17 2025-02-24 13.33.39.excalidraw.md",
+    "Supplemental Files/images/1.18 Review Day 2025-02-26 13.05.36.excalidraw.md",
+    "Supplemental Files/images/1.18 Review Day 2025-02-26 13.07.40.excalidraw.md",
+    "Supplemental Files/images/1.18 Review Day 2025-02-26 13.07.49.excalidraw.md",
     "Supplemental Files/images/02_Mitski_normalized_total.png",
     "Supplemental Files/images/2.1 2024-10-15 10.04.49.excalidraw.md",
     "Supplemental Files/images/2.1 2024-10-15 10.05.23.excalidraw.md",
@@ -476,6 +525,8 @@
     "Supplemental Files/images/3.10 ArrayLists 2025-02-19 18.07.18.excalidraw.md",
     "Supplemental Files/images/3.10 ArrayLists 2025-02-19 18.14.30.excalidraw.md",
     "Supplemental Files/images/3.10 ArrayLists Worksheet 2025-02-19 18.43.15.excalidraw.md",
+    "Supplemental Files/images/3.11 More Advanced Array Work 2025-02-26 17.10.11.excalidraw.md",
+    "Supplemental Files/images/3.11 More Advanced Array Work 2025-02-26 17.27.38.excalidraw.md",
     "Supplemental Files/images/5.1 Quantum Teleportation 2024-04-16 15.55.46.excalidraw.md",
     "Supplemental Files/images/5.1 Quantum Teleportation 2024-04-16 16.15.45.excalidraw.md",
     "Supplemental Files/images/5.1 Quantum Teleportation 2024-04-16 16.46.13.excalidraw.md",
@@ -570,8 +621,10 @@
     "Supplemental Files/images/AgACAgEAAxkBAAIBw2eX3lsHYEehcfU9zCVjdhZ3FULCAAJ6sDEbxtrARB7F6sLCPN1pAQADAgADeQADNgQ.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAIBWGbXLFllAVltwi-T9vhaV6ZeX1cwAAIfrDEbb4vARqZbipqXXIApAQADAgADeQADNQQ.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAIBWmbaB0HG8ceTFA3kNes9cC5-P5U0AALfrDEbtDPRRnmLnI-NVtUVAQADAgADeQADNgQ.jpg",
+    "Supplemental Files/images/AgACAgEAAxkBAAIBx2e9LcYKiqG5tGvGOSUqrV34GmfYAAJArjEbHDnpRXFWD48bzSsKAQADAgADeQADNgQ.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAIBXmbgWW9akiT7LmSBrksV7TujB2n1AAIirTEbFpgIR2A8a7j5dICkAQADAgADeQADNgQ.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAIBY2bgX8m5_kEeQnKr0Ll3ZO6tncNFAAIurTEbFpgIR15MAAFD33Cg-AEAAwIAA3kAAzYE.jpg",
+    "Supplemental Files/images/AgACAgEAAxkBAAIByWe_bTpN63Xax_bMP_KbsaoH9HAzAAL2rjEbPbgAAUbablgAAW51lvcBAAMCAAN5AAM2BA.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAIBZmbgYKrKg_WCuMh2lF-q3z1MggQ7AAIwrTEbFpgIR4NJpMCqOaJhAQADAgADeQADNgQ.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAIBZWbgYF2cCrLkAtV8awincJrq2s0CAAIvrTEbFpgIRxBpqCumiBaoAQADAgADeQADNgQ.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAP4ZpCr1N3Y0SzXzMZa0uwXrF_EkUQAAjetMRt0uYFEq-XIZ9_rCKYBAAMCAAN5AAM1BA.jpg",
@@ -666,6 +719,7 @@
     "Supplemental Files/images/Homework 3 2025-02-11 15.47.47.excalidraw.md",
     "Supplemental Files/images/Homework 3 2025-02-16 21.35.45.excalidraw.md",
     "Supplemental Files/images/Homework 4 2024-10-19 18.30.35.excalidraw.md",
+    "Supplemental Files/images/Homework 4 2025-02-25 21.12.26.excalidraw.md",
     "Supplemental Files/images/Homework 5 2024-10-01 12.37.36.excalidraw.md",
     "Supplemental Files/images/Homework 5 2024-10-07 14.26.30.excalidraw.md",
     "Supplemental Files/images/Homework 6 2024-10-08 13.14.49.excalidraw.md",
@@ -713,6 +767,7 @@
     "Supplemental Files/images/image_34.png",
     "Supplemental Files/images/image_35.png",
     "Supplemental Files/images/image_36.png",
+    "Supplemental Files/images/image_37.png",
     "Supplemental Files/images/IMG_2890.png",
     "Supplemental Files/images/IMG_20240825_133024.jpg",
     "Supplemental Files/images/IMG_20240825_133025.jpg",
@@ -1243,6 +1298,11 @@
     "Supplemental Files/images/Pasted image 20250218192442.png",
     "Supplemental Files/images/Pasted image 20250221173742.png",
     "Supplemental Files/images/Pasted image 20250221181236.png",
+    "Supplemental Files/images/Pasted image 20250224104457.png",
+    "Supplemental Files/images/Pasted image 20250224191441.png",
+    "Supplemental Files/images/Pasted image 20250224191958.png",
+    "Supplemental Files/images/Pasted image 20250224192707.png",
+    "Supplemental Files/images/Pasted image 20250225172018.png",
     "Supplemental Files/images/PCD Fab for PD 2024-10-21 10.47.44.excalidraw.md",
     "Supplemental Files/images/Periodic-table-indicating-the-cosmic-origin-and-evolution-of-the-chemical-elements.png",
     "Supplemental Files/images/picture.png",
@@ -1463,15 +1523,15 @@
     "Supplemental Files/images/UTQT Navigating Differences Post.png",
     "Supplemental Files/images/VID_49561121_203338_224.mp4",
     "index.md",
-    "lib/media/pasted-image-20240326160527.png",
-    "lib/media/pasted-image-20240326160616.png",
-    "lib/media/pasted-image-20240326161036.png",
-    "lib/media/pasted-image-20240326161206.png",
-    "lib/media/pasted-image-20240326161259.png",
-    "lib/media/pasted-image-20240326163049.png",
-    "lib/media/pasted-image-20240326162241.png",
-    "lib/media/pasted-image-20240326164239.png",
-    "lib/media/pasted-image-20240326164653.png",
+    "lib/media/kinematics-equations.png",
+    "lib/media/pasted-image-20240828175002.png",
+    "lib/media/pasted-image-20240828180055.png",
+    "lib/media/pasted-image-20250225172018.png",
+    "lib/media/pasted-image-20250224104457.png",
+    "lib/media/pasted-image-20250203134958.png",
+    "lib/media/pasted-image-20250214131342.png",
+    "lib/media/pasted-image-20250214132323.png",
+    "lib/media/pasted-image-20250214133801.png",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -1527,7 +1587,6 @@
     "lib/styles/supported-plugins.css",
     "lib/styles/main-styles.css",
     "lib/styles/snippets.css",
-    "lib/media/kinematics-equations.png",
     "lib/media/pasted-image-20250121165904.png",
     "lib/media/pasted-image-20250128172051.png",
     "lib/media/pasted-image-20240510134042.png",
@@ -1641,11 +1700,7 @@
     "lib/media/spherical-harmonics-chart.png",
     "lib/media/pasted-image-20240902194106.png",
     "lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg",
-    "lib/media/pasted-image-20250203134958.png",
     "lib/media/pasted-image-20250207135050.png",
-    "lib/media/pasted-image-20250214131342.png",
-    "lib/media/pasted-image-20250214132323.png",
-    "lib/media/pasted-image-20250214133801.png",
     "lib/media/pasted-image-20240504222402.png",
     "lib/media/pasted-image-20240504222415.png",
     "lib/media/pasted-image-20240402164753.png",
@@ -1677,6 +1732,15 @@
     "lib/media/screenshot-2024-03-19-at-4.15.33-pm.png",
     "lib/media/pasted-image-20240321161706.png",
     "lib/media/pasted-image-20240321161926.png",
+    "lib/media/pasted-image-20240326160527.png",
+    "lib/media/pasted-image-20240326160616.png",
+    "lib/media/pasted-image-20240326161036.png",
+    "lib/media/pasted-image-20240326161206.png",
+    "lib/media/pasted-image-20240326161259.png",
+    "lib/media/pasted-image-20240326163049.png",
+    "lib/media/pasted-image-20240326162241.png",
+    "lib/media/pasted-image-20240326164239.png",
+    "lib/media/pasted-image-20240326164653.png",
     "lib/media/pasted-image-20240402153811.png",
     "lib/media/pasted-image-20240402153758.png",
     "lib/media/pasted-image-20240402154523.png",
@@ -1756,85 +1820,85 @@
   ],
   "fileInfo": {
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
@@ -1846,181 +1910,181 @@
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1740191103732,
-      "sourceSize": 1282989,
+      "modifiedTime": 1740616389096,
+      "sourceSize": 1333550,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
@@ -2032,67 +2096,67 @@
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1740191103732,
-      "sourceSize": 82781,
+      "modifiedTime": 1740616389096,
+      "sourceSize": 88567,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 137305,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 10171,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 271569,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 336,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 10512,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 34264,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     },
     "lib/media/favicon.ico": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 15086,
       "exportedPath": "lib/media/favicon.ico",
       "dependencies": []
     },
     "lib/html/custom-head-content.html": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 601,
       "exportedPath": "lib/html/custom-head-content.html",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1740191103732,
+      "modifiedTime": 1740616389096,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
@@ -2908,14 +2972,14 @@
       ]
     },
     "School/Physics/Quantum 2/Notes/1.9 Zeeman Effect.md": {
-      "modifiedTime": 1739203948402,
-      "sourceSize": 6142,
+      "modifiedTime": 1740616389096,
+      "sourceSize": 6249,
       "exportedPath": "school/physics/quantum-2/notes/1.9-zeeman-effect.html",
       "dependencies": []
     },
     "School/Physics/Quantum 2/Notes/1.8 Complete Fine Structure.md": {
-      "modifiedTime": 1740030609922,
-      "sourceSize": 4191,
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4192,
       "exportedPath": "school/physics/quantum-2/notes/1.8-complete-fine-structure.html",
       "dependencies": [
         "lib/media/pasted-image-20250203134958.png"
@@ -10318,7 +10382,7 @@
       "dependencies": []
     },
     "lib/media/pasted-image-20250203134958.png": {
-      "modifiedTime": 1740030609922,
+      "modifiedTime": 1740616389096,
       "sourceSize": 141677,
       "exportedPath": "lib/media/pasted-image-20250203134958.png",
       "dependencies": []
@@ -10788,8 +10852,8 @@
       ]
     },
     "School/Physics/Quantum 2/Notes/1.13 Double Well Problem.md": {
-      "modifiedTime": 1740030609922,
-      "sourceSize": 3513,
+      "modifiedTime": 1740616389096,
+      "sourceSize": 3537,
       "exportedPath": "school/physics/quantum-2/notes/1.13-double-well-problem.html",
       "dependencies": [
         "lib/media/pasted-image-20250214131342.png",
@@ -10882,8 +10946,8 @@
       "dependencies": []
     },
     "Supplemental Files/images/1.13 Double Well Problem 2025-02-14 13.45.44.excalidraw.md": {
-      "modifiedTime": 1739569356074,
-      "sourceSize": 5334,
+      "modifiedTime": 1740616389096,
+      "sourceSize": 5722,
       "exportedPath": "supplemental-files/images/1.13-double-well-problem-2025-02-14-13.45.44.excalidraw.html",
       "dependencies": []
     },
@@ -10894,19 +10958,19 @@
       "dependencies": []
     },
     "lib/media/pasted-image-20250214131342.png": {
-      "modifiedTime": 1740030609922,
+      "modifiedTime": 1740616389096,
       "sourceSize": 894771,
       "exportedPath": "lib/media/pasted-image-20250214131342.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250214132323.png": {
-      "modifiedTime": 1740030609922,
+      "modifiedTime": 1740616389096,
       "sourceSize": 1383826,
       "exportedPath": "lib/media/pasted-image-20250214132323.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250214133801.png": {
-      "modifiedTime": 1740030609922,
+      "modifiedTime": 1740616389096,
       "sourceSize": 81828,
       "exportedPath": "lib/media/pasted-image-20250214133801.png",
       "dependencies": []
@@ -10930,8 +10994,8 @@
       "dependencies": []
     },
     "School/Physics/Quantum 2/Notes/1.14 Time Dependent Perturbation Theory.md": {
-      "modifiedTime": 1740030609922,
-      "sourceSize": 6867,
+      "modifiedTime": 1740616389096,
+      "sourceSize": 6865,
       "exportedPath": "school/physics/quantum-2/notes/1.14-time-dependent-perturbation-theory.html",
       "dependencies": []
     },
@@ -11062,8 +11126,8 @@
       "dependencies": []
     },
     "School/Physics/Quantum 2/Notes/1.16 The Stark Effect.md": {
-      "modifiedTime": 1740168885332,
-      "sourceSize": 5561,
+      "modifiedTime": 1740616389096,
+      "sourceSize": 5616,
       "exportedPath": "school/physics/quantum-2/notes/1.16-the-stark-effect.html",
       "dependencies": []
     },
@@ -11893,7 +11957,7 @@
       ]
     },
     "lib/media/kinematics-equations.png": {
-      "modifiedTime": 1740187984971,
+      "modifiedTime": 1740616389096,
       "sourceSize": 27667,
       "exportedPath": "lib/media/kinematics-equations.png",
       "dependencies": []
@@ -12202,6 +12266,398 @@
       "modifiedTime": 1740189367394,
       "sourceSize": 28727,
       "exportedPath": "lib/media/pasted-image-20250221181236.png",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Class Worksheets/3.6 For Loops.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 2263,
+      "exportedPath": "personal/tutoring/ap-cs/class-worksheets/3.6-for-loops.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Class Worksheets/3.7 Worksheet.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 2311,
+      "exportedPath": "personal/tutoring/ap-cs/class-worksheets/3.7-worksheet.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Class Worksheets/3.8 2D arrays.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 2741,
+      "exportedPath": "personal/tutoring/ap-cs/class-worksheets/3.8-2d-arrays.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Class Worksheets/3.10 ArrayLists Worksheet.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 2325,
+      "exportedPath": "personal/tutoring/ap-cs/class-worksheets/3.10-arraylists-worksheet.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Class Worksheets/3.11 More Advanced Array Work.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 5500,
+      "exportedPath": "personal/tutoring/ap-cs/class-worksheets/3.11-more-advanced-array-work.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/3.2 Boolean Expressions- Bank.pdf": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 39028,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/3.2-boolean-expressions-bank.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/3.2 Boolean Expressions- Bank.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 5000,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/3.2-boolean-expressions-bank.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/3.4 Arrays - Basketball.pdf": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 83409,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/3.4-arrays-basketball.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/3.4 Arrays - Basketball.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4460,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/3.4-arrays-basketball.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/3.5 For Loop Art.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4271,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/3.5-for-loop-art.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/3.7 For Loop Challenges.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 3244,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/3.7-for-loop-challenges.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/3.8 2D Arrays Image Processing.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 6623,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/3.8-2d-arrays-image-processing.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/ArrayList Challenges.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4093,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/arraylist-challenges.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/Style Guide 3.4.pdf": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 75046,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/style-guide-3.4.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/Style Guide 3.4.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 1483,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/style-guide-3.4.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/3.2 Boolean Expressions and Conditionals.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 2324,
+      "exportedPath": "personal/tutoring/ap-cs/3.2-boolean-expressions-and-conditionals.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/3.3 If Else Statements.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 2470,
+      "exportedPath": "personal/tutoring/ap-cs/3.3-if-else-statements.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/3.4 If statements and Arrays.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 2359,
+      "exportedPath": "personal/tutoring/ap-cs/3.4-if-statements-and-arrays.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/3.5 Arrays and For loops.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4887,
+      "exportedPath": "personal/tutoring/ap-cs/3.5-arrays-and-for-loops.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/3.6 For loops and Nested Loops.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4296,
+      "exportedPath": "personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/3.7 More For Loops.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4604,
+      "exportedPath": "personal/tutoring/ap-cs/3.7-more-for-loops.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/3.8 2D Array Indexing.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 630,
+      "exportedPath": "personal/tutoring/ap-cs/3.8-2d-array-indexing.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/3.9.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 660,
+      "exportedPath": "personal/tutoring/ap-cs/3.9.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/3.10 ArrayLists.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4351,
+      "exportedPath": "personal/tutoring/ap-cs/3.10-arraylists.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/3.11 Challenge Problems with Arrays.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 246,
+      "exportedPath": "personal/tutoring/ap-cs/3.11-challenge-problems-with-arrays.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/AP CS Midterm Study Guide Review 2024-25-1.pdf": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 263858,
+      "exportedPath": "personal/tutoring/ap-cs/ap-cs-midterm-study-guide-review-2024-25-1.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Assignment Statements and Operators.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 3921,
+      "exportedPath": "personal/tutoring/ap-cs/assignment-statements-and-operators.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Casting Numerics, and Classes.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 2093,
+      "exportedPath": "personal/tutoring/ap-cs/casting-numerics,-and-classes.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Classes and For loops.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 1852,
+      "exportedPath": "personal/tutoring/ap-cs/classes-and-for-loops.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Datatypes and Variables.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4491,
+      "exportedPath": "personal/tutoring/ap-cs/datatypes-and-variables.html",
+      "dependencies": [
+        "lib/media/kinematics-equations.png",
+        "lib/media/pasted-image-20240828175002.png",
+        "lib/media/pasted-image-20240828180055.png"
+      ]
+    },
+    "Personal/Tutoring/AP CS/Lesson Plan for 3.4.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 1280,
+      "exportedPath": "personal/tutoring/ap-cs/lesson-plan-for-3.4.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Methods.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 2492,
+      "exportedPath": "personal/tutoring/ap-cs/methods.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Midterm CS Questions.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 11799,
+      "exportedPath": "personal/tutoring/ap-cs/midterm-cs-questions.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Midterm Review.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 7661,
+      "exportedPath": "personal/tutoring/ap-cs/midterm-review.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Overloading Classes.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 1888,
+      "exportedPath": "personal/tutoring/ap-cs/overloading-classes.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/User Input.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 3172,
+      "exportedPath": "personal/tutoring/ap-cs/user-input.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Wrapper Classes.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 1207,
+      "exportedPath": "personal/tutoring/ap-cs/wrapper-classes.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Equation Sheet.pdf": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 991252,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/midterm/equation-sheet.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Midterm FRQ.pdf": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 532801,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/midterm/midterm-frq.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Midterm MCQ.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 6415,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/midterm/midterm-mcq.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250225172018.png"
+      ]
+    },
+    "School/Physics/Electrodynamics/Notes/2.3 Laplace's Equation.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 1900,
+      "exportedPath": "school/physics/electrodynamics/notes/2.3-laplace's-equation.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250224104457.png"
+      ]
+    },
+    "School/Physics/Electrodynamics/Notes/2.4.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4391,
+      "exportedPath": "school/physics/electrodynamics/notes/2.4.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/1.17 Transitions in the Atom.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4534,
+      "exportedPath": "school/physics/quantum-2/notes/1.17-transitions-in-the-atom.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/1.18 Review Day.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 2204,
+      "exportedPath": "school/physics/quantum-2/notes/1.18-review-day.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.17 2025-02-24 13.28.08.excalidraw.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 6166,
+      "exportedPath": "supplemental-files/images/1.17-2025-02-24-13.28.08.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.17 2025-02-24 13.33.39.excalidraw.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 4771,
+      "exportedPath": "supplemental-files/images/1.17-2025-02-24-13.33.39.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.18 Review Day 2025-02-26 13.05.36.excalidraw.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 5697,
+      "exportedPath": "supplemental-files/images/1.18-review-day-2025-02-26-13.05.36.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.18 Review Day 2025-02-26 13.07.40.excalidraw.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 570,
+      "exportedPath": "supplemental-files/images/1.18-review-day-2025-02-26-13.07.40.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/1.18 Review Day 2025-02-26 13.07.49.excalidraw.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 7280,
+      "exportedPath": "supplemental-files/images/1.18-review-day-2025-02-26-13.07.49.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/3.11 More Advanced Array Work 2025-02-26 17.10.11.excalidraw.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 221960,
+      "exportedPath": "supplemental-files/images/3.11-more-advanced-array-work-2025-02-26-17.10.11.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/3.11 More Advanced Array Work 2025-02-26 17.27.38.excalidraw.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 143630,
+      "exportedPath": "supplemental-files/images/3.11-more-advanced-array-work-2025-02-26-17.27.38.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/AgACAgEAAxkBAAIBx2e9LcYKiqG5tGvGOSUqrV34GmfYAAJArjEbHDnpRXFWD48bzSsKAQADAgADeQADNgQ.jpg": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 102865,
+      "exportedPath": "supplemental-files/images/agacageaaxkbaaibx2e9lcykiqg5tgvgosuqrv34gmfyaajarjebhdnprxfwd48bzsskaqadagadeqadngq.jpg",
+      "dependencies": []
+    },
+    "Supplemental Files/images/AgACAgEAAxkBAAIByWe_bTpN63Xax_bMP_KbsaoH9HAzAAL2rjEbPbgAAUbablgAAW51lvcBAAMCAAN5AAM2BA.jpg": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 65254,
+      "exportedPath": "supplemental-files/images/agacageaaxkbaaibywe_btpn63xax_bmp_kbsaoh9hazaal2rjebpbgaaubablgaaw51lvcbaamcaan5aam2ba.jpg",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Homework 4 2025-02-25 21.12.26.excalidraw.md": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 5039,
+      "exportedPath": "supplemental-files/images/homework-4-2025-02-25-21.12.26.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/image_37.png": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 37848,
+      "exportedPath": "supplemental-files/images/image_37.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250224104457.png": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 159742,
+      "exportedPath": "supplemental-files/images/pasted-image-20250224104457.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250224191441.png": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 66678,
+      "exportedPath": "supplemental-files/images/pasted-image-20250224191441.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250224191958.png": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 70114,
+      "exportedPath": "supplemental-files/images/pasted-image-20250224191958.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250224192707.png": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 62427,
+      "exportedPath": "supplemental-files/images/pasted-image-20250224192707.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250225172018.png": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 32676,
+      "exportedPath": "supplemental-files/images/pasted-image-20250225172018.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20240828175002.png": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 60396,
+      "exportedPath": "lib/media/pasted-image-20240828175002.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20240828180055.png": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 64704,
+      "exportedPath": "lib/media/pasted-image-20240828180055.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250225172018.png": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 32676,
+      "exportedPath": "lib/media/pasted-image-20250225172018.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250224104457.png": {
+      "modifiedTime": 1740616389096,
+      "sourceSize": 159742,
+      "exportedPath": "lib/media/pasted-image-20250224104457.png",
       "dependencies": []
     }
   }

@@ -1,0 +1,281 @@
+<!DOCTYPE html> <html><head>
+		<title>3.6 For loops and Nested Loops</title>
+		<base href="../../../">
+		<meta id="root-path" root-path="../../../">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="Obsidian Vault - 3.6 For loops and Nested Loops">
+		<meta property="og:title" content="3.6 For loops and Nested Loops">
+		<meta property="og:description" content="Obsidian Vault - 3.6 For loops and Nested Loops">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://azalamer.com/UniversityNotes/personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html">
+		<meta property="og:image" content="undefined">
+		<meta property="og:site_name" content="Obsidian Vault">
+		<meta name="author" content="Azal Amer"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://azalamer.com/UniversityNotes/lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.ico"><include src="lib/html/custom-head-content.html"></include><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="lib/styles/theme.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/supported-plugins.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><link rel="preload" href="lib/styles/snippets.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/snippets.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title show-ribbon ctp-latte ctp-mocha-old ctp-accent-maroon anp-speech-bubble anp-codeblock-numbers anp-list-toggle anp-table-toggle anp-table-width anp-table-auto anp-color-transition-toggle anp-button-metadata-toggle anp-h1-red anp-h1-divider anp-h2-peach anp-h2-divider anp-h3-green anp-h4-teal anp-h5-lavender anp-h6-mauve anp-italic-teal anp-highlight-yellow anp-simple-rainbow-color-toggle anp-simple-rainbow-title-toggle anp-simple-rainbow-collapse-icon-toggle anp-simple-rainbow-indentation-toggle anp-simple-rainbow-icon-toggle anp-rainbow-subfolder-color-toggle anp-card-layout-filebrowser anp-theme-ext-dark ctp-nord-light ctp-flexoki-dark"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles">mjx-math { display: inline-block; text-align: left; line-height: 0; text-indent: 0px; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; border-collapse: collapse; overflow-wrap: normal; word-spacing: normal; white-space: nowrap; direction: ltr; padding: 1px 0px; }
+mjx-container[jax="CHTML"][display="true"] { display: block; text-align: center; margin: 1em 0px; }
+mjx-container[jax="CHTML"][display="true"][width="full"] { display: flex; }
+mjx-container[jax="CHTML"][display="true"] mjx-math { padding: 0px; }
+mjx-container[jax="CHTML"][justify="left"] { text-align: left; }
+mjx-container[jax="CHTML"][justify="right"] { text-align: right; }
+mjx-mi { display: inline-block; text-align: left; }
+mjx-c { display: inline-block; }
+mjx-utext { display: inline-block; padding: 0.75em 0px 0.2em; }
+mjx-mo { display: inline-block; text-align: left; }
+mjx-stretchy-h { display: inline-table; width: 100%; }
+mjx-stretchy-h > * { display: table-cell; width: 0px; }
+mjx-stretchy-h > * > mjx-c { display: inline-block; transform: scaleX(1); }
+mjx-stretchy-h > * > mjx-c::before { display: inline-block; width: initial; }
+mjx-stretchy-h > mjx-ext { overflow: clip visible; width: 100%; }
+mjx-stretchy-h > mjx-ext > mjx-c::before { transform: scaleX(500); }
+mjx-stretchy-h > mjx-ext > mjx-c { width: 0px; }
+mjx-stretchy-h > mjx-beg > mjx-c { margin-right: -0.1em; }
+mjx-stretchy-h > mjx-end > mjx-c { margin-left: -0.1em; }
+mjx-stretchy-v { display: inline-block; }
+mjx-stretchy-v > * { display: block; }
+mjx-stretchy-v > mjx-beg { height: 0px; }
+mjx-stretchy-v > mjx-end > mjx-c { display: block; }
+mjx-stretchy-v > * > mjx-c { transform: scaleY(1); transform-origin: left center; overflow: hidden; }
+mjx-stretchy-v > mjx-ext { display: block; height: 100%; box-sizing: border-box; border: 0px solid transparent; overflow: visible clip; }
+mjx-stretchy-v > mjx-ext > mjx-c::before { width: initial; box-sizing: border-box; }
+mjx-stretchy-v > mjx-ext > mjx-c { transform: scaleY(500) translateY(0.075em); overflow: visible; }
+mjx-mark { display: inline-block; height: 0px; }
+mjx-c.mjx-c1D434.TEX-I::before { padding: 0.716em 0.75em 0px 0px; content: "A"; }
+mjx-c.mjx-c2C::before { padding: 0.121em 0.278em 0.194em 0px; content: ","; }
+mjx-c.mjx-c1D435.TEX-I::before { padding: 0.683em 0.759em 0px 0px; content: "B"; }
+mjx-container[jax="CHTML"] { line-height: 0; }
+mjx-container [space="1"] { margin-left: 0.111em; }
+mjx-container [space="2"] { margin-left: 0.167em; }
+mjx-container [space="3"] { margin-left: 0.222em; }
+mjx-container [space="4"] { margin-left: 0.278em; }
+mjx-container [space="5"] { margin-left: 0.333em; }
+mjx-container [rspace="1"] { margin-right: 0.111em; }
+mjx-container [rspace="2"] { margin-right: 0.167em; }
+mjx-container [rspace="3"] { margin-right: 0.222em; }
+mjx-container [rspace="4"] { margin-right: 0.278em; }
+mjx-container [rspace="5"] { margin-right: 0.333em; }
+mjx-container [size="s"] { font-size: 70.7%; }
+mjx-container [size="ss"] { font-size: 50%; }
+mjx-container [size="Tn"] { font-size: 60%; }
+mjx-container [size="sm"] { font-size: 85%; }
+mjx-container [size="lg"] { font-size: 120%; }
+mjx-container [size="Lg"] { font-size: 144%; }
+mjx-container [size="LG"] { font-size: 173%; }
+mjx-container [size="hg"] { font-size: 207%; }
+mjx-container [size="HG"] { font-size: 249%; }
+mjx-container [width="full"] { width: 100%; }
+mjx-box { display: inline-block; }
+mjx-block { display: block; }
+mjx-itable { display: inline-table; }
+mjx-row { display: table-row; }
+mjx-row > * { display: table-cell; }
+mjx-mtext { display: inline-block; }
+mjx-mstyle { display: inline-block; }
+mjx-merror { display: inline-block; color: red; background-color: yellow; }
+mjx-mphantom { visibility: hidden; }
+mjx-assistive-mml { top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); user-select: none; position: absolute !important; padding: 1px 0px 0px !important; border: 0px !important; display: block !important; width: auto !important; overflow: hidden !important; }
+mjx-assistive-mml[display="block"] { width: 100% !important; }
+mjx-c::before { display: block; width: 0px; }
+.MJX-TEX { font-family: MJXZERO, MJXTEX; }
+.TEX-B { font-family: MJXZERO, MJXTEX-B; }
+.TEX-I { font-family: MJXZERO, MJXTEX-I; }
+.TEX-MI { font-family: MJXZERO, MJXTEX-MI; }
+.TEX-BI { font-family: MJXZERO, MJXTEX-BI; }
+.TEX-S1 { font-family: MJXZERO, MJXTEX-S1; }
+.TEX-S2 { font-family: MJXZERO, MJXTEX-S2; }
+.TEX-S3 { font-family: MJXZERO, MJXTEX-S3; }
+.TEX-S4 { font-family: MJXZERO, MJXTEX-S4; }
+.TEX-A { font-family: MJXZERO, MJXTEX-A; }
+.TEX-C { font-family: MJXZERO, MJXTEX-C; }
+.TEX-CB { font-family: MJXZERO, MJXTEX-CB; }
+.TEX-FR { font-family: MJXZERO, MJXTEX-FR; }
+.TEX-FRB { font-family: MJXZERO, MJXTEX-FRB; }
+.TEX-SS { font-family: MJXZERO, MJXTEX-SS; }
+.TEX-SSB { font-family: MJXZERO, MJXTEX-SSB; }
+.TEX-SSI { font-family: MJXZERO, MJXTEX-SSI; }
+.TEX-SC { font-family: MJXZERO, MJXTEX-SC; }
+.TEX-T { font-family: MJXZERO, MJXTEX-T; }
+.TEX-V { font-family: MJXZERO, MJXTEX-V; }
+.TEX-VB { font-family: MJXZERO, MJXTEX-VB; }
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c { font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A !important; }
+@font-face { font-family: MJXZERO; src: url("lib/fonts/mathjax_zero.woff") format("woff"); }
+@font-face { font-family: MJXTEX; src: url("lib/fonts/mathjax_main-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-B; src: url("lib/fonts/mathjax_main-bold.woff") format("woff"); }
+@font-face { font-family: MJXTEX-I; src: url("lib/fonts/mathjax_math-italic.woff") format("woff"); }
+@font-face { font-family: MJXTEX-MI; src: url("lib/fonts/mathjax_main-italic.woff") format("woff"); }
+@font-face { font-family: MJXTEX-BI; src: url("lib/fonts/mathjax_math-bolditalic.woff") format("woff"); }
+@font-face { font-family: MJXTEX-S1; src: url("lib/fonts/mathjax_size1-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-S2; src: url("lib/fonts/mathjax_size2-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-S3; src: url("lib/fonts/mathjax_size3-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-S4; src: url("lib/fonts/mathjax_size4-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-A; src: url("lib/fonts/mathjax_ams-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-C; src: url("lib/fonts/mathjax_calligraphic-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-CB; src: url("lib/fonts/mathjax_calligraphic-bold.woff") format("woff"); }
+@font-face { font-family: MJXTEX-FR; src: url("lib/fonts/mathjax_fraktur-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-FRB; src: url("lib/fonts/mathjax_fraktur-bold.woff") format("woff"); }
+@font-face { font-family: MJXTEX-SS; src: url("lib/fonts/mathjax_sansserif-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-SSB; src: url("lib/fonts/mathjax_sansserif-bold.woff") format("woff"); }
+@font-face { font-family: MJXTEX-SSI; src: url("lib/fonts/mathjax_sansserif-italic.woff") format("woff"); }
+@font-face { font-family: MJXTEX-SC; src: url("lib/fonts/mathjax_script-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-T; src: url("lib/fonts/mathjax_typewriter-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-V; src: url("lib/fonts/mathjax_vector-regular.woff") format("woff"); }
+@font-face { font-family: MJXTEX-VB; src: url("lib/fonts/mathjax_vector-bold.woff") format("woff"); }
+</style><pre class="frontmatter language-yaml" tabindex="0" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">tags</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> tutoring
+<span class="token key atrule">student</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> Humza
+  <span class="token punctuation">-</span> Abdullah
+  <span class="token punctuation">-</span> Yusuf
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2025-01-22</span>
+<span class="token key atrule">Unit</span><span class="token punctuation">:</span> <span class="token string">"3"</span></code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="Lesson Plan"><p dir="auto">Lesson Plan</p></h1><div class="el-h1 heading-wrapper"><div class="heading-children"><div class="el-h2 heading-wrapper"><h2 data-heading="Lesson Objectives" dir="auto" class="heading" id="Lesson_Objectives"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Lesson Objectives</h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">Understand basic for loop syntax and usage</li>
+<li data-line="1" dir="auto">Apply for loops to array traversal</li>
+<li data-line="2" dir="auto">Implement nested for loops</li>
+<li data-line="3" dir="auto">Debug common for loop issues</li>
+<li data-line="4" dir="auto">Create programs using for loops with arrays</li>
+</ul></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="Timeline (60 minutes)" dir="auto" class="heading" id="Timeline_(60_minutes)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Timeline (60 minutes)</h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="1. Opening Activity (10 minutes)" dir="auto" class="heading" id="1._Opening_Activity_(10_minutes)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1. Opening Activity (10 minutes)</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">Send worksheet to students</li>
+<li data-line="1" dir="auto">Quick review of arrays from previous homework</li>
+<li data-line="2" dir="auto">Students explain one thing they learned about arrays from their video assignment</li>
+<li data-line="3" dir="auto">Live coding: Basic array traversal example</li>
+</ul></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="2. Core Concept Introduction (15 minutes)" dir="auto" class="heading" id="2._Core_Concept_Introduction_(15_minutes)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2. Core Concept Introduction (15 minutes)</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">
+<p>For loop syntax breakdown</p>
+</li>
+<li data-line="1" dir="auto" class="has-run-code-button">
+<p>Three key examples:</p>
+<pre class="language-java" tabindex="0"><code data-line="2" class="language-java is-loaded"><span class="token comment">// Basic for loop</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+
+<span class="token comment">// Array traversal</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+
+<span class="token comment">// Nested loops</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> rows<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> cols<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><button class="run-code-button">Run</button></pre>
+</li>
+<li data-line="13" dir="auto">
+<p>Common pitfalls discussion</p>
+</li>
+<li data-line="14" dir="auto">
+<p>Live debugging exercise</p>
+</li>
+</ul></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="3. Guided Practice (20 minutes)" dir="auto" class="heading" id="3._Guided_Practice_(20_minutes)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>3. Guided Practice (20 minutes)</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Basketball Stats Challenge
+<ul>
+<li data-line="1" dir="auto">Start with simple array traversal</li>
+<li data-line="2" dir="auto">Build to more complex operations</li>
+<li data-line="3" dir="auto">Connect to their previous homework</li>
+</ul>
+</li>
+<li data-line="4" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Pattern Recognition Exercise
+<ul>
+<li data-line="5" dir="auto">Simple pattern first</li>
+<li data-line="6" dir="auto">Progress to more complex pattern</li>
+</ul>
+</li>
+<li data-line="7" dir="auto">Real-time feedback and adjustments</li>
+</ul></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="4. Independent Practice (10 minutes)" dir="auto" class="heading" id="4._Independent_Practice_(10_minutes)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>4. Independent Practice (10 minutes)</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">Students work on challenge problem</li>
+<li data-line="1" dir="auto">Provide support as needed</li>
+<li data-line="2" dir="auto">Group discussion of solutions</li>
+</ul></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="5. Closing (5 minutes)" dir="auto" class="heading" id="5._Closing_(5_minutes)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>5. Closing (5 minutes)</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">Review key concepts</li>
+<li data-line="1" dir="auto">Preview homework</li>
+<li data-line="2" dir="auto">Answer remaining questions</li>
+</ul></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="Contingency Plans" dir="auto" class="heading" id="Contingency_Plans"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Contingency Plans</h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">If students struggle with basic syntax: More examples with array printing</li>
+<li data-line="1" dir="auto">If concepts are mastered quickly: Move to challenge problems</li>
+<li data-line="2" dir="auto">If engagement drops: Switch to competitive element</li>
+</ul></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="Assessment Strategies" dir="auto" class="heading" id="Assessment_Strategies"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Assessment Strategies</h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">Verbal checks for understanding</li>
+<li data-line="1" dir="auto">Code completion exercises</li>
+<li data-line="2" dir="auto">Pattern prediction challenges</li>
+<li data-line="3" dir="auto">Real-time debugging participation</li>
+</ul></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Overview" dir="auto" class="heading" id="Overview">Overview</h1><div class="heading-children"><div class="el-p"><span style="display: block; margin-block-start: var(--p-spacing); margin-block-end: var(--p-spacing);"><span alt="3.5 Arrays and For loops > ^homework" src="3.5 Arrays and For loops#^homework" class="internal-embed markdown-embed inline-embed is-loaded" data-type="block"><div class="embed-title markdown-embed-title"></div><div class="markdown-embed-content node-insert-event"><div class="markdown-preview-view markdown-rendered node-insert-event show-indentation-guide allow-fold-headings allow-fold-lists"><div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: 0px; min-height: 258px;"><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="mod-header mod-ui"></div><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="todo" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-check-circle-2"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg></div><div class="callout-title-inner">Homework Total length ~  [60-70min]</div></div><div class="callout-content">
+<ol>
+<li data-line="1" dir="auto">
+<p>Basketball assignment due date extended to next week, part 1 and part 2 are both due. I should have grades back for them by Friday so you can correct what you have thus far.</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p>Videos:</p>
+<ul class="has-list-bullet">
+<li data-line="3" dir="auto"><span class="list-bullet"></span><a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=3jMaKlNBjug" rel="noopener nofollow" class="external-link" href="https://www.youtube.com/watch?v=3jMaKlNBjug" target="_blank">This</a> overall description of for loops</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>Make a 7 minute video explaining when Id use a for loop to go through an array, and different examples. If you have a tablet, you can screen record while drawing similar to what I do in class. If you don't, attach notes to your video. The video is graded on clarity and how well it covers chapter 6.2</li>
+</ul>
+</li>
+<li data-line="6" dir="auto">
+<p><a data-tooltip-position="top" aria-label="https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/toctree.html" rel="noopener nofollow" class="external-link" href="https://runestone.academy/ns/books/published/csawesome/Unit6-Arrays/toctree.html" target="_blank"> Read Chapter 6 of textbook</a> (this was due last time, but needs to be re-stressed)</p>
+</li>
+<li data-line="7" dir="auto">
+<p>NOTE: Last time you were assigned to read <strong><em>all</em></strong> of chapter 6. That is expected. It helps me to grade your notes if you label what section you got them from. This will result in a loss of points if not done</p>
+</li>
+</ol>
+</div></div></div></div></div></div><div class="markdown-embed-content node-insert-event" style="display: none;"></div><div class="markdown-embed-link" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></div></span></span></div><div class="el-ul"><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Go through questions on the homework
+<ul>
+<li data-line="1" dir="auto">Let students know to be more active on google classroom for comments from teacher and remind of resources they have from me</li>
+<li data-line="2" dir="auto">No questions on homework</li>
+</ul>
+</li>
+<li data-line="3" dir="auto">Send <a data-tooltip-position="top" aria-label="Class Worksheets/3.6 For Loops" data-href="Class Worksheets/3.6 For Loops" href="Class Worksheets/3.6 For Loops" class="original-internal-link" target="_blank" rel="noopener nofollow" style="display: none;">worksheet</a><a data-tooltip-position="top" aria-label="Class Worksheets/3.6 For Loops" data-href="Class Worksheets/3.6 For Loops" href="personal/tutoring/ap-cs/class-worksheets/3.6-for-loops.html" class="internal-link mathLink-internal-link" target="_self" rel="noopener nofollow">worksheet</a> to them</li>
+<li data-line="4" dir="auto">Have them do part 1 as a refresher on their worksheet. Then randomly call to get solutions. </li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Call on whoever was left in the RNG to then summarize what they learned on their assignment
+<ul>
+<li data-line="6" dir="auto">Summarize the previous assignment in class, talk through how it works and all</li>
+<li data-line="7" dir="auto">Introduce them to the concept of a double for loop like a square. </li>
+</ul>
+</li>
+</ul></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Notes" dir="auto" class="heading" id="Notes">Notes</h1><div class="heading-children"><div class="el-p"><p dir="auto">Go through the worksheet part 1, Yusuf and Abdullah were RNG'd to explain<br>
+RNG a student: Humza</p></div><div class="el-h2 heading-wrapper"><h2 data-heading="Kids Homework Review Sesh" dir="auto" class="heading" id="Kids_Homework_Review_Sesh"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Kids Homework Review Sesh</h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="Humza Arrays 6.1-6.2" dir="auto" class="heading" id="Humza_Arrays_6.1-6.2"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Humza Arrays 6.1-6.2</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">An array is a big box of stuff </li>
+<li data-line="1" dir="auto">An array is a row of lockers</li>
+<li data-line="2" dir="auto">Index of array starts at zero</li>
+</ul></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Yusuf 6.3-6.4" dir="auto" class="heading" id="Yusuf_6.3-6.4"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Yusuf 6.3-6.4</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">There are special for loops, for each loops! They don't let you modify array elements though which is sad, but it's much easier to type out</li>
+<li data-line="1" dir="auto">6.4 was algorithms to remember for the AP</li>
+</ul></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Abdullah Summary" dir="auto" class="heading" id="Abdullah_Summary"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Abdullah Summary</h3><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">There are two different ways to initialize arrays, straight up making it or with a new int[…]</li>
+<li data-line="1" dir="auto">You can use a for loop to do math with it, search it, etc.</li>
+<li data-line="2" dir="auto">Start with a first index of zero</li>
+<li data-line="3" dir="auto">Then also the for-each loops</li>
+</ul></div></div></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="Problem 2 Worksheet" dir="auto" class="heading" id="Problem_2_Worksheet"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Problem 2 Worksheet</h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">Check in with the kids on if this textbook works with them, and if the materials are helpful<br>
+- Mention feedback form for the course thus far<br>
+- Take out-loud stuff too<br>
+Problem 2.1:</li>
+<li data-line="4" dir="auto">Made a variable, and the asterisk</li>
+</ul></div><div class="el-pre has-run-code-button"><pre class="language-java" tabindex="0"><code data-line="0" class="language-java is-loaded"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">testing</span><span class="token punctuation">(</span><span class="token keyword">int</span> width<span class="token punctuation">,</span><span class="token keyword">int</span> height <span class="token punctuation">)</span><span class="token punctuation">{</span>
+	   <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> row <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> row <span class="token operator">&lt;=</span> height<span class="token punctuation">;</span> row<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	       <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> column <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> column <span class="token operator">&lt;=</span> width<span class="token punctuation">;</span> column<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	           <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	       <span class="token punctuation">}</span>
+       <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+	
+<span class="token punctuation">}</span>
+<span class="token function">testing</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button><button class="run-code-button">Run</button></pre></div><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="todo" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-check-circle-2"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg></div><div class="callout-title-inner">Homework Total length ~  [60-70min]</div></div><div class="callout-content">
+<ol>
+<li data-line="1" dir="auto">Finish the entire class worksheet</li>
+<li data-line="2" dir="auto">Corrections for assignment will be released Saturday, and are due the same time as the class work. They are technically optional. When they are done, just make a comment on that assignment with the phrase "Corrected"</li>
+<li data-line="3" dir="auto">Do assignment attached to this the classroom</li>
+<li data-line="4" dir="auto">Fill out this <a data-tooltip-position="top" aria-label="https://docs.google.com/forms/d/e/1FAIpQLSf6hVKmy2pX7PU472cjyweni0R_9yMamKr_E1_xpnOta0gs9g/viewform?usp=header" rel="noopener nofollow" class="external-link" href="https://docs.google.com/forms/d/e/1FAIpQLSf6hVKmy2pX7PU472cjyweni0R_9yMamKr_E1_xpnOta0gs9g/viewform?usp=header" target="_blank">google</a> form! The more you put, the better I can be<br>
+</li>
+</ol>
+</div></div></div><div class="mod-footer mod-ui"></div></div></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Lesson Plan"><div class="tree-item-contents heading-link" heading-name="Lesson Plan"><span class="tree-item-title">Lesson Plan</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="2"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Lesson_Objectives"><div class="tree-item-contents heading-link" heading-name="Lesson Objectives"><span class="tree-item-title">Lesson Objectives</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Timeline_(60_minutes)"><div class="tree-item-contents heading-link" heading-name="Timeline (60 minutes)"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Timeline (60 minutes)</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#1._Opening_Activity_(10_minutes)"><div class="tree-item-contents heading-link" heading-name="1. Opening Activity (10 minutes)"><span class="tree-item-title">1. 
+Opening Activity (10 minutes)
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#2._Core_Concept_Introduction_(15_minutes)"><div class="tree-item-contents heading-link" heading-name="2. Core Concept Introduction (15 minutes)"><span class="tree-item-title">2. 
+Core Concept Introduction (15 minutes)
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#3._Guided_Practice_(20_minutes)"><div class="tree-item-contents heading-link" heading-name="3. Guided Practice (20 minutes)"><span class="tree-item-title">3. 
+Guided Practice (20 minutes)
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#4._Independent_Practice_(10_minutes)"><div class="tree-item-contents heading-link" heading-name="4. Independent Practice (10 minutes)"><span class="tree-item-title">4. 
+Independent Practice (10 minutes)
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#5._Closing_(5_minutes)"><div class="tree-item-contents heading-link" heading-name="5. Closing (5 minutes)"><span class="tree-item-title">5. 
+Closing (5 minutes)
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Contingency_Plans"><div class="tree-item-contents heading-link" heading-name="Contingency Plans"><span class="tree-item-title">Contingency Plans</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Assessment_Strategies"><div class="tree-item-contents heading-link" heading-name="Assessment Strategies"><span class="tree-item-title">Assessment Strategies</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Overview"><div class="tree-item-contents heading-link" heading-name="Overview"><span class="tree-item-title">Overview</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Notes"><div class="tree-item-contents heading-link" heading-name="Notes"><span class="tree-item-title">Notes</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Kids_Homework_Review_Sesh"><div class="tree-item-contents heading-link" heading-name="Kids Homework Review Sesh"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Kids Homework Review Sesh</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Humza_Arrays_6.1-6.2"><div class="tree-item-contents heading-link" heading-name="Humza Arrays 6.1-6.2"><span class="tree-item-title">Humza Arrays 6.1-6.2</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Yusuf_6.3-6.4"><div class="tree-item-contents heading-link" heading-name="Yusuf 6.3-6.4"><span class="tree-item-title">Yusuf 6.3-6.4</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Abdullah_Summary"><div class="tree-item-contents heading-link" heading-name="Abdullah Summary"><span class="tree-item-title">Abdullah Summary</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="personal/tutoring/ap-cs/3.6-for-loops-and-nested-loops.html#Problem_2_Worksheet"><div class="tree-item-contents heading-link" heading-name="Problem 2 Worksheet"><span class="tree-item-title">Problem 2 Worksheet</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>
