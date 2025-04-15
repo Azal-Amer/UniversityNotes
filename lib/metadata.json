@@ -1,16 +1,19 @@
 {
   "vaultName": "Obsidian Vault",
-  "lastExport": 1740616389096,
+  "lastExport": 1744735070303,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon ctp-latte ctp-mocha-old ctp-accent-maroon anp-speech-bubble anp-codeblock-numbers anp-list-toggle anp-table-toggle anp-table-width anp-table-auto anp-color-transition-toggle anp-button-metadata-toggle anp-h1-red anp-h1-divider anp-h2-peach anp-h2-divider anp-h3-green anp-h4-teal anp-h5-lavender anp-h6-mauve anp-italic-teal anp-highlight-yellow anp-simple-rainbow-color-toggle anp-simple-rainbow-title-toggle anp-simple-rainbow-collapse-icon-toggle anp-simple-rainbow-indentation-toggle anp-simple-rainbow-icon-toggle anp-rainbow-subfolder-color-toggle anp-card-layout-filebrowser anp-theme-ext-dark ctp-nord-light ctp-flexoki-dark",
   "useCustomHeadContent": true,
   "useCustomFavicon": true,
   "files": [
+    "Personal/Tutoring/AP CS/Class Worksheets/2d-arrays-worksheet.md",
+    "Personal/Tutoring/AP CS/Class Worksheets/3.3 Recursion.md",
     "Personal/Tutoring/AP CS/Class Worksheets/3.6 For Loops.md",
     "Personal/Tutoring/AP CS/Class Worksheets/3.7 Worksheet.md",
     "Personal/Tutoring/AP CS/Class Worksheets/3.8 2D arrays.md",
     "Personal/Tutoring/AP CS/Class Worksheets/3.10 ArrayLists Worksheet.md",
     "Personal/Tutoring/AP CS/Class Worksheets/3.11 More Advanced Array Work.md",
+    "Personal/Tutoring/AP CS/Class Worksheets/3.13 Worksheet.md",
     "Personal/Tutoring/AP CS/Homework Assignments/3.2 Boolean Expressions- Bank.pdf",
     "Personal/Tutoring/AP CS/Homework Assignments/3.2 Boolean Expressions- Bank.md",
     "Personal/Tutoring/AP CS/Homework Assignments/3.4 Arrays - Basketball.pdf",
@@ -18,7 +21,10 @@
     "Personal/Tutoring/AP CS/Homework Assignments/3.5 For Loop Art.md",
     "Personal/Tutoring/AP CS/Homework Assignments/3.7 For Loop Challenges.md",
     "Personal/Tutoring/AP CS/Homework Assignments/3.8 2D Arrays Image Processing.md",
+    "Personal/Tutoring/AP CS/Homework Assignments/3.12 Array Manipulation Challenges.md",
+    "Personal/Tutoring/AP CS/Homework Assignments/3.13 Game Board Analysis.md",
     "Personal/Tutoring/AP CS/Homework Assignments/ArrayList Challenges.md",
+    "Personal/Tutoring/AP CS/Homework Assignments/Midterm Rubric.md",
     "Personal/Tutoring/AP CS/Homework Assignments/Style Guide 3.4.pdf",
     "Personal/Tutoring/AP CS/Homework Assignments/Style Guide 3.4.md",
     "Personal/Tutoring/AP CS/3.2 Boolean Expressions and Conditionals.md",
@@ -44,6 +50,7 @@
     "Personal/Tutoring/AP CS/User Input.md",
     "Personal/Tutoring/AP CS/Wrapper Classes.md",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Equation Sheet.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Grading Midterm.md",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Midterm FRQ.pdf",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Midterm MCQ.md",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.pdf",
@@ -54,8 +61,8 @@
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz.aux",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/Quiz 1.tex",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.tex",
-    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.out",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.pdf",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.out",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.log",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.fls",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/quiz Solutions.fdb_latexmk",
@@ -65,6 +72,8 @@
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 1/Textbook.pdf",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 2/Quiz 2.pdf",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 2/Quiz 2.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 3/Quiz 3.md",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 3/Quiz 3 Rotational and Spring.md",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/position-graph-grid.svg",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/position-graph-grid.pdf",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Test 1/assets/position-graph-lines-arcs.pdf",
@@ -103,8 +112,8 @@
     "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/MCQ Answers.ipynb",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.tex",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.pdf",
-    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.log",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.fls",
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.log",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.fdb_latexmk",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.aux",
     "Personal/Tutoring/AP Physics/Quizes and Tests/Test 2/Test 2 Main.synctex.gz",
@@ -149,6 +158,7 @@
     "Personal/Tutoring/AP Physics/Session 27 Retest Review and New Unit Intro.md",
     "Personal/Tutoring/AP Physics/Session 28 More on Work.md",
     "Personal/Tutoring/AP Physics/Session 29 More on Energy and Rotational Motion.md",
+    "Personal/Tutoring/AP Physics/Session 29 More on Energy and Rotational Motion.pandoc.md",
     "Personal/Tutoring/AP Physics/Session 30.md",
     "Personal/Tutoring/AP Physics/Session 31 Work Energy Theorem.md",
     "Personal/Tutoring/AP Physics/Session 32 Quiz Review and Momentum.md",
@@ -160,6 +170,16 @@
     "Personal/Tutoring/AP Physics/Session 38- Retake Review.md",
     "Personal/Tutoring/AP Physics/Session 39 Momentum Review.md",
     "Personal/Tutoring/AP Physics/Session 40- Midterm Review.md",
+    "Personal/Tutoring/AP Physics/Session 41- Rotational Motion.md",
+    "Personal/Tutoring/AP Physics/Session 42 Inertia And Torque.md",
+    "Personal/Tutoring/AP Physics/Session 43.md",
+    "Personal/Tutoring/AP Physics/Session 44 Angular Momentum.md",
+    "Personal/Tutoring/AP Physics/Session 45- Simple Harmonic Motion.md",
+    "Personal/Tutoring/AP Physics/Session 46.md",
+    "Personal/Tutoring/AP Physics/Session 47 More on Springs.md",
+    "Personal/Tutoring/AP Physics/Session 48- Gravity.pdf",
+    "Personal/Tutoring/AP Physics/Session 48- Gravity.md",
+    "Personal/Tutoring/AP Physics/Session 50- Post Practice and overview.md",
     "School/CS/CS 312/Class Official Files/CS 312 Scavenger Hunt Personal Copy.pdf",
     "School/CS/CS 312/Class Official Files/CS 312 Syllabus Fall 2024.pdf",
     "School/CS/CS 312/Notes/Homework Assignments/Azal Amer I Know an Old Lady - Guided Design.pdf",
@@ -189,7 +209,9 @@
     "School/Math/Discrete Math CS/Notes/0.1 Introduction.md",
     "School/Math/Discrete Math CS/Notes/cheatsheet.pdf",
     "School/Math/Discrete Math CS/Notes/CheatSheet.md",
+    "School/Math/Discrete Math CS/Notes/Cheatsheet2.pdf",
     "School/Math/Discrete Math CS/Notes/CheatSheetTemplate.tex",
+    "School/Math/Discrete Math CS/Notes/MT2Cheatsheet.md",
     "School/Math/Linear Algebra/🟩 Linear Algebra Homepage 🟩.md",
     "School/Math/Linear Algebra/1.1 Echelon Form.md",
     "School/Math/Linear Algebra/1.5 Linear Systems.md",
@@ -217,6 +239,9 @@
     "School/Math/Probability/Notes/cheatsheet.pdf",
     "School/Math/Probability/Notes/Cheatsheet.md",
     "School/Math/Probability/Notes/CheatSheetTemplate.tex",
+    "School/Math/Probability/Notes/MT2 Cheatsheet.md",
+    "School/Math/Probability/Notes/probability-cheatsheet.pdf",
+    "School/Math/Probability/Notes/probability-cheatsheet.md",
     "School/Physics/Electrodynamics/Notes/0.1 Introduction.md",
     "School/Physics/Electrodynamics/Notes/1.1 Reviewing Vectors.md",
     "School/Physics/Electrodynamics/Notes/1.3 Differential Operators.md",
@@ -228,7 +253,9 @@
     "School/Physics/Electrodynamics/Notes/1.11 Boundary Conditions and Energy.md",
     "School/Physics/Electrodynamics/Notes/1.12 Capacitors and Electrostatics.md",
     "School/Physics/Electrodynamics/Notes/2.3 Laplace's Equation.md",
-    "School/Physics/Electrodynamics/Notes/2.4.md",
+    "School/Physics/Electrodynamics/Notes/2.4 Introduction to Multipole Expansion.md",
+    "School/Physics/Electrodynamics/Notes/2.5 Multipole Expansion of Electric Potential.md",
+    "School/Physics/Electrodynamics/Notes/2.6 Conductors vs Dielectrics.md",
     "School/Physics/Modern Physics/Code/introduction.ipynb",
     "School/Physics/Modern Physics/Notes/0.1 Introduction.md",
     "School/Physics/Modern Physics/Notes/1.1 Fundamentals of Probability.md",
@@ -304,6 +331,20 @@
     "School/Physics/Quantum 2/Notes/1.16 The Stark Effect.md",
     "School/Physics/Quantum 2/Notes/1.17 Transitions in the Atom.md",
     "School/Physics/Quantum 2/Notes/1.18 Review Day.md",
+    "School/Physics/Quantum 2/Notes/2.1 Variational Principle.md",
+    "School/Physics/Quantum 2/Notes/2.3 Variational Principle Examples.md",
+    "School/Physics/Quantum 2/Notes/2.4 More Variational Principle Examples.md",
+    "School/Physics/Quantum 2/Notes/2.5 Excited States of Helium.md",
+    "School/Physics/Quantum 2/Notes/2.6 The Periodic Table.md",
+    "School/Physics/Quantum 2/Notes/2.7 H2+ Ion.md",
+    "School/Physics/Quantum 2/Notes/2.8 H2+ Cont.md",
+    "School/Physics/Quantum 2/Notes/2.9 The Hydrogen Molecule.md",
+    "School/Physics/Quantum 2/Notes/2.10 Molecules.md",
+    "School/Physics/Quantum 2/Notes/2.12 Born Oppenheimer 2.md",
+    "School/Physics/Quantum 2/Notes/2.13 Spin Statistics and Molecules.md",
+    "School/Physics/Quantum 2/Notes/2.14 EPR.md",
+    "School/Physics/Quantum 2/Notes/2.15 Bell's Inequality.md",
+    "School/Physics/Quantum 2/Notes/2.16 Exam Review.md",
     "School/Physics/Quantum Computing/Definitions/Bell States.md",
     "School/Physics/Quantum Computing/Definitions/Bra-Ket Notation.md",
     "School/Physics/Quantum Computing/Definitions/Introduction to Qbits.md",
@@ -415,8 +456,8 @@
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.12.01.excalidraw.md",
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.12.04.excalidraw.md",
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.13.08.excalidraw.md",
-    "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.18.27.excalidraw.tex",
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.18.27.excalidraw.md",
+    "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.18.27.excalidraw.tex",
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.42.08.excalidraw.md",
     "Supplemental Files/images/1.1 Reviewing Vectors 2025-01-15 10.49.12.excalidraw.md",
     "Supplemental Files/images/1.1 Revisiting Perturbation Theory 2025-01-15 13.08.11.excalidraw.md",
@@ -475,6 +516,7 @@
     "Supplemental Files/images/2.1 2024-10-15 10.23.45.excalidraw.md",
     "Supplemental Files/images/2.1 2024-10-15 10.25.44.excalidraw.md",
     "Supplemental Files/images/2.1 Deutsch-Jozsa and Computing 2024-12-17 22.02.48.excalidraw.md",
+    "Supplemental Files/images/2.1 Variational Principle 2025-03-03 13.37.15.excalidraw.md",
     "Supplemental Files/images/2.2 2024-10-17 09.34.40.excalidraw.md",
     "Supplemental Files/images/2.2 2024-10-17 10.31.05.excalidraw.md",
     "Supplemental Files/images/2.2 Bernstein-Vazirani 2024-10-29 14.24.53.excalidraw.md",
@@ -484,8 +526,11 @@
     "Supplemental Files/images/2.5 More Shors Alg 2024-11-07 14.10.41.excalidraw.md",
     "Supplemental Files/images/2.5 More Shors Alg 2024-11-07 14.30.52.excalidraw.md",
     "Supplemental Files/images/2.5 More Shors Alg 2024-11-07 14.32.48.excalidraw.md",
+    "Supplemental Files/images/2.5 Multipole Expansion of Electric Potential 2025-02-28 10.09.22.excalidraw.tex",
+    "Supplemental Files/images/2.5 Multipole Expansion of Electric Potential 2025-02-28 10.09.22.excalidraw.md",
     "Supplemental Files/images/2.6 2024-11-12 14.52.19.excalidraw.md",
     "Supplemental Files/images/2.6 2024-11-12 14.55.06.excalidraw.md",
+    "Supplemental Files/images/2.6 2025-03-03 10.13.08.excalidraw.md",
     "Supplemental Files/images/2.6 Spherical Harmoics 2024-10-31 10.40.03.excalidraw.md",
     "Supplemental Files/images/2.6 Spherical Harmoics 2024-10-31 10.40.03.excalidraw.sync-conflict-20241209-220802-PF4S3H5.md",
     "Supplemental Files/images/2.7 What Else can Shor do, and Grover 2024-12-03 14.00.48.excalidraw.md",
@@ -504,16 +549,25 @@
     "Supplemental Files/images/2.8 Grovers Algorithm 2024-11-19 14.46.28.excalidraw.md",
     "Supplemental Files/images/2.8 Grovers Algorithm 2024-11-19 14.54.07.excalidraw.md",
     "Supplemental Files/images/2.8 Grovers Algorithm 2024-11-19 14.56.07.excalidraw.md",
+    "Supplemental Files/images/2.9 The Hydrogen Molecule 2025-03-28 13.04.39.excalidraw.md",
+    "Supplemental Files/images/2.9 The Hydrogen Molecule 2025-03-28 13.42.31.excalidraw.md",
+    "Supplemental Files/images/2.9 The Hydrogen Molecule 2025-03-31 13.16.01.excalidraw.md",
     "Supplemental Files/images/2.10 2024-12-03 15.02.52.excalidraw.md",
     "Supplemental Files/images/2.11 Error Correction and Fault-Tolerant Computation 2024-12-05 14.27.30.excalidraw.md",
     "Supplemental Files/images/2.11 Error Correction and Fault-Tolerant Computation 2024-12-05 14.28.18.excalidraw.md",
     "Supplemental Files/images/2.11 Error Correction and Fault-Tolerant Computation 2024-12-05 15.13.06.excalidraw.md",
+    "Supplemental Files/images/2.12 Born Oppenheimer 2 2025-04-04 13.17.25.excalidraw.md",
+    "Supplemental Files/images/2.12 Born Oppenheimer 2 2025-04-04 13.39.09.excalidraw.md",
+    "Supplemental Files/images/2.16 Exam Review 2025-04-14 13.11.18.excalidraw.md",
+    "Supplemental Files/images/2d-arrays-worksheet 2025-03-12 17.11.35.excalidraw.md",
     "Supplemental Files/images/3.1 2024-11-12 10.38.33.excalidraw.tex",
     "Supplemental Files/images/3.1 2024-11-12 10.38.33.excalidraw.md",
     "Supplemental Files/images/3.2 Two Particles-The Hydrogen Atom 2024-11-14 09.53.02.excalidraw.md",
     "Supplemental Files/images/3.2 Two Particles-The Hydrogen Atom 2024-11-14 09.55.18.excalidraw.md",
     "Supplemental Files/images/3.3 2024-11-19 09.45.13.excalidraw.md",
     "Supplemental Files/images/3.3 If Else Statements 2025-01-02 13.33.12.excalidraw.md",
+    "Supplemental Files/images/3.3 Recursion 2025-03-26 17.08.26.excalidraw.md",
+    "Supplemental Files/images/3.3 Recursion 2025-03-26 17.33.42.excalidraw.md",
     "Supplemental Files/images/3.4 If statements and Arrays 2025-01-08 17.43.10.excalidraw.md",
     "Supplemental Files/images/3.5 2024-12-03 10.22.54.excalidraw.md",
     "Supplemental Files/images/3.5 Arrays and For loops 2025-01-15 17.34.00.excalidraw.md",
@@ -527,6 +581,7 @@
     "Supplemental Files/images/3.10 ArrayLists Worksheet 2025-02-19 18.43.15.excalidraw.md",
     "Supplemental Files/images/3.11 More Advanced Array Work 2025-02-26 17.10.11.excalidraw.md",
     "Supplemental Files/images/3.11 More Advanced Array Work 2025-02-26 17.27.38.excalidraw.md",
+    "Supplemental Files/images/3.14 2025-04-09 17.58.00.excalidraw.md",
     "Supplemental Files/images/5.1 Quantum Teleportation 2024-04-16 15.55.46.excalidraw.md",
     "Supplemental Files/images/5.1 Quantum Teleportation 2024-04-16 16.15.45.excalidraw.md",
     "Supplemental Files/images/5.1 Quantum Teleportation 2024-04-16 16.46.13.excalidraw.md",
@@ -627,6 +682,7 @@
     "Supplemental Files/images/AgACAgEAAxkBAAIByWe_bTpN63Xax_bMP_KbsaoH9HAzAAL2rjEbPbgAAUbablgAAW51lvcBAAMCAAN5AAM2BA.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAIBZmbgYKrKg_WCuMh2lF-q3z1MggQ7AAIwrTEbFpgIR4NJpMCqOaJhAQADAgADeQADNgQ.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAIBZWbgYF2cCrLkAtV8awincJrq2s0CAAIvrTEbFpgIRxBpqCumiBaoAQADAgADeQADNgQ.jpg",
+    "Supplemental Files/images/AgACAgEAAxkBAAIBzWfUjtFBh9nwbdT-R6v-CaXePMHXAAKBsDEbnuSpRmx-fQoW3YjsAQADAgADeQADNgQ.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAP4ZpCr1N3Y0SzXzMZa0uwXrF_EkUQAAjetMRt0uYFEq-XIZ9_rCKYBAAMCAAN5AAM1BA.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAPhZo4GNlKXDyLae5UtUlcy3POj8l0AAnqtMRsJdXFEAaq62sqnJlYBAAMCAAN5AAM1BA.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAPiZo4GTRAi_4Zbo2TlPSMcOxrZ1x4AAnutMRsJdXFE9PUd57SUc10BAAMCAAN5AAM1BA.jpg",
@@ -637,6 +693,7 @@
     "Supplemental Files/images/AgACAgEAAxkBAAPtZo4HvL5ofHVzRdFT_MtWNMjIYvAAAoGtMRsJdXFE_dkvNeJ9fKQBAAMCAAN5AAM1BA.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAPvZo64-rwWZoTLqpbG-ubjdiGYYEwAAiGuMRsJdXlEd3vEyBV7vjIBAAMCAAN5AAM1BA.jpg",
     "Supplemental Files/images/AgACAgEAAxkBAAPxZpBK7V1LFLKYCYgnOt-t3o639SUAAh-tMRt0uYFEQ_qiOBXx98kBAAMCAAN5AAM1BA.jpg",
+    "Supplemental Files/images/ap-physics-quiz-final 2025-04-02 14.51.49.excalidraw.md",
     "Supplemental Files/images/Assignment Statements and Operators 2024-09-11 17.35.50.excalidraw.md",
     "Supplemental Files/images/Assignment Statements and Operators 2024-09-11 17.49.20.excalidraw.md",
     "Supplemental Files/images/Assignment Statements and Operators 2024-09-11 17.55.31.excalidraw.md",
@@ -691,17 +748,21 @@
     "Supplemental Files/images/Fermilab Trip 2024-06-12 00.41.06.excalidraw.md",
     "Supplemental Files/images/Fermilab Trip 2024-06-12 21.13.39.excalidraw.md",
     "Supplemental Files/images/Fermilab Trip 2024-06-12 21.30.33.excalidraw.md",
+    "Supplemental Files/images/filter.log",
     "Supplemental Files/images/formatting.ts",
     "Supplemental Files/images/Fundamental Theorem of Orthogonality Diagram.png",
     "Supplemental Files/images/Galvanic and Electrolytic Cells 2024-04-16 11.31.55.excalidraw.md",
     "Supplemental Files/images/Galvanic_and_Electrolytic_Cells.png",
     "Supplemental Files/images/Galvanic_and_Electrolytic_Cells 1.png",
     "Supplemental Files/images/Galvanic_and_Electrolytic_Cells 2.png",
+    "Supplemental Files/images/game-board-simulator-worksheet 2025-04-02 17.37.32.excalidraw.md",
+    "Supplemental Files/images/game-board-simulator-worksheet 2025-04-02 17.52.22.excalidraw.md",
     "Supplemental Files/images/Google Assistant Obsidian Connector 2024-06-01 14.00.05.excalidraw.md",
     "Supplemental Files/images/Google Assistant Obsidian Connector 2024-06-13 00.09.59.excalidraw.md",
     "Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.png",
     "Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.md",
     "Supplemental Files/images/Graded Test 1 2024-07-08 19.37.46.excalidraw.sync-conflict-20240708-201726-Y4UWHYB.md",
+    "Supplemental Files/images/Grading Midterm 2025-03-09 15.17.57.excalidraw.md",
     "Supplemental Files/images/Grading Test 2 2024-08-26 15.00.35.excalidraw.md",
     "Supplemental Files/images/Grafing 2024-10-08 11.05.45.excalidraw.md",
     "Supplemental Files/images/H-Bridge Capacitor.excalidraw.md",
@@ -722,9 +783,14 @@
     "Supplemental Files/images/Homework 4 2025-02-25 21.12.26.excalidraw.md",
     "Supplemental Files/images/Homework 5 2024-10-01 12.37.36.excalidraw.md",
     "Supplemental Files/images/Homework 5 2024-10-07 14.26.30.excalidraw.md",
+    "Supplemental Files/images/Homework 5 2025-03-14 15.37.31.excalidraw.tex",
+    "Supplemental Files/images/Homework 5 2025-03-14 15.37.31.excalidraw.md",
+    "Supplemental Files/images/Homework 5 2025-03-28 21.57.45.excalidraw.md",
+    "Supplemental Files/images/Homework 5 2025-03-28 22.06.24.excalidraw.md",
     "Supplemental Files/images/Homework 6 2024-10-08 13.14.49.excalidraw.md",
     "Supplemental Files/images/Homework 6 2024-10-10 18.02.53.excalidraw.md",
     "Supplemental Files/images/Homework 6 2024-10-15 13.57.12.excalidraw.md",
+    "Supplemental Files/images/Homework 6 2025-03-26 21.55.38.excalidraw.md",
     "Supplemental Files/images/Homework 11 2024-12-06 20.01.59.excalidraw.md",
     "Supplemental Files/images/HWP Angle Specs.png",
     "Supplemental Files/images/HWP Spec Sheet.png",
@@ -768,10 +834,18 @@
     "Supplemental Files/images/image_35.png",
     "Supplemental Files/images/image_36.png",
     "Supplemental Files/images/image_37.png",
+    "Supplemental Files/images/image_38.png",
+    "Supplemental Files/images/image_39.png",
+    "Supplemental Files/images/image_40.png",
+    "Supplemental Files/images/image_41.png",
+    "Supplemental Files/images/image_42.png",
+    "Supplemental Files/images/image_43.png",
+    "Supplemental Files/images/image(1).png",
     "Supplemental Files/images/IMG_2890.png",
     "Supplemental Files/images/IMG_20240825_133024.jpg",
     "Supplemental Files/images/IMG_20240825_133025.jpg",
     "Supplemental Files/images/index 2024-12-09 22.19.58.excalidraw.md",
+    "Supplemental Files/images/Insurance Information.jpg",
     "Supplemental Files/images/Kinematics Equations.png",
     "Supplemental Files/images/Laser Hazard Classification System.png",
     "Supplemental Files/images/Linear Algebra Grade Scale.png",
@@ -1303,6 +1377,40 @@
     "Supplemental Files/images/Pasted image 20250224191958.png",
     "Supplemental Files/images/Pasted image 20250224192707.png",
     "Supplemental Files/images/Pasted image 20250225172018.png",
+    "Supplemental Files/images/Pasted image 20250227200503.png",
+    "Supplemental Files/images/Pasted image 20250303103341.png",
+    "Supplemental Files/images/Pasted image 20250303104143.png",
+    "Supplemental Files/images/Pasted image 20250306140859.png",
+    "Supplemental Files/images/Pasted image 20250310133732.png",
+    "Supplemental Files/images/Pasted image 20250314090345.png",
+    "Supplemental Files/images/Pasted image 20250314093721.png",
+    "Supplemental Files/images/Pasted image 20250314222601.png",
+    "Supplemental Files/images/Pasted image 20250324132308.png",
+    "Supplemental Files/images/Pasted image 20250324132344.png",
+    "Supplemental Files/images/Pasted image 20250324133526.png",
+    "Supplemental Files/images/Pasted image 20250324134223.png",
+    "Supplemental Files/images/Pasted image 20250324175219.png",
+    "Supplemental Files/images/Pasted image 20250326134004.png",
+    "Supplemental Files/images/Pasted image 20250326134847.png",
+    "Supplemental Files/images/Pasted image 20250327215417.png",
+    "Supplemental Files/images/Pasted image 20250328133547.png",
+    "Supplemental Files/images/Pasted image 20250328133558.png",
+    "Supplemental Files/images/Pasted image 20250328134231.png",
+    "Supplemental Files/images/Pasted Image 20250328134240_810.png",
+    "Supplemental Files/images/Pasted image 20250328134541.png",
+    "Supplemental Files/images/Pasted image 20250328221925.png",
+    "Supplemental Files/images/Pasted image 20250328222014.png",
+    "Supplemental Files/images/Pasted Image 20250329163158_583.png",
+    "Supplemental Files/images/Pasted image 20250331151404.png",
+    "Supplemental Files/images/Pasted image 20250402145122.png",
+    "Supplemental Files/images/Pasted Image 20250402145155_915.png",
+    "Supplemental Files/images/Pasted Image 20250402145225_916.png",
+    "Supplemental Files/images/Pasted image 20250402145359.png",
+    "Supplemental Files/images/Pasted image 20250402145517.png",
+    "Supplemental Files/images/Pasted Image 20250402173745_516.png",
+    "Supplemental Files/images/Pasted image 20250404103607.png",
+    "Supplemental Files/images/Pasted image 20250410180754.png",
+    "Supplemental Files/images/Pasted image 20250414171627.png",
     "Supplemental Files/images/PCD Fab for PD 2024-10-21 10.47.44.excalidraw.md",
     "Supplemental Files/images/Periodic-table-indicating-the-cosmic-origin-and-evolution-of-the-chemical-elements.png",
     "Supplemental Files/images/picture.png",
@@ -1315,6 +1423,7 @@
     "Supplemental Files/images/PXL_20241223_050338073.jpg",
     "Supplemental Files/images/PXL_20250112_025628825.jpg",
     "Supplemental Files/images/PXL_20250112_025628825 1.jpg",
+    "Supplemental Files/images/PXL_20250215_032831445.jpg",
     "Supplemental Files/images/QIS Circuit.png",
     "Supplemental Files/images/Quantum Computing Photon Object 2024-05-05 18.15.38.excalidraw.md",
     "Supplemental Files/images/RDT_20240409_2153018245334699049567009.jpg",
@@ -1343,6 +1452,7 @@
     "Supplemental Files/images/Screenshot_20240710-013142.png",
     "Supplemental Files/images/Screenshot_20241001-232514.png",
     "Supplemental Files/images/Screenshot_20241227-013938.png",
+    "Supplemental Files/images/Screenshot_20250225-224022.png",
     "Supplemental Files/images/Session 7 Gravity 2024-06-07 10.08.31.excalidraw.md",
     "Supplemental Files/images/Session 7 Gravity 2024-06-07 10.13.02.excalidraw.md",
     "Supplemental Files/images/Session 7 Gravity 2024-06-07 10.27.41.excalidraw.md",
@@ -1471,6 +1581,28 @@
     "Supplemental Files/images/Session 40- Midterm Review 2025-02-21 18.12.43.excalidraw.md",
     "Supplemental Files/images/Session 40- Midterm Review 2025-02-21 18.39.40.excalidraw.md",
     "Supplemental Files/images/Session 40- Midterm Review 2025-02-21 18.49.49.excalidraw.md",
+    "Supplemental Files/images/Session 41 2025-03-08 16.03.34.excalidraw.md",
+    "Supplemental Files/images/Session 41 2025-03-08 16.25.14.excalidraw.md",
+    "Supplemental Files/images/Session 41 2025-03-08 16.41.21.excalidraw.md",
+    "Supplemental Files/images/Session 42 Inertia And Torque 2025-03-09 15.59.49.excalidraw.md",
+    "Supplemental Files/images/Session 42 Inertia And Torque 2025-03-09 16.08.52.excalidraw.md",
+    "Supplemental Files/images/Session 42 Inertia And Torque 2025-03-09 16.29.31.excalidraw.md",
+    "Supplemental Files/images/Session 42 Inertia And Torque 2025-03-09 16.43.10.excalidraw.md",
+    "Supplemental Files/images/Session 43 2025-03-15 16.20.35.excalidraw.md",
+    "Supplemental Files/images/Session 43 2025-03-15 16.38.08.excalidraw.md",
+    "Supplemental Files/images/Session 43 2025-03-15 16.53.53.excalidraw.md",
+    "Supplemental Files/images/Session 44 2025-03-20 15.39.14.excalidraw.md",
+    "Supplemental Files/images/Session 44 Angular Momentum 2025-03-20 16.13.35.excalidraw.md",
+    "Supplemental Files/images/Session 44 Angular Momentum 2025-03-20 16.25.50.excalidraw.md",
+    "Supplemental Files/images/Session 44 Angular Momentum 2025-03-20 16.48.32.excalidraw.md",
+    "Supplemental Files/images/Session 45- Simple Harmonic Motin 2025-03-24 15.02.50.excalidraw.md",
+    "Supplemental Files/images/Session 45- Simple Harmonic Motin 2025-03-24 15.54.03.excalidraw.md",
+    "Supplemental Files/images/Session 46 2025-03-29 16.31.55.excalidraw.md",
+    "Supplemental Files/images/Session 46 2025-03-29 17.11.24.excalidraw.md",
+    "Supplemental Files/images/Session 47 2025-03-31 15.12.41.excalidraw.md",
+    "Supplemental Files/images/Session 48- Gravity 2025-04-03 17.41.07.excalidraw.md",
+    "Supplemental Files/images/Session 48- Gravity 2025-04-03 17.56.53.excalidraw.md",
+    "Supplemental Files/images/Session 49- Prep for PRactice 2025-04-08 17.24.59.excalidraw.md",
     "Supplemental Files/images/Spec Sheet Polarizer 1.png",
     "Supplemental Files/images/Spherical Coordinates Diagram.excalidraw.md",
     "Supplemental Files/images/Spherical Harmonics Chart.png",
@@ -1523,15 +1655,35 @@
     "Supplemental Files/images/UTQT Navigating Differences Post.png",
     "Supplemental Files/images/VID_49561121_203338_224.mp4",
     "index.md",
-    "lib/media/kinematics-equations.png",
-    "lib/media/pasted-image-20240828175002.png",
-    "lib/media/pasted-image-20240828180055.png",
     "lib/media/pasted-image-20250225172018.png",
-    "lib/media/pasted-image-20250224104457.png",
-    "lib/media/pasted-image-20250203134958.png",
-    "lib/media/pasted-image-20250214131342.png",
-    "lib/media/pasted-image-20250214132323.png",
-    "lib/media/pasted-image-20250214133801.png",
+    "lib/media/pasted-image-20250402145517.png",
+    "lib/media/pasted-image-20250402145122.png",
+    "lib/media/pasted-image-20250402145359.png",
+    "lib/media/kinematics-equations.png",
+    "lib/media/pasted-image-20250221173742.png",
+    "lib/media/pasted-image-20250221181236.png",
+    "lib/media/pasted-image-20250331151404.png",
+    "lib/media/pasted-image-20250410180754.png",
+    "lib/media/image(1).png",
+    "lib/media/pasted-image-20250112152929.png",
+    "lib/media/pasted-image-20250303103341.png",
+    "lib/media/pasted-image-20250303104143.png",
+    "lib/media/agacageaaxkbaaibg2bze_11wd3uneycicacn05yfuhmaakgrdebnvezrxfuepiqxykvaqadagadeqadngq.jpg",
+    "lib/media/agacageaaxkbaaibhwbzfxfgorgw-ncomvfhvqjxp3khaakhrdebnvezrzpdhkg3tldcaqadagadeqadngq.jpg",
+    "lib/media/agacageaaxkbaaibh2bzhh7tls3tnnzrbfsa219c8cataakirdebnvezryckauk6smcuaqadagadeqadngq.jpg",
+    "lib/media/pasted-image-20240711142824.png",
+    "lib/media/agacageaaxkbaaibiwb8fsbobij_mx77skdqjlkjg0iqaakqrjebvrzgr1gwye-e97c2aqadagadeqadngq.jpg",
+    "lib/media/agacageaaxkbaaibjwb-sf-zfjba_r_mty-nbckhdkbaaakartebqphwryzzaaec-9sigqeaawiaa3kaazye.jpg",
+    "lib/media/pasted-image-20250310133732.png",
+    "lib/media/pasted-image-20250324132308.png",
+    "lib/media/pasted-image-20250324132344.png",
+    "lib/media/pasted-image-20250324133526.png",
+    "lib/media/pasted-image-20250324134223.png",
+    "lib/media/pasted-image-20250326134004.png",
+    "lib/media/pasted-image-20250326134847.png",
+    "lib/media/pasted-image-20250328133558.png",
+    "lib/media/pasted-image-20250328134541.png",
+    "lib/media/pasted-image-20240711143647.png",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -1587,6 +1739,8 @@
     "lib/styles/supported-plugins.css",
     "lib/styles/main-styles.css",
     "lib/styles/snippets.css",
+    "lib/media/pasted-image-20240828175002.png",
+    "lib/media/pasted-image-20240828180055.png",
     "lib/media/pasted-image-20250121165904.png",
     "lib/media/pasted-image-20250128172051.png",
     "lib/media/pasted-image-20240510134042.png",
@@ -1636,8 +1790,6 @@
     "lib/media/pasted-image-20241231174033.png",
     "lib/media/pasted-image-20250204173834.png",
     "lib/media/pasted-image-20250218192442.png",
-    "lib/media/pasted-image-20250221173742.png",
-    "lib/media/pasted-image-20250221181236.png",
     "lib/media/picture.png",
     "lib/media/agacageaaxkbaaibqmbmx8ewtwhgxqb7htaykdy3yxz1aalisdeb4xnhrvjfvznti2m7aqadagadeqadnqq.jpg",
     "lib/media/pasted-image-20240830123741.png",
@@ -1647,8 +1799,8 @@
     "lib/media/pasted-image-20240606201810.png",
     "lib/media/fundamental-theorem-of-orthogonality-diagram.png",
     "lib/media/pasted-image-20240624225133.png",
-    "lib/media/pasted-image-20250112152929.png",
     "lib/media/pasted-image-20250214101640.png",
+    "lib/media/pasted-image-20250224104457.png",
     "lib/media/agacageaaxkbaaibe2bpvvmjgpi_ipmwhoqecpyyxjg2aallrdebdzfqr47lybimywf0aqadagadeqadngq.jpg",
     "lib/media/agacageaaxkbaaibfwbpwufva0qvkooq2ksiqo6-p7naalqrdebdzfqr3dboj0qusjwaqadagadeqadngq.jpg",
     "lib/media/pasted-image-20240919125605.png",
@@ -1664,10 +1816,6 @@
     "lib/media/agacageaaxkbaaibd2bjsmt-6sxwi1kafgyfwnaq2epuaajorteb-vkhr2hj1gnt4pxeaqadagadeqadngq.jpg",
     "lib/media/agacageaaxkbaaibewbjtov0lo0bdxxksr7m2gh6xsf_aajqrteb-vkhr-ttwxrpceeoaqadagadeqadngq.jpg",
     "lib/media/pasted-image-20240919145142.png",
-    "lib/media/agacageaaxkbaaibg2bze_11wd3uneycicacn05yfuhmaakgrdebnvezrxfuepiqxykvaqadagadeqadngq.jpg",
-    "lib/media/agacageaaxkbaaibhwbzfxfgorgw-ncomvfhvqjxp3khaakhrdebnvezrzpdhkg3tldcaqadagadeqadngq.jpg",
-    "lib/media/agacageaaxkbaaibh2bzhh7tls3tnnzrbfsa219c8cataakirdebnvezryckauk6smcuaqadagadeqadngq.jpg",
-    "lib/media/pasted-image-20240711142824.png",
     "lib/media/pasted-image-20241010142055.png",
     "lib/media/agacageaaxkbaaibn2cowqktznykwjqkikcumsu9h9oraajgrjebovp5ra4ujxjbmw3oaqadagadeqadngq.jpg",
     "lib/media/agacageaaxkbaaibp2capi9o-g10jf_9sk2y_bw1u34haaltrdebeivyrkc1kg9bq5ubaqadagadeqadngq.jpg",
@@ -1691,8 +1839,6 @@
     "lib/media/pasted-image-20240917103717.png",
     "lib/media/agacageaaxkbaaibf2byz1kuidzo0vohpyak0ixypzm0aakjrdebnvezr3e7rcnczqtzaqadagadeqadngq.jpg",
     "lib/media/agacageaaxkbaaibgwby1b5l5btakjnsfdizi2nd5c4paakkrdebnvezr5k1054k7xtcaqadagadeqadngq.jpg",
-    "lib/media/agacageaaxkbaaibiwb8fsbobij_mx77skdqjlkjg0iqaakqrjebvrzgr1gwye-e97c2aqadagadeqadngq.jpg",
-    "lib/media/agacageaaxkbaaibjwb-sf-zfjba_r_mty-nbckhdkbaaakartebqphwryzzaaec-9sigqeaawiaa3kaazye.jpg",
     "lib/media/agacageaaxkbaaibj2b-sszoff9sygsz5nr2l472jbn_aakbrtebqphwr3j8-sghexagaqadagadeqadngq.jpg",
     "lib/media/aal_izz_well__3_idiots__aamir_khan_madhavan_sharman_j__sonu.gif",
     "lib/media/agacageaaxkbaaibpwcaw-uuhpt1ihlnfqyfgy7pcqegaak8rdebeivyro8by6sz31uxaqadagadeqadngq.jpg",
@@ -1700,7 +1846,11 @@
     "lib/media/spherical-harmonics-chart.png",
     "lib/media/pasted-image-20240902194106.png",
     "lib/media/agacageaaxkbaaibw2ex3lshyeehcfu9zcvjdhz3fulcaaj6sdebxtrarb7f6slcpn1paqadagadeqadngq.jpg",
+    "lib/media/pasted-image-20250203134958.png",
     "lib/media/pasted-image-20250207135050.png",
+    "lib/media/pasted-image-20250214131342.png",
+    "lib/media/pasted-image-20250214132323.png",
+    "lib/media/pasted-image-20250214133801.png",
     "lib/media/pasted-image-20240504222402.png",
     "lib/media/pasted-image-20240504222415.png",
     "lib/media/pasted-image-20240402164753.png",
@@ -1758,8 +1908,7 @@
     "lib/media/pasted-image-20240416155424.png",
     "lib/media/pasted-image-20240416164118.png",
     "lib/media/pasted-image-20240227160047-1.png",
-    "lib/media/pasted-image-20240227161146-1.png",
-    "lib/media/pasted-image-20240711143647.png"
+    "lib/media/pasted-image-20240227161146-1.png"
   ],
   "mainDependencies": [
     "lib/scripts/graph-wasm.wasm",
@@ -1820,85 +1969,85 @@
   ],
   "fileInfo": {
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
@@ -1910,181 +2059,181 @@
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1740616389096,
-      "sourceSize": 1333550,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 1442039,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
@@ -2096,67 +2245,67 @@
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1740616389096,
-      "sourceSize": 88567,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 99161,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1740616389096,
-      "sourceSize": 137305,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 137466,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 10171,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 271569,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1740616389096,
-      "sourceSize": 336,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 353,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 10512,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 34264,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     },
     "lib/media/favicon.ico": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 15086,
       "exportedPath": "lib/media/favicon.ico",
       "dependencies": []
     },
     "lib/html/custom-head-content.html": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 601,
       "exportedPath": "lib/html/custom-head-content.html",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
@@ -2454,8 +2603,8 @@
       "dependencies": []
     },
     "School/Math/Probability/Notes/Lecture 1/xyz.R": {
-      "modifiedTime": 1739203948402,
-      "sourceSize": 135,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 1239,
       "exportedPath": "school/math/probability/notes/lecture-1/xyz.r",
       "dependencies": []
     },
@@ -2472,7 +2621,7 @@
       "dependencies": []
     },
     "School/Math/Probability/Notes/Lecture 1/Lecture 1.Rproj": {
-      "modifiedTime": 1739203948402,
+      "modifiedTime": 1744735070303,
       "sourceSize": 253,
       "exportedPath": "school/math/probability/notes/lecture-1/lecture-1.rproj",
       "dependencies": []
@@ -2526,7 +2675,7 @@
       "dependencies": []
     },
     "School/Physics/Electrodynamics/Notes/0.1 Introduction.md": {
-      "modifiedTime": 1739203948402,
+      "modifiedTime": 1744735070303,
       "sourceSize": 2674,
       "exportedPath": "school/physics/electrodynamics/notes/0.1-introduction.html",
       "dependencies": [
@@ -2766,16 +2915,16 @@
       "dependencies": []
     },
     "School/Physics/QIS/Notes/1.11 EPR and Bell Inequality.md": {
-      "modifiedTime": 1739203948402,
-      "sourceSize": 3452,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 3435,
       "exportedPath": "school/physics/qis/notes/1.11-epr-and-bell-inequality.html",
       "dependencies": [
         "lib/media/pasted-image-20240711142824.png"
       ]
     },
     "School/Physics/QIS/Notes/1.10 Quantum Teleportation.md": {
-      "modifiedTime": 1739203948402,
-      "sourceSize": 4748,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4749,
       "exportedPath": "school/physics/qis/notes/1.10-quantum-teleportation.html",
       "dependencies": [
         "lib/media/agacageaaxkbaaibg2bze_11wd3uneycicacn05yfuhmaakgrdebnvezrxfuepiqxykvaqadagadeqadngq.jpg",
@@ -2881,8 +3030,8 @@
       "dependencies": []
     },
     "School/Physics/Quantum 1/Notes/1.9 Boundary Conditions in Free Space.md": {
-      "modifiedTime": 1739203948402,
-      "sourceSize": 9523,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 9524,
       "exportedPath": "school/physics/quantum-1/notes/1.9-boundary-conditions-in-free-space.html",
       "dependencies": [
         "lib/media/agacageaaxkbaaibiwb8fsbobij_mx77skdqjlkjg0iqaakqrjebvrzgr1gwye-e97c2aqadagadeqadngq.jpg",
@@ -3485,8 +3634,8 @@
       "dependencies": []
     },
     "School/Physics/Quantum Computing/Hidden Variables and Bell's Inequality.md": {
-      "modifiedTime": 1739203948402,
-      "sourceSize": 7639,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 7644,
       "exportedPath": "school/physics/quantum-computing/hidden-variables-and-bell's-inequality.html",
       "dependencies": [
         "lib/media/pasted-image-20240711142824.png",
@@ -10076,7 +10225,7 @@
       "dependencies": []
     },
     "lib/media/pasted-image-20250112152929.png": {
-      "modifiedTime": 1739203948402,
+      "modifiedTime": 1744735070303,
       "sourceSize": 170188,
       "exportedPath": "lib/media/pasted-image-20250112152929.png",
       "dependencies": []
@@ -10232,25 +10381,25 @@
       "dependencies": []
     },
     "lib/media/pasted-image-20240711142824.png": {
-      "modifiedTime": 1739203948402,
+      "modifiedTime": 1744735070303,
       "sourceSize": 91086,
       "exportedPath": "lib/media/pasted-image-20240711142824.png",
       "dependencies": []
     },
     "lib/media/agacageaaxkbaaibg2bze_11wd3uneycicacn05yfuhmaakgrdebnvezrxfuepiqxykvaqadagadeqadngq.jpg": {
-      "modifiedTime": 1739203948402,
+      "modifiedTime": 1744735070303,
       "sourceSize": 66858,
       "exportedPath": "lib/media/agacageaaxkbaaibg2bze_11wd3uneycicacn05yfuhmaakgrdebnvezrxfuepiqxykvaqadagadeqadngq.jpg",
       "dependencies": []
     },
     "lib/media/agacageaaxkbaaibhwbzfxfgorgw-ncomvfhvqjxp3khaakhrdebnvezrzpdhkg3tldcaqadagadeqadngq.jpg": {
-      "modifiedTime": 1739203948402,
+      "modifiedTime": 1744735070303,
       "sourceSize": 78073,
       "exportedPath": "lib/media/agacageaaxkbaaibhwbzfxfgorgw-ncomvfhvqjxp3khaakhrdebnvezrzpdhkg3tldcaqadagadeqadngq.jpg",
       "dependencies": []
     },
     "lib/media/agacageaaxkbaaibh2bzhh7tls3tnnzrbfsa219c8cataakirdebnvezryckauk6smcuaqadagadeqadngq.jpg": {
-      "modifiedTime": 1739203948402,
+      "modifiedTime": 1744735070303,
       "sourceSize": 106513,
       "exportedPath": "lib/media/agacageaaxkbaaibh2bzhh7tls3tnnzrbfsa219c8cataakirdebnvezryckauk6smcuaqadagadeqadngq.jpg",
       "dependencies": []
@@ -10298,13 +10447,13 @@
       "dependencies": []
     },
     "lib/media/agacageaaxkbaaibiwb8fsbobij_mx77skdqjlkjg0iqaakqrjebvrzgr1gwye-e97c2aqadagadeqadngq.jpg": {
-      "modifiedTime": 1739203948402,
+      "modifiedTime": 1744735070303,
       "sourceSize": 146802,
       "exportedPath": "lib/media/agacageaaxkbaaibiwb8fsbobij_mx77skdqjlkjg0iqaakqrjebvrzgr1gwye-e97c2aqadagadeqadngq.jpg",
       "dependencies": []
     },
     "lib/media/agacageaaxkbaaibjwb-sf-zfjba_r_mty-nbckhdkbaaakartebqphwryzzaaec-9sigqeaawiaa3kaazye.jpg": {
-      "modifiedTime": 1739203948402,
+      "modifiedTime": 1744735070303,
       "sourceSize": 57616,
       "exportedPath": "lib/media/agacageaaxkbaaibjwb-sf-zfjba_r_mty-nbckhdkbaaakartebqphwryzzaaec-9sigqeaawiaa3kaazye.jpg",
       "dependencies": []
@@ -10748,7 +10897,7 @@
       "dependencies": []
     },
     "lib/media/pasted-image-20240711143647.png": {
-      "modifiedTime": 1739203948402,
+      "modifiedTime": 1744735070303,
       "sourceSize": 87197,
       "exportedPath": "lib/media/pasted-image-20240711143647.png",
       "dependencies": []
@@ -10976,8 +11125,8 @@
       "dependencies": []
     },
     "School/Math/Probability/Notes/CheatSheetTemplate.tex": {
-      "modifiedTime": 1740030609922,
-      "sourceSize": 2078,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2093,
       "exportedPath": "school/math/probability/notes/cheatsheettemplate.tex",
       "dependencies": []
     },
@@ -11108,14 +11257,14 @@
       "dependencies": []
     },
     "School/Math/Discrete Math CS/Notes/cheatsheet.pdf": {
-      "modifiedTime": 1740168885332,
-      "sourceSize": 41221,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 118373,
       "exportedPath": "school/math/discrete-math-cs/notes/cheatsheet.pdf",
       "dependencies": []
     },
     "School/Math/Discrete Math CS/Notes/CheatSheetTemplate.tex": {
-      "modifiedTime": 1740168885332,
-      "sourceSize": 2094,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2093,
       "exportedPath": "school/math/discrete-math-cs/notes/cheatsheettemplate.tex",
       "dependencies": []
     },
@@ -11618,8 +11767,8 @@
       "dependencies": []
     },
     "Personal/Tutoring/AP Physics/filter.log": {
-      "modifiedTime": 1740187984971,
-      "sourceSize": 15,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 45,
       "exportedPath": "personal/tutoring/ap-physics/filter.log",
       "dependencies": []
     },
@@ -11864,8 +12013,8 @@
       ]
     },
     "Personal/Tutoring/AP Physics/Session 29 More on Energy and Rotational Motion.md": {
-      "modifiedTime": 1740187984971,
-      "sourceSize": 2510,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2512,
       "exportedPath": "personal/tutoring/ap-physics/session-29-more-on-energy-and-rotational-motion.html",
       "dependencies": [
         "lib/media/kinematics-equations.png"
@@ -11948,8 +12097,8 @@
       ]
     },
     "Personal/Tutoring/AP Physics/Session 40- Midterm Review.md": {
-      "modifiedTime": 1740189367394,
-      "sourceSize": 4766,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4770,
       "exportedPath": "personal/tutoring/ap-physics/session-40-midterm-review.html",
       "dependencies": [
         "lib/media/pasted-image-20250221173742.png",
@@ -11957,7 +12106,7 @@
       ]
     },
     "lib/media/kinematics-equations.png": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 27667,
       "exportedPath": "lib/media/kinematics-equations.png",
       "dependencies": []
@@ -12257,13 +12406,13 @@
       "dependencies": []
     },
     "lib/media/pasted-image-20250221173742.png": {
-      "modifiedTime": 1740189367394,
+      "modifiedTime": 1744735070303,
       "sourceSize": 140601,
       "exportedPath": "lib/media/pasted-image-20250221173742.png",
       "dependencies": []
     },
     "lib/media/pasted-image-20250221181236.png": {
-      "modifiedTime": 1740189367394,
+      "modifiedTime": 1744735070303,
       "sourceSize": 28727,
       "exportedPath": "lib/media/pasted-image-20250221181236.png",
       "dependencies": []
@@ -12425,7 +12574,7 @@
       "dependencies": []
     },
     "Personal/Tutoring/AP CS/Assignment Statements and Operators.md": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 3921,
       "exportedPath": "personal/tutoring/ap-cs/assignment-statements-and-operators.html",
       "dependencies": []
@@ -12507,8 +12656,8 @@
       "dependencies": []
     },
     "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Midterm MCQ.md": {
-      "modifiedTime": 1740616389096,
-      "sourceSize": 6415,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 6414,
       "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/midterm/midterm-mcq.html",
       "dependencies": [
         "lib/media/pasted-image-20250225172018.png"
@@ -12522,15 +12671,9 @@
         "lib/media/pasted-image-20250224104457.png"
       ]
     },
-    "School/Physics/Electrodynamics/Notes/2.4.md": {
-      "modifiedTime": 1740616389096,
-      "sourceSize": 4391,
-      "exportedPath": "school/physics/electrodynamics/notes/2.4.html",
-      "dependencies": []
-    },
     "School/Physics/Quantum 2/Notes/1.17 Transitions in the Atom.md": {
-      "modifiedTime": 1740616389096,
-      "sourceSize": 4534,
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4728,
       "exportedPath": "school/physics/quantum-2/notes/1.17-transitions-in-the-atom.html",
       "dependencies": []
     },
@@ -12649,7 +12792,7 @@
       "dependencies": []
     },
     "lib/media/pasted-image-20250225172018.png": {
-      "modifiedTime": 1740616389096,
+      "modifiedTime": 1744735070303,
       "sourceSize": 32676,
       "exportedPath": "lib/media/pasted-image-20250225172018.png",
       "dependencies": []
@@ -12658,6 +12801,931 @@
       "modifiedTime": 1740616389096,
       "sourceSize": 159742,
       "exportedPath": "lib/media/pasted-image-20250224104457.png",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Class Worksheets/2d-arrays-worksheet.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 3377,
+      "exportedPath": "personal/tutoring/ap-cs/class-worksheets/2d-arrays-worksheet.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Class Worksheets/3.3 Recursion.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4880,
+      "exportedPath": "personal/tutoring/ap-cs/class-worksheets/3.3-recursion.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Class Worksheets/3.13 Worksheet.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 3175,
+      "exportedPath": "personal/tutoring/ap-cs/class-worksheets/3.13-worksheet.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/3.12 Array Manipulation Challenges.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 6337,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/3.12-array-manipulation-challenges.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/3.13 Game Board Analysis.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 5296,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/3.13-game-board-analysis.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP CS/Homework Assignments/Midterm Rubric.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2305,
+      "exportedPath": "personal/tutoring/ap-cs/homework-assignments/midterm-rubric.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Midterm/Grading Midterm.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 246,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/midterm/grading-midterm.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 3/Quiz 3.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4736,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-3/quiz-3.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Quizes and Tests/Quiz 3/Quiz 3 Rotational and Spring.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 5207,
+      "exportedPath": "personal/tutoring/ap-physics/quizes-and-tests/quiz-3/quiz-3-rotational-and-spring.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250402145517.png",
+        "lib/media/pasted-image-20250402145122.png",
+        "lib/media/pasted-image-20250402145359.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 29 More on Energy and Rotational Motion.pandoc.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 7503,
+      "exportedPath": "personal/tutoring/ap-physics/session-29-more-on-energy-and-rotational-motion.pandoc.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 41- Rotational Motion.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 8611,
+      "exportedPath": "personal/tutoring/ap-physics/session-41-rotational-motion.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 42 Inertia And Torque.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 3489,
+      "exportedPath": "personal/tutoring/ap-physics/session-42-inertia-and-torque.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 43.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2083,
+      "exportedPath": "personal/tutoring/ap-physics/session-43.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 44 Angular Momentum.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 9052,
+      "exportedPath": "personal/tutoring/ap-physics/session-44-angular-momentum.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 45- Simple Harmonic Motion.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 5886,
+      "exportedPath": "personal/tutoring/ap-physics/session-45-simple-harmonic-motion.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 46.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 604,
+      "exportedPath": "personal/tutoring/ap-physics/session-46.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 47 More on Springs.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 1282,
+      "exportedPath": "personal/tutoring/ap-physics/session-47-more-on-springs.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250331151404.png"
+      ]
+    },
+    "Personal/Tutoring/AP Physics/Session 48- Gravity.pdf": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 6556,
+      "exportedPath": "personal/tutoring/ap-physics/session-48-gravity.pdf",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 48- Gravity.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 6582,
+      "exportedPath": "personal/tutoring/ap-physics/session-48-gravity.html",
+      "dependencies": []
+    },
+    "Personal/Tutoring/AP Physics/Session 50- Post Practice and overview.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 7690,
+      "exportedPath": "personal/tutoring/ap-physics/session-50-post-practice-and-overview.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250410180754.png",
+        "lib/media/image(1).png"
+      ]
+    },
+    "School/Math/Discrete Math CS/Notes/Cheatsheet2.pdf": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 145750,
+      "exportedPath": "school/math/discrete-math-cs/notes/cheatsheet2.pdf",
+      "dependencies": []
+    },
+    "School/Math/Discrete Math CS/Notes/MT2Cheatsheet.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 7616,
+      "exportedPath": "school/math/discrete-math-cs/notes/mt2cheatsheet.html",
+      "dependencies": []
+    },
+    "School/Math/Probability/Notes/MT2 Cheatsheet.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4695,
+      "exportedPath": "school/math/probability/notes/mt2-cheatsheet.html",
+      "dependencies": []
+    },
+    "School/Math/Probability/Notes/probability-cheatsheet.pdf": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 61850,
+      "exportedPath": "school/math/probability/notes/probability-cheatsheet.pdf",
+      "dependencies": []
+    },
+    "School/Math/Probability/Notes/probability-cheatsheet.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 8919,
+      "exportedPath": "school/math/probability/notes/probability-cheatsheet.html",
+      "dependencies": []
+    },
+    "School/Physics/Electrodynamics/Notes/2.4 Introduction to Multipole Expansion.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4402,
+      "exportedPath": "school/physics/electrodynamics/notes/2.4-introduction-to-multipole-expansion.html",
+      "dependencies": []
+    },
+    "School/Physics/Electrodynamics/Notes/2.5 Multipole Expansion of Electric Potential.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 642,
+      "exportedPath": "school/physics/electrodynamics/notes/2.5-multipole-expansion-of-electric-potential.html",
+      "dependencies": []
+    },
+    "School/Physics/Electrodynamics/Notes/2.6 Conductors vs Dielectrics.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4269,
+      "exportedPath": "school/physics/electrodynamics/notes/2.6-conductors-vs-dielectrics.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250303103341.png",
+        "lib/media/pasted-image-20250303104143.png"
+      ]
+    },
+    "School/Physics/Quantum 2/Notes/2.1 Variational Principle.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2488,
+      "exportedPath": "school/physics/quantum-2/notes/2.1-variational-principle.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/2.3 Variational Principle Examples.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 6463,
+      "exportedPath": "school/physics/quantum-2/notes/2.3-variational-principle-examples.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/2.4 More Variational Principle Examples.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 5277,
+      "exportedPath": "school/physics/quantum-2/notes/2.4-more-variational-principle-examples.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250310133732.png"
+      ]
+    },
+    "School/Physics/Quantum 2/Notes/2.5 Excited States of Helium.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2598,
+      "exportedPath": "school/physics/quantum-2/notes/2.5-excited-states-of-helium.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/2.6 The Periodic Table.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 1210,
+      "exportedPath": "school/physics/quantum-2/notes/2.6-the-periodic-table.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/2.7 H2+ Ion.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 7002,
+      "exportedPath": "school/physics/quantum-2/notes/2.7-h2+-ion.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250324132308.png",
+        "lib/media/pasted-image-20250324132344.png",
+        "lib/media/pasted-image-20250324133526.png",
+        "lib/media/pasted-image-20250324134223.png"
+      ]
+    },
+    "School/Physics/Quantum 2/Notes/2.8 H2+ Cont.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 3204,
+      "exportedPath": "school/physics/quantum-2/notes/2.8-h2+-cont.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250326134004.png",
+        "lib/media/pasted-image-20250326134847.png"
+      ]
+    },
+    "School/Physics/Quantum 2/Notes/2.9 The Hydrogen Molecule.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 5013,
+      "exportedPath": "school/physics/quantum-2/notes/2.9-the-hydrogen-molecule.html",
+      "dependencies": [
+        "lib/media/pasted-image-20250328133558.png",
+        "lib/media/pasted-image-20250328134541.png"
+      ]
+    },
+    "School/Physics/Quantum 2/Notes/2.10 Molecules.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2220,
+      "exportedPath": "school/physics/quantum-2/notes/2.10-molecules.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/2.12 Born Oppenheimer 2.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 3884,
+      "exportedPath": "school/physics/quantum-2/notes/2.12-born-oppenheimer-2.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/2.13 Spin Statistics and Molecules.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 653,
+      "exportedPath": "school/physics/quantum-2/notes/2.13-spin-statistics-and-molecules.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/2.14 EPR.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 495,
+      "exportedPath": "school/physics/quantum-2/notes/2.14-epr.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/2.15 Bell's Inequality.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 338,
+      "exportedPath": "school/physics/quantum-2/notes/2.15-bell's-inequality.html",
+      "dependencies": []
+    },
+    "School/Physics/Quantum 2/Notes/2.16 Exam Review.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2180,
+      "exportedPath": "school/physics/quantum-2/notes/2.16-exam-review.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2.1 Variational Principle 2025-03-03 13.37.15.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 5108,
+      "exportedPath": "supplemental-files/images/2.1-variational-principle-2025-03-03-13.37.15.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2.5 Multipole Expansion of Electric Potential 2025-02-28 10.09.22.excalidraw.tex": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 13190,
+      "exportedPath": "supplemental-files/images/2.5-multipole-expansion-of-electric-potential-2025-02-28-10.09.22.excalidraw.tex",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2.5 Multipole Expansion of Electric Potential 2025-02-28 10.09.22.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 7989,
+      "exportedPath": "supplemental-files/images/2.5-multipole-expansion-of-electric-potential-2025-02-28-10.09.22.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2.6 2025-03-03 10.13.08.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 8307,
+      "exportedPath": "supplemental-files/images/2.6-2025-03-03-10.13.08.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2.9 The Hydrogen Molecule 2025-03-28 13.04.39.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 11628,
+      "exportedPath": "supplemental-files/images/2.9-the-hydrogen-molecule-2025-03-28-13.04.39.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2.9 The Hydrogen Molecule 2025-03-28 13.42.31.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4371,
+      "exportedPath": "supplemental-files/images/2.9-the-hydrogen-molecule-2025-03-28-13.42.31.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2.9 The Hydrogen Molecule 2025-03-31 13.16.01.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 71044,
+      "exportedPath": "supplemental-files/images/2.9-the-hydrogen-molecule-2025-03-31-13.16.01.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2.12 Born Oppenheimer 2 2025-04-04 13.17.25.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4087,
+      "exportedPath": "supplemental-files/images/2.12-born-oppenheimer-2-2025-04-04-13.17.25.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2.12 Born Oppenheimer 2 2025-04-04 13.39.09.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 8127,
+      "exportedPath": "supplemental-files/images/2.12-born-oppenheimer-2-2025-04-04-13.39.09.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2.16 Exam Review 2025-04-14 13.11.18.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 5501,
+      "exportedPath": "supplemental-files/images/2.16-exam-review-2025-04-14-13.11.18.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/2d-arrays-worksheet 2025-03-12 17.11.35.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 212496,
+      "exportedPath": "supplemental-files/images/2d-arrays-worksheet-2025-03-12-17.11.35.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/3.3 Recursion 2025-03-26 17.08.26.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 134350,
+      "exportedPath": "supplemental-files/images/3.3-recursion-2025-03-26-17.08.26.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/3.3 Recursion 2025-03-26 17.33.42.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 208388,
+      "exportedPath": "supplemental-files/images/3.3-recursion-2025-03-26-17.33.42.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/3.14 2025-04-09 17.58.00.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 3795,
+      "exportedPath": "supplemental-files/images/3.14-2025-04-09-17.58.00.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/AgACAgEAAxkBAAIBzWfUjtFBh9nwbdT-R6v-CaXePMHXAAKBsDEbnuSpRmx-fQoW3YjsAQADAgADeQADNgQ.jpg": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 53348,
+      "exportedPath": "supplemental-files/images/agacageaaxkbaaibzwfujtfbh9nwbdt-r6v-caxepmhxaakbsdebnusprmx-fqow3yjsaqadagadeqadngq.jpg",
+      "dependencies": []
+    },
+    "Supplemental Files/images/ap-physics-quiz-final 2025-04-02 14.51.49.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 3349,
+      "exportedPath": "supplemental-files/images/ap-physics-quiz-final-2025-04-02-14.51.49.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/filter.log": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 854,
+      "exportedPath": "supplemental-files/images/filter.log",
+      "dependencies": []
+    },
+    "Supplemental Files/images/game-board-simulator-worksheet 2025-04-02 17.37.32.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 174914,
+      "exportedPath": "supplemental-files/images/game-board-simulator-worksheet-2025-04-02-17.37.32.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/game-board-simulator-worksheet 2025-04-02 17.52.22.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 88633,
+      "exportedPath": "supplemental-files/images/game-board-simulator-worksheet-2025-04-02-17.52.22.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Grading Midterm 2025-03-09 15.17.57.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 190308,
+      "exportedPath": "supplemental-files/images/grading-midterm-2025-03-09-15.17.57.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Homework 5 2025-03-14 15.37.31.excalidraw.tex": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 9416,
+      "exportedPath": "supplemental-files/images/homework-5-2025-03-14-15.37.31.excalidraw.tex",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Homework 5 2025-03-14 15.37.31.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 8702,
+      "exportedPath": "supplemental-files/images/homework-5-2025-03-14-15.37.31.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Homework 5 2025-03-28 21.57.45.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4651,
+      "exportedPath": "supplemental-files/images/homework-5-2025-03-28-21.57.45.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Homework 5 2025-03-28 22.06.24.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 8386,
+      "exportedPath": "supplemental-files/images/homework-5-2025-03-28-22.06.24.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Homework 6 2025-03-26 21.55.38.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 16144,
+      "exportedPath": "supplemental-files/images/homework-6-2025-03-26-21.55.38.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/image_38.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 7723739,
+      "exportedPath": "supplemental-files/images/image_38.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/image_39.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 7810942,
+      "exportedPath": "supplemental-files/images/image_39.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/image_40.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 8312662,
+      "exportedPath": "supplemental-files/images/image_40.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/image_41.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 8889148,
+      "exportedPath": "supplemental-files/images/image_41.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/image_42.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2938509,
+      "exportedPath": "supplemental-files/images/image_42.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/image_43.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 1975131,
+      "exportedPath": "supplemental-files/images/image_43.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/image(1).png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 68586,
+      "exportedPath": "supplemental-files/images/image(1).png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Insurance Information.jpg": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 100756,
+      "exportedPath": "supplemental-files/images/insurance-information.jpg",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250227200503.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 132309,
+      "exportedPath": "supplemental-files/images/pasted-image-20250227200503.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250303103341.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 1157585,
+      "exportedPath": "supplemental-files/images/pasted-image-20250303103341.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250303104143.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 99387,
+      "exportedPath": "supplemental-files/images/pasted-image-20250303104143.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250306140859.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 83589,
+      "exportedPath": "supplemental-files/images/pasted-image-20250306140859.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250310133732.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 53632,
+      "exportedPath": "supplemental-files/images/pasted-image-20250310133732.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250314090345.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 29059,
+      "exportedPath": "supplemental-files/images/pasted-image-20250314090345.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250314093721.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 62468,
+      "exportedPath": "supplemental-files/images/pasted-image-20250314093721.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250314222601.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 90842,
+      "exportedPath": "supplemental-files/images/pasted-image-20250314222601.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250324132308.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 40979,
+      "exportedPath": "supplemental-files/images/pasted-image-20250324132308.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250324132344.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 46118,
+      "exportedPath": "supplemental-files/images/pasted-image-20250324132344.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250324133526.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 81396,
+      "exportedPath": "supplemental-files/images/pasted-image-20250324133526.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250324134223.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 38235,
+      "exportedPath": "supplemental-files/images/pasted-image-20250324134223.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250324175219.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2875787,
+      "exportedPath": "supplemental-files/images/pasted-image-20250324175219.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250326134004.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 80651,
+      "exportedPath": "supplemental-files/images/pasted-image-20250326134004.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250326134847.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 640164,
+      "exportedPath": "supplemental-files/images/pasted-image-20250326134847.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250327215417.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 71956,
+      "exportedPath": "supplemental-files/images/pasted-image-20250327215417.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250328133547.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 49431,
+      "exportedPath": "supplemental-files/images/pasted-image-20250328133547.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250328133558.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 47701,
+      "exportedPath": "supplemental-files/images/pasted-image-20250328133558.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250328134231.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 54920,
+      "exportedPath": "supplemental-files/images/pasted-image-20250328134231.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted Image 20250328134240_810.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 48828,
+      "exportedPath": "supplemental-files/images/pasted-image-20250328134240_810.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250328134541.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 67176,
+      "exportedPath": "supplemental-files/images/pasted-image-20250328134541.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250328221925.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 47163,
+      "exportedPath": "supplemental-files/images/pasted-image-20250328221925.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250328222014.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 12354,
+      "exportedPath": "supplemental-files/images/pasted-image-20250328222014.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted Image 20250329163158_583.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 2590311,
+      "exportedPath": "supplemental-files/images/pasted-image-20250329163158_583.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250331151404.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 66458,
+      "exportedPath": "supplemental-files/images/pasted-image-20250331151404.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250402145122.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 67874,
+      "exportedPath": "supplemental-files/images/pasted-image-20250402145122.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted Image 20250402145155_915.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 49176,
+      "exportedPath": "supplemental-files/images/pasted-image-20250402145155_915.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted Image 20250402145225_916.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 3900,
+      "exportedPath": "supplemental-files/images/pasted-image-20250402145225_916.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250402145359.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 83179,
+      "exportedPath": "supplemental-files/images/pasted-image-20250402145359.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250402145517.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 196156,
+      "exportedPath": "supplemental-files/images/pasted-image-20250402145517.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted Image 20250402173745_516.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 343900,
+      "exportedPath": "supplemental-files/images/pasted-image-20250402173745_516.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250404103607.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 180505,
+      "exportedPath": "supplemental-files/images/pasted-image-20250404103607.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250410180754.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 49704,
+      "exportedPath": "supplemental-files/images/pasted-image-20250410180754.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Pasted image 20250414171627.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 81930,
+      "exportedPath": "supplemental-files/images/pasted-image-20250414171627.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/PXL_20250215_032831445.jpg": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 1619305,
+      "exportedPath": "supplemental-files/images/pxl_20250215_032831445.jpg",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Screenshot_20250225-224022.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 237293,
+      "exportedPath": "supplemental-files/images/screenshot_20250225-224022.png",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 41 2025-03-08 16.03.34.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 208214,
+      "exportedPath": "supplemental-files/images/session-41-2025-03-08-16.03.34.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 41 2025-03-08 16.25.14.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 192836,
+      "exportedPath": "supplemental-files/images/session-41-2025-03-08-16.25.14.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 41 2025-03-08 16.41.21.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 44744,
+      "exportedPath": "supplemental-files/images/session-41-2025-03-08-16.41.21.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 42 Inertia And Torque 2025-03-09 15.59.49.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 96662,
+      "exportedPath": "supplemental-files/images/session-42-inertia-and-torque-2025-03-09-15.59.49.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 42 Inertia And Torque 2025-03-09 16.08.52.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 127968,
+      "exportedPath": "supplemental-files/images/session-42-inertia-and-torque-2025-03-09-16.08.52.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 42 Inertia And Torque 2025-03-09 16.29.31.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 168882,
+      "exportedPath": "supplemental-files/images/session-42-inertia-and-torque-2025-03-09-16.29.31.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 42 Inertia And Torque 2025-03-09 16.43.10.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 78480,
+      "exportedPath": "supplemental-files/images/session-42-inertia-and-torque-2025-03-09-16.43.10.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 43 2025-03-15 16.20.35.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 251144,
+      "exportedPath": "supplemental-files/images/session-43-2025-03-15-16.20.35.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 43 2025-03-15 16.38.08.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 17936,
+      "exportedPath": "supplemental-files/images/session-43-2025-03-15-16.38.08.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 43 2025-03-15 16.53.53.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 177166,
+      "exportedPath": "supplemental-files/images/session-43-2025-03-15-16.53.53.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 44 2025-03-20 15.39.14.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 1984,
+      "exportedPath": "supplemental-files/images/session-44-2025-03-20-15.39.14.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 44 Angular Momentum 2025-03-20 16.13.35.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 90062,
+      "exportedPath": "supplemental-files/images/session-44-angular-momentum-2025-03-20-16.13.35.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 44 Angular Momentum 2025-03-20 16.25.50.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 4100,
+      "exportedPath": "supplemental-files/images/session-44-angular-momentum-2025-03-20-16.25.50.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 44 Angular Momentum 2025-03-20 16.48.32.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 23482,
+      "exportedPath": "supplemental-files/images/session-44-angular-momentum-2025-03-20-16.48.32.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 45- Simple Harmonic Motin 2025-03-24 15.02.50.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 400022,
+      "exportedPath": "supplemental-files/images/session-45-simple-harmonic-motin-2025-03-24-15.02.50.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 45- Simple Harmonic Motin 2025-03-24 15.54.03.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 14670,
+      "exportedPath": "supplemental-files/images/session-45-simple-harmonic-motin-2025-03-24-15.54.03.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 46 2025-03-29 16.31.55.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 446080,
+      "exportedPath": "supplemental-files/images/session-46-2025-03-29-16.31.55.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 46 2025-03-29 17.11.24.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 279939,
+      "exportedPath": "supplemental-files/images/session-46-2025-03-29-17.11.24.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 47 2025-03-31 15.12.41.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 239227,
+      "exportedPath": "supplemental-files/images/session-47-2025-03-31-15.12.41.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 48- Gravity 2025-04-03 17.41.07.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 121607,
+      "exportedPath": "supplemental-files/images/session-48-gravity-2025-04-03-17.41.07.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 48- Gravity 2025-04-03 17.56.53.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 71189,
+      "exportedPath": "supplemental-files/images/session-48-gravity-2025-04-03-17.56.53.excalidraw.html",
+      "dependencies": []
+    },
+    "Supplemental Files/images/Session 49- Prep for PRactice 2025-04-08 17.24.59.excalidraw.md": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 386421,
+      "exportedPath": "supplemental-files/images/session-49-prep-for-practice-2025-04-08-17.24.59.excalidraw.html",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250402145517.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 196156,
+      "exportedPath": "lib/media/pasted-image-20250402145517.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250402145122.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 67874,
+      "exportedPath": "lib/media/pasted-image-20250402145122.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250402145359.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 83179,
+      "exportedPath": "lib/media/pasted-image-20250402145359.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250331151404.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 66458,
+      "exportedPath": "lib/media/pasted-image-20250331151404.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250410180754.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 49704,
+      "exportedPath": "lib/media/pasted-image-20250410180754.png",
+      "dependencies": []
+    },
+    "lib/media/image(1).png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 68586,
+      "exportedPath": "lib/media/image(1).png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250303103341.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 1157585,
+      "exportedPath": "lib/media/pasted-image-20250303103341.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250303104143.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 99387,
+      "exportedPath": "lib/media/pasted-image-20250303104143.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250310133732.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 53632,
+      "exportedPath": "lib/media/pasted-image-20250310133732.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250324132308.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 40979,
+      "exportedPath": "lib/media/pasted-image-20250324132308.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250324132344.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 46118,
+      "exportedPath": "lib/media/pasted-image-20250324132344.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250324133526.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 81396,
+      "exportedPath": "lib/media/pasted-image-20250324133526.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250324134223.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 38235,
+      "exportedPath": "lib/media/pasted-image-20250324134223.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250326134004.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 80651,
+      "exportedPath": "lib/media/pasted-image-20250326134004.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250326134847.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 640164,
+      "exportedPath": "lib/media/pasted-image-20250326134847.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250328133558.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 47701,
+      "exportedPath": "lib/media/pasted-image-20250328133558.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20250328134541.png": {
+      "modifiedTime": 1744735070303,
+      "sourceSize": 67176,
+      "exportedPath": "lib/media/pasted-image-20250328134541.png",
       "dependencies": []
     }
   }
