@@ -1,0 +1,5 @@
+defaults:
+  - scope:
+      path: "school"
+    values:
+      render_with_liquid: false
